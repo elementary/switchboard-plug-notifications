@@ -21,6 +21,9 @@ vala_precompile (VALA_C ${PLUGNAME}
     Plug.vala
     NotifySettings.vala
     Widgets/AppsView.vala
+    Widgets/AppList.vala
+    Widgets/AppItem.vala
+    Widgets/AppSettings.vala
     Widgets/Footer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES

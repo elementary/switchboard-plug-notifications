@@ -22,19 +22,22 @@
 public class NotifySettings : Object {
 	public Settings settings;
 
-	static const string BUBBLES_KEY = "bubbles";
-	static const string SOUNDS_KEY = "sounds";
+	static const string APPS_KEY = "apps";
 
-	public string[] bubbles { get; set; }
-	public string[] sounds { get; set; }
+	public string[] apps { get; set; }
+
+	public signal void apps_changed (string[] new_value);
 
 	static NotifySettings? instance = null;
 
 	private NotifySettings () {
 		settings = new Settings ("org.pantheon.desktop.gala.notifications");
 
-		this.settings.bind (BUBBLES_KEY, this, "bubbles", SettingsBindFlags.DEFAULT);
-		this.settings.bind (SOUNDS_KEY, this, "sounds", SettingsBindFlags.DEFAULT);
+		settings.bind (APPS_KEY, this, "apps", SettingsBindFlags.DEFAULT);
+
+		settings.changed[APPS_KEY].connect (() => {
+				apps_changed (apps);
+			});
 	}
 
 	public static NotifySettings get_default () {

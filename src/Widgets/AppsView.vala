@@ -20,8 +20,21 @@
 ***/
 
 public class Widgets.AppsView : Granite.Widgets.ThinPaned {
+	private AppList applist;
+
+	private AppSettings appsettings;
+
 	public AppsView () {
-		this.add1 (new Gtk.Label ("Left"));
-		this.add2 (new Gtk.Label ("Right"));
+		applist = new AppList ();
+		appsettings = new AppSettings ();
+
+		this.add1 (applist);
+		this.add2 (appsettings);
+
+		applist.item_selected.connect ((item) => {
+			appsettings.appicon.set_from_gicon ((item as AppItem).get_icon (), Gtk.IconSize.DIALOG);
+			appsettings.apptitle.set_label ((item as AppItem).get_title ());
+			appsettings.appdescription.set_label ((item as AppItem).get_description ());
+		});
 	}
 }

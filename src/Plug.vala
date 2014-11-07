@@ -59,7 +59,7 @@ public class NotificationsPlug : Switchboard.Plug {
 	}
 
 	public override void search_callback (string location) {
-		
+		print (location);
 	}
 
 	public override async Gee.TreeMap<string, string> search (string search) {
