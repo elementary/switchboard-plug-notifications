@@ -31,10 +31,17 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		this.add1 (applist);
 		this.add2 (appsettings);
 
+		if (applist.selected == null) {
+			appsettings.set_sensitive (false);
+		} else {
+			appsettings.set_appicon ((applist.selected as AppItem).get_icon ());
+			appsettings.set_apptitle ((applist.selected as AppItem).get_title ());
+		}
+
 		applist.item_selected.connect ((item) => {
-			appsettings.appicon.set_from_gicon ((item as AppItem).get_icon (), Gtk.IconSize.DIALOG);
-			appsettings.apptitle.set_label ((item as AppItem).get_title ());
-			appsettings.appdescription.set_label ((item as AppItem).get_description ());
+			appsettings.set_appicon ((item as AppItem).get_icon ());
+			appsettings.set_apptitle ((item as AppItem).get_title ());
+			appsettings.set_sensitive (true);
 		});
 	}
 }
