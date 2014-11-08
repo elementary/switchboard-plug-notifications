@@ -51,8 +51,11 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 	private void list_apps () {
 		for (int i = 0; i < NotifySettings.get_default ().apps.length; i++) {
 			var parameters = NotifySettings.get_default ().apps[i].split (":");
-			var item = new AppItem (parameters[0]);
-			if (parameters[1].split (",")[0] == "0") {
+			var properties = parameters[1].split (",");
+
+			var item = new AppItem (parameters[0], properties);
+
+			if (properties[0] == "0") {
 				group_disabled.add (item);
 			} else {
 				group_enabled.add (item);

@@ -25,9 +25,13 @@ public class Widgets.AppSettings : Gtk.Grid {
 
 	private Gtk.Image bubblesimage;
 	private Gtk.Label bubblestitle;
+	private Gtk.ComboBoxText bubblescombobox;
+	private Gtk.Label bubblesinfo;
 
 	private Gtk.Image soundsimage;
 	private Gtk.Label soundstitle;
+	private Gtk.Switch soundsswitch;
+	private Gtk.Label soundsinfo;
 
 	public AppSettings () {
 		this.margin = 12;
@@ -46,7 +50,7 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblesimage.halign = Gtk.Align.START;
 		bubblesimage.hexpand = false;
 		bubblesimage.margin_top = 50;
-		this.attach (bubblesimage, 1, 1, 1, 1);
+		this.attach (bubblesimage, 1, 1, 1, 3);
 
 		bubblestitle = new Gtk.Label ("<span font_weight=\"bold\" size=\"large\">" + _("Bubbles") + "</span>");
 		bubblestitle.use_markup = true;
@@ -54,15 +58,33 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblestitle.valign = Gtk.Align.START;
 		bubblestitle.hexpand = true;
 		bubblestitle.vexpand = false;
-		bubblestitle.margin_top = 50;
+		bubblestitle.margin_top = 50 + 5;
 		this.attach (bubblestitle, 2, 1, 1, 1);
+
+		bubblescombobox = new Gtk.ComboBoxText ();
+		bubblescombobox.append_text (_("Show all"));							// 0
+		bubblescombobox.append_text (_("Disable low notifications"));			// 1
+		bubblescombobox.append_text (_("Show critical notifications only"));	// 2
+		bubblescombobox.append_text (_("Don't show any"));						// 3
+		bubblescombobox.halign = Gtk.Align.START;
+		bubblescombobox.valign = Gtk.Align.CENTER;
+		bubblescombobox.hexpand = false;
+		bubblescombobox.vexpand = false;
+		this.attach (bubblescombobox, 2, 2, 1, 1);
+
+		bubblesinfo = new Gtk.Label (_("Bubbles appear in the top right corner of the display and disappear automatically."));
+		bubblesinfo.halign = Gtk.Align.START;
+		bubblesinfo.valign = Gtk.Align.START;
+		bubblesinfo.hexpand = true;
+		bubblesinfo.vexpand = false;
+		bubblesinfo.margin_bottom = 9;
+		this.attach (bubblesinfo, 2, 3, 1, 1);
 
 		soundsimage = new Gtk.Image.from_file (Constants.PKGDATADIR + "/sounds.svg");
 		soundsimage.halign = Gtk.Align.START;
 		soundsimage.hexpand = false;
 		soundsimage.margin_top = 50;
-		soundsimage.margin_bottom = 20;
-		this.attach (soundsimage, 1, 2, 1, 1);
+		this.attach (soundsimage, 1, 4, 1, 3);
 
 		soundstitle = new Gtk.Label ("<span font_weight=\"bold\" size=\"large\">" + _("Sounds") + "</span>");
 		soundstitle.use_markup = true;
@@ -70,8 +92,23 @@ public class Widgets.AppSettings : Gtk.Grid {
 		soundstitle.valign = Gtk.Align.START;
 		soundstitle.hexpand = true;
 		soundstitle.vexpand = false;
-		soundstitle.margin_top = 50;
-		this.attach (soundstitle, 2, 2, 1, 1);
+		soundstitle.margin_top = 50 + 5;
+		this.attach (soundstitle, 2, 4, 1, 1);
+
+		soundsswitch = new Gtk.Switch ();
+		soundsswitch.halign = Gtk.Align.START;
+		soundsswitch.valign = Gtk.Align.CENTER;
+		soundsswitch.hexpand = false;
+		soundsswitch.vexpand = false;
+		this.attach (soundsswitch, 2, 5, 1, 1);
+
+		soundsinfo = new Gtk.Label (_("Sounds play once when a new notification arrives."));
+		soundsinfo.halign = Gtk.Align.START;
+		soundsinfo.valign = Gtk.Align.START;
+		soundsinfo.hexpand = true;
+		soundsinfo.vexpand = false;
+		soundsinfo.margin_bottom = 9;
+		this.attach (soundsinfo, 2, 6, 1, 1);
 
 		this.show_all ();
 	}
@@ -83,5 +120,26 @@ public class Widgets.AppSettings : Gtk.Grid {
 	public void set_apptitle (string title) {
 		apptitle.set_label (@"<span font_weight=\"bold\" size=\"x-large\">$title</span>");
 		apptitle.set_use_markup (true);
+	}
+
+	public void set_priority (string priority) {
+		switch (priority) {
+			case "0":
+				bubblescombobox.set_active (3);
+				break;
+			case "1":
+				bubblescombobox.set_active (2);
+				break;
+			case "2":
+				bubblescombobox.set_active (1);
+				break;
+			case "3":
+				bubblescombobox.set_active (0);
+				break;
+		}
+	}
+
+	public void set_allow_sounds (bool allow_sounds) {
+		soundsswitch.set_active (allow_sounds);
 	}
 }

@@ -35,14 +35,19 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		if (applist.selected == null) {
 			appsettings.set_sensitive (false);
 		} else {
-			appsettings.set_appicon ((applist.selected as AppItem).get_icon ());
-			appsettings.set_apptitle ((applist.selected as AppItem).get_title ());
+			select_app (applist.selected as AppItem);
 		}
 
 		applist.item_selected.connect ((item) => {
-			appsettings.set_appicon ((item as AppItem).get_icon ());
-			appsettings.set_apptitle ((item as AppItem).get_title ());
-			appsettings.set_sensitive (true);
+			select_app (item as AppItem);
 		});
+	}
+
+	private void select_app (AppItem item) {
+		appsettings.set_appicon (item.get_icon ());
+		appsettings.set_apptitle (item.get_title ());
+		appsettings.set_priority (item.get_priority ());
+		appsettings.set_allow_sounds (item.get_allow_sounds ());
+		appsettings.set_sensitive (true);
 	}
 }

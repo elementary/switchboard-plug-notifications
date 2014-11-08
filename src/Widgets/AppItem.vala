@@ -21,9 +21,15 @@
 
 public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	private AppInfo appinfo;
+	private string appname;
+	private string apppriority;
+	private bool appallowsounds;
 
-	public AppItem (string app_name) {
+	public AppItem (string app_name, string[] properties) {
 		appinfo = search_appinfo_for_name (app_name);
+		appname = app_name;
+		apppriority = properties[0];
+		appallowsounds = (properties[1] != "0");
 
 		this.name = get_title ();
 		this.icon = get_icon ();
@@ -49,7 +55,7 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 				case "NetworkManager":
 					return _("Network");
 				case "gnome-settings-daemon":
-					return _("System Konfiguration");
+					return _("System Configuration");
 				default:
 					return appinfo.get_display_name ();
 			}
@@ -81,5 +87,13 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 		} catch {
 			return null;
 		}
+	}
+
+	public string get_priority () {
+		return apppriority;
+	}
+
+	public bool get_allow_sounds () {
+		return appallowsounds;
 	}
 }
