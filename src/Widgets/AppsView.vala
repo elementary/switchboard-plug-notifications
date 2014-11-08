@@ -30,6 +30,7 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 
 		this.add1 (applist);
 		this.add2 (appsettings);
+		this.set_position (200);
 
 		if (applist.selected == null) {
 			appsettings.set_sensitive (false);

@@ -29,7 +29,7 @@ public class NotificationsPlug : Switchboard.Plug {
 			code_name: "personal-pantheon-notifications",
 			display_name: _("Notifications"),
 			description: _("Enable or disable notifications."),
-			icon: "application-default-icon");
+			icon: "applications-chat");
 	}
 
 	public override Gtk.Widget get_widget () {
@@ -59,7 +59,7 @@ public class NotificationsPlug : Switchboard.Plug {
 	}
 
 	public override void search_callback (string location) {
-		print (location);
+		
 	}
 
 	public override async Gee.TreeMap<string, string> search (string search) {
