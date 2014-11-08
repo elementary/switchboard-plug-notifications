@@ -23,8 +23,12 @@ public class NotifySettings : Object {
 	public Settings settings;
 
 	static const string APPS_KEY = "apps";
+	static const string DEFAULT_PRIORITY_KEY = "default-priority";
+	static const string DEFAULT_SOUNDS_ENABLED_KEY = "default-sounds-enabled";
 
 	public string[] apps { get; set; }
+	public int default_priority { get; set; }
+	public int default_sounds_enabled { get; set; }
 
 	public signal void apps_changed (string[] new_value);
 
@@ -34,6 +38,8 @@ public class NotifySettings : Object {
 		settings = new Settings ("org.pantheon.desktop.gala.notifications");
 
 		settings.bind (APPS_KEY, this, "apps", SettingsBindFlags.DEFAULT);
+		settings.bind (DEFAULT_PRIORITY_KEY, this, "default-priority", SettingsBindFlags.DEFAULT);
+		settings.bind (DEFAULT_SOUNDS_ENABLED_KEY, this, "default-sounds-enabled", SettingsBindFlags.DEFAULT);
 
 		settings.changed[APPS_KEY].connect (() => {
 				apps_changed (apps);

@@ -23,13 +23,15 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	private AppInfo appinfo;
 	private string appname;
 	private string apppriority;
-	private bool appallowsounds;
+	private string appallowsounds;
+
+	private string[] priorities = ({"0", "1", "2", "3"});
 
 	public AppItem (string app_name, string[] properties) {
 		appinfo = search_appinfo_for_name (app_name);
 		appname = app_name;
-		apppriority = properties[0];
-		appallowsounds = (properties[1] != "0");
+		apppriority = properties [0];
+		appallowsounds = properties[1];
 
 		this.name = get_title ();
 		this.icon = get_icon ();
@@ -90,10 +92,38 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	}
 
 	public string get_priority () {
-		return apppriority;
+		if (apppriority in priorities) {
+			return apppriority;
+		} else {
+			// Fallback to default
+			return NotifySettings.get_default ().default_priority.to_string ();
+		}
 	}
 
-	public bool get_allow_sounds () {
-		return appallowsounds;
+	public void set_priority (string priority) {
+		if (priority in priorities) {
+			apppriority = priority;
+			rewrite_settings ();
+		}
+	}
+
+	public string get_allow_sounds () {
+		if (appallowsounds == "0" || appallowsounds == "1") {
+			return appallowsounds;
+		} else {
+			// Fallback to default
+			return NotifySettings.get_default ().default_sounds_enabled.to_string ();
+		}
+	}
+
+	public void set_allow_sounds (string allow_sounds) {
+		if (allow_sounds == "0" || allow_sounds == "1") {
+			appallowsounds = allow_sounds;
+			rewrite_settings ();
+		}
+	}
+
+	private void rewrite_settings () {
+		
 	}
 }

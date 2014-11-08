@@ -62,10 +62,10 @@ public class Widgets.AppSettings : Gtk.Grid {
 		this.attach (bubblestitle, 2, 1, 1, 1);
 
 		bubblescombobox = new Gtk.ComboBoxText ();
-		bubblescombobox.append_text (_("Show all"));							// 0
-		bubblescombobox.append_text (_("Disable low notifications"));			// 1
-		bubblescombobox.append_text (_("Show critical notifications only"));	// 2
-		bubblescombobox.append_text (_("Don't show any"));						// 3
+		bubblescombobox.append_text (_("Show all"));
+		bubblescombobox.append_text (_("Disable low notifications"));
+		bubblescombobox.append_text (_("Show critical notifications only"));
+		bubblescombobox.append_text (_("Don't show any"));
 		bubblescombobox.halign = Gtk.Align.START;
 		bubblescombobox.valign = Gtk.Align.CENTER;
 		bubblescombobox.hexpand = false;

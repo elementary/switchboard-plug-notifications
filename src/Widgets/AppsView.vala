@@ -47,7 +47,7 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		appsettings.set_appicon (item.get_icon ());
 		appsettings.set_apptitle (item.get_title ());
 		appsettings.set_priority (item.get_priority ());
-		appsettings.set_allow_sounds (item.get_allow_sounds ());
+		appsettings.set_allow_sounds (item.get_allow_sounds () == "1");
 		appsettings.set_sensitive (true);
 	}
 }
