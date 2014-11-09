@@ -22,8 +22,8 @@
 public class Widgets.AppList : Granite.Widgets.SourceList {
 	private Granite.Widgets.SourceList.ExpandableItem root_item;
 
-	private Granite.Widgets.SourceList.ExpandableItem group_enabled;
-	private Granite.Widgets.SourceList.ExpandableItem group_disabled;
+	public Granite.Widgets.SourceList.ExpandableItem group_enabled;
+	public Granite.Widgets.SourceList.ExpandableItem group_disabled;
 
 	private int item_count;
 

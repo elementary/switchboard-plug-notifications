@@ -48,7 +48,24 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		appsettings.set_allow_sounds (item.get_allow_sounds () == "1");
 		appsettings.set_sensitive (true);
 		appsettings.bubbles_changed.connect ((priority) => {
-			(applist.selected as AppItem).set_priority (priority);
+			var selected_item = applist.selected as AppItem;
+			selected_item.set_priority (priority);
+
+			if (priority == "0") {
+				// Move icon to "Disabled"
+				if (selected_item.parent != applist.group_disabled) {
+					applist.group_enabled.remove (selected_item);
+					applist.group_disabled.add (selected_item);
+					applist.selected = selected_item;
+				}
+			} else {
+				// Move icon to "Enabled"
+				if (selected_item.parent != applist.group_enabled) {
+					applist.group_disabled.remove (selected_item);
+					applist.group_enabled.add (selected_item);
+					applist.selected = selected_item;
+				}
+			}
 		});
 		appsettings.allow_sounds_changed.connect ((allow_sounds) => {
 			(applist.selected as AppItem).set_allow_sounds (allow_sounds);

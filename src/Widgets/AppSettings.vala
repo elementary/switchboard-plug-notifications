@@ -74,6 +74,8 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblescombobox.hexpand = false;
 		bubblescombobox.vexpand = false;
 		bubblescombobox.changed.connect (() => {
+			var enable_sounds_switch = true;
+
 			switch (bubblescombobox.active) {
 				case 0:
 					bubbles_changed ("3");
@@ -86,8 +88,11 @@ public class Widgets.AppSettings : Gtk.Grid {
 					break;
 				case 3:
 					bubbles_changed ("0");
+					enable_sounds_switch = false;
 					break;
 			}
+
+			soundsswitch.set_sensitive (enable_sounds_switch);
 		});
 		this.attach (bubblescombobox, 2, 2, 1, 1);
 
