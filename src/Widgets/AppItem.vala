@@ -27,6 +27,9 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 
 	private string[] priorities = ({"0", "1", "2", "3"});
 
+	// Please add more exceptions! TODO: app-name, title and icon all in one array.
+	private string[] exceptions = ({"indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
+
 	public AppItem (string app_name, string[] properties) {
 		appinfo = search_appinfo_for_name (app_name);
 		appname = app_name;
@@ -40,17 +43,31 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	private AppInfo search_appinfo_for_name (string app_name) {
 		var found_info = AppInfo.create_from_commandline ("", app_name, AppInfoCreateFlags.NONE);
 
-		AppInfo.get_all ().foreach ((info) => {
-			if (app_name.down ().contains (info.get_name ().down ()) || app_name.down ().contains (info.get_executable ().down ())) {
-				found_info = info;
+		if ((app_name in exceptions) == false) {
+			var found = false;
+
+			AppInfo.get_all ().foreach ((info) => {
+				if (app_name.down ().contains (info.get_name ().down ()) || app_name.down ().contains (info.get_executable ().down ())) {
+					found_info = info;
+					found = true;
+				}
+			});
+
+			if (!found) {
+				AppInfo.get_all ().foreach ((info) => {
+					if (info.get_display_name ().down ().contains (app_name.down ())) {
+						found_info = info;
+						found = true;
+					}
+				});
 			}
-		});
+		}
 
 		return found_info;
 	}
 
 	public string get_title () {
-		// Please add more exceptions!
+		// Please add more exceptions! (See also string[] exceptions!)
 		switch (appinfo.get_display_name ()) {
 				case "indicator-sound":
 					return _("Sound Menu");
@@ -70,7 +87,7 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	public Icon get_icon () {
 		try {
 			if (appinfo.get_icon () == null) {
-				// Please add more exceptions!
+				// Please add more exceptions! (See also string[] exceptions!)
 				switch (appinfo.get_display_name ()) {
 					case "indicator-sound":
 						return Icon.new_for_string ("preferences-desktop-sound");
