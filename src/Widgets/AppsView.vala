@@ -39,6 +39,10 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		}
 
 		applist.item_changed.connect (select_app);
+
+		NotifySettings.get_default ().do_not_disturb_changed.connect ((do_not_disturb) => {
+			this.set_sensitive (do_not_disturb == false);
+		});
 	}
 
 	private void select_app (AppItem item) {

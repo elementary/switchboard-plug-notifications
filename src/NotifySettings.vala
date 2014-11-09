@@ -25,12 +25,15 @@ public class NotifySettings : Object {
 	static const string APPS_KEY = "apps";
 	static const string DEFAULT_PRIORITY_KEY = "default-priority";
 	static const string DEFAULT_SOUNDS_ENABLED_KEY = "default-sounds-enabled";
+	static const string DO_NOT_DISTURB_KEY = "do-not-disturb";
 
 	public string[] apps { get; set; }
 	public int default_priority { get; set; }
 	public int default_sounds_enabled { get; set; }
+	public bool do_not_disturb { get; set; }
 
 	public signal void apps_changed (string[] new_value);
+	public signal void do_not_disturb_changed (bool new_value);
 
 	static NotifySettings? instance = null;
 
@@ -40,10 +43,15 @@ public class NotifySettings : Object {
 		settings.bind (APPS_KEY, this, "apps", SettingsBindFlags.DEFAULT);
 		settings.bind (DEFAULT_PRIORITY_KEY, this, "default-priority", SettingsBindFlags.DEFAULT);
 		settings.bind (DEFAULT_SOUNDS_ENABLED_KEY, this, "default-sounds-enabled", SettingsBindFlags.DEFAULT);
+		settings.bind (DO_NOT_DISTURB_KEY, this, "do-not-disturb", SettingsBindFlags.DEFAULT);
 
 		settings.changed[APPS_KEY].connect (() => {
-				apps_changed (apps);
-			});
+			apps_changed (apps);
+		});
+
+		settings.changed[DO_NOT_DISTURB_KEY].connect (() => {
+			do_not_disturb_changed (do_not_disturb);
+		});
 	}
 
 	public static NotifySettings get_default () {
