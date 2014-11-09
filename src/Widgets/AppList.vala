@@ -60,18 +60,21 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 	private void list_apps () {
 		item_count = NotifySettings.get_default ().apps.length;
 		for (int i = 0; i < item_count; i++) {
-			try {
-				var parameters = NotifySettings.get_default ().apps[i].split (":");
+			var parameters = NotifySettings.get_default ().apps[i].split (":");
+
+			if (parameters.length == 2) {
 				var properties = parameters[1].split (",");
 
-				var item = new AppItem (parameters[0], properties);
+				if (properties.length == 2) {
+					var item = new AppItem (parameters[0], properties);
 
-				if (properties[0] == "0") {
-					group_disabled.add (item);
-				} else {
-					group_enabled.add (item);
+					if (properties[0] == "0") {
+						group_disabled.add (item);
+					} else {
+						group_enabled.add (item);
+					}
 				}
-			} catch {}
+			}
 		}
 
 		var first_item = this.get_first_child (group_enabled);
