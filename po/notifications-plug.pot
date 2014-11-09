@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-08 18:06-0600\n"
+"POT-Creation-Date: 2014-11-09 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,60 +25,60 @@ msgstr ""
 msgid "Enable or disable notifications."
 msgstr ""
 
-#: ../src/Widgets/AppList.vala:30
+#: ../src/Widgets/AppItem.vala:73
+msgid "Sound Menu"
+msgstr ""
+
+#: ../src/Widgets/AppItem.vala:75
+msgid "Network"
+msgstr ""
+
+#: ../src/Widgets/AppItem.vala:77
+msgid "System Configuration"
+msgstr ""
+
+#: ../src/Widgets/AppList.vala:34
 msgid "Enabled"
 msgstr ""
 
-#: ../src/Widgets/AppList.vala:33
+#: ../src/Widgets/AppList.vala:37
 msgid "Disabled"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:55
-msgid "Bubbles"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:65
-msgid "Show all"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:66
-msgid "Disable low notifications"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:67
-msgid "Show critical notifications only"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:68
-msgid "Don't show any"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:75
-msgid ""
-"Bubbles appear in the top right corner of the display and disappear "
-"automatically."
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:89
-msgid "Sounds"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:105
-msgid "Sounds play once when a new notification arrives."
 msgstr ""
 
 #: ../src/Widgets/Footer.vala:30
 msgid "Do Not Disturb"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:56
-msgid "Sound Menu"
+#: ../src/Widgets/AppSettings.vala:58
+msgid "Bubbles"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:58
-msgid "Network"
+#: ../src/Widgets/AppSettings.vala:68
+msgid "Show all"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:60
-msgid "System Configuration"
+#: ../src/Widgets/AppSettings.vala:69
+msgid "Disable low notifications"
+msgstr ""
+
+#: ../src/Widgets/AppSettings.vala:70
+msgid "Show critical notifications only"
+msgstr ""
+
+#: ../src/Widgets/AppSettings.vala:71
+msgid "Don't show any"
+msgstr ""
+
+#: ../src/Widgets/AppSettings.vala:99
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+
+#: ../src/Widgets/AppSettings.vala:113
+msgid "Sounds"
+msgstr ""
+
+#: ../src/Widgets/AppSettings.vala:136
+msgid "Sounds play once when a new notification arrives."
 msgstr ""
