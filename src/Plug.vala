@@ -29,7 +29,7 @@ public class NotificationsPlug : Switchboard.Plug {
 			code_name: "personal-pantheon-notifications",
 			display_name: _("Notifications"),
 			description: _("Enable or disable notifications."),
-			icon: "applications-chat");
+			icon: "preferences-desktop-notifications");
 	}
 
 	public override Gtk.Widget get_widget () {
