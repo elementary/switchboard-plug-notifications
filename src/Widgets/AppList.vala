@@ -25,6 +25,10 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 	private Granite.Widgets.SourceList.ExpandableItem group_enabled;
 	private Granite.Widgets.SourceList.ExpandableItem group_disabled;
 
+	private int item_count;
+
+	public signal void item_changed (AppItem item);
+
 	public AppList () {
 		root_item = new Granite.Widgets.SourceList.ExpandableItem ();
 		group_enabled = new Granite.Widgets.SourceList.ExpandableItem (_("Enabled"));
@@ -38,18 +42,24 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 
 		this.root = root_item;
 		this.show_all ();
+		this.item_selected.connect ((item) => {
+			item_changed (item as AppItem);
+		});
 
 		list_apps ();
 
 		NotifySettings.get_default ().apps_changed.connect (() => {
-			group_enabled.clear ();
-			group_disabled.clear ();
-			list_apps ();
+			if (NotifySettings.get_default ().apps.length != item_count) {
+				group_enabled.clear ();
+				group_disabled.clear ();
+				list_apps ();
+			}
 		});
 	}
 
 	private void list_apps () {
-		for (int i = 0; i < NotifySettings.get_default ().apps.length; i++) {
+		item_count = NotifySettings.get_default ().apps.length;
+		for (int i = 0; i < item_count; i++) {
 			try {
 				var parameters = NotifySettings.get_default ().apps[i].split (":");
 				var properties = parameters[1].split (",");

@@ -124,6 +124,20 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 	}
 
 	private void rewrite_settings () {
-		
+		var apps_new = new string[NotifySettings.get_default ().apps.length];
+
+		for (int i = 0; i < NotifySettings.get_default ().apps.length; i++) {
+			try {
+				if (NotifySettings.get_default ().apps[i].split (":")[0] == appname) {
+					// Rewrite
+					apps_new[i] = appname + ":" + apppriority + "," + appallowsounds;
+				} else {
+					// Keep
+					apps_new[i] = NotifySettings.get_default ().apps[i];
+				}
+			} catch {}
+		}
+
+		NotifySettings.get_default ().apps = apps_new;
 	}
 }

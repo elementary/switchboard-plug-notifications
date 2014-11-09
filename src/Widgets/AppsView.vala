@@ -38,9 +38,7 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 			select_app (applist.selected as AppItem);
 		}
 
-		applist.item_selected.connect ((item) => {
-			select_app (item as AppItem);
-		});
+		applist.item_changed.connect (select_app);
 	}
 
 	private void select_app (AppItem item) {
@@ -49,5 +47,11 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		appsettings.set_priority (item.get_priority ());
 		appsettings.set_allow_sounds (item.get_allow_sounds () == "1");
 		appsettings.set_sensitive (true);
+		appsettings.bubbles_changed.connect ((priority) => {
+			(applist.selected as AppItem).set_priority (priority);
+		});
+		appsettings.allow_sounds_changed.connect ((allow_sounds) => {
+			(applist.selected as AppItem).set_allow_sounds (allow_sounds);
+		});
 	}
 }

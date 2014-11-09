@@ -33,6 +33,9 @@ public class Widgets.AppSettings : Gtk.Grid {
 	private Gtk.Switch soundsswitch;
 	private Gtk.Label soundsinfo;
 
+	public signal void bubbles_changed (string new_priority);
+	public signal void allow_sounds_changed (string new_status);
+
 	public AppSettings () {
 		this.margin = 12;
 		this.row_spacing = 12;
@@ -70,6 +73,22 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblescombobox.valign = Gtk.Align.CENTER;
 		bubblescombobox.hexpand = false;
 		bubblescombobox.vexpand = false;
+		bubblescombobox.changed.connect (() => {
+			switch (bubblescombobox.active) {
+				case 0:
+					bubbles_changed ("3");
+					break;
+				case 1:
+					bubbles_changed ("2");
+					break;
+				case 2:
+					bubbles_changed ("1");
+					break;
+				case 3:
+					bubbles_changed ("0");
+					break;
+			}
+		});
 		this.attach (bubblescombobox, 2, 2, 1, 1);
 
 		bubblesinfo = new Gtk.Label (_("Bubbles appear in the top right corner of the display and disappear automatically."));
@@ -100,6 +119,13 @@ public class Widgets.AppSettings : Gtk.Grid {
 		soundsswitch.valign = Gtk.Align.CENTER;
 		soundsswitch.hexpand = false;
 		soundsswitch.vexpand = false;
+		soundsswitch.notify["active"].connect (() => {
+			if (soundsswitch.active) {
+				allow_sounds_changed ("1");
+			} else {
+				allow_sounds_changed ("0");
+			}
+		});
 		this.attach (soundsswitch, 2, 5, 1, 1);
 
 		soundsinfo = new Gtk.Label (_("Sounds play once when a new notification arrives."));
