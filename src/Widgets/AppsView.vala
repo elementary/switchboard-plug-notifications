@@ -30,15 +30,19 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 
 		this.add1 (applist);
 		this.add2 (appsettings);
-		this.set_position (200);
+		this.set_position (220);
 
-		if (applist.selected == null) {
-			appsettings.set_sensitive (false);
-		} else {
-			select_app (applist.selected as AppItem);
-		}
+		select_app (applist.selected_row);
 
 		applist.item_changed.connect (select_app);
+
+		appsettings.bubbles_changed.connect ((priority) => {
+			var selected_item = applist.selected_row as AppItem;
+			selected_item.set_priority (priority);
+		});
+		appsettings.allow_sounds_changed.connect ((allow_sounds) => {
+			(applist.selected_row as AppItem).set_allow_sounds (allow_sounds);
+		});
 
 		NotifySettings.get_default ().do_not_disturb_changed.connect ((do_not_disturb) => {
 			this.set_sensitive (do_not_disturb == false);
@@ -51,28 +55,5 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		appsettings.set_priority (item.get_priority ());
 		appsettings.set_allow_sounds (item.get_allow_sounds () == "1");
 		appsettings.set_sensitive (true);
-		appsettings.bubbles_changed.connect ((priority) => {
-			var selected_item = applist.selected as AppItem;
-			selected_item.set_priority (priority);
-
-			if (priority == "0") {
-				// Move icon to "Disabled"
-				if (selected_item.parent != applist.group_disabled) {
-					applist.group_enabled.remove (selected_item);
-					applist.group_disabled.add (selected_item);
-					applist.selected = selected_item;
-				}
-			} else {
-				// Move icon to "Enabled"
-				if (selected_item.parent != applist.group_enabled) {
-					applist.group_disabled.remove (selected_item);
-					applist.group_enabled.add (selected_item);
-					applist.selected = selected_item;
-				}
-			}
-		});
-		appsettings.allow_sounds_changed.connect ((allow_sounds) => {
-			(applist.selected as AppItem).set_allow_sounds (allow_sounds);
-		});
 	}
 }

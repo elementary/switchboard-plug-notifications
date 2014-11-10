@@ -19,39 +19,30 @@
 
 ***/
 
-public class Widgets.AppList : Granite.Widgets.SourceList {
-	private Granite.Widgets.SourceList.ExpandableItem root_item;
-
-	public Granite.Widgets.SourceList.ExpandableItem group_enabled;
-	public Granite.Widgets.SourceList.ExpandableItem group_disabled;
-
+public class Widgets.AppList : Gtk.ListBox {
 	private int item_count;
 
 	public signal void item_changed (AppItem item);
 
+	public AppItem selected_row;
+
 	public AppList () {
-		root_item = new Granite.Widgets.SourceList.ExpandableItem ();
-		group_enabled = new Granite.Widgets.SourceList.ExpandableItem (_("Enabled"));
-		group_enabled.expanded = true;
-
-		group_disabled = new Granite.Widgets.SourceList.ExpandableItem (_("Disabled"));
-		group_disabled.expanded = true;
-
-		root_item.add (group_enabled);
-		root_item.add (group_disabled);
-
-		this.root = root_item;
-		this.show_all ();
-		this.item_selected.connect ((item) => {
-			item_changed (item as AppItem);
+		this.selection_mode = Gtk.SelectionMode.SINGLE;
+		this.row_selected.connect ((row) => {
+			if (row != null) {
+				selected_row = row as AppItem;
+				item_changed (row as AppItem);
+			}
 		});
 
 		list_apps ();
 
 		NotifySettings.get_default ().apps_changed.connect (() => {
 			if (NotifySettings.get_default ().apps.length != item_count) {
-				group_enabled.clear ();
-				group_disabled.clear ();
+				this.get_children ().foreach ((row) => {
+					this.remove (row);
+				});
+
 				list_apps ();
 			}
 		});
@@ -59,6 +50,7 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 
 	private void list_apps () {
 		item_count = NotifySettings.get_default ().apps.length;
+
 		for (int i = 0; i < item_count; i++) {
 			var parameters = NotifySettings.get_default ().apps[i].split (":");
 
@@ -67,22 +59,18 @@ public class Widgets.AppList : Granite.Widgets.SourceList {
 
 				if (properties.length == 2) {
 					var item = new AppItem (parameters[0], properties);
-
-					if (properties[0] == "0") {
-						group_disabled.add (item);
-					} else {
-						group_enabled.add (item);
-					}
+					this.add (item);
 				}
 			}
 		}
 
-		var first_item = this.get_first_child (group_enabled);
+		this.show_all ();
 
-		if (first_item == null)
-			first_item = this.get_first_child (group_disabled);
+		if (item_count > 0) {
+			var first_row = this.get_row_at_index (0);
 
-		if (first_item != null)
-			this.selected = first_item;
+			this.select_row (first_row);
+			selected_row = first_row as AppItem;
+		}
 	}
 }

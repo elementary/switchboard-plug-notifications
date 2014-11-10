@@ -19,11 +19,16 @@
 
 ***/
 
-public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
+public class Widgets.AppItem : Gtk.ListBoxRow {
 	private AppInfo appinfo;
 	private string appname;
 	private string apppriority;
 	private string appallowsounds;
+
+	private Gtk.Grid row_grid;
+	private Gtk.Image row_image;
+	private Gtk.Label row_title;
+	private Gtk.Label row_description;
 
 	private string[] priorities = ({"0", "1", "2", "3"});
 
@@ -36,8 +41,7 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 		apppriority = properties [0];
 		appallowsounds = properties[1];
 
-		this.name = get_title ();
-		this.icon = get_icon ();
+		create_ui ();
 	}
 
 	private AppInfo search_appinfo_for_name (string app_name) {
@@ -66,6 +70,47 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 		return found_info;
 	}
 
+	private void create_ui () {
+		row_grid = new Gtk.Grid ();
+		row_grid.margin = 6;
+		row_grid.column_spacing = 6;
+		this.add (row_grid);
+
+		row_image = new Gtk.Image.from_gicon (get_icon (), Gtk.IconSize.DIALOG);
+		row_grid.attach (row_image, 0, 0, 1, 2);
+
+		row_title = new Gtk.Label (@"<span font_weight=\"bold\">" + this.get_title () + "</span>");
+		row_title.use_markup = true;
+		row_title.ellipsize = Pango.EllipsizeMode.END;
+		row_title.halign = Gtk.Align.START;
+		row_title.valign = Gtk.Align.END;
+		row_grid.attach (row_title, 1, 0, 1, 1);
+
+		row_description = new Gtk.Label (null);
+		row_description.use_markup = true;
+		row_description.ellipsize = Pango.EllipsizeMode.END;
+		row_description.halign = Gtk.Align.START;
+		row_description.valign = Gtk.Align.START;
+		create_description ();
+		row_grid.attach (row_description, 1, 1, 1, 1);
+	}
+
+	private void create_description () {
+		var desc = "";
+
+		if (apppriority != "0") {
+			desc += _("Bubbles");
+
+			if (appallowsounds == "1") {
+				desc += ", " + _("Sounds");
+			}
+		} else {
+			desc += _("Disabled");
+		}
+
+		row_description.set_label (@"<span font_style=\"italic\" font_size=\"small\">$desc</span>");
+	}
+
 	public string get_title () {
 		// Please add more exceptions! (See also string[] exceptions!)
 		switch (appinfo.get_display_name ()) {
@@ -78,10 +123,6 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 				default:
 					return appinfo.get_display_name ();
 			}
-	}
-
-	public string get_description () {
-		return appinfo.get_description ();
 	}
 
 	public Icon get_icon () {
@@ -121,6 +162,7 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 		if (priority in priorities) {
 			apppriority = priority;
 			rewrite_settings ();
+			create_description ();
 		}
 	}
 
@@ -137,6 +179,7 @@ public class Widgets.AppItem : Granite.Widgets.SourceList.Item {
 		if (allow_sounds == "0" || allow_sounds == "1") {
 			appallowsounds = allow_sounds;
 			rewrite_settings ();
+			create_description ();
 		}
 	}
 
