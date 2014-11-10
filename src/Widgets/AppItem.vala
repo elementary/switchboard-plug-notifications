@@ -24,6 +24,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private string appname;
 	private string apppriority;
 	private string appallowsounds;
+	private Icon appicon;
 
 	private Gtk.Grid row_grid;
 	private Gtk.Image row_image;
@@ -36,38 +37,75 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private string[] exceptions = ({"indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
 
 	public AppItem (string app_name, string[] properties) {
-		appinfo = search_appinfo_for_name (app_name);
-		appname = app_name;
-		apppriority = properties [0];
-		appallowsounds = properties[1];
+		if (search_appinfo_for_name (app_name) && load_icon ()) {
+			appname = app_name;
+			apppriority = properties [0];
+			appallowsounds = properties[1];
 
-		create_ui ();
+			create_ui ();
+		}
 	}
 
-	private AppInfo search_appinfo_for_name (string app_name) {
-		var found_info = AppInfo.create_from_commandline ("", app_name, AppInfoCreateFlags.NONE);
+	private bool search_appinfo_for_name (string app_name) {
+		try {
+			AppInfo found_info = AppInfo.create_from_commandline ("", app_name, AppInfoCreateFlags.NONE);
 
-		if ((app_name in exceptions) == false) {
-			var found = false;
+			if ((app_name in exceptions) == false) {
+				var found = false;
 
-			AppInfo.get_all ().foreach ((info) => {
-				if (app_name.down ().contains (info.get_name ().down ()) || app_name.down ().contains (info.get_executable ().down ())) {
-					found_info = info;
-					found = true;
-				}
-			});
-
-			if (!found) {
 				AppInfo.get_all ().foreach ((info) => {
-					if (info.get_display_name ().down ().contains (app_name.down ())) {
+					if (app_name.down ().contains (info.get_name ().down ()) || app_name.down ().contains (info.get_executable ().down ())) {
 						found_info = info;
 						found = true;
 					}
 				});
-			}
-		}
 
-		return found_info;
+				if (!found) {
+					AppInfo.get_all ().foreach ((info) => {
+						if (info.get_display_name ().down ().contains (app_name.down ())) {
+							found_info = info;
+							found = true;
+						}
+					});
+				}
+			}
+
+			appinfo = found_info;
+			return true;
+		} catch {
+			return false;
+		}
+	}
+
+	private bool load_icon () {
+		try {
+			if (appinfo.get_icon () == null) {
+				// Please add more exceptions! (See also string[] exceptions!)
+				switch (appinfo.get_display_name ()) {
+					case "indicator-sound":
+						appicon = Icon.new_for_string ("preferences-desktop-sound");
+						break;
+					case "notify-send":
+						appicon = Icon.new_for_string ("applications-chat");
+						break;
+					case "NetworkManager":
+						appicon = Icon.new_for_string ("preferences-system-network");
+						break;
+					case "gnome-settings-daemon":
+						appicon = Icon.new_for_string ("applications-electronics");
+						break;
+					default:
+						appicon = Icon.new_for_string ("application-default-icon");
+						break;
+				}
+			} else {
+				appicon = appinfo.get_icon ();
+			}
+
+			return true;
+		} catch {
+			return false;
+		}
 	}
 
 	private void create_ui () {
@@ -76,7 +114,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		row_grid.column_spacing = 6;
 		this.add (row_grid);
 
-		row_image = new Gtk.Image.from_gicon (get_icon (), Gtk.IconSize.DIALOG);
+		row_image = new Gtk.Image.from_gicon (appicon, Gtk.IconSize.DIALOG);
 		row_grid.attach (row_image, 0, 0, 1, 2);
 
 		row_title = new Gtk.Label (@"<span font_weight=\"bold\">" + this.get_title () + "</span>");
@@ -126,27 +164,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	}
 
 	public Icon get_icon () {
-		try {
-			if (appinfo.get_icon () == null) {
-				// Please add more exceptions! (See also string[] exceptions!)
-				switch (appinfo.get_display_name ()) {
-					case "indicator-sound":
-						return Icon.new_for_string ("preferences-desktop-sound");
-					case "notify-send":
-						return Icon.new_for_string ("applications-chat");
-					case "NetworkManager":
-						return Icon.new_for_string ("preferences-system-network");
-					case "gnome-settings-daemon":
-						return Icon.new_for_string ("applications-electronics");
-					default:
-						return Icon.new_for_string ("application-default-icon");
-				}
-			} else {
-				return appinfo.get_icon ();
-			}
-		} catch {
-			return null;
-		}
+		return appicon;
 	}
 
 	public string get_priority () {
@@ -187,15 +205,17 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		var apps_new = new string[NotifySettings.get_default ().apps.length];
 
 		for (int i = 0; i < NotifySettings.get_default ().apps.length; i++) {
-			try {
-				if (NotifySettings.get_default ().apps[i].split (":")[0] == appname) {
+			var parameters = NotifySettings.get_default ().apps[i].split (":");
+
+			if (parameters.length == 2) {
+				if (parameters[0] == appname) {
 					// Rewrite
 					apps_new[i] = appname + ":" + apppriority + "," + appallowsounds;
 				} else {
 					// Keep
 					apps_new[i] = NotifySettings.get_default ().apps[i];
 				}
-			} catch {}
+			}
 		}
 
 		NotifySettings.get_default ().apps = apps_new;
