@@ -76,11 +76,11 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		row_grid.column_spacing = 6;
 		this.add (row_grid);
 
-		row_image = new Gtk.Image.from_gicon (get_icon (), Gtk.IconSize.DIALOG);
+		row_image = new Gtk.Image.from_gicon (get_icon (), Gtk.IconSize.DND);
 		row_grid.attach (row_image, 0, 0, 1, 2);
 
-		row_title = new Gtk.Label (@"<span font_weight=\"bold\">" + this.get_title () + "</span>");
-		row_title.use_markup = true;
+		row_title = new Gtk.Label (this.get_title ());
+        row_title.get_style_context ().add_class ("h3");
 		row_title.ellipsize = Pango.EllipsizeMode.END;
 		row_title.halign = Gtk.Align.START;
 		row_title.valign = Gtk.Align.END;
@@ -108,7 +108,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 			desc += _("Disabled");
 		}
 
-		row_description.set_label (@"<span font_style=\"italic\" font_size=\"small\">$desc</span>");
+		row_description.set_label (@"<span font_size=\"small\">$desc</span>");
 	}
 
 	public string get_title () {
