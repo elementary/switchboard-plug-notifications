@@ -1,4 +1,80 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-09 19:05+0100\n"
+"PO-Revision-Date: 2014-11-09 11:01+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-11-10 06:38+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
+
+#: ../src/Plug.vala:30
+msgid "Notifications"
+msgstr "Ilmoitukset"
+
+#: ../src/Plug.vala:31
+msgid "Enable or disable notifications."
+msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
+
+#: ../src/Widgets/AppItem.vala:73
+msgid "Sound Menu"
+msgstr "Äänivalikko"
+
+#: ../src/Widgets/AppItem.vala:75
+msgid "Network"
+msgstr "Verkko"
+
+#: ../src/Widgets/AppItem.vala:77
+msgid "System Configuration"
+msgstr "Järjestelmän asetukset"
+
+#: ../src/Widgets/AppList.vala:34
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: ../src/Widgets/AppList.vala:37
+msgid "Disabled"
+msgstr "Ei käytössä"
+
+#: ../src/Widgets/Footer.vala:30
+msgid "Do Not Disturb"
+msgstr "Älä häiritse"
+
+#: ../src/Widgets/AppSettings.vala:58
+msgid "Bubbles"
+msgstr "Kuplat"
+
+#: ../src/Widgets/AppSettings.vala:68
+msgid "Show all"
+msgstr "Näytä kaikki"
+
+#: ../src/Widgets/AppSettings.vala:69
+msgid "Disable low notifications"
+msgstr "Poista matalat ilmoitukset käytöstä"
+
+#: ../src/Widgets/AppSettings.vala:70
+msgid "Show critical notifications only"
+msgstr "Näytä vain kriittiset ilmoitukset"
+
+#: ../src/Widgets/AppSettings.vala:71
+msgid "Don't show any"
+msgstr "Älä näytä mitään"
+
+#: ../src/Widgets/AppSettings.vala:99
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+"Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
+
+#: ../src/Widgets/AppSettings.vala:113
+msgid "Sounds"
+msgstr "Äänet"
+
+#: ../src/Widgets/AppSettings.vala:136
+msgid "Sounds play once when a new notification arrives."
+msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."

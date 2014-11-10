@@ -1,4 +1,81 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-09 19:05+0100\n"
+"PO-Revision-Date: 2014-11-09 21:01+0000\n"
+"Last-Translator: UweS <Unknown>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-11-10 06:38+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
+
+#: ../src/Plug.vala:30
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: ../src/Plug.vala:31
+msgid "Enable or disable notifications."
+msgstr "Benachrichtigungen aktivieren oder deaktivieren"
+
+#: ../src/Widgets/AppItem.vala:73
+msgid "Sound Menu"
+msgstr "Audiomenü"
+
+#: ../src/Widgets/AppItem.vala:75
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../src/Widgets/AppItem.vala:77
+msgid "System Configuration"
+msgstr "Systemeinstellungen"
+
+#: ../src/Widgets/AppList.vala:34
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: ../src/Widgets/AppList.vala:37
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: ../src/Widgets/Footer.vala:30
+msgid "Do Not Disturb"
+msgstr "Bitte nicht stören"
+
+#: ../src/Widgets/AppSettings.vala:58
+msgid "Bubbles"
+msgstr "Blasen"
+
+#: ../src/Widgets/AppSettings.vala:68
+msgid "Show all"
+msgstr "Alle anzeigen"
+
+#: ../src/Widgets/AppSettings.vala:69
+msgid "Disable low notifications"
+msgstr "Zeige alle außer die mit niedriger Priorität"
+
+#: ../src/Widgets/AppSettings.vala:70
+msgid "Show critical notifications only"
+msgstr "Nur wichtige Benachrichtigungen anzeigen"
+
+#: ../src/Widgets/AppSettings.vala:71
+msgid "Don't show any"
+msgstr "Keine anzeigen"
+
+#: ../src/Widgets/AppSettings.vala:99
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+"Benachrichtigungsblasen erscheinen in der oberen rechten Ecke des "
+"Bildschirms und verschwinden automatisch."
+
+#: ../src/Widgets/AppSettings.vala:113
+msgid "Sounds"
+msgstr "Klänge"
+
+#: ../src/Widgets/AppSettings.vala:136
+msgid "Sounds play once when a new notification arrives."
+msgstr "Töne werden beim erscheinen einer Benachrichtung abgespielt."
