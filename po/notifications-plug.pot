@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 23:50+0100\n"
+"POT-Creation-Date: 2014-11-11 00:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,27 +25,27 @@ msgstr ""
 msgid "Enable or disable notifications."
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:102 ../src/Widgets/AppSettings.vala:58
+#: ../src/Widgets/AppItem.vala:140 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:105 ../src/Widgets/AppSettings.vala:113
+#: ../src/Widgets/AppItem.vala:143 ../src/Widgets/AppSettings.vala:113
 msgid "Sounds"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:108
+#: ../src/Widgets/AppItem.vala:146
 msgid "Disabled"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:118
+#: ../src/Widgets/AppItem.vala:156
 msgid "Sound Menu"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:120
+#: ../src/Widgets/AppItem.vala:158
 msgid "Network"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:122
+#: ../src/Widgets/AppItem.vala:160
 msgid "System Configuration"
 msgstr ""
 
