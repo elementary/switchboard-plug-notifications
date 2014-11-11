@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 19:05+0100\n"
-"PO-Revision-Date: 2014-11-09 11:01+0000\n"
+"POT-Creation-Date: 2014-11-11 00:21+0100\n"
+"PO-Revision-Date: 2014-11-10 08:56+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-10 06:38+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2014-11-11 07:38+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -20,33 +20,33 @@ msgstr "Ilmoitukset"
 msgid "Enable or disable notifications."
 msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
 
-#: ../src/Widgets/AppItem.vala:73
+#: ../src/Widgets/AppItem.vala:140 ../src/Widgets/AppSettings.vala:58
+msgid "Bubbles"
+msgstr "Kuplat"
+
+#: ../src/Widgets/AppItem.vala:143 ../src/Widgets/AppSettings.vala:113
+msgid "Sounds"
+msgstr "Äänet"
+
+#: ../src/Widgets/AppItem.vala:146
+msgid "Disabled"
+msgstr "Ei käytössä"
+
+#: ../src/Widgets/AppItem.vala:156
 msgid "Sound Menu"
 msgstr "Äänivalikko"
 
-#: ../src/Widgets/AppItem.vala:75
+#: ../src/Widgets/AppItem.vala:158
 msgid "Network"
 msgstr "Verkko"
 
-#: ../src/Widgets/AppItem.vala:77
+#: ../src/Widgets/AppItem.vala:160
 msgid "System Configuration"
 msgstr "Järjestelmän asetukset"
-
-#: ../src/Widgets/AppList.vala:34
-msgid "Enabled"
-msgstr "Käytössä"
-
-#: ../src/Widgets/AppList.vala:37
-msgid "Disabled"
-msgstr "Ei käytössä"
 
 #: ../src/Widgets/Footer.vala:30
 msgid "Do Not Disturb"
 msgstr "Älä häiritse"
-
-#: ../src/Widgets/AppSettings.vala:58
-msgid "Bubbles"
-msgstr "Kuplat"
 
 #: ../src/Widgets/AppSettings.vala:68
 msgid "Show all"
@@ -54,7 +54,7 @@ msgstr "Näytä kaikki"
 
 #: ../src/Widgets/AppSettings.vala:69
 msgid "Disable low notifications"
-msgstr "Poista matalat ilmoitukset käytöstä"
+msgstr "Poista matalasta tasosta kertovat ilmoitukset käytöstä"
 
 #: ../src/Widgets/AppSettings.vala:70
 msgid "Show critical notifications only"
@@ -70,10 +70,6 @@ msgid ""
 "automatically."
 msgstr ""
 "Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
-
-#: ../src/Widgets/AppSettings.vala:113
-msgid "Sounds"
-msgstr "Äänet"
 
 #: ../src/Widgets/AppSettings.vala:136
 msgid "Sounds play once when a new notification arrives."
