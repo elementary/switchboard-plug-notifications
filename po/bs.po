@@ -3,73 +3,74 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-11 00:21+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-11 11:14+0000\n"
+"Last-Translator: Coa_brate <aleksandar.todorovic@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-11 07:38+0000\n"
+"X-Launchpad-Export-Date: 2014-11-12 07:49+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr ""
+msgstr "Notifikacije"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Omogućite ili onemogućite notifikacije."
 
 #: ../src/Widgets/AppItem.vala:140 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Balončići"
 
 #: ../src/Widgets/AppItem.vala:143 ../src/Widgets/AppSettings.vala:113
 msgid "Sounds"
-msgstr ""
+msgstr "Zvuci"
 
 #: ../src/Widgets/AppItem.vala:146
 msgid "Disabled"
-msgstr ""
+msgstr "Onemogućeno"
 
 #: ../src/Widgets/AppItem.vala:156
 msgid "Sound Menu"
-msgstr ""
+msgstr "Meni za zvuke"
 
 #: ../src/Widgets/AppItem.vala:158
 msgid "Network"
-msgstr ""
+msgstr "Mreža"
 
 #: ../src/Widgets/AppItem.vala:160
 msgid "System Configuration"
-msgstr ""
+msgstr "Konfiguracija sistema"
 
 #: ../src/Widgets/Footer.vala:30
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Ne uznemiravaj"
 
 #: ../src/Widgets/AppSettings.vala:68
 msgid "Show all"
-msgstr ""
+msgstr "Prikaži sve"
 
 #: ../src/Widgets/AppSettings.vala:69
 msgid "Disable low notifications"
-msgstr ""
+msgstr "Onemogućite notifikacije sa malim prioritetom"
 
 #: ../src/Widgets/AppSettings.vala:70
 msgid "Show critical notifications only"
-msgstr ""
+msgstr "Prikaži samo kritične notifikacije"
 
 #: ../src/Widgets/AppSettings.vala:71
 msgid "Don't show any"
-msgstr ""
+msgstr "Ne prikazuj notifikacije"
 
 #: ../src/Widgets/AppSettings.vala:99
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Balončići se pojavljuju u gornjem desnom uglu monitora i nestaju automatski."
 
 #: ../src/Widgets/AppSettings.vala:136
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Zvuk se pušta samo kada vam stigne nova notifikacija."
