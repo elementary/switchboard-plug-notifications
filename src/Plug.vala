@@ -22,7 +22,6 @@
 public class NotificationsPlug : Switchboard.Plug {
 	private Gtk.Box box;
 	private Widgets.AppsView appsview;
-	private Widgets.Footer footer;
 
 	public NotificationsPlug () {
 		Object (category: Category.PERSONAL,
@@ -40,12 +39,8 @@ public class NotificationsPlug : Switchboard.Plug {
 		box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
 
 		appsview = new Widgets.AppsView ();
-		footer = new Widgets.Footer ();
 
 		box.pack_start (appsview, true, true);
-		box.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, true);
-		box.pack_start (footer, false, true);
-
 		box.show_all ();
 
 		return box;

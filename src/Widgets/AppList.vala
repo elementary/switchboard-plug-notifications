@@ -65,12 +65,18 @@ public class Widgets.AppList : Gtk.ListBox {
 		}
 
 		this.show_all ();
+	}
 
+	public void select_first () {
 		if (item_count > 0) {
 			var first_row = this.get_row_at_index (0);
 
 			this.select_row (first_row);
 			selected_row = first_row as AppItem;
 		}
+	}
+
+	public void select_none () {
+		this.select_row (null);
 	}
 }

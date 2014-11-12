@@ -20,17 +20,37 @@
 ***/
 
 public class Widgets.AppsView : Granite.Widgets.ThinPaned {
+	private Gtk.Box sidebar;
+
 	private AppList applist;
+	private Footer footer;
+
+	private Gtk.Stack content;
 
 	private AppSettings appsettings;
+	private InfoScreen do_not_disturb_info;
 
 	public AppsView () {
-		applist = new AppList ();
-		appsettings = new AppSettings ();
+		sidebar = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
 
-		this.add1 (applist);
-		this.add2 (appsettings);
-		this.set_position (220);
+		applist = new AppList ();
+		footer = new Footer ();
+
+		content = new Gtk.Stack ();
+
+		appsettings = new AppSettings ();
+		do_not_disturb_info = new InfoScreen ();
+
+		content.add_named (appsettings, "app-settings");
+		content.add_named (do_not_disturb_info, "do-not-disturb");
+
+		sidebar.pack_start (applist, true, true);
+		sidebar.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, true);
+		sidebar.pack_start (footer, false, true);
+
+		this.add1 (sidebar);
+		this.add2 (content);
+		this.set_position (240);
 
 		select_app (applist.selected_row);
 
@@ -44,9 +64,24 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 			(applist.selected_row as AppItem).set_allow_sounds (allow_sounds);
 		});
 
+		set_do_not_disturb_mode (NotifySettings.get_default ().do_not_disturb);
+
 		NotifySettings.get_default ().do_not_disturb_changed.connect ((do_not_disturb) => {
-			this.set_sensitive (do_not_disturb == false);
+			set_do_not_disturb_mode (do_not_disturb);
 		});
+	}
+
+	private void set_do_not_disturb_mode (bool do_not_disturb) {
+		if (do_not_disturb) {
+			applist.set_sensitive (false);
+			applist.select_none ();
+			do_not_disturb_info.show ();
+			content.set_visible_child (do_not_disturb_info);
+		} else {
+			applist.set_sensitive (true);
+			applist.select_first ();
+			content.set_visible_child (appsettings);
+		}
 	}
 
 	private void select_app (AppItem item) {

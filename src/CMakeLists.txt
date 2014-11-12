@@ -24,6 +24,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     Widgets/AppList.vala
     Widgets/AppItem.vala
     Widgets/AppSettings.vala
+    Widgets/InfoScreen.vala
     Widgets/Footer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES

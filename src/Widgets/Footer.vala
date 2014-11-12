@@ -24,13 +24,19 @@ public class Widgets.Footer : Gtk.Grid {
 	private Gtk.Switch do_not_disturb_switch;
 
 	public Footer () {
-		this.margin = 6;
+		// FIXME: There can't be a margin on the right, because the Gtk.Switch has its own.
+		this.margin_top = 12;
+		this.margin_bottom = 12;
+		this.margin_start = 12;
 		this.column_spacing = 12;
 
 		do_not_disturb_label = new Gtk.Label ("<b>" + _("Do Not Disturb") + "</b>");
 		do_not_disturb_label.use_markup = true;
+		do_not_disturb_label.halign = Gtk.Align.START;
 
 		do_not_disturb_switch = new Gtk.Switch ();
+		do_not_disturb_switch.hexpand = true;
+		do_not_disturb_switch.halign = Gtk.Align.END;
 
 		this.attach (do_not_disturb_label, 0, 0, 1, 1);
 		this.attach (do_not_disturb_switch, 1, 0, 1, 1);
