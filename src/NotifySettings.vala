@@ -28,8 +28,8 @@ public class NotifySettings : Object {
 	static const string DO_NOT_DISTURB_KEY = "do-not-disturb";
 
 	public string[] apps { get; set; }
-	public int default_priority { get; set; }
-	public int default_sounds_enabled { get; set; }
+	public string default_priority { get; set; }
+	public bool default_sounds_enabled { get; set; }
 	public bool do_not_disturb { get; set; }
 
 	public signal void apps_changed (string[] new_value);

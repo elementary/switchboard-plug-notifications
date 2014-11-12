@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 00:21+0100\n"
+"POT-Creation-Date: 2014-11-12 20:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,27 +25,27 @@ msgstr ""
 msgid "Enable or disable notifications."
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:140 ../src/Widgets/AppSettings.vala:58
+#: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:143 ../src/Widgets/AppSettings.vala:113
+#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:97
 msgid "Sounds"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:146
+#: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:156
+#: ../src/Widgets/AppItem.vala:157
 msgid "Sound Menu"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:158
+#: ../src/Widgets/AppItem.vala:159
 msgid "Network"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:160
+#: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
 msgstr ""
 
@@ -53,28 +53,12 @@ msgstr ""
 msgid "Do Not Disturb"
 msgstr ""
 
-#: ../src/Widgets/AppSettings.vala:68
-msgid "Show all"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:69
-msgid "Disable low notifications"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:70
-msgid "Show critical notifications only"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:71
-msgid "Don't show any"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:99
+#: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 
-#: ../src/Widgets/AppSettings.vala:136
+#: ../src/Widgets/AppSettings.vala:120
 msgid "Sounds play once when a new notification arrives."
 msgstr ""

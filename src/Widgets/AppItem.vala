@@ -31,7 +31,8 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private Gtk.Label row_title;
 	private Gtk.Label row_description;
 
-	private string[] priorities = ({"0", "1", "2", "3"});
+	private string[] priorities = ({"show", "hide"});
+	private string[] conditions = ({"on", "off"});
 
 	// Please add more exceptions! TODO: app-name, title and icon all in one array.
 	private string[] exceptions = ({"indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
@@ -118,7 +119,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		row_grid.attach (row_image, 0, 0, 1, 2);
 
 		row_title = new Gtk.Label (this.get_title ());
-        row_title.get_style_context ().add_class ("h3");
+		row_title.get_style_context ().add_class ("h3");
 		row_title.ellipsize = Pango.EllipsizeMode.END;
 		row_title.halign = Gtk.Align.START;
 		row_title.valign = Gtk.Align.END;
@@ -136,10 +137,10 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private void create_description () {
 		var desc = "";
 
-		if (apppriority != "0") {
+		if (apppriority != "hide") {
 			desc += _("Bubbles");
 
-			if (appallowsounds == "1") {
+			if (appallowsounds == "on") {
 				desc += ", " + _("Sounds");
 			}
 		} else {
@@ -172,7 +173,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 			return apppriority;
 		} else {
 			// Fallback to default
-			return NotifySettings.get_default ().default_priority.to_string ();
+			return NotifySettings.get_default ().default_priority;
 		}
 	}
 
@@ -185,16 +186,20 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	}
 
 	public string get_allow_sounds () {
-		if (appallowsounds == "0" || appallowsounds == "1") {
+		if (appallowsounds in conditions) {
 			return appallowsounds;
 		} else {
 			// Fallback to default
-			return NotifySettings.get_default ().default_sounds_enabled.to_string ();
+			if (NotifySettings.get_default ().default_sounds_enabled) {
+				return "on";
+			} else {
+				return "off";
+			}
 		}
 	}
 
 	public void set_allow_sounds (string allow_sounds) {
-		if (allow_sounds == "0" || allow_sounds == "1") {
+		if (allow_sounds in conditions) {
 			appallowsounds = allow_sounds;
 			rewrite_settings ();
 			create_description ();

@@ -45,6 +45,7 @@ public class NotificationsPlug : Switchboard.Plug {
 		box.pack_start (appsview, true, true);
 		box.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, true);
 		box.pack_start (footer, false, true);
+
 		box.show_all ();
 
 		return box;

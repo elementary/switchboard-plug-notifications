@@ -25,7 +25,7 @@ public class Widgets.AppSettings : Gtk.Grid {
 
 	private Gtk.Image bubblesimage;
 	private Gtk.Label bubblestitle;
-	private Gtk.ComboBoxText bubblescombobox;
+	private Gtk.Switch bubblesswitch;
 	private Gtk.Label bubblesinfo;
 
 	private Gtk.Image soundsimage;
@@ -64,37 +64,21 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblestitle.margin_top = 50 + 5;
 		this.attach (bubblestitle, 2, 1, 1, 1);
 
-		bubblescombobox = new Gtk.ComboBoxText ();
-		bubblescombobox.append_text (_("Show all"));
-		bubblescombobox.append_text (_("Disable low notifications"));
-		bubblescombobox.append_text (_("Show critical notifications only"));
-		bubblescombobox.append_text (_("Don't show any"));
-		bubblescombobox.halign = Gtk.Align.START;
-		bubblescombobox.valign = Gtk.Align.CENTER;
-		bubblescombobox.hexpand = false;
-		bubblescombobox.vexpand = false;
-		bubblescombobox.changed.connect (() => {
-			var enable_sounds_switch = true;
-
-			switch (bubblescombobox.active) {
-				case 0:
-					bubbles_changed ("3");
-					break;
-				case 1:
-					bubbles_changed ("2");
-					break;
-				case 2:
-					bubbles_changed ("1");
-					break;
-				case 3:
-					bubbles_changed ("0");
-					enable_sounds_switch = false;
-					break;
+		bubblesswitch = new Gtk.Switch ();
+		bubblesswitch.halign = Gtk.Align.START;
+		bubblesswitch.valign = Gtk.Align.CENTER;
+		bubblesswitch.hexpand = false;
+		bubblesswitch.vexpand = false;
+		bubblesswitch.notify["active"].connect (() => {
+			if (bubblesswitch.active) {
+				bubbles_changed ("show");
+				soundsswitch.set_sensitive (true);
+			} else {
+				bubbles_changed ("hide");
+				soundsswitch.set_sensitive (false);
 			}
-
-			soundsswitch.set_sensitive (enable_sounds_switch);
 		});
-		this.attach (bubblescombobox, 2, 2, 1, 1);
+		this.attach (bubblesswitch, 2, 2, 1, 1);
 
 		bubblesinfo = new Gtk.Label (_("Bubbles appear in the top right corner of the display and disappear automatically."));
 		bubblesinfo.halign = Gtk.Align.START;
@@ -126,9 +110,9 @@ public class Widgets.AppSettings : Gtk.Grid {
 		soundsswitch.vexpand = false;
 		soundsswitch.notify["active"].connect (() => {
 			if (soundsswitch.active) {
-				allow_sounds_changed ("1");
+				allow_sounds_changed ("on");
 			} else {
-				allow_sounds_changed ("0");
+				allow_sounds_changed ("off");
 			}
 		});
 		this.attach (soundsswitch, 2, 5, 1, 1);
@@ -154,19 +138,10 @@ public class Widgets.AppSettings : Gtk.Grid {
 	}
 
 	public void set_priority (string priority) {
-		switch (priority) {
-			case "0":
-				bubblescombobox.set_active (3);
-				break;
-			case "1":
-				bubblescombobox.set_active (2);
-				break;
-			case "2":
-				bubblescombobox.set_active (1);
-				break;
-			case "3":
-				bubblescombobox.set_active (0);
-				break;
+		if (priority == "show") {
+			bubblesswitch.set_active (true);
+		} else {
+			bubblesswitch.set_active (false);
 		}
 	}
 
