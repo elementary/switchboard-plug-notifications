@@ -2,75 +2,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 00:21+0100\n"
+"POT-Creation-Date: 2014-11-13 00:48+0100\n"
 "PO-Revision-Date: 2014-11-10 08:56+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-11 07:38+0000\n"
+"X-Launchpad-Export-Date: 2014-11-13 07:28+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:29
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
-#: ../src/Plug.vala:31
+#: ../src/Plug.vala:30
 msgid "Enable or disable notifications."
 msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
 
-#: ../src/Widgets/AppItem.vala:140 ../src/Widgets/AppSettings.vala:58
+#: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
 msgstr "Kuplat"
 
-#: ../src/Widgets/AppItem.vala:143 ../src/Widgets/AppSettings.vala:113
+#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:97
 msgid "Sounds"
 msgstr "Äänet"
 
-#: ../src/Widgets/AppItem.vala:146
+#: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
 msgstr "Ei käytössä"
 
-#: ../src/Widgets/AppItem.vala:156
+#: ../src/Widgets/AppItem.vala:157
 msgid "Sound Menu"
 msgstr "Äänivalikko"
 
-#: ../src/Widgets/AppItem.vala:158
+#: ../src/Widgets/AppItem.vala:159
 msgid "Network"
 msgstr "Verkko"
 
-#: ../src/Widgets/AppItem.vala:160
+#: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
 msgstr "Järjestelmän asetukset"
 
-#: ../src/Widgets/Footer.vala:30
+#: ../src/Widgets/InfoScreen.vala:48
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr ""
+
+#: ../src/Widgets/InfoScreen.vala:55
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: ../src/Widgets/InfoScreen.vala:56
+msgid "Confirmations like the brightness display aren't affected."
+msgstr ""
+
+#: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
 msgstr "Älä häiritse"
 
-#: ../src/Widgets/AppSettings.vala:68
-msgid "Show all"
-msgstr "Näytä kaikki"
-
-#: ../src/Widgets/AppSettings.vala:69
-msgid "Disable low notifications"
-msgstr "Poista matalasta tasosta kertovat ilmoitukset käytöstä"
-
-#: ../src/Widgets/AppSettings.vala:70
-msgid "Show critical notifications only"
-msgstr "Näytä vain kriittiset ilmoitukset"
-
-#: ../src/Widgets/AppSettings.vala:71
-msgid "Don't show any"
-msgstr "Älä näytä mitään"
-
-#: ../src/Widgets/AppSettings.vala:99
+#: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
 
-#: ../src/Widgets/AppSettings.vala:136
+#: ../src/Widgets/AppSettings.vala:120
 msgid "Sounds play once when a new notification arrives."
 msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."
