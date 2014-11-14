@@ -20,8 +20,9 @@
 ***/
 
 public class NotificationsPlug : Switchboard.Plug {
-	private Gtk.Box box;
+	private Gtk.Stack stack;
 	private Widgets.AppsView appsview;
+	private Widgets.InfoScreen no_apps_info;
 
 	public NotificationsPlug () {
 		Object (category: Category.PERSONAL,
@@ -32,18 +33,35 @@ public class NotificationsPlug : Switchboard.Plug {
 	}
 
 	public override Gtk.Widget get_widget () {
-		if (box != null) {
-			return box;
+		if (stack != null) {
+			return stack;
 		}
 
-		box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+		stack = new Gtk.Stack ();
 
 		appsview = new Widgets.AppsView ();
+		no_apps_info = new Widgets.InfoScreen (_("There are no Notification-Requests."),
+				_("On this page you can disable and enable Notification-Bubbles and Sounds for various apps.") + "\n" +
+				_("Every app that sends Notifications would appear here automatically."),
+				"dialog-information");
 
-		box.pack_start (appsview, true, true);
-		box.show_all ();
+		stack.add_named (appsview, "apps-view");
+		stack.add_named (no_apps_info, "no-apps-info");
 
-		return box;
+		appsview.applist.list_loaded.connect ((length) => {
+			if (length > 0) {
+				stack.set_visible_child (appsview);
+			} else {
+				no_apps_info.show ();
+				stack.set_visible_child (no_apps_info);
+			}
+		});
+
+		appsview.applist.list_apps ();
+
+		stack.show_all ();
+
+		return stack;
 	}
 
 	public override void shown () {

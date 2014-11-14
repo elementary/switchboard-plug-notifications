@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 16:11+0100\n"
+"POT-Creation-Date: 2014-11-14 20:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,39 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Plug.vala:29
+#: ../src/Plug.vala:30
 msgid "Notifications"
 msgstr ""
 
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:42
+#: ../src/Plug.vala:43
+msgid "There are no Notification-Requests."
+msgstr ""
+
+#: ../src/Plug.vala:44
+msgid ""
+"On this page you can disable and enable Notification-Bubbles and Sounds for "
+"various apps."
+msgstr ""
+
+#: ../src/Plug.vala:45
+msgid "Every app that sends Notifications would appear here automatically."
+msgstr ""
+
+#: ../src/Widgets/AppsView.vala:44
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:43
+#: ../src/Widgets/AppsView.vala:45
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:44
+#: ../src/Widgets/AppsView.vala:46
 msgid "Confirmations like the brightness display aren't affected."
 msgstr ""
 

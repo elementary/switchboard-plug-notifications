@@ -22,13 +22,15 @@
 public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 	private Gtk.Box sidebar;
 
-	private AppList applist;
+	public AppList applist;
 	private Footer footer;
 
 	private Gtk.Stack content;
 
 	private AppSettings appsettings;
 	private InfoScreen do_not_disturb_info;
+
+	public signal void applist_created (int length);
 
 	public AppsView () {
 		sidebar = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -58,12 +60,12 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		select_app (applist.selected_row);
 
 		applist.item_changed.connect (select_app);
+		applist.list_loaded.connect ((length) => {
+			applist_created (length);
+		});
 
 		appsettings.bubbles_changed.connect ((bubbles) => {
 			(applist.selected_row as AppItem).set_bubbles (bubbles);
-		});
-		appsettings.sounds_changed.connect ((sounds) => {
-			(applist.selected_row as AppItem).set_sounds (sounds);
 		});
 
 		set_do_not_disturb_mode (NotifySettings.get_default ().do_not_disturb);

@@ -30,6 +30,7 @@ public class Widgets.InfoScreen : Gtk.Frame {
 	public InfoScreen (string header, string desc, string icon_name) {
 		this.expand = true;
 		this.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+		this.shadow_type = Gtk.ShadowType.NONE;
 
 		grid = new Gtk.Grid ();
 		grid.vexpand = false;

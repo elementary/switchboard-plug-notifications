@@ -23,6 +23,7 @@ public class Widgets.AppList : Gtk.ListBox {
 	private int item_count;
 
 	public signal void item_changed (AppItem item);
+	public signal void list_loaded (int length);
 
 	public AppItem selected_row;
 
@@ -35,8 +36,6 @@ public class Widgets.AppList : Gtk.ListBox {
 			}
 		});
 
-		list_apps ();
-
 		NotifySettings.get_default ().apps_changed.connect (() => {
 			if (NotifySettings.get_default ().apps.length != item_count) {
 				this.get_children ().foreach ((row) => {
@@ -44,11 +43,14 @@ public class Widgets.AppList : Gtk.ListBox {
 				});
 
 				list_apps ();
+
+				if (NotifySettings.get_default ().do_not_disturb == false)
+					select_first ();
 			}
 		});
 	}
 
-	private void list_apps () {
+	public void list_apps () {
 		item_count = NotifySettings.get_default ().apps.length;
 
 		for (int i = 0; i < item_count; i++) {
@@ -65,6 +67,8 @@ public class Widgets.AppList : Gtk.ListBox {
 		}
 
 		this.show_all ();
+
+		list_loaded (item_count);
 	}
 
 	public void select_first () {
