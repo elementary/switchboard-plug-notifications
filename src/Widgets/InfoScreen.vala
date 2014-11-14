@@ -27,7 +27,7 @@ public class Widgets.InfoScreen : Gtk.Frame {
 	private Gtk.Label description;
 
 	// Compareable to the widget of switchboard-plug-security-privacy.
-	public InfoScreen () {
+	public InfoScreen (string header, string desc, string icon_name) {
 		this.expand = true;
 		this.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
 
@@ -39,21 +39,19 @@ public class Widgets.InfoScreen : Gtk.Frame {
 		grid.row_spacing = 12;
 		grid.column_spacing = 12;
 
-		image = new Gtk.Image.from_icon_name ("notification-do-not-disturb", Gtk.IconSize.DIALOG);
+		image = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DIALOG);
 		image.valign = Gtk.Align.START;
 		image.halign = Gtk.Align.END;
 
 		grid.attach (image, 0, 0, 1, 2);
 
-		title = new Gtk.Label (_("elementary OS is in Do Not Disturb mode"));
+		title = new Gtk.Label (header);
 		title.halign = Gtk.Align.START;
 		title.justify = Gtk.Justification.FILL;
 		title.get_style_context ().add_class ("h2");
 		grid.attach (title, 1, 0, 1, 1);
 
-		description = new Gtk.Label ("%s\n\n%s".printf (
-				_("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced."),
-				_("Confirmations like the brightness display aren't affected.")));
+		description = new Gtk.Label (desc);
 		description.halign = Gtk.Align.START;
 		description.set_line_wrap (true);
 		description.justify = Gtk.Justification.FILL;

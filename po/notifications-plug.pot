@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-13 00:48+0100\n"
+"POT-Creation-Date: 2014-11-14 15:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,20 @@ msgstr ""
 
 #: ../src/Plug.vala:30
 msgid "Enable or disable notifications."
+msgstr ""
+
+#: ../src/Widgets/AppsView.vala:42
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr ""
+
+#: ../src/Widgets/AppsView.vala:43
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: ../src/Widgets/AppsView.vala:44
+msgid "Confirmations like the brightness display aren't affected."
 msgstr ""
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
@@ -47,20 +61,6 @@ msgstr ""
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
-msgstr ""
-
-#: ../src/Widgets/InfoScreen.vala:48
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
-
-#: ../src/Widgets/InfoScreen.vala:55
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-
-#: ../src/Widgets/InfoScreen.vala:56
-msgid "Confirmations like the brightness display aren't affected."
 msgstr ""
 
 #: ../src/Widgets/Footer.vala:33
