@@ -173,7 +173,11 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 			return appbubbles;
 		} else {
 			// Fallback to default
-			return NotifySettings.get_default ().default_bubbles;
+			if (NotifySettings.get_default ().default_bubbles) {
+				return "show";
+			} else {
+				return "hide";
+			}
 		}
 	}
 
