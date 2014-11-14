@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:37+0100\n"
+"POT-Creation-Date: 2014-11-14 20:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,17 +26,20 @@ msgid "Enable or disable notifications."
 msgstr ""
 
 #: ../src/Plug.vala:43
-msgid "There are no Notification-Requests."
+msgid "Nothing to do here"
 msgstr ""
 
 #: ../src/Plug.vala:44
 msgid ""
-"On this page you can disable and enable Notification-Bubbles and Sounds for "
-"various apps."
+"Notifications preferences are for configuring which apps make use of "
+"notifications,for changing how an app's notifications appear,\n"
+"and for setting when you don't want to be disturbed by notifications."
 msgstr ""
 
 #: ../src/Plug.vala:45
-msgid "Every app that sends Notifications would appear here automatically."
+msgid ""
+"When apps are installed that have notification options they will "
+"automatically appear here."
 msgstr ""
 
 #: ../src/Widgets/AppsView.vala:42

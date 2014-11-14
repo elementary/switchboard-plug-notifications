@@ -40,9 +40,9 @@ public class NotificationsPlug : Switchboard.Plug {
 		stack = new Gtk.Stack ();
 
 		appsview = new Widgets.AppsView ();
-		no_apps_info = new Widgets.InfoScreen (_("There are no Notification-Requests."),
-				_("On this page you can disable and enable Notification-Bubbles and Sounds for various apps.") + "\n" +
-				_("Every app that sends Notifications would appear here automatically."),
+		no_apps_info = new Widgets.InfoScreen (_("Nothing to do here"),
+				_("Notifications preferences are for configuring which apps make use of notifications,for changing how an app's notifications appear,\nand for setting when you don't want to be disturbed by notifications.") + "\n\n" +
+				_("When apps are installed that have notification options they will automatically appear here."),
 				"dialog-information");
 
 		stack.add_named (appsview, "apps-view");
