@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:05+0100\n"
+"POT-Creation-Date: 2014-11-14 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,17 +39,17 @@ msgstr ""
 msgid "Every app that sends Notifications would appear here automatically."
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:44
+#: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:45
+#: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
 
-#: ../src/Widgets/AppsView.vala:46
+#: ../src/Widgets/AppsView.vala:44
 msgid "Confirmations like the brightness display aren't affected."
 msgstr ""
 

@@ -58,9 +58,6 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		select_app (applist.selected_row);
 
 		applist.item_changed.connect (select_app);
-		applist.list_loaded.connect ((length) => {
-			applist_created (length);
-		});
 
 		appsettings.bubbles_changed.connect ((bubbles) => {
 			(applist.selected_row as AppItem).set_bubbles (bubbles);
