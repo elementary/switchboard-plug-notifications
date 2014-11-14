@@ -58,6 +58,7 @@ public class NotificationsPlug : Switchboard.Plug {
 		});
 
 		appsview.applist.list_apps ();
+		appsview.applist.select_first ();
 
 		stack.show_all ();
 
