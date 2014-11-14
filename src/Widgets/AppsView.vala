@@ -59,12 +59,11 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 
 		applist.item_changed.connect (select_app);
 
-		appsettings.bubbles_changed.connect ((priority) => {
-			var selected_item = applist.selected_row as AppItem;
-			selected_item.set_priority (priority);
+		appsettings.bubbles_changed.connect ((bubbles) => {
+			(applist.selected_row as AppItem).set_bubbles (bubbles);
 		});
-		appsettings.allow_sounds_changed.connect ((allow_sounds) => {
-			(applist.selected_row as AppItem).set_allow_sounds (allow_sounds);
+		appsettings.sounds_changed.connect ((sounds) => {
+			(applist.selected_row as AppItem).set_sounds (sounds);
 		});
 
 		set_do_not_disturb_mode (NotifySettings.get_default ().do_not_disturb);
@@ -90,8 +89,8 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 	private void select_app (AppItem item) {
 		appsettings.set_appicon (item.get_icon ());
 		appsettings.set_apptitle (item.get_title ());
-		appsettings.set_priority (item.get_priority ());
-		appsettings.set_allow_sounds (item.get_allow_sounds () == "on");
+		appsettings.set_bubbles (item.get_bubbles ());
+		appsettings.set_sounds (item.get_sounds ());
 		appsettings.set_sensitive (true);
 	}
 }

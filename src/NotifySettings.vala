@@ -23,13 +23,13 @@ public class NotifySettings : Object {
 	public Settings settings;
 
 	static const string APPS_KEY = "apps";
-	static const string DEFAULT_PRIORITY_KEY = "default-priority";
-	static const string DEFAULT_SOUNDS_ENABLED_KEY = "default-sounds-enabled";
+	static const string DEFAULT_BUBBLES_KEY = "default-bubbles";
+	static const string DEFAULT_SOUNDS_KEY = "default-sounds";
 	static const string DO_NOT_DISTURB_KEY = "do-not-disturb";
 
 	public string[] apps { get; set; }
-	public string default_priority { get; set; }
-	public bool default_sounds_enabled { get; set; }
+	public string default_bubbles { get; set; }
+	public bool default_sounds { get; set; }
 	public bool do_not_disturb { get; set; }
 
 	public signal void apps_changed (string[] new_value);
@@ -41,8 +41,8 @@ public class NotifySettings : Object {
 		settings = new Settings ("org.pantheon.desktop.gala.notifications");
 
 		settings.bind (APPS_KEY, this, "apps", SettingsBindFlags.DEFAULT);
-		settings.bind (DEFAULT_PRIORITY_KEY, this, "default-priority", SettingsBindFlags.DEFAULT);
-		settings.bind (DEFAULT_SOUNDS_ENABLED_KEY, this, "default-sounds-enabled", SettingsBindFlags.DEFAULT);
+		settings.bind (DEFAULT_BUBBLES_KEY, this, "default-bubbles", SettingsBindFlags.DEFAULT);
+		settings.bind (DEFAULT_SOUNDS_KEY, this, "default-sounds", SettingsBindFlags.DEFAULT);
 		settings.bind (DO_NOT_DISTURB_KEY, this, "do-not-disturb", SettingsBindFlags.DEFAULT);
 
 		settings.changed[APPS_KEY].connect (() => {

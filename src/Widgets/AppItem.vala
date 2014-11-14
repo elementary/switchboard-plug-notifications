@@ -22,8 +22,8 @@
 public class Widgets.AppItem : Gtk.ListBoxRow {
 	private AppInfo appinfo;
 	private string appname;
-	private string apppriority;
-	private string appallowsounds;
+	private string appbubbles;
+	private string appsounds;
 	private Icon appicon;
 
 	private Gtk.Grid row_grid;
@@ -31,8 +31,8 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private Gtk.Label row_title;
 	private Gtk.Label row_description;
 
-	private string[] priorities = ({"show", "hide"});
-	private string[] conditions = ({"on", "off"});
+	private string[] cond_bubbles = ({"show", "hide"});
+	private string[] cond_sounds = ({"on", "off"});
 
 	// Please add more exceptions! TODO: app-name, title and icon all in one array.
 	private string[] exceptions = ({"indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
@@ -40,8 +40,8 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	public AppItem (string app_name, string[] properties) {
 		if (search_appinfo_for_name (app_name) && load_icon ()) {
 			appname = app_name;
-			apppriority = properties [0];
-			appallowsounds = properties[1];
+			appbubbles = properties [0];
+			appsounds = properties[1];
 
 			create_ui ();
 		}
@@ -137,10 +137,10 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private void create_description () {
 		var desc = "";
 
-		if (apppriority != "hide") {
+		if (appbubbles != "hide") {
 			desc += _("Bubbles");
 
-			if (appallowsounds == "on") {
+			if (appsounds == "on") {
 				desc += ", " + _("Sounds");
 			}
 		} else {
@@ -168,29 +168,29 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		return appicon;
 	}
 
-	public string get_priority () {
-		if (apppriority in priorities) {
-			return apppriority;
+	public string get_bubbles () {
+		if (appbubbles in cond_bubbles) {
+			return appbubbles;
 		} else {
 			// Fallback to default
-			return NotifySettings.get_default ().default_priority;
+			return NotifySettings.get_default ().default_bubbles;
 		}
 	}
 
-	public void set_priority (string priority) {
-		if (priority in priorities) {
-			apppriority = priority;
+	public void set_bubbles (string bubbles) {
+		if (bubbles in cond_bubbles) {
+			appbubbles = bubbles;
 			rewrite_settings ();
 			create_description ();
 		}
 	}
 
-	public string get_allow_sounds () {
-		if (appallowsounds in conditions) {
-			return appallowsounds;
+	public string get_sounds () {
+		if (appsounds in cond_sounds) {
+			return appsounds;
 		} else {
 			// Fallback to default
-			if (NotifySettings.get_default ().default_sounds_enabled) {
+			if (NotifySettings.get_default ().default_sounds) {
 				return "on";
 			} else {
 				return "off";
@@ -198,9 +198,9 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		}
 	}
 
-	public void set_allow_sounds (string allow_sounds) {
-		if (allow_sounds in conditions) {
-			appallowsounds = allow_sounds;
+	public void set_sounds (string sounds) {
+		if (sounds in cond_sounds) {
+			appsounds = sounds;
 			rewrite_settings ();
 			create_description ();
 		}
@@ -215,7 +215,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 			if (parameters.length == 2) {
 				if (parameters[0] == appname) {
 					// Rewrite
-					apps_new[i] = appname + ":" + apppriority + "," + appallowsounds;
+					apps_new[i] = appname + ":" + appbubbles + "," + appsounds;
 				} else {
 					// Keep
 					apps_new[i] = NotifySettings.get_default ().apps[i];

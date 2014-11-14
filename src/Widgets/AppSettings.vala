@@ -33,8 +33,8 @@ public class Widgets.AppSettings : Gtk.Grid {
 	private Gtk.Switch soundsswitch;
 	private Gtk.Label soundsinfo;
 
-	public signal void bubbles_changed (string new_priority);
-	public signal void allow_sounds_changed (string new_status);
+	public signal void bubbles_changed (string bubbles);
+	public signal void sounds_changed (string sounds);
 
 	public AppSettings () {
 		this.margin = 12;
@@ -110,9 +110,9 @@ public class Widgets.AppSettings : Gtk.Grid {
 		soundsswitch.vexpand = false;
 		soundsswitch.notify["active"].connect (() => {
 			if (soundsswitch.active) {
-				allow_sounds_changed ("on");
+				sounds_changed ("on");
 			} else {
-				allow_sounds_changed ("off");
+				sounds_changed ("off");
 			}
 		});
 		this.attach (soundsswitch, 2, 5, 1, 1);
@@ -137,15 +137,11 @@ public class Widgets.AppSettings : Gtk.Grid {
 		apptitle.set_use_markup (true);
 	}
 
-	public void set_priority (string priority) {
-		if (priority == "show") {
-			bubblesswitch.set_active (true);
-		} else {
-			bubblesswitch.set_active (false);
-		}
+	public void set_bubbles (string bubbles) {
+		bubblesswitch.set_active (bubbles == "show");
 	}
 
-	public void set_allow_sounds (bool allow_sounds) {
-		soundsswitch.set_active (allow_sounds);
+	public void set_sounds (string sounds) {
+		soundsswitch.set_active (sounds == "on");
 	}
 }
