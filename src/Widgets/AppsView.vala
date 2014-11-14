@@ -30,8 +30,6 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 	private AppSettings appsettings;
 	private InfoScreen do_not_disturb_info;
 
-	public signal void applist_created (int length);
-
 	public AppsView () {
 		sidebar = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
 
