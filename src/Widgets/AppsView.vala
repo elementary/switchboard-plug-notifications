@@ -51,8 +51,8 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		sidebar.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, true);
 		sidebar.pack_start (footer, false, true);
 
-		this.add1 (sidebar);
-		this.add2 (content);
+		this.pack1 (sidebar, false, false);
+		this.pack2 (content, false, false);
 		this.set_position (240);
 
 		select_app (applist.selected_row);
