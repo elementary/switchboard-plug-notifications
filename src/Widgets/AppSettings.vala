@@ -86,6 +86,8 @@ public class Widgets.AppSettings : Gtk.Grid {
 		bubblesinfo.hexpand = true;
 		bubblesinfo.vexpand = false;
 		bubblesinfo.margin_bottom = 9;
+		bubblesinfo.wrap = true;
+		bubblesinfo.justify = Gtk.Justification.FILL;
 		this.attach (bubblesinfo, 2, 3, 1, 1);
 
 		soundsimage = new Gtk.Image.from_file (Constants.PKGDATADIR + "/sounds.svg");
@@ -123,6 +125,8 @@ public class Widgets.AppSettings : Gtk.Grid {
 		soundsinfo.hexpand = true;
 		soundsinfo.vexpand = false;
 		soundsinfo.margin_bottom = 9;
+		soundsinfo.wrap = true;
+		soundsinfo.justify = Gtk.Justification.FILL;
 		this.attach (soundsinfo, 2, 6, 1, 1);
 
 		this.show_all ();

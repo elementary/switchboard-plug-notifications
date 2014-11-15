@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-15 23:45+0100\n"
+"POT-Creation-Date: 2014-11-16 00:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Bubbles"
 msgstr ""
 
-#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:97
+#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
 msgstr ""
 
@@ -90,6 +90,6 @@ msgid ""
 "automatically."
 msgstr ""
 
-#: ../src/Widgets/AppSettings.vala:120
+#: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
 msgstr ""

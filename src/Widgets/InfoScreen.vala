@@ -48,6 +48,7 @@ public class Widgets.InfoScreen : Gtk.Frame {
 
 		title = new Gtk.Label (header);
 		title.halign = Gtk.Align.START;
+		title.set_line_wrap (true);
 		title.justify = Gtk.Justification.FILL;
 		title.get_style_context ().add_class ("h2");
 		grid.attach (title, 1, 0, 1, 1);
