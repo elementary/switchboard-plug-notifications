@@ -41,7 +41,7 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		appsettings = new AppSettings ();
 		do_not_disturb_info = new InfoScreen (_("elementary OS is in Do Not Disturb mode"),
 				_("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.") + "\n" +
-				_("Confirmations like the brightness display aren't affected."),
+				_("Confirmations like the brightness display are not affected."),
 				"notification-do-not-disturb");
 
 		content.add_named (appsettings, "app-settings");

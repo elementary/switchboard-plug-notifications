@@ -41,7 +41,7 @@ public class NotificationsPlug : Switchboard.Plug {
 
 		appsview = new Widgets.AppsView ();
 		no_apps_info = new Widgets.InfoScreen (_("Nothing to do here"),
-				_("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you don not want to be disturbed by notifications.") + "\n\n" +
+				_("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.") + "\n\n" +
 				_("When apps are installed that have notification options they will automatically appear here."),
 				"dialog-information");
 
