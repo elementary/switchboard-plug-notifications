@@ -2,23 +2,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-13 00:48+0100\n"
+"POT-Creation-Date: 2014-11-14 20:55+0100\n"
 "PO-Revision-Date: 2014-11-13 09:46+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-14 06:38+0000\n"
+"X-Launchpad-Export-Date: 2014-11-15 07:02+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
-#: ../src/Plug.vala:29
+#: ../src/Plug.vala:30
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
-#: ../src/Plug.vala:30
+#: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
 msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
+
+#: ../src/Plug.vala:43
+msgid "Nothing to do here"
+msgstr ""
+
+#: ../src/Plug.vala:44
+msgid ""
+"Notifications preferences are for configuring which apps make use of "
+"notifications,for changing how an app's notifications appear,\n"
+"and for setting when you don't want to be disturbed by notifications."
+msgstr ""
+
+#: ../src/Plug.vala:45
+msgid ""
+"When apps are installed that have notification options they will "
+"automatically appear here."
+msgstr ""
+
+#: ../src/Widgets/AppsView.vala:42
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS on \"Älä häiritse\"-tilassa"
+
+#: ../src/Widgets/AppsView.vala:43
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Älä häiritse -tilassa ilmoitukset ja hälytykset piilotetaan, eikä "
+"ilmoitusääniä toisteta."
+
+#: ../src/Widgets/AppsView.vala:44
+msgid "Confirmations like the brightness display aren't affected."
+msgstr "Tämä ei vaikuta vahvistuksiin, kuten kirkkauden näyttämiseen."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
@@ -43,22 +76,6 @@ msgstr "Verkko"
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
 msgstr "Järjestelmän asetukset"
-
-#: ../src/Widgets/InfoScreen.vala:48
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS on \"Älä häiritse\"-tilassa"
-
-#: ../src/Widgets/InfoScreen.vala:55
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Älä häiritse -tilassa ilmoitukset ja hälytykset piilotetaan, eikä "
-"ilmoitusääniä toisteta."
-
-#: ../src/Widgets/InfoScreen.vala:56
-msgid "Confirmations like the brightness display aren't affected."
-msgstr "Tämä ei vaikuta vahvistuksiin, kuten kirkkauden näyttämiseen."
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
