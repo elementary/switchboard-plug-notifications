@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:55+0100\n"
+"POT-Creation-Date: 2014-11-16 03:02+0100\n"
 "PO-Revision-Date: 2014-11-14 20:58+0000\n"
 "Last-Translator: Mostro En Turno <mostroenturno@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-15 07:02+0000\n"
+"X-Launchpad-Export-Date: 2014-11-16 06:26+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
@@ -27,8 +27,8 @@ msgstr ""
 #: ../src/Plug.vala:44
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications,for changing how an app's notifications appear,\n"
-"and for setting when you don't want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear,\n"
+"and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
 #: ../src/Plug.vala:45
@@ -48,14 +48,14 @@ msgid ""
 msgstr ""
 
 #: ../src/Widgets/AppsView.vala:44
-msgid "Confirmations like the brightness display aren't affected."
+msgid "Confirmations like the brightness display are not affected."
 msgstr ""
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
 msgstr "Burbujas"
 
-#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:97
+#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
 msgstr "Sonidos"
 
@@ -87,6 +87,6 @@ msgstr ""
 "Los avisos aparecen en  la esquina superior derecha de la pantalla y "
 "desaparecen automáticamente."
 
-#: ../src/Widgets/AppSettings.vala:120
+#: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
 msgstr ""

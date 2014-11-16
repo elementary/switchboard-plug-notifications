@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-14 20:55+0100\n"
-"PO-Revision-Date: 2014-11-13 09:46+0000\n"
+"POT-Creation-Date: 2014-11-16 03:02+0100\n"
+"PO-Revision-Date: 2014-11-15 08:25+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-15 07:02+0000\n"
+"X-Launchpad-Export-Date: 2014-11-16 06:24+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
@@ -22,13 +22,13 @@ msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Ei mitään tehtävää"
 
 #: ../src/Plug.vala:44
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications,for changing how an app's notifications appear,\n"
-"and for setting when you don't want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear,\n"
+"and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
 #: ../src/Plug.vala:45
@@ -36,6 +36,8 @@ msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Kun ilmoitusvalintoja sisältäviä sovelluksia on asennettu, kyseiset "
+"sovellukset näkyvät täällä."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
@@ -50,14 +52,14 @@ msgstr ""
 "ilmoitusääniä toisteta."
 
 #: ../src/Widgets/AppsView.vala:44
-msgid "Confirmations like the brightness display aren't affected."
-msgstr "Tämä ei vaikuta vahvistuksiin, kuten kirkkauden näyttämiseen."
+msgid "Confirmations like the brightness display are not affected."
+msgstr ""
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
 msgstr "Kuplat"
 
-#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:97
+#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
 msgstr "Äänet"
 
@@ -88,6 +90,6 @@ msgid ""
 msgstr ""
 "Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
 
-#: ../src/Widgets/AppSettings.vala:120
+#: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
 msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."
