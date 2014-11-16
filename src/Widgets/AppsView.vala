@@ -63,6 +63,10 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 			(applist.selected_row as AppItem).set_bubbles (bubbles);
 		});
 
+		appsettings.sounds_changed.connect ((sounds) => {
+			(applist.selected_row as AppItem).set_sounds (sounds);
+		});
+
 		set_do_not_disturb_mode (NotifySettings.get_default ().do_not_disturb);
 
 		NotifySettings.get_default ().do_not_disturb_changed.connect ((do_not_disturb) => {
