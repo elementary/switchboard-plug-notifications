@@ -87,7 +87,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 						appicon = Icon.new_for_string ("preferences-desktop-sound");
 						break;
 					case "notify-send":
-						appicon = Icon.new_for_string ("applications-chat");
+						appicon = Icon.new_for_string ("dialog-notification");
 						break;
 					case "NetworkManager":
 						appicon = Icon.new_for_string ("preferences-system-network");
