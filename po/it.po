@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-11 13:12+0000\n"
-"Last-Translator: Fabio Gaudenzi <bafio.fruges@gmail.com>\n"
+"PO-Revision-Date: 2014-11-17 19:46+0000\n"
+"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 06:27+0000\n"
+"X-Launchpad-Export-Date: 2014-11-18 07:32+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
@@ -22,7 +22,7 @@ msgstr "Abilita o disabilita le notifiche."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Niente da fare qui"
 
 #: ../src/Plug.vala:44
 msgid ""
@@ -30,28 +30,38 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Le preferenze di notifica servono per configurare quali applicazioni "
+"utilizzano le notifiche, per cambiare come le notifiche di un applicazione "
+"appaiono,\n"
+"e per impostare quando non desideri essere disturbato da notifiche."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Quando le applicazioni che vengono installate hanno opzioni di notifica "
+"appariranno automaticamente qui."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS è in modalità Non Disturbare"
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Mentre è in modalità Non Disturbare, le notifiche e gli avvisi saranno "
+"nascosti e saranno messi a tacere i suoni di notifica."
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Le notifiche di sistema, come volume e luminosità del display, non saranno "
+"influenzati."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"

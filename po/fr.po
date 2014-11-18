@@ -3,26 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-17 15:22+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 06:27+0000\n"
+"X-Launchpad-Export-Date: 2014-11-18 07:32+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr ""
+msgstr "Notifications"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Activer ou désactiver les notifications."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Aucune action à effectuer"
 
 #: ../src/Plug.vala:44
 msgid ""
@@ -30,63 +30,74 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Les paramètres de notifications permettent de configurer les applications "
+"utilisant des notifications afin de changer \n"
+"la manière dont celles-ci apparaissent et pour définir lorsque vous ne "
+"voulez pas être dérangé par celles-ci."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Lorsque des applications utilisant les notifications sont installées, des "
+"options apparaîtront automatiquement ici."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS est en mode Ne pas déranger."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"En mode Ne pas déranger, les notifications et alertes seront cachées."
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Les notifications système comme le volume et la luminosité ne seront "
+"néanmoins pas affectés."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Bulles"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr ""
+msgstr "Sons"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr ""
+msgstr "Désactivé"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Sound Menu"
-msgstr ""
+msgstr "Menu Son"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Network"
-msgstr ""
+msgstr "Réseau"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
-msgstr ""
+msgstr "Configuration système"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Ne pas déranger"
 
 #: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Les bulles apparaissent dans le coin supérieur droit de l'écran et "
+"disparaissent automatiquement."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Les sons sont joués lorsqu'une nouvelle notification est affichée."
