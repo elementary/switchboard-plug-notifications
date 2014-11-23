@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-19 22:03+0000\n"
+"PO-Revision-Date: 2014-11-22 14:26+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-20 06:44+0000\n"
+"X-Launchpad-Export-Date: 2014-11-23 05:42+0000\n"
 "X-Generator: Launchpad (build 17252)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr "Teated"
+msgstr "Märguanded"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr "Teadete lubamine või keelamine"
+msgstr "Märguannete lubamine või keelamine"
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
@@ -30,35 +30,35 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
-"Teadete seadistamisega on võimalik määrata, millised rakendused annavad "
-"endast teadetega märku ning kuidas nad seda teevad.\n"
-"Võimalik on ka kõik teated keelata, et neid ei kuvataks."
+"Märguannete seadistamisega on võimalik määrata, millised rakendused annavad "
+"endast märku ning kuidas nad seda teevad.\n"
+"Kõik märguanded on ka võimalik keelata, et sind ei segataks."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr "Rakendused, mis toetavad teateid, kuvatakse siin."
+msgstr "Märguandeid kasutavad rakendused kuvatakse siin."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS on \"mitte segamise\" režiimis"
+msgstr "Mitte segamise režiim on sisselülitatud"
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Kui \"mitte segamise\" reziim on lubatud, siis ühtegi teadet ega hoiatust ei "
-"kuvata ning kõik teadete helid on keelatud."
+"Kui \"mitte segamise\" reziim on lubatud, siis ei kuvata ühtegi märguannet "
+"ega nendega kaasnevaid helisid."
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
-"Süsteemi teated, nagu näiteks helitugevuse ning ekraaniheleduse teated ei "
-"ole mõjutatud."
+"Süsteemi märguanded, nagu näiteks helitugevuse ning ekraaniheleduse "
+"märguanded ei ole mõjutatud."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
@@ -93,9 +93,9 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Teadete mullid ilmuvad üleval paremas nurgas ning haihtuvad ise teatud aja "
-"tagant."
+"Märguannete mullid ilmuvad ülesse paremasse nurka ning mõne aja pärast "
+"kaovad need iseenesest."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr "Uue teate korral esitatakse heli ühe korra."
+msgstr "Märguande korral ühe korra heli esitatamine."
