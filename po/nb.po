@@ -3,26 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-27 18:23+0000\n"
+"Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 06:27+0000\n"
-"X-Generator: Launchpad (build 17241)\n"
+"X-Launchpad-Export-Date: 2014-11-28 07:12+0000\n"
+"X-Generator: Launchpad (build 17261)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr ""
+msgstr "Varslinger"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Aktiver eller deaktiver varslinger."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Ingenting å gjøre her"
 
 #: ../src/Plug.vala:44
 msgid ""
@@ -30,63 +30,72 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Varslingsinnstillinger er for å konfigurere hvilke applikasjoner som skal "
+"bruke varslinger, for å endre hvordan en applikasjon viser varslinger,\n"
+"og for å sette når du ikke ønsker å bli forstyrret av varslinger."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Når applikasjoner som støtter varslinger er installert vil de automatisk "
+"dukke opp her."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS er i ikke forstyrr modus"
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Mens i ikke forstyrr-modus vil varsler og advarsler være skjult og "
+"varslingslyder vil bli brakt til taushet."
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Systemvarslinger, som for eksempel volum og lysstyrke, vil være upåvirket."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Bobler"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr ""
+msgstr "Lyder"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr ""
+msgstr "Slått av"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Sound Menu"
-msgstr ""
+msgstr "Lydmeny"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Network"
-msgstr ""
+msgstr "Nettverk"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
-msgstr ""
+msgstr "Systemoppsett"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Ikke forstyrr"
 
 #: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Bobler opptrer i øvre høyre hjørne av skjermen og forsvinner automatisk."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Lyder spilles en gang når et nytt varsel kommer."
