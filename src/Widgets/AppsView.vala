@@ -47,7 +47,10 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		content.add_named (appsettings, "app-settings");
 		content.add_named (do_not_disturb_info, "do-not-disturb");
 
-		sidebar.pack_start (applist, true, true);
+		var scrolled_window = new Gtk.ScrolledWindow (null, null);
+		scrolled_window.add (applist);
+		
+		sidebar.pack_start (scrolled_window, true, true);
 		sidebar.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, true);
 		sidebar.pack_start (footer, false, true);
 
