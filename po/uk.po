@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-12-27 12:28+0000\n"
+"Last-Translator: Max_ym <b.maxym.naumtchyk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 06:27+0000\n"
-"X-Generator: Launchpad (build 17241)\n"
+"X-Launchpad-Export-Date: 2014-12-28 06:23+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr ""
+msgstr "Сповіщення"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
@@ -55,31 +55,31 @@ msgstr ""
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Бульбашки"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr ""
+msgstr "Звуки"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr ""
+msgstr "Вимкнено"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Sound Menu"
-msgstr ""
+msgstr "Меню Звуку"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Network"
-msgstr ""
+msgstr "Мережа"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
-msgstr ""
+msgstr "Системні Налаштування"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Не турбувати"
 
 #: ../src/Widgets/AppSettings.vala:83
 msgid ""
