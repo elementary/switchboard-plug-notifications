@@ -160,7 +160,12 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 				case "gnome-settings-daemon":
 					return _("System Configuration");
 				default:
-					return appinfo.get_display_name ();
+					switch (appinfo.get_executable ()) {
+						case "midori":
+							return "Midori";
+						default:
+							return appinfo.get_display_name ();
+					}
 			}
 	}
 
