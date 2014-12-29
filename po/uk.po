@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-12-27 12:28+0000\n"
+"PO-Revision-Date: 2014-12-28 13:31+0000\n"
 "Last-Translator: Max_ym <b.maxym.naumtchyk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-28 06:23+0000\n"
+"X-Launchpad-Export-Date: 2014-12-29 06:36+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Plug.vala:30
@@ -18,7 +18,7 @@ msgstr "Сповіщення"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Ввімкнення або вимкнення сповіщень."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
@@ -36,16 +36,20 @@ msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Після встановлення програм з підтримкою сповіщень, вони автоматично "
+"з’являться тут."
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS перебуває в режимі `Не турбувати'"
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Перебуваючи в режимі `Не турбувати', всі сповіщення та сигнали будуть "
+"сховані, а звук повідомлень - вимкнений."
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
@@ -86,7 +90,9 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Бульбашки будуть з’являються в верхньому правому кутку екрану та автоматично "
+"зникатимуть."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Ви почуєте звук як тільки з’явиться нове сповіщення."
