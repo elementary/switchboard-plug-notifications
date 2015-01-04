@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-16 18:09+0100\n"
-"PO-Revision-Date: 2014-11-14 20:58+0000\n"
-"Last-Translator: Mostro En Turno <mostroenturno@gmail.com>\n"
+"PO-Revision-Date: 2015-01-04 03:27+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-17 06:27+0000\n"
-"X-Generator: Launchpad (build 17241)\n"
+"X-Launchpad-Export-Date: 2015-01-04 06:43+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -18,7 +18,7 @@ msgstr "Notificaciones"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Activar o desactivar las notificaciones."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../src/Widgets/AppsView.vala:42
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS está en modo «No molestar»"
 
 #: ../src/Widgets/AppsView.vala:43
 msgid ""
@@ -52,6 +52,8 @@ msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Las notificaciones del sistema, como volumen y brillo de pantalla, no se "
+"verán afectadas."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
@@ -71,11 +73,11 @@ msgstr "Menú de sonido"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Network"
-msgstr ""
+msgstr "Red"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "System Configuration"
-msgstr "Configuración de Sistema"
+msgstr "Configuración del sistema"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
@@ -92,3 +94,4 @@ msgstr ""
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
 msgstr ""
+"Los sonidos se reproducen una vez al aparecer una notificación nueva."
