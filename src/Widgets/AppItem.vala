@@ -35,7 +35,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	private string[] cond_sounds = ({"on", "off"});
 
 	// Please add more exceptions! TODO: app-name, title and icon all in one array.
-	private string[] exceptions = ({"indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
+	private string[] exceptions = ({"", "indicator-sound", "notify-send", "NetworkManager", "gnome-settings-daemon"});
 
 	public AppItem (string app_name, string[] properties) {
 		if (search_appinfo_for_name (app_name) && load_icon ()) {
@@ -153,6 +153,8 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 	public string get_title () {
 		// Please add more exceptions! (See also string[] exceptions!)
 		switch (appinfo.get_display_name ()) {
+				case "":
+					return _("Unknown");
 				case "indicator-sound":
 					return _("Sound Menu");
 				case "NetworkManager":
