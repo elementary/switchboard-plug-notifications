@@ -134,6 +134,7 @@ public class Widgets.AppSettings : Gtk.Grid {
 
 	public void set_appicon (Icon icon) {
 		appicon.set_from_gicon (icon, Gtk.IconSize.DIALOG);
+		appicon.pixel_size = 48;
 	}
 
 	public void set_apptitle (string title) {
