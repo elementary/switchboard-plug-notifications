@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-16 18:09+0100\n"
+"POT-Creation-Date: 2015-02-03 16:05+0100\n"
 "PO-Revision-Date: 2015-01-03 14:09+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-04 06:43+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -43,11 +43,11 @@ msgstr ""
 "Kiedy są zainstalowane aplikacje które mają opcje powiadomień zostaną one "
 "automatycznie wyświetlone tutaj."
 
-#: ../src/Widgets/AppsView.vala:42
+#: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS jest w trybie Nie przeszkadzać"
 
-#: ../src/Widgets/AppsView.vala:43
+#: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -55,7 +55,7 @@ msgstr ""
 "W trybie Nie przeszkadzać powiadomienia i alerty będą ukryte a dźwięk "
 "powiadomień zostanie wyciszony."
 
-#: ../src/Widgets/AppsView.vala:44
+#: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -76,14 +76,18 @@ msgid "Disabled"
 msgstr "Wyłączone"
 
 #: ../src/Widgets/AppItem.vala:157
+msgid "Unknown"
+msgstr ""
+
+#: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
 msgstr "Menu dźwięku"
 
-#: ../src/Widgets/AppItem.vala:159
+#: ../src/Widgets/AppItem.vala:161
 msgid "Network"
 msgstr "Sieć"
 
-#: ../src/Widgets/AppItem.vala:161
+#: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
 msgstr "Konfiguracja komputera"
 

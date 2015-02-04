@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-16 18:09+0100\n"
+"POT-Creation-Date: 2015-02-03 16:05+0100\n"
 "PO-Revision-Date: 2014-11-27 18:23+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-28 07:12+0000\n"
-"X-Generator: Launchpad (build 17261)\n"
+"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -42,11 +42,11 @@ msgstr ""
 "Når applikasjoner som støtter varslinger er installert vil de automatisk "
 "dukke opp her."
 
-#: ../src/Widgets/AppsView.vala:42
+#: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS er i ikke forstyrr modus"
 
-#: ../src/Widgets/AppsView.vala:43
+#: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -54,7 +54,7 @@ msgstr ""
 "Mens i ikke forstyrr-modus vil varsler og advarsler være skjult og "
 "varslingslyder vil bli brakt til taushet."
 
-#: ../src/Widgets/AppsView.vala:44
+#: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -74,14 +74,18 @@ msgid "Disabled"
 msgstr "Slått av"
 
 #: ../src/Widgets/AppItem.vala:157
+msgid "Unknown"
+msgstr ""
+
+#: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
 msgstr "Lydmeny"
 
-#: ../src/Widgets/AppItem.vala:159
+#: ../src/Widgets/AppItem.vala:161
 msgid "Network"
 msgstr "Nettverk"
 
-#: ../src/Widgets/AppItem.vala:161
+#: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
 msgstr "Systemoppsett"
 

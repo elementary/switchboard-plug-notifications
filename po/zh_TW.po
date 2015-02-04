@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-16 18:09+0100\n"
+"POT-Creation-Date: 2015-02-03 16:05+0100\n"
 "PO-Revision-Date: 2014-12-12 12:18+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-13 08:19+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-04 07:24+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -39,17 +39,17 @@ msgid ""
 "automatically appear here."
 msgstr "當有通知選項的程式安裝時會自動出現在這裡。"
 
-#: ../src/Widgets/AppsView.vala:42
+#: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS 正處於「勿擾」模式"
 
-#: ../src/Widgets/AppsView.vala:43
+#: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr "當處於「勿擾」模式時，通知與警告會隱藏起來，通知音效則靜音。"
 
-#: ../src/Widgets/AppsView.vala:44
+#: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -68,14 +68,18 @@ msgid "Disabled"
 msgstr "已停用"
 
 #: ../src/Widgets/AppItem.vala:157
+msgid "Unknown"
+msgstr ""
+
+#: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
 msgstr "音效選單"
 
-#: ../src/Widgets/AppItem.vala:159
+#: ../src/Widgets/AppItem.vala:161
 msgid "Network"
 msgstr "網路"
 
-#: ../src/Widgets/AppItem.vala:161
+#: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
 msgstr "系統組態"
 
