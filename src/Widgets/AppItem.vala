@@ -116,6 +116,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		this.add (row_grid);
 
 		row_image = new Gtk.Image.from_gicon (appicon, Gtk.IconSize.DND);
+		row_image.pixel_size = 32;
 		row_grid.attach (row_image, 0, 0, 1, 2);
 
 		row_title = new Gtk.Label (this.get_title ());
