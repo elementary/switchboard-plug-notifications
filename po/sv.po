@@ -3,22 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2014-12-04 08:10+0000\n"
-"Last-Translator: Zahirovic Mensur <Unknown>\n"
+"PO-Revision-Date: 2015-02-18 17:02+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Launchpad-Export-Date: 2015-02-19 06:01+0000\n"
+"X-Generator: Launchpad (build 17341)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr "Meddelanden"
+msgstr "Notiser"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr "Aktivera eller inaktivera meddelanden."
+msgstr "Aktivera eller inaktivera notiser."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
