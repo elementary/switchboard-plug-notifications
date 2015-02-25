@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-02-22 22:25+0000\n"
+"PO-Revision-Date: 2015-02-24 22:02+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-23 05:40+0000\n"
+"X-Launchpad-Export-Date: 2015-02-25 06:03+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
 #: ../src/Plug.vala:30
@@ -30,67 +30,76 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Parapëlqimet e njoftimeve janë për të caktuar cilët programe përdorin "
+"njoftimet, për të ndryshuar paraqitjen e njoftimit të ndonjë programi\n"
+"dhe për të vendosur kur nuk dëshironi të jeni të shqetësuar nga njoftimet."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Programet e instaluar që kanë opsione për njoftimet do të paraqiten këtu "
+"vetvetishëm."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS është në modalitetit Mos më shqetëso"
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Gjatë modalitetit Mos më shqetëso, njoftimet dhe alarmet s'do të paraqiten "
+"dhe tingujt e njoftimeve do jenë të heshtur."
 
 #: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Njoftimet e sistemit, si puna e volumit dhe e ndriçimit të ekranit, nuk do "
+"të preken."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Flluska"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr ""
+msgstr "Tingujt"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr ""
+msgstr "Çaktivizuar"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
-msgstr ""
+msgstr "I panjohur"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
-msgstr ""
+msgstr "Menyja e zërit"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "Network"
-msgstr ""
+msgstr "Rrjeti"
 
 #: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
-msgstr ""
+msgstr "Konfigurimi i sistemit"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Mos shqetëso"
 
 #: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
-msgstr ""
+msgstr "Flluskat dalin lart në këndin e djathtë të ekranit dhe zhduken vetë."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Tingujt riprodhohen sapo arrin një njoftim i ri."
