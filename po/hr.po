@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2014-11-17 13:28+0000\n"
+"PO-Revision-Date: 2015-04-06 19:11+0000\n"
 "Last-Translator: Ivan Vrljić <vrlja92@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Launchpad-Export-Date: 2015-04-07 05:53+0000\n"
+"X-Generator: Launchpad (build 17413)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -76,7 +76,7 @@ msgstr "Onemogućeno"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
