@@ -1,5 +1,5 @@
-switchboard-plug-notifications (0.1) UNRELEASED; urgency=low
+switchboard-plug-notifications (0.1) trusty; urgency=low
 
   * New upstream release.
 
- -- Cody Garver <cody@elementaryos.org>  Sat, 15 Nov 2014 21:21:13 -0600
+ -- Cody Garver <cody@elementaryos.org>  Fri, 10 Apr 2015 21:49:21 -0500
