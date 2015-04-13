@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-03-04 11:16+0000\n"
+"PO-Revision-Date: 2015-04-12 10:27+0000\n"
 "Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-05 06:06+0000\n"
-"X-Generator: Launchpad (build 17374)\n"
+"X-Launchpad-Export-Date: 2015-04-13 06:03+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -30,12 +30,17 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Notisinställningar ställer in vilka program som använder notiser, för att "
+"ändra hur ett programs notiser ser ut\n"
+"och för att ställa in när du inte vill bli störd."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Installerade program med aviseringalternativ kommer automatiskt att visas "
+"här."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
@@ -69,7 +74,7 @@ msgstr "Inaktiverad"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
-msgstr ""
+msgstr "Okänd"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
@@ -92,6 +97,7 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Aviseringsbubblor visas i översta högra hörnet och försvinner automatiskt."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
