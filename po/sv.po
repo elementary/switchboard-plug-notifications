@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-04-12 10:27+0000\n"
+"PO-Revision-Date: 2015-04-13 17:31+0000\n"
 "Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-13 06:03+0000\n"
+"X-Launchpad-Export-Date: 2015-04-14 05:38+0000\n"
 "X-Generator: Launchpad (build 17423)\n"
 
 #: ../src/Plug.vala:30
@@ -22,7 +22,7 @@ msgstr "Aktivera eller inaktivera notiser."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr "Inget att göra här"
+msgstr "Ingenting här ännu"
 
 #: ../src/Plug.vala:44
 msgid ""
@@ -51,8 +51,8 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Även i stör ej-läge, meddelanden och varningar kommer att döljas och ljud "
-"meddelanden kommer att tystas."
+"När datorn är i stör ej-läge visas varken notiser eller varningar och "
+"notisljud tystas."
 
 #: ../src/Widgets/AppsView.vala:45
 msgid ""
@@ -101,4 +101,4 @@ msgstr ""
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr "Ljudet spelas upp en gång när ett nytt meddelande kommer."
+msgstr "Ljud spelas upp en gång när en ny notis visas"
