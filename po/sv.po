@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-04-13 17:31+0000\n"
-"Last-Translator: Joachim Johansson <Unknown>\n"
+"PO-Revision-Date: 2015-04-29 09:41+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-14 05:38+0000\n"
-"X-Generator: Launchpad (build 17423)\n"
+"X-Launchpad-Export-Date: 2015-04-30 05:33+0000\n"
+"X-Generator: Launchpad (build 17453)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -62,7 +62,7 @@ msgstr "Systemmeddelanden, som volym och skärmens ljusstyrka, påverkas inte."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr "Bubblor"
+msgstr "Notisbubblor"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
