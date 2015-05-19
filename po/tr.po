@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2014-12-08 21:26+0000\n"
-"Last-Translator: Mehmet Bozoklu <Unknown>\n"
+"PO-Revision-Date: 2015-05-19 04:13+0000\n"
+"Last-Translator: Sadık <sadikpoyraz01@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Launchpad-Export-Date: 2015-05-19 05:46+0000\n"
+"X-Generator: Launchpad (build 17508)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -30,32 +30,40 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Bildirim tercihleri, hangi uygulamanın bildirimleri kullanacağını "
+"belirlemek, uygulama bildirimlerinin\n"
+"nasıl belireceğini değiştirmek ve bildirimler tarafından rahatsız edilmemek "
+"istendiğinde bunları ayarlamak içindir."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Uygulamalar yüklendiğinde, bunlara ait bildirim tercihleri otomatik olarak "
+"burada belirecek."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS Rahatsız Etmeyin modunda"
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Rahatsız Etmeyin modundayken, bildirimler ve uyarılar gizlenecek ve bildirim "
+"sesleri kapatılacak."
 
 #: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
+msgstr "Ses ve ekran parlaklığı gibi sistem bildirimleri etkilenmeyecek."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Baloncuklar"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
@@ -67,7 +75,7 @@ msgstr "Etkisiz"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
-msgstr ""
+msgstr "Bilinmeyen"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
@@ -90,7 +98,9 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Baloncuklar ekranın sağ üst köşesinde görünecek ve otomatik olarak "
+"gösterilecek."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Yeni bir bildirim geldiğinde ses çıkar."
