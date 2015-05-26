@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Notifications
+Comment=Enable or disable notifications
+Exec=switchboard -o personal-pantheon-notifications
+Icon=preferences-desktop-notifications
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=X-PANTHEON-Switchboard-Plugs;
+OnlyShowIn=Pantheon;
+Keywords=notifications;
+X-GNOME-Gettext-Domain=notifications-plug
