@@ -19,8 +19,31 @@
 	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
-public class Widgets.AppList : Gtk.ListBox {
-	public AppList () {
-		this.selection_mode = Gtk.SelectionMode.SINGLE;
+public class Widgets.Sidebar : Gtk.Box {
+	private Gtk.ScrolledWindow scrolled_window;
+	private AppList app_list;
+
+	private Footer footer;
+
+	public Sidebar () {
+		this.orientation = Gtk.Orientation.VERTICAL;
+
+		scrolled_window = create_scrolled_window ();
+
+		footer = new Footer ();
+
+		this.pack_start (scrolled_window);
+		this.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, false);
+		this.pack_end (footer, false, false);
+	}
+
+	private Gtk.ScrolledWindow create_scrolled_window () {
+		var scrolled_window = new Gtk.ScrolledWindow (null, null);
+
+		app_list = new AppList ();
+
+		scrolled_window.add (app_list);
+
+		return scrolled_window;
 	}
 }

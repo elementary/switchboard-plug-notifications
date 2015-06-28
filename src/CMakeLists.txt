@@ -19,13 +19,15 @@ include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${PLUGNAME}
     Plug.vala
-    NotifySettings.vala
-    Widgets/AppsView.vala
+    Widgets/AppEntry.vala
     Widgets/AppList.vala
-    Widgets/AppItem.vala
-    Widgets/AppSettings.vala
-    Widgets/InfoScreen.vala
+    Widgets/AppSettingsView.vala
     Widgets/Footer.vala
+    Widgets/MainView.vala
+    Widgets/SettingsHeader.vala
+    Widgets/SettingsOption.vala
+    Widgets/Sidebar.vala
+    Backend/NotifySettings.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     switchboard-2.0

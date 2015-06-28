@@ -19,8 +19,18 @@
 	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
-public class Widgets.AppList : Gtk.ListBox {
-	public AppList () {
-		this.selection_mode = Gtk.SelectionMode.SINGLE;
+public class Widgets.SettingsHeader : Gtk.Grid {
+	private Gtk.Image app_image;
+	private Gtk.Label app_label;
+
+	public SettingsHeader () {
+		app_image = new Gtk.Image ();
+
+		app_label = new Gtk.Label (null);
+		app_label.halign = Gtk.Align.START;
+		app_label.hexpand = true;
+
+		this.attach (app_image, 0, 0, 1, 1);
+		this.attach (app_label, 1, 0, 1, 1);
 	}
 }

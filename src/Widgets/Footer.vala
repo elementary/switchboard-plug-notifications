@@ -1,7 +1,7 @@
 /***
 	BEGIN LICENSE
 
-	Copyright (C) 2014 elementary Developers
+	Copyright (C) 2014-2015 elementary Developers
 	This program is free software: you can redistribute it and/or modify it
 	under the terms of the GNU Lesser General Public License version 3, as published
 	by the Free Software Foundation.
@@ -15,8 +15,8 @@
 	with this program.  If not, see <http://www.gnu.org/licenses/>
 
 	END LICENSE
-	Written By: Marcus Wichelmann <admin@marcusw.de>
 
+	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
 public class Widgets.Footer : Gtk.Grid {
@@ -40,7 +40,5 @@ public class Widgets.Footer : Gtk.Grid {
 
 		this.attach (do_not_disturb_label, 0, 0, 1, 1);
 		this.attach (do_not_disturb_switch, 1, 0, 1, 1);
-
-		NotifySettings.get_default ().settings.bind ("do-not-disturb", do_not_disturb_switch, "active", SettingsBindFlags.DEFAULT);
 	}
 }

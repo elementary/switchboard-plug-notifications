@@ -1,7 +1,7 @@
 /***
 	BEGIN LICENSE
 
-	Copyright (C) 2014 elementary Developers
+	Copyright (C) 2014-2015 elementary Developers
 	This program is free software: you can redistribute it and/or modify it
 	under the terms of the GNU Lesser General Public License version 3, as published
 	by the Free Software Foundation.
@@ -15,14 +15,15 @@
 	with this program.  If not, see <http://www.gnu.org/licenses/>
 
 	END LICENSE
-	Written By: Marcus Wichelmann <admin@marcusw.de>
 
+	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
 public class NotificationsPlug : Switchboard.Plug {
 	private Gtk.Stack stack;
-	private Widgets.AppsView appsview;
-	private Widgets.InfoScreen no_apps_info;
+
+	private Widgets.MainView main_view;
+	private Granite.Widgets.AlertView alert_view;
 
 	public NotificationsPlug () {
 		Object (category: Category.PERSONAL,
@@ -37,32 +38,7 @@ public class NotificationsPlug : Switchboard.Plug {
 			return stack;
 		}
 
-		stack = new Gtk.Stack ();
-
-		appsview = new Widgets.AppsView ();
-		no_apps_info = new Widgets.InfoScreen (_("Nothing to do here"),
-				_("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.") + "\n\n" +
-				_("When apps are installed that have notification options they will automatically appear here."),
-				"dialog-information");
-
-		stack.add_named (appsview, "apps-view");
-		stack.add_named (no_apps_info, "no-apps-info");
-
-		appsview.applist.list_loaded.connect ((length) => {
-			if (length > 0) {
-				stack.set_visible_child (appsview);
-			} else {
-				no_apps_info.show ();
-				stack.set_visible_child (no_apps_info);
-			}
-		});
-
-		appsview.applist.list_apps ();
-
-		if (NotifySettings.get_default ().do_not_disturb == false)
-			appsview.applist.select_first ();
-
-		stack.show_all ();
+		build_ui ();
 
 		return stack;
 	}
@@ -83,6 +59,29 @@ public class NotificationsPlug : Switchboard.Plug {
 		return new Gee.TreeMap<string, string> (null, null);
 	}
 
+	private void build_ui () {
+		stack = new Gtk.Stack ();
+
+		main_view = new Widgets.MainView ();
+		alert_view = create_alert_view ();
+
+		stack.add (main_view);
+		stack.add (alert_view);
+
+		stack.show_all ();
+	}
+
+	private Granite.Widgets.AlertView create_alert_view () {
+		var title = _("Nothing to do here");
+
+		var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
+		description += "\n\n";
+		description += _("When apps are installed that have notification options they will automatically appear here.");
+
+		var icon_name = "dialog-information";
+
+		return new Granite.Widgets.AlertView (title, description, icon_name);
+	}
 }
 
 public Switchboard.Plug get_plug (Module module) {

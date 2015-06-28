@@ -19,8 +19,23 @@
 	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
-public class Widgets.AppList : Gtk.ListBox {
-	public AppList () {
-		this.selection_mode = Gtk.SelectionMode.SINGLE;
+public class Backend.NotifySettings : Granite.Services.Settings {
+	public static NotifySettings? instance = null;
+
+	public string[] apps { get; set; }
+	public bool default_bubbles { get; set; }
+	public bool default_sounds { get; set; }
+	public bool do_not_disturb { get; set; }
+
+	private NotifySettings () {
+		base ("org.pantheon.desktop.gala.notifications");
+	}
+
+	public static NotifySettings get_default () {
+		if (instance == null) {
+			instance = new NotifySettings ();
+		}
+
+		return instance;
 	}
 }
