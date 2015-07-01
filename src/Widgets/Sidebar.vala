@@ -26,6 +26,10 @@ public class Widgets.Sidebar : Gtk.Box {
 	private Footer footer;
 
 	public Sidebar () {
+		build_ui ();
+	}
+
+	private void build_ui () {
 		this.orientation = Gtk.Orientation.VERTICAL;
 
 		scrolled_window = create_scrolled_window ();

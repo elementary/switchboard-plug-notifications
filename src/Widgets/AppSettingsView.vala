@@ -32,6 +32,10 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 	private SettingsOption sinc_option;
 
 	public AppSettingsView () {
+		build_ui ();
+	}
+
+	private void build_ui () {
 		this.margin = 12;
 		this.row_spacing = 60;
 

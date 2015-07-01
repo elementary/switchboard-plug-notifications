@@ -20,12 +20,26 @@
 ***/
 
 public class Widgets.SettingsOption : Gtk.Grid {
+	private string image_path;
+	private string title;
+	private string description;
+	private Gtk.Widget widget;
+
 	private Gtk.Image image;
 	private Gtk.Label title_label;
 	private Gtk.Widget option_widget;
 	private Gtk.Label description_label;
 
 	public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
+		this.image_path = image_path;
+		this.title = title;
+		this.description = description;
+		this.widget = widget;
+
+		build_ui ();
+	}
+
+	private void build_ui () {
 		this.column_spacing = 6;
 		this.row_spacing = 6;
 		this.margin_start = 60;

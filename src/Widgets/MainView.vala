@@ -28,6 +28,11 @@ public class Widgets.MainView : Gtk.Paned {
 	private Granite.Widgets.AlertView alert_view;
 
 	public MainView () {
+		build_ui ();
+		connect_signals ();
+	}
+
+	private void build_ui () {
 		sidebar = new Sidebar ();
 
 		content = new Gtk.Stack ();
@@ -41,8 +46,6 @@ public class Widgets.MainView : Gtk.Paned {
 		this.pack1 (sidebar, true, false);
 		this.pack2 (content, true, false);
 		this.set_position (240);
-
-		connect_signals ();
 	}
 
 	private void connect_signals () {

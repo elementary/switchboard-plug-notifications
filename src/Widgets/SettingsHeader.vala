@@ -24,6 +24,10 @@ public class Widgets.SettingsHeader : Gtk.Grid {
 	private Gtk.Label app_label;
 
 	public SettingsHeader () {
+		build_ui ();
+	}
+
+	private void build_ui () {
 		app_image = new Gtk.Image ();
 
 		app_label = new Gtk.Label (null);

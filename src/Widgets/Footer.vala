@@ -24,6 +24,11 @@ public class Widgets.Footer : Gtk.Grid {
 	private Gtk.Switch do_not_disturb_switch;
 
 	public Footer () {
+		build_ui ();
+		create_bindings ();
+	}
+
+	private void build_ui () {
 		// FIXME: There can't be a margin on the right, because the Gtk.Switch has its own.
 		this.margin_top = 12;
 		this.margin_bottom = 12;
@@ -40,8 +45,6 @@ public class Widgets.Footer : Gtk.Grid {
 
 		this.attach (do_not_disturb_label, 0, 0, 1, 1);
 		this.attach (do_not_disturb_switch, 1, 0, 1, 1);
-
-		create_bindings ();
 	}
 
 	private void create_bindings () {

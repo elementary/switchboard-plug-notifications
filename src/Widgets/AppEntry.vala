@@ -27,6 +27,10 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 	private Gtk.Label description_label;
 
 	public AppEntry () {
+		build_ui ();
+	}
+
+	private void build_ui () {
 		grid = new Gtk.Grid ();
 		grid.margin = 6;
 		grid.column_spacing = 6;
