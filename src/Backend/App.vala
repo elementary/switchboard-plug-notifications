@@ -19,23 +19,11 @@
 	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
-public class Backend.NotifySettings : Granite.Services.Settings {
-	public static NotifySettings? instance = null;
+public class Backend.App : Object {
+	public bool enable_bubbles { get; set; }
+	public bool enable_sounds { get; set; }
 
-	public Variant apps { get; set; }
-	public bool default_bubbles { get; set; }
-	public bool default_sounds { get; set; }
-	public bool do_not_disturb { get; set; }
-
-	private NotifySettings () {
-		base ("org.pantheon.desktop.gala.notifications");
-	}
-
-	public static NotifySettings get_default () {
-		if (instance == null) {
-			instance = new NotifySettings ();
-		}
-
-		return instance;
+	private App () {
+		
 	}
 }

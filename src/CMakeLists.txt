@@ -28,6 +28,8 @@ vala_precompile (VALA_C ${PLUGNAME}
     Widgets/SettingsOption.vala
     Widgets/Sidebar.vala
     Backend/NotifySettings.vala
+    Backend/NotifyManager.vala
+    Backend/App.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     switchboard-2.0

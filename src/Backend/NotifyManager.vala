@@ -19,21 +19,26 @@
 	Written By: Marcus Wichelmann <admin@marcusw.de>
 ***/
 
-public class Backend.NotifySettings : Granite.Services.Settings {
-	public static NotifySettings? instance = null;
+public class Backend.NotifyManager : Object {
+	public static NotifyManager? instance = null;
 
-	public Variant apps { get; set; }
-	public bool default_bubbles { get; set; }
-	public bool default_sounds { get; set; }
 	public bool do_not_disturb { get; set; }
 
-	private NotifySettings () {
-		base ("org.pantheon.desktop.gala.notifications");
+	private Gee.HashMap<string, App> apps; // string: app-id
+
+	private NotifyManager () {
+		apps = new Gee.HashMap<string, App> ();
+
+		create_bindings ();
 	}
 
-	public static NotifySettings get_default () {
+	private void create_bindings () {
+		NotifySettings.get_default ().schema.bind ("do-not-disturb", this, "do_not_disturb", SettingsBindFlags.DEFAULT);
+	}
+
+	public static NotifyManager get_default () {
 		if (instance == null) {
-			instance = new NotifySettings ();
+			instance = new NotifyManager ();
 		}
 
 		return instance;

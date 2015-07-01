@@ -41,6 +41,19 @@ public class Widgets.MainView : Gtk.Paned {
 		this.pack1 (sidebar, true, false);
 		this.pack2 (content, true, false);
 		this.set_position (240);
+
+		connect_signals ();
+	}
+
+	private void connect_signals () {
+		Backend.NotifyManager.get_default ().notify["do-not-disturb"].connect (update_view);
+	}
+
+	private void update_view () {
+		if (Backend.NotifyManager.get_default ().do_not_disturb)
+			content.set_visible_child (alert_view);
+		else
+			content.set_visible_child (app_settings_view);
 	}
 
 	private Granite.Widgets.AlertView create_alert_view () {

@@ -40,5 +40,14 @@ public class Widgets.Footer : Gtk.Grid {
 
 		this.attach (do_not_disturb_label, 0, 0, 1, 1);
 		this.attach (do_not_disturb_switch, 1, 0, 1, 1);
+
+		create_bindings ();
+	}
+
+	private void create_bindings () {
+		do_not_disturb_switch.bind_property ("state",
+				Backend.NotifyManager.get_default (),
+				"do-not-disturb",
+				BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
 	}
 }
