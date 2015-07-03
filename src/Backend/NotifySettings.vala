@@ -22,13 +22,14 @@
 public class Backend.NotifySettings : Granite.Services.Settings {
 	public static NotifySettings? instance = null;
 
-	public Variant apps { get; set; }
-	public bool default_bubbles { get; set; }
-	public bool default_sounds { get; set; }
+	// FIXME: Granite.Services.Settings seems to not support Variants in the moment.
+	//public Variant apps { get; set; }
+	public int default_permissions { get; set; }
 	public bool do_not_disturb { get; set; }
 
 	private NotifySettings () {
 		base ("org.pantheon.desktop.gala.notifications");
+
 	}
 
 	public static NotifySettings get_default () {

@@ -22,5 +22,22 @@
 public class Widgets.AppList : Gtk.ListBox {
 	public AppList () {
 		this.selection_mode = Gtk.SelectionMode.SINGLE;
+
+		create_list ();
+		sort_list ();
+	}
+
+	private void create_list () {
+		Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
+			AppEntry app_entry = new AppEntry (entry.value);
+
+			this.add (app_entry);
+
+			return true;
+		});
+	}
+
+	private void sort_list () {
+		// TODO
 	}
 }

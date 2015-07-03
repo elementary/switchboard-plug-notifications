@@ -24,16 +24,93 @@ public class Backend.NotifyManager : Object {
 
 	public bool do_not_disturb { get; set; }
 
-	private Gee.HashMap<string, App> apps; // string: app-id
+	public Gee.HashMap<string, App> apps { get; set; } // string: app-id
+
+	private VariantDict app_settings;
 
 	private NotifyManager () {
 		apps = new Gee.HashMap<string, App> ();
 
+		load_dictionary ();
 		create_bindings ();
+		read_app_list ();
+	}
+
+	private void load_dictionary () {
+		app_settings = new VariantDict (NotifySettings.get_default ().schema.get_value ("apps"));
+
+		debug ("App settings loaded.");
+	}
+
+	private void save_dictionary () {
+		Variant new_variant = app_settings.end ();
+
+		if (!new_variant.equal (NotifySettings.get_default ().schema.get_value ("apps"))) {
+			NotifySettings.get_default ().schema.set_value ("apps", new_variant);
+
+			debug ("App settings updated.");
+		}
+
+		// FIXME: After calling VariantDict.end () the dictionary is freeed, so we need to reload it
+		load_dictionary ();
 	}
 
 	private void create_bindings () {
-		NotifySettings.get_default ().schema.bind ("do-not-disturb", this, "do_not_disturb", SettingsBindFlags.DEFAULT);
+		NotifySettings.get_default ().schema.bind ("do-not-disturb", this, "do-not-disturb", SettingsBindFlags.DEFAULT);
+	}
+
+	private void read_app_list () {
+		var installed_apps = AppInfo.get_all ();
+
+		foreach (AppInfo app_info in installed_apps) {
+			DesktopAppInfo? desktop_app_info = app_info as DesktopAppInfo;
+
+			if (desktop_app_info != null)
+				register_app (desktop_app_info);
+		}
+
+		save_dictionary ();
+	}
+
+	private void register_app (DesktopAppInfo app_info) {
+		if (!app_info.get_boolean ("X-GNOME-UsesNotifications"))
+			return;
+
+		string app_id = app_info.get_id ().replace (".desktop", "");
+
+		debug ("Application \"%s\" detected.", app_id);
+
+		App.Permissions permissions = lookup_app_permissions (app_id);
+
+		App app = new App (app_info, permissions);
+
+		apps.@set (app_id, app);
+	}
+
+	private App.Permissions lookup_app_permissions (string app_id) {
+		int permission_code = NotifySettings.get_default ().default_permissions;
+
+		if (!app_settings.lookup (app_id, "i", out permission_code)) {
+			debug ("No settings for \"%s\" found. Adding default permissions to list.", app_id);
+
+			app_settings.insert (app_id, "i", permission_code);
+		}
+
+		return decode_app_permissions (permission_code);
+	}
+
+	private int encode_app_permissions (App.Permissions permissions) {
+		int s = (int)permissions.enable_sounds * 2;
+		int b = (int)permissions.enable_bubbles;
+
+		return s + b;
+	}
+
+	private App.Permissions decode_app_permissions (int code) {
+		int s = code >> 1;
+		int b = code - s * 2;
+
+		return {b == 1, s == 1};
 	}
 
 	public static NotifyManager get_default () {

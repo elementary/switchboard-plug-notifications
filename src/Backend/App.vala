@@ -20,10 +20,16 @@
 ***/
 
 public class Backend.App : Object {
-	public bool enable_bubbles { get; set; }
-	public bool enable_sounds { get; set; }
+	public struct Permissions {
+		public bool enable_bubbles { get; set; }
+		public bool enable_sounds { get; set; }
+	}
 
-	private App () {
-		
+	public DesktopAppInfo app_info { get; private set; }
+	public Permissions permissions { get; set; }
+
+	public App (DesktopAppInfo app_info, Permissions permissions) {
+		this.app_info = app_info;
+		this.permissions = permissions;
 	}
 }
