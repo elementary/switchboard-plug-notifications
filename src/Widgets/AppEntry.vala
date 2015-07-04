@@ -32,6 +32,15 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 		this.app = app;
 
 		build_ui ();
+		connect_signals ();
+	}
+
+	public Backend.App get_app () {
+		return app;
+	}
+
+	public string get_title () {
+		return app.app_info.get_display_name ();
 	}
 
 	private void build_ui () {
@@ -42,7 +51,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 		image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND);
 		image.pixel_size = 32;
 
-		title_label = new Gtk.Label (app.app_info.get_display_name ());
+		title_label = new Gtk.Label (Markup.escape_text (app.app_info.get_display_name ()));
 		title_label.get_style_context ().add_class ("h3");
 		title_label.ellipsize = Pango.EllipsizeMode.END;
 		title_label.halign = Gtk.Align.START;
@@ -58,6 +67,12 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 		grid.attach (description_label, 1, 1, 1, 1);
 
 		this.add (grid);
+	}
+
+	private void connect_signals () {
+		app.notify["permissions"].connect (() => {
+			description_label.set_label (get_permissions_string (app.permissions));
+		});
 	}
 
 	private string get_permissions_string (Backend.App.Permissions permissions) {

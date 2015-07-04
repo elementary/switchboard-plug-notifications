@@ -21,14 +21,16 @@
 
 public class Backend.App : Object {
 	public struct Permissions {
-		public bool enable_bubbles { get; set; }
-		public bool enable_sounds { get; set; }
+		public bool enable_bubbles;
+		public bool enable_sounds;
 	}
 
+	public string app_id { get; private set; }
 	public DesktopAppInfo app_info { get; private set; }
 	public Permissions permissions { get; set; }
 
-	public App (DesktopAppInfo app_info, Permissions permissions) {
+	public App (string app_id, DesktopAppInfo app_info, Permissions permissions) {
+		this.app_id = app_id;
 		this.app_info = app_info;
 		this.permissions = permissions;
 	}

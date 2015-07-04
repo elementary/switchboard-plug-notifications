@@ -20,6 +20,13 @@
 ***/
 
 public class Widgets.AppSettingsView : Gtk.Grid {
+	private enum PermissionType {
+		BUBBLES,
+		SOUNDS
+	}
+
+	private Backend.App? selected_app = null;
+
 	private SettingsHeader header;
 
 	private Gtk.Switch bubbles_switch;
@@ -33,6 +40,8 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
 	public AppSettingsView () {
 		build_ui ();
+		connect_signals ();
+		show_selected_app ();
 	}
 
 	private void build_ui () {
@@ -63,5 +72,36 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 		this.attach (bubbles_option, 0, 1, 1, 1);
 		this.attach (sound_option, 0, 2, 1, 1);
 		this.attach (sinc_option, 0, 3, 1, 1);
+	}
+
+	private void connect_signals () {
+		Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (show_selected_app);
+
+		bubbles_switch.state_set.connect (() => { update_permissions (PermissionType.BUBBLES); return false; });
+		sound_switch.state_set.connect (() => { update_permissions (PermissionType.SOUNDS); return false; });
+	}
+
+	private void show_selected_app () {
+		string app_id = Backend.NotifyManager.get_default ().selected_app_id;
+		selected_app = Backend.NotifyManager.get_default ().apps.get (app_id);
+
+		if (selected_app != null)
+			show_app (selected_app);
+	}
+
+	private void show_app (Backend.App app) {
+		header.set_title (app.app_info.get_display_name ());
+		header.set_icon (app.app_info.get_icon ());
+
+		bubbles_switch.set_state (app.permissions.enable_bubbles);
+		sound_switch.set_state (app.permissions.enable_sounds);
+	}
+
+	private void update_permissions (PermissionType permission_type) {
+		if (selected_app != null)
+			selected_app.permissions = {
+				permission_type == PermissionType.BUBBLES ? bubbles_switch.active : selected_app.permissions.enable_bubbles,
+				permission_type == PermissionType.SOUNDS ? sound_switch.active : selected_app.permissions.enable_sounds
+			};
 	}
 }

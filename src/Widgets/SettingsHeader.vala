@@ -27,10 +27,22 @@ public class Widgets.SettingsHeader : Gtk.Grid {
 		build_ui ();
 	}
 
+	public void set_title (string title) {
+		app_label.set_label ("<span font_weight=\"bold\" size=\"x-large\">%s</span>".printf (Markup.escape_text (title)));
+	}
+
+	public void set_icon (Icon icon) {
+		app_image.set_from_gicon (icon, Gtk.IconSize.DIALOG);
+		app_image.set_pixel_size (48);
+	}
+
 	private void build_ui () {
+		this.column_spacing = 12;
+
 		app_image = new Gtk.Image ();
 
 		app_label = new Gtk.Label (null);
+		app_label.use_markup = true;
 		app_label.halign = Gtk.Align.START;
 		app_label.hexpand = true;
 

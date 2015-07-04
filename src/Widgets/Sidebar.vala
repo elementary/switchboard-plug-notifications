@@ -27,6 +27,7 @@ public class Widgets.Sidebar : Gtk.Box {
 
 	public Sidebar () {
 		build_ui ();
+		create_bindings ();
 	}
 
 	private void build_ui () {
@@ -39,6 +40,13 @@ public class Widgets.Sidebar : Gtk.Box {
 		this.pack_start (scrolled_window);
 		this.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, false);
 		this.pack_end (footer, false, false);
+	}
+
+	private void create_bindings () {
+		Backend.NotifyManager.get_default ().bind_property ("do-not-disturb",
+				app_list,
+				"sensitive",
+				BindingFlags.INVERT_BOOLEAN | BindingFlags.SYNC_CREATE);
 	}
 
 	private Gtk.ScrolledWindow create_scrolled_window () {

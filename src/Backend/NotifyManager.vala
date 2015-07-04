@@ -26,6 +26,8 @@ public class Backend.NotifyManager : Object {
 
 	public Gee.HashMap<string, App> apps { get; set; } // string: app-id
 
+	public string selected_app_id { get; set; }
+
 	private VariantDict app_settings;
 
 	private NotifyManager () {
@@ -82,7 +84,14 @@ public class Backend.NotifyManager : Object {
 
 		App.Permissions permissions = lookup_app_permissions (app_id);
 
-		App app = new App (app_info, permissions);
+		App app = new App (app_id, app_info, permissions);
+		app.notify["permissions"].connect (() => {
+			Variant new_value = new Variant.int32 (encode_app_permissions (app.permissions));
+
+			app_settings.insert_value (app_id, new_value);
+
+			save_dictionary ();
+		});
 
 		apps.@set (app_id, app);
 	}

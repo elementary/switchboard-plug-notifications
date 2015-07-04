@@ -29,6 +29,7 @@ public class Widgets.MainView : Gtk.Paned {
 
 	public MainView () {
 		build_ui ();
+		update_view ();
 		connect_signals ();
 	}
 
@@ -40,8 +41,11 @@ public class Widgets.MainView : Gtk.Paned {
 		app_settings_view = new AppSettingsView ();
 		alert_view = create_alert_view ();
 
-		content.add (app_settings_view);
-		content.add (alert_view);
+		app_settings_view.show_all ();
+		alert_view.show_all ();
+
+		content.add_named (app_settings_view, "app-settings-view");
+		content.add_named (alert_view, "alert-view");
 
 		this.pack1 (sidebar, true, false);
 		this.pack2 (content, true, false);
@@ -53,10 +57,7 @@ public class Widgets.MainView : Gtk.Paned {
 	}
 
 	private void update_view () {
-		if (Backend.NotifyManager.get_default ().do_not_disturb)
-			content.set_visible_child (alert_view);
-		else
-			content.set_visible_child (app_settings_view);
+		content.set_visible_child_name (Backend.NotifyManager.get_default ().do_not_disturb ? "alert-view" : "app-settings-view");
 	}
 
 	private Granite.Widgets.AlertView create_alert_view () {
