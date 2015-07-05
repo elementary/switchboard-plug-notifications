@@ -45,7 +45,7 @@ public class Widgets.AppList : Gtk.ListBox {
 		});
 	}
 
-	private void show_row (Gtk.ListBoxRow row) {
+	private void show_row (Gtk.ListBoxRow? row) {
 		if (row == null)
 			return;
 

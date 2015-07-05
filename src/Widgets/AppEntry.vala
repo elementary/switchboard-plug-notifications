@@ -20,6 +20,8 @@
 ***/
 
 public class Widgets.AppEntry : Gtk.ListBoxRow {
+	private bool notify_center_installed = false;
+
 	private Backend.App app;
 
 	private Gtk.Grid grid;
@@ -30,6 +32,8 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 
 	public AppEntry (Backend.App app) {
 		this.app = app;
+
+		notify_center_installed = Backend.NotifyManager.get_default ().notify_center_blacklist.is_installed;
 
 		build_ui ();
 		connect_signals ();
@@ -57,7 +61,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 		title_label.halign = Gtk.Align.START;
 		title_label.valign = Gtk.Align.END;
 
-		description_label = new Gtk.Label (get_permissions_string (app.permissions));
+		description_label = new Gtk.Label (get_permissions_string (app));
 		description_label.ellipsize = Pango.EllipsizeMode.END;
 		description_label.halign = Gtk.Align.START;
 		description_label.valign = Gtk.Align.START;
@@ -71,15 +75,35 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 
 	private void connect_signals () {
 		app.notify["permissions"].connect (() => {
-			description_label.set_label (get_permissions_string (app.permissions));
+			description_label.set_label (get_permissions_string (app));
 		});
+
+		if (notify_center_installed) {
+			Backend.NotifyManager.get_default ().notify_center_blacklist.notify["blacklist"].connect (() => {
+				description_label.set_label (get_permissions_string (app));
+			});
+		}
 	}
 
-	private string get_permissions_string (Backend.App.Permissions permissions) {
-		if (permissions.enable_bubbles && permissions.enable_sounds) return _("Sounds and Bubbles");
-		if (permissions.enable_bubbles) return _("Bubbles");
-		if (permissions.enable_sounds) return _("Sounds");
+	private string get_permissions_string (Backend.App app) {
+		Backend.App.Permissions permissions = app.permissions;
+		bool sinc = false;
 
-		return _("Disabled");
+		if (notify_center_installed)
+			sinc = !(app.app_id in Backend.NotifyManager.get_default ().notify_center_blacklist.blacklist);
+
+		string[] items = {};
+
+		if (permissions.enable_bubbles)
+			items += _("Bubbles");
+		if (permissions.enable_sounds)
+			items +=_("Sounds");
+		if (sinc)
+			items += _("Notification-Center");
+
+		if (items.length == 0)
+			return _("Disabled");
+
+		return string.joinv (", ", items);
 	}
 }

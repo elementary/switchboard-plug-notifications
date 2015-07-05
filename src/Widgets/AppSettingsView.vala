@@ -27,6 +27,8 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
 	private Backend.App? selected_app = null;
 
+	private bool notify_center_installed = false;
+
 	private SettingsHeader header;
 
 	private Gtk.Switch bubbles_switch;
@@ -39,6 +41,8 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 	private SettingsOption sinc_option;
 
 	public AppSettingsView () {
+		notify_center_installed = Backend.NotifyManager.get_default ().notify_center_blacklist.is_installed;
+
 		build_ui ();
 		connect_signals ();
 		show_selected_app ();
@@ -62,16 +66,19 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 				_("Sounds play once when a new notification arrives."),
 				sound_switch = new Gtk.Switch ());
 
-		sinc_option = new SettingsOption (
-				Constants.PKGDATADIR + "/notify-center.svg",
-				_("Notification Center"),
-				_("Show missed notifications in Notification Center."),
-				sinc_switch = new Gtk.Switch ());
-
 		this.attach (header, 0, 0, 1, 1);
 		this.attach (bubbles_option, 0, 1, 1, 1);
 		this.attach (sound_option, 0, 2, 1, 1);
-		this.attach (sinc_option, 0, 3, 1, 1);
+
+		if (notify_center_installed) {
+			sinc_option = new SettingsOption (
+					Constants.PKGDATADIR + "/notify-center.svg",
+					_("Notification Center"),
+					_("Show missed notifications in Notification Center."),
+					sinc_switch = new Gtk.Switch ());
+
+			this.attach (sinc_option, 0, 3, 1, 1);
+		}
 	}
 
 	private void connect_signals () {
@@ -79,6 +86,9 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
 		bubbles_switch.state_set.connect (() => { update_permissions (PermissionType.BUBBLES); return false; });
 		sound_switch.state_set.connect (() => { update_permissions (PermissionType.SOUNDS); return false; });
+
+		if (notify_center_installed)
+			sinc_switch.state_set.connect (() => { update_sinc_state (); return false; });
 	}
 
 	private void show_selected_app () {
@@ -95,6 +105,9 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
 		bubbles_switch.set_state (app.permissions.enable_bubbles);
 		sound_switch.set_state (app.permissions.enable_sounds);
+
+		if (notify_center_installed)
+			sinc_switch.set_state (!(app.app_id in Backend.NotifyManager.get_default ().notify_center_blacklist.blacklist));
 	}
 
 	private void update_permissions (PermissionType permission_type) {
@@ -103,5 +116,15 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 				permission_type == PermissionType.BUBBLES ? bubbles_switch.active : selected_app.permissions.enable_bubbles,
 				permission_type == PermissionType.SOUNDS ? sound_switch.active : selected_app.permissions.enable_sounds
 			};
+	}
+
+	private void update_sinc_state () {
+		if (!notify_center_installed || selected_app == null)
+			return;
+
+		if (sinc_switch.active)
+			Backend.NotifyManager.get_default ().notify_center_blacklist.enable_app (selected_app.app_id);
+		else
+			Backend.NotifyManager.get_default ().notify_center_blacklist.disable_app (selected_app.app_id);
 	}
 }

@@ -30,6 +30,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     Backend/NotifySettings.vala
     Backend/NotifyManager.vala
     Backend/App.vala
+    Backend/NotifyCenterBlacklist.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     switchboard-2.0

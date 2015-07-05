@@ -39,6 +39,7 @@ public class NotificationsPlug : Switchboard.Plug {
 		}
 
 		build_ui ();
+		update_view ();
 
 		return stack;
 	}
@@ -72,6 +73,10 @@ public class NotificationsPlug : Switchboard.Plug {
 		stack.add_named (alert_view, "alert-view");
 
 		stack.show_all ();
+	}
+
+	private void update_view () {
+		stack.set_visible_child_name (Backend.NotifyManager.get_default ().apps.size > 0 ? "main-view" : "alert-view");
 	}
 
 	private Granite.Widgets.AlertView create_alert_view () {

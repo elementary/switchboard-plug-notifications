@@ -22,6 +22,8 @@
 public class Backend.NotifyManager : Object {
 	public static NotifyManager? instance = null;
 
+	public NotifyCenterBlacklist notify_center_blacklist;
+
 	public bool do_not_disturb { get; set; }
 
 	public Gee.HashMap<string, App> apps { get; set; } // string: app-id
@@ -32,6 +34,7 @@ public class Backend.NotifyManager : Object {
 
 	private NotifyManager () {
 		apps = new Gee.HashMap<string, App> ();
+		notify_center_blacklist = new NotifyCenterBlacklist ();
 
 		load_dictionary ();
 		create_bindings ();
@@ -115,7 +118,7 @@ public class Backend.NotifyManager : Object {
 		return s + b;
 	}
 
-	private App.Permissions decode_app_permissions (int code) {
+	private App.Permissions decode_app_permissions (int code) requires (code <= 3) {
 		int s = code >> 1;
 		int b = code - s * 2;
 
