@@ -51,7 +51,7 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 		try {
 			AppInfo found_info = AppInfo.create_from_commandline ("", app_name, AppInfoCreateFlags.NONE);
 
-			if ((app_name in exceptions) == false) {
+			if (!(app_name in exceptions)) {
 				var found = false;
 
 				AppInfo.get_all ().foreach ((info) => {
@@ -85,9 +85,6 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 				switch (appinfo.get_display_name ()) {
 					case "indicator-sound":
 						appicon = Icon.new_for_string ("preferences-desktop-sound");
-						break;
-					case "notify-send":
-						appicon = Icon.new_for_string ("dialog-information");
 						break;
 					case "NetworkManager":
 						appicon = Icon.new_for_string ("preferences-system-network");
@@ -162,8 +159,6 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 					return _("Network");
 				case "gnome-settings-daemon":
 					return _("System Configuration");
-				case "notify-send":
-					return _("Default");
 				default:
 					switch (appinfo.get_executable ()) {
 						case "midori":

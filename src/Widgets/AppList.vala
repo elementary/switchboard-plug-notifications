@@ -59,7 +59,7 @@ public class Widgets.AppList : Gtk.ListBox {
 			if (parameters.length == 2) {
 				var properties = parameters[1].split (",");
 
-				if (properties.length == 2) {
+				if (properties.length == 2 && parameters[0] != "notify-send") {
 					var item = new AppItem (parameters[0], properties);
 					this.add (item);
 				}
