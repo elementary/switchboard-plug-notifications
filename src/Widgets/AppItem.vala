@@ -162,6 +162,8 @@ public class Widgets.AppItem : Gtk.ListBoxRow {
 					return _("Network");
 				case "gnome-settings-daemon":
 					return _("System Configuration");
+				case "notify-send":
+					return _("Default");
 				default:
 					switch (appinfo.get_executable ()) {
 						case "midori":
