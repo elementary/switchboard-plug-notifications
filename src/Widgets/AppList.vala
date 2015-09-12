@@ -43,9 +43,6 @@ public class Widgets.AppList : Gtk.ListBox {
 				});
 
 				list_apps ();
-
-				if (NotifySettings.get_default ().do_not_disturb == false)
-					select_first ();
 			}
 		});
 	}
