@@ -51,9 +51,16 @@ public class Widgets.AppList : Gtk.ListBox {
 	}
 
 	public void list_apps () {
+		list_apps_async.begin ();
+	}
+
+	private async void list_apps_async () {
 		item_count = NotifySettings.get_default ().apps.length;
 
 		for (int i = 0; i < item_count; i++) {
+			Idle.add (list_apps_async.callback);
+			yield;
+
 			var parameters = NotifySettings.get_default ().apps[i].split (":");
 
 			if (parameters.length == 2) {
@@ -64,11 +71,12 @@ public class Widgets.AppList : Gtk.ListBox {
 					this.add (item);
 				}
 			}
-		}
+			if (selected_row == null && NotifySettings.get_default ().do_not_disturb == false)
+				select_first ();
 
 		this.show_all ();
-
 		list_loaded (item_count);
+		}
 	}
 
 	public void select_first () {
