@@ -18,12 +18,7 @@
  */
 
 public class Backend.NotifyManager : Object {
-    private static const string CHILD_SCHEMA_ID = "org.pantheon.desktop.gala.notifications.application";
-    private static const string CHILD_PATH = "/org/pantheon/desktop/gala/notifications/applications/%s/";
-
     public static NotifyManager? instance = null;
-
-    public SettingsSchemaSource schema_source;
 
     public bool do_not_disturb { get; set; }
     public Gee.HashMap<string, App> apps { get; set; } /* string: app-id */
@@ -31,7 +26,6 @@ public class Backend.NotifyManager : Object {
     public string selected_app_id { get; set; }
 
     private NotifyManager () {
-        schema_source = SettingsSchemaSource.get_default ();
         apps = new Gee.HashMap<string, App> ();
 
         create_bindings ();
@@ -55,14 +49,8 @@ public class Backend.NotifyManager : Object {
     }
 
     private void register_app (DesktopAppInfo app_info) {
-        string app_id = app_info.get_id ().replace (".desktop", "");
-
-        debug ("Application \"%s\" detected.", app_id);
-
-        Settings app_settings = new Settings.full (schema_source.lookup (CHILD_SCHEMA_ID, false), null, CHILD_PATH.printf (app_id));
-        App app = new App (app_id, app_info, app_settings);
-
-        apps.@set (app_id, app);
+        App app = new App (app_info);
+        apps.@set (app.app_id, app);
     }
 
     public static NotifyManager get_default () {

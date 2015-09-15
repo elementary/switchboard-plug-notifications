@@ -18,11 +18,17 @@
  */
 
 public class Backend.App : Object {
+    private static const string CHILD_SCHEMA_ID = "org.pantheon.desktop.gala.notifications.application";
+    private static const string CHILD_PATH = "/org/pantheon/desktop/gala/notifications/applications/%s/";
+
     public string app_id { get; construct set; }
     public DesktopAppInfo app_info { get; construct set; }
     public Settings settings { get; construct set; }
 
-    public App (string app_id, DesktopAppInfo app_info, Settings settings) {
-        Object (app_id: app_id, app_info: app_info, settings: settings);
+    public App (DesktopAppInfo app_info) {
+        Object (app_info: app_info);
+
+        app_id = app_info.get_id ().replace (".desktop", "");
+        settings = new Settings.full (SettingsSchemaSource.get_default ().lookup (CHILD_SCHEMA_ID, false), null, CHILD_PATH.printf (app_id));
     }
 }
