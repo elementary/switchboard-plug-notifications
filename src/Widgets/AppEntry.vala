@@ -48,6 +48,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         title_label.valign = Gtk.Align.END;
 
         description_label = new Gtk.Label (get_permissions_string (app));
+        description_label.use_markup = true;
         description_label.ellipsize = Pango.EllipsizeMode.END;
         description_label.halign = Gtk.Align.START;
         description_label.valign = Gtk.Align.START;
@@ -61,7 +62,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 
     private void connect_signals () {
         app.settings.changed.connect (() => {
-            description_label.set_label (get_permissions_string (app));
+            description_label.set_markup (get_permissions_string (app));
         });
     }
 
@@ -84,6 +85,6 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             return _("Disabled");
         }
 
-        return string.joinv (", ", items);
+        return "<span font_size=\"small\">%s</span>".printf (string.joinv (", ", items));
     }
 }
