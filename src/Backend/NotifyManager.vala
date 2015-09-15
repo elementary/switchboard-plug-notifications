@@ -18,8 +18,8 @@
  */
 
 public class Backend.NotifyManager : Object {
-    private static const string CHILD_SCHEMA_ID = "org.pantheon.desktop.gala.notifications.app";
-    private static const string CHILD_PATH = "/org/pantheon/desktop/gala/notifications/apps/%s/";
+    private static const string CHILD_SCHEMA_ID = "org.pantheon.desktop.gala.notifications.application";
+    private static const string CHILD_PATH = "/org/pantheon/desktop/gala/notifications/applications/%s/";
 
     public static NotifyManager? instance = null;
 
