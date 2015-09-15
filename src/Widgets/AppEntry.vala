@@ -18,9 +18,7 @@
  */
 
 public class Widgets.AppEntry : Gtk.ListBoxRow {
-    private bool notify_center_installed = false;
-
-    private Backend.App app;
+    public Backend.App app { get; construct set; }
 
     private Gtk.Grid grid;
 
@@ -29,20 +27,10 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
     private Gtk.Label description_label;
 
     public AppEntry (Backend.App app) {
-        this.app = app;
-
-        notify_center_installed = Backend.NotifyManager.get_default ().notify_center_blacklist.is_installed;
+        Object (app: app);
 
         build_ui ();
         connect_signals ();
-    }
-
-    public Backend.App get_app () {
-        return app;
-    }
-
-    public string get_title () {
-        return app.app_info.get_display_name ();
     }
 
     private void build_ui () {
@@ -72,36 +60,23 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
     }
 
     private void connect_signals () {
-        app.notify["permissions"].connect (() => {
+        app.settings.changed.connect (() => {
             description_label.set_label (get_permissions_string (app));
         });
-
-        if (notify_center_installed) {
-            Backend.NotifyManager.get_default ().notify_center_blacklist.notify["blacklist"].connect (() => {
-                description_label.set_label (get_permissions_string (app));
-            });
-        }
     }
 
     private string get_permissions_string (Backend.App app) {
-        Backend.App.Permissions permissions = app.permissions;
-        bool sinc = false;
-
-        if (notify_center_installed) {
-            sinc = !(app.app_id in Backend.NotifyManager.get_default ().notify_center_blacklist.blacklist);
-        }
-
         string[] items = {};
 
-        if (permissions.enable_bubbles) {
+        if (app.settings.get_boolean ("bubbles")) {
             items += _("Bubbles");
         }
 
-        if (permissions.enable_sounds) {
+        if (app.settings.get_boolean ("sounds")) {
             items += _("Sounds");
         }
 
-        if (sinc) {
+        if (app.settings.get_boolean ("notification-center")) {
             items += _("Notification-Center");
         }
 

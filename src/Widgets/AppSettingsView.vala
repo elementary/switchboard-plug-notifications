@@ -18,14 +18,11 @@
  */
 
 public class Widgets.AppSettingsView : Gtk.Grid {
-    private enum PermissionType {
-        BUBBLES,
-        SOUNDS
-    }
+    private static const string BUBBLES_KEY = "bubbles";
+    private static const string SOUNDS_KEY = "sounds";
+    private static const string SINC_KEY = "notification-center";
 
     private Backend.App? selected_app = null;
-
-    private bool notify_center_installed = false;
 
     private SettingsHeader header;
 
@@ -35,15 +32,16 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private Gtk.Switch sound_switch;
     private SettingsOption sound_option;
 
-    private Gtk.Switch sinc_switch; /* sinc = show in notifications center */
+    /* sinc = show in notifications center */
+    private Gtk.Switch sinc_switch;
     private SettingsOption sinc_option;
 
     public AppSettingsView () {
-        notify_center_installed = Backend.NotifyManager.get_default ().notify_center_blacklist.is_installed;
-
         build_ui ();
+        update_selected_app ();
+        create_bindings ();
+        update_header ();
         connect_signals ();
-        show_selected_app ();
     }
 
     private void build_ui () {
@@ -64,71 +62,46 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             _("Sounds play once when a new notification arrives."),
             sound_switch = new Gtk.Switch ());
 
+        sinc_option = new SettingsOption (
+            Constants.PKGDATADIR + "/notify-center.svg",
+            _("Notification Center"),
+            _("Show missed notifications in Notification Center."),
+            sinc_switch = new Gtk.Switch ());
+
         this.attach (header, 0, 0, 1, 1);
         this.attach (bubbles_option, 0, 1, 1, 1);
         this.attach (sound_option, 0, 2, 1, 1);
-
-        if (notify_center_installed) {
-            sinc_option = new SettingsOption (
-                Constants.PKGDATADIR + "/notify-center.svg",
-                _("Notification Center"),
-                _("Show missed notifications in Notification Center."),
-                sinc_switch = new Gtk.Switch ());
-
-            this.attach (sinc_option, 0, 3, 1, 1);
-        }
+        this.attach (sinc_option, 0, 3, 1, 1);
     }
 
     private void connect_signals () {
-        Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (show_selected_app);
-
-        bubbles_switch.state_set.connect (() => { update_permissions (PermissionType.BUBBLES); return false; });
-        sound_switch.state_set.connect (() => { update_permissions (PermissionType.SOUNDS); return false; });
-
-        if (notify_center_installed) {
-            sinc_switch.state_set.connect (() => { update_sinc_state (); return false; });
-        }
+        Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (() => {
+            remove_bindings ();
+            update_selected_app ();
+            create_bindings ();
+            update_header ();
+        });
     }
 
-    private void show_selected_app () {
+    private void remove_bindings () {
+        Settings.unbind (bubbles_option.widget, "state");
+        Settings.unbind (sound_option.widget, "state");
+        Settings.unbind (sinc_option.widget, "state");
+    }
+
+    private void update_selected_app () {
         string app_id = Backend.NotifyManager.get_default ().selected_app_id;
         selected_app = Backend.NotifyManager.get_default ().apps.get (app_id);
-
-        if (selected_app != null) {
-            show_app (selected_app);
-        }
     }
 
-    private void show_app (Backend.App app) {
-        header.set_title (app.app_info.get_display_name ());
-        header.set_icon (app.app_info.get_icon ());
-
-        bubbles_switch.set_state (app.permissions.enable_bubbles);
-        sound_switch.set_state (app.permissions.enable_sounds);
-
-        if (notify_center_installed) {
-            sinc_switch.set_state (!(app.app_id in Backend.NotifyManager.get_default ().notify_center_blacklist.blacklist));
-        }
+    private void create_bindings () {
+        selected_app.settings.bind (BUBBLES_KEY, bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind (SOUNDS_KEY, sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind (SINC_KEY, sinc_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
     }
 
-    private void update_permissions (PermissionType permission_type) {
-        if (selected_app != null) {
-            selected_app.permissions = {
-                permission_type == PermissionType.BUBBLES ? bubbles_switch.active : selected_app.permissions.enable_bubbles,
-                permission_type == PermissionType.SOUNDS ? sound_switch.active : selected_app.permissions.enable_sounds
-            };
-        }
-    }
-
-    private void update_sinc_state () {
-        if (!notify_center_installed || selected_app == null) {
-            return;
-        }
-
-        if (sinc_switch.active) {
-            Backend.NotifyManager.get_default ().notify_center_blacklist.enable_app (selected_app.app_id);
-        } else {
-            Backend.NotifyManager.get_default ().notify_center_blacklist.disable_app (selected_app.app_id);
-        }
+    private void update_header () {
+        header.set_title (selected_app.app_info.get_display_name ());
+        header.set_icon (selected_app.app_info.get_icon ());
     }
 }

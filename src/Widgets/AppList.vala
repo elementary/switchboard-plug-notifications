@@ -28,16 +28,12 @@ public class Widgets.AppList : Gtk.ListBox {
     }
 
     private void create_list () {
-        Backend.NotifyManager.get_default ().apps.
-
-         foreach ((entry) => {
+        Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
             AppEntry app_entry = new AppEntry (entry.value);
-
             this.add (app_entry);
 
             return true;
-        }) {
-        }
+        });
     }
 
     private void connect_signals () {
@@ -55,7 +51,7 @@ public class Widgets.AppList : Gtk.ListBox {
             return;
         }
 
-        Backend.NotifyManager.get_default ().selected_app_id = ((AppEntry)row).get_app ().app_id;
+        Backend.NotifyManager.get_default ().selected_app_id = ((AppEntry)row).app.app_id;
     }
 
     private void select_first_item () {
@@ -74,8 +70,8 @@ public class Widgets.AppList : Gtk.ListBox {
             return 0;
         }
 
-        string row_name1 = ((AppEntry)row1).get_title ();
-        string row_name2 = ((AppEntry)row2).get_title ();
+        string row_name1 = ((AppEntry)row1).app.app_info.get_display_name ();
+        string row_name2 = ((AppEntry)row2).app.app_info.get_display_name ();
 
         int order = strcmp (row_name1, row_name2);
 

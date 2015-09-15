@@ -18,10 +18,10 @@
  */
 
 public class Widgets.SettingsOption : Gtk.Grid {
-    private string image_path;
-    private string title;
-    private string description;
-    private Gtk.Widget widget;
+    public string image_path { get; construct set; }
+    public string title { get; construct set; }
+    public string description { get; construct set; }
+    public Gtk.Widget widget { get; construct set; }
 
     private Gtk.Image image;
     private Gtk.Label title_label;
@@ -29,10 +29,10 @@ public class Widgets.SettingsOption : Gtk.Grid {
     private Gtk.Label description_label;
 
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
-        this.image_path = image_path;
-        this.title = title;
-        this.description = description;
-        this.widget = widget;
+        Object (image_path: image_path,
+                title: title,
+                description: description,
+                widget: widget);
 
         build_ui ();
     }
