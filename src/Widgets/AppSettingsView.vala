@@ -46,7 +46,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
     private void build_ui () {
         this.margin = 12;
-        this.row_spacing = 60;
+        this.row_spacing = 32;
 
         header = new SettingsHeader ();
 
