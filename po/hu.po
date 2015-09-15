@@ -3,26 +3,26 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-08-20 11:47+0000\n"
+"Last-Translator: Papp Ferenc <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-04 07:23+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Launchpad-Export-Date: 2015-09-01 05:39+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
-msgstr ""
+msgstr "Értesítések"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr ""
+msgstr "Értesítések engedélyezése vagy letiltása."
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Nincs teendő"
 
 #: ../src/Plug.vala:44
 msgid ""
@@ -30,67 +30,78 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Az értesítési beállításokban megadható, hogy mely alkalmazások használhatják "
+"az értesítéseket, hogy hogyan jelenjenek meg azok,\n"
+"illetve mikor nem szeretné, hogy zavarják az értesítések."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Itt automatikusan megjelennek azok a telepített alkalmazások, amelyek "
+"értesítési beállításokkal rendelkeznek."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "Az elementary OS ne zavarj módban van"
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Ne zavarj módban az értesítések és figyelmeztetések rejtve lesznek és "
+"értesítési hangok sem játszódnak le."
 
 #: ../src/Widgets/AppsView.vala:45
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Rendszerszintű értesítések, mint például a hangerő és fényerő állítása, "
+"érintetlenek lesznek."
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr ""
+msgstr "Buborékok"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr ""
+msgstr "Hangok"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltva"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
-msgstr ""
+msgstr "Ismeretlen"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
-msgstr ""
+msgstr "Hang menü"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "Network"
-msgstr ""
+msgstr "Hálózat"
 
 #: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
-msgstr ""
+msgstr "Rendszerbeállítás"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "Ne zavarj"
 
 #: ../src/Widgets/AppSettings.vala:83
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"A buborékok a képernyő jobb felső sarkában jelennek meg, és automatikusan "
+"eltűnnek."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "A hangok egyszer játszódnak le az új értesítés pillanatában."

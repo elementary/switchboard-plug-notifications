@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-02-23 22:57+0000\n"
+"PO-Revision-Date: 2015-07-24 16:41+0000\n"
 "Last-Translator: Tomo Moto <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-24 05:52+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"X-Launchpad-Export-Date: 2015-09-01 05:39+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -30,12 +30,16 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Nastavení notifikací slouží pro konfiguraci jednotlivých aplikací, které je "
+"využívají, ke změně způsobu jejich zobrazení,\n"
+"a pro nastavení, kdy si nepřejete být notifikacemi rušeni."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Aplikace, které využívají možnosti notifikací, se zde automaticky objeví."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
@@ -75,7 +79,7 @@ msgstr "Neznámé"
 
 #: ../src/Widgets/AppItem.vala:159
 msgid "Sound Menu"
-msgstr ""
+msgstr "Nabídka zvuku"
 
 #: ../src/Widgets/AppItem.vala:161
 msgid "Network"
@@ -98,4 +102,4 @@ msgstr ""
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Při nové notifikaci je zvuk přehrán jedenkrát."
