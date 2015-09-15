@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-05 18:45+0200\n"
+"POT-Creation-Date: 2015-09-15 20:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,81 +17,81 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Plug.vala:31
+#: ../src/Widgets/MainView.vala:62
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:64
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:66
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:72 ../src/Widgets/AppSettingsView.vala:55
+msgid "Bubbles"
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:76 ../src/Widgets/AppSettingsView.vala:61
+msgid "Sounds"
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:80
+msgid "Notification-Center"
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:84
+msgid "Disabled"
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:56
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:62
+msgid "Sounds play once when a new notification arrives."
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:67
+msgid "Notification Center"
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:68
+msgid "Show missed notifications in Notification Center."
+msgstr ""
+
+#: ../src/Widgets/Footer.vala:36
+msgid "Do Not Disturb"
+msgstr ""
+
+#: ../src/Plug.vala:29
 msgid "Notifications"
 msgstr ""
 
-#: ../src/Plug.vala:32
+#: ../src/Plug.vala:30
 msgid "Enable or disable notifications."
 msgstr ""
 
-#: ../src/Plug.vala:83
+#: ../src/Plug.vala:78
 msgid "Nothing to do here"
 msgstr ""
 
-#: ../src/Plug.vala:85
+#: ../src/Plug.vala:80
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
-#: ../src/Plug.vala:87
+#: ../src/Plug.vala:82
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr ""
-
-#: ../src/Widgets/Footer.vala:38
-msgid "Do Not Disturb"
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:59 ../src/Widgets/AppEntry.vala:98
-msgid "Bubbles"
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:60
-msgid ""
-"Bubbles appear in the top right corner of the display and disappear "
-"automatically."
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:65 ../src/Widgets/AppEntry.vala:100
-msgid "Sounds"
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:66
-msgid "Sounds play once when a new notification arrives."
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:76
-msgid "Notification Center"
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:77
-msgid "Show missed notifications in Notification Center."
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:64
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:66
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:68
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-
-#: ../src/Widgets/AppEntry.vala:102
-msgid "Notification-Center"
-msgstr ""
-
-#: ../src/Widgets/AppEntry.vala:105
-msgid "Disabled"
 msgstr ""
