@@ -22,8 +22,6 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private static const string SOUNDS_KEY = "sounds";
     private static const string SINC_KEY = "notification-center";
 
-    private Backend.NotifyManager notify_manager;
-
     private Backend.App? selected_app = null;
 
     private SettingsHeader header;
@@ -39,8 +37,6 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private SettingsOption sinc_option;
 
     construct {
-        notify_manager = Backend.NotifyManager.get_default ();
-
         build_ui ();
         update_selected_app ();
         create_bindings ();
@@ -79,7 +75,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void connect_signals () {
-        notify_manager.notify["selected-app-id"].connect (() => {
+        Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (() => {
             remove_bindings ();
             update_selected_app ();
             create_bindings ();
@@ -94,6 +90,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void update_selected_app () {
+        Backend.NotifyManager notify_manager = Backend.NotifyManager.get_default ();
         string app_id = notify_manager.selected_app_id;
         selected_app = notify_manager.apps.get (app_id);
     }
