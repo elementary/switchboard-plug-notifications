@@ -25,7 +25,6 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private Gtk.Image image;
     private Gtk.Label title_label;
-    private Gtk.Widget option_widget;
     private Gtk.Label description_label;
 
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
@@ -54,11 +53,10 @@ public class Widgets.SettingsOption : Gtk.Grid {
         title_label.hexpand = true;
         title_label.vexpand = false;
 
-        option_widget = widget;
-        option_widget.halign = Gtk.Align.START;
-        option_widget.valign = Gtk.Align.CENTER;
-        option_widget.hexpand = false;
-        option_widget.vexpand = false;
+        widget.halign = Gtk.Align.START;
+        widget.valign = Gtk.Align.CENTER;
+        widget.hexpand = false;
+        widget.vexpand = false;
 
         description_label = new Gtk.Label (description);
         description_label.halign = Gtk.Align.START;
@@ -70,7 +68,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
         this.attach (image, 0, 0, 1, 3);
         this.attach (title_label, 1, 0, 1, 1);
-        this.attach (option_widget, 1, 1, 1, 1);
+        this.attach (widget, 1, 1, 1, 1);
         this.attach (description_label, 1, 2, 1, 1);
     }
 }
