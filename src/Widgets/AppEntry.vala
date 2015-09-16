@@ -18,7 +18,7 @@
  */
 
 public class Widgets.AppEntry : Gtk.ListBoxRow {
-    public Backend.App app { get; construct set; }
+    public Backend.App app { get; construct; }
 
     private Gtk.Grid grid;
 

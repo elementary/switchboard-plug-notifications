@@ -18,9 +18,13 @@
  */
 
 public class Widgets.AppList : Gtk.ListBox {
-    public AppList () {
+    private Backend.NotifyManager notify_manager;
+
+    construct {
         this.selection_mode = Gtk.SelectionMode.SINGLE;
         this.set_sort_func (sort_func);
+
+        notify_manager = Backend.NotifyManager.get_default ();
 
         create_list ();
         connect_signals ();
@@ -28,7 +32,7 @@ public class Widgets.AppList : Gtk.ListBox {
     }
 
     private void create_list () {
-        Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
+        notify_manager.apps.@foreach ((entry) => {
             AppEntry app_entry = new AppEntry (entry.value);
             this.add (app_entry);
 
@@ -37,9 +41,7 @@ public class Widgets.AppList : Gtk.ListBox {
     }
 
     private void connect_signals () {
-        this.row_selected.connect ((row) => {
-            show_row (row);
-        });
+        this.row_selected.connect (show_row);
     }
 
     private void show_row (Gtk.ListBoxRow? row) {
@@ -51,7 +53,7 @@ public class Widgets.AppList : Gtk.ListBox {
             return;
         }
 
-        Backend.NotifyManager.get_default ().selected_app_id = ((AppEntry)row).app.app_id;
+        notify_manager.selected_app_id = ((AppEntry)row).app.app_id;
     }
 
     private void select_first_item () {

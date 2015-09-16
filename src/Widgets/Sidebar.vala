@@ -23,7 +23,7 @@ public class Widgets.Sidebar : Gtk.Box {
 
     private Footer footer;
 
-    public Sidebar () {
+    construct {
         build_ui ();
         create_bindings ();
     }

@@ -21,11 +21,11 @@ public class Backend.NotifyManager : Object {
     public static NotifyManager? instance = null;
 
     public bool do_not_disturb { get; set; }
-    public Gee.HashMap<string, App> apps { get; set; } /* string: app-id */
+    public Gee.HashMap<string, App> apps { get; construct; } /* string: app-id */
 
     public string selected_app_id { get; set; }
 
-    private NotifyManager () {
+    construct {
         apps = new Gee.HashMap<string, App> ();
 
         create_bindings ();

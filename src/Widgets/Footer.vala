@@ -21,7 +21,7 @@ public class Widgets.Footer : Gtk.Grid {
     private Gtk.Label do_not_disturb_label;
     private Gtk.Switch do_not_disturb_switch;
 
-    public Footer () {
+    construct {
         build_ui ();
         create_bindings ();
     }

@@ -18,10 +18,10 @@
  */
 
 public class Widgets.SettingsOption : Gtk.Grid {
-    public string image_path { get; construct set; }
-    public string title { get; construct set; }
-    public string description { get; construct set; }
-    public Gtk.Widget widget { get; construct set; }
+    public string image_path { get; construct; }
+    public string title { get; construct; }
+    public string description { get; construct; }
+    public Gtk.Widget widget { get; construct; }
 
     private Gtk.Image image;
     private Gtk.Label title_label;
