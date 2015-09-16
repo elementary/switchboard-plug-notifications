@@ -138,8 +138,8 @@ public class Widgets.AppSettings : Gtk.Grid {
 	}
 
 	public void set_apptitle (string title) {
-		apptitle.set_label (@"<span font_weight=\"bold\" size=\"x-large\">$title</span>");
-		apptitle.set_use_markup (true);
+		apptitle.set_label (title);
+		apptitle.get_style_context ().add_class ("h2");
 	}
 
 	public void set_bubbles (string bubbles) {
