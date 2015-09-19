@@ -57,11 +57,6 @@ public class NotificationsPlug : Switchboard.Plug {
 			}
 		});
 
-		appsview.applist.list_apps ();
-
-		if (NotifySettings.get_default ().do_not_disturb == false)
-			appsview.applist.select_first ();
-
 		stack.show_all ();
 
 		return stack;
