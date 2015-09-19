@@ -40,14 +40,14 @@ public class Widgets.AppList : Gtk.ListBox {
 		list_apps_cancellable = new Cancellable ();
 		NotifySettings.get_default ().apps_changed.connect (() => {
 			if (NotifySettings.get_default ().apps.length != item_count) {
-				list_apps ();
+				queue_reload ();
 			}
 		});
 
-		list_apps ();
+		queue_reload ();
 	}
 
-	private void list_apps () {
+	private void queue_reload () {
 		list_apps_cancellable.cancel ();
 		this.get_children ().foreach ((row) => {
 			this.remove (row);
