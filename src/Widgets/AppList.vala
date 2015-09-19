@@ -52,13 +52,14 @@ public class Widgets.AppList : Gtk.ListBox {
 	}
 
 	private async void list_apps_async () {
-		item_count = NotifySettings.get_default ().apps.length;
+		var apps = NotifySettings.get_default ().apps;
+		item_count = apps.length;
 
-		for (int i = 0; i < item_count; i++) {
+		foreach (var app in apps) {
 			Idle.add (list_apps_async.callback);
 			yield;
 
-			var parameters = NotifySettings.get_default ().apps[i].split (":");
+			var parameters = app.split (":");
 
 			if (parameters.length == 2) {
 				var properties = parameters[1].split (",");
