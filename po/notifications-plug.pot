@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-15 20:13+0200\n"
+"POT-Creation-Date: 2015-09-22 15:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,37 +33,33 @@ msgid ""
 "unaffected."
 msgstr ""
 
-#: ../src/Widgets/AppEntry.vala:72 ../src/Widgets/AppSettingsView.vala:55
+#: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
 msgstr ""
 
-#: ../src/Widgets/AppEntry.vala:76 ../src/Widgets/AppSettingsView.vala:61
+#: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
 msgid "Sounds"
 msgstr ""
 
-#: ../src/Widgets/AppEntry.vala:80
-msgid "Notification-Center"
+#: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
+msgid "Remember"
 msgstr ""
 
-#: ../src/Widgets/AppEntry.vala:84
+#: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
 msgstr ""
 
-#: ../src/Widgets/AppSettingsView.vala:56
+#: ../src/Widgets/AppSettingsView.vala:55
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 
-#: ../src/Widgets/AppSettingsView.vala:62
+#: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
 msgstr ""
 
 #: ../src/Widgets/AppSettingsView.vala:67
-msgid "Notification Center"
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:68
 msgid "Show missed notifications in Notification Center."
 msgstr ""
 

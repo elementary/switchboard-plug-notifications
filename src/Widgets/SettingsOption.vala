@@ -46,8 +46,8 @@ public class Widgets.SettingsOption : Gtk.Grid {
         image.halign = Gtk.Align.START;
         image.hexpand = false;
 
-        title_label = new Gtk.Label ("<span font_weight=\"bold\" size=\"large\">" + title + "</span>");
-        title_label.use_markup = true;
+        title_label = new Gtk.Label (title);
+        title_label.get_style_context ().add_class ("h2");
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
         title_label.hexpand = true;
@@ -64,7 +64,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         description_label.hexpand = true;
         description_label.vexpand = false;
         description_label.wrap = true;
-        description_label.justify = Gtk.Justification.FILL;
+        description_label.justify = Gtk.Justification.LEFT;
 
         this.attach (image, 0, 0, 1, 3);
         this.attach (title_label, 1, 0, 1, 1);
