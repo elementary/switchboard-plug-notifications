@@ -86,7 +86,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         }
 
         if (items.length == 0) {
-            return _("Disabled");
+            items += _("Disabled");
         }
 
         return "<span font_size=\"small\">%s</span>".printf (string.joinv (", ", items));
