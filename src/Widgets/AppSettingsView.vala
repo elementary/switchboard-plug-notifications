@@ -20,7 +20,7 @@
 public class Widgets.AppSettingsView : Gtk.Grid {
     private static const string BUBBLES_KEY = "bubbles";
     private static const string SOUNDS_KEY = "sounds";
-    private static const string SINC_KEY = "notification-center";
+    private static const string REMEMBER_KEY = "remember";
 
     private Backend.App? selected_app = null;
 
@@ -32,9 +32,8 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private Gtk.Switch sound_switch;
     private SettingsOption sound_option;
 
-    /* sinc = show in notifications center */
-    private Gtk.Switch sinc_switch;
-    private SettingsOption sinc_option;
+    private Gtk.Switch remember_switch;
+    private SettingsOption remember_option;
 
     construct {
         build_ui ();
@@ -62,16 +61,16 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             _("Sounds play once when a new notification arrives."),
             sound_switch = new Gtk.Switch ());
 
-        sinc_option = new SettingsOption (
+        remember_option = new SettingsOption (
             Constants.PKGDATADIR + "/notify-center.svg",
-            _("Notification Center"),
+            _("Remember"),
             _("Show missed notifications in Notification Center."),
-            sinc_switch = new Gtk.Switch ());
+            remember_switch = new Gtk.Switch ());
 
         this.attach (header, 0, 0, 1, 1);
         this.attach (bubbles_option, 0, 1, 1, 1);
         this.attach (sound_option, 0, 2, 1, 1);
-        this.attach (sinc_option, 0, 3, 1, 1);
+        this.attach (remember_option, 0, 3, 1, 1);
     }
 
     private void connect_signals () {
@@ -86,7 +85,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private void remove_bindings () {
         Settings.unbind (bubbles_option.widget, "state");
         Settings.unbind (sound_option.widget, "state");
-        Settings.unbind (sinc_option.widget, "state");
+        Settings.unbind (remember_option.widget, "state");
     }
 
     private void update_selected_app () {
@@ -98,7 +97,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private void create_bindings () {
         selected_app.settings.bind (BUBBLES_KEY, bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind (SOUNDS_KEY, sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        selected_app.settings.bind (SINC_KEY, sinc_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind (REMEMBER_KEY, remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void update_header () {

@@ -18,6 +18,10 @@
  */
 
 public class Widgets.AppEntry : Gtk.ListBoxRow {
+    private static const string BUBBLES_KEY = "bubbles";
+    private static const string SOUNDS_KEY = "sounds";
+    private static const string REMEMBER_KEY = "remember";
+
     public Backend.App app { get; construct; }
 
     private Gtk.Grid grid;
@@ -69,16 +73,16 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
     private string get_permissions_string (Backend.App app) {
         string[] items = {};
 
-        if (app.settings.get_boolean ("bubbles")) {
+        if (app.settings.get_boolean (BUBBLES_KEY)) {
             items += _("Bubbles");
         }
 
-        if (app.settings.get_boolean ("sounds")) {
+        if (app.settings.get_boolean (SOUNDS_KEY)) {
             items += _("Sounds");
         }
 
-        if (app.settings.get_boolean ("notification-center")) {
-            items += _("Notification-Center");
+        if (app.settings.get_boolean (REMEMBER_KEY)) {
+            items += _("Remember");
         }
 
         if (items.length == 0) {
