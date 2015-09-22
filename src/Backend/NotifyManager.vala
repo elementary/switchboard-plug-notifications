@@ -20,6 +20,14 @@
 public class Backend.NotifyManager : Object {
     public static NotifyManager? instance = null;
 
+    public static unowned NotifyManager get_default () {
+        if (instance == null) {
+            instance = new NotifyManager ();
+        }
+
+        return instance;
+    }
+
     public bool do_not_disturb { get; set; }
     public Gee.HashMap<string, App> apps { get; construct; } /* string: app-id */
 
@@ -51,13 +59,5 @@ public class Backend.NotifyManager : Object {
     private void register_app (DesktopAppInfo app_info) {
         App app = new App (app_info);
         apps.@set (app.app_id, app);
-    }
-
-    public static unowned NotifyManager get_default () {
-        if (instance == null) {
-            instance = new NotifyManager ();
-        }
-
-        return instance;
     }
 }

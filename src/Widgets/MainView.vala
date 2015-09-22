@@ -18,6 +18,18 @@
  */
 
 public class Widgets.MainView : Gtk.Paned {
+    private static Granite.Widgets.AlertView create_alert_view () {
+        var title = _("elementary OS is in Do Not Disturb mode");
+
+        var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
+        description += "\n\n";
+        description += _("System notifications, such as volume and display brightness, will be unaffected.");
+
+        var icon_name = "notification-disabled";
+
+        return new Granite.Widgets.AlertView (title, description, icon_name);
+    }
+
     private Sidebar sidebar;
 
     private Gtk.Stack content;
@@ -56,17 +68,5 @@ public class Widgets.MainView : Gtk.Paned {
 
     private void update_view () {
         content.set_visible_child_name (Backend.NotifyManager.get_default ().do_not_disturb ? "alert-view" : "app-settings-view");
-    }
-
-    private Granite.Widgets.AlertView create_alert_view () {
-        var title = _("elementary OS is in Do Not Disturb mode");
-
-        var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
-        description += "\n\n";
-        description += _("System notifications, such as volume and display brightness, will be unaffected.");
-
-        var icon_name = "notification-disabled";
-
-        return new Granite.Widgets.AlertView (title, description, icon_name);
     }
 }

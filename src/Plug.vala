@@ -18,6 +18,18 @@
  */
 
 public class NotificationsPlug : Switchboard.Plug {
+    private static Granite.Widgets.AlertView create_alert_view () {
+        var title = _("Nothing to do here");
+
+        var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
+        description += "\n\n";
+        description += _("When apps are installed that have notification options they will automatically appear here.");
+
+        var icon_name = "dialog-information";
+
+        return new Granite.Widgets.AlertView (title, description, icon_name);
+    }
+
     private Gtk.Stack stack;
 
     private Widgets.MainView main_view;
@@ -72,18 +84,6 @@ public class NotificationsPlug : Switchboard.Plug {
 
     private void update_view () {
         stack.set_visible_child_name (Backend.NotifyManager.get_default ().apps.size > 0 ? "main-view" : "alert-view");
-    }
-
-    private Granite.Widgets.AlertView create_alert_view () {
-        var title = _("Nothing to do here");
-
-        var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
-        description += "\n\n";
-        description += _("When apps are installed that have notification options they will automatically appear here.");
-
-        var icon_name = "dialog-information";
-
-        return new Granite.Widgets.AlertView (title, description, icon_name);
     }
 }
 

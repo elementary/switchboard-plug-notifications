@@ -20,17 +20,17 @@
 public class Backend.NotifySettings : Granite.Services.Settings {
     public static NotifySettings? instance = null;
 
-    public bool do_not_disturb { get; set; }
-
-    private NotifySettings () {
-        base ("org.pantheon.desktop.gala.notifications");
-    }
-
     public static unowned NotifySettings get_default () {
         if (instance == null) {
             instance = new NotifySettings ();
         }
 
         return instance;
+    }
+
+    public bool do_not_disturb { get; set; }
+
+    private NotifySettings () {
+        base ("org.pantheon.desktop.gala.notifications");
     }
 }
