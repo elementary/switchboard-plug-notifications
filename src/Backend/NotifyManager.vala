@@ -53,7 +53,7 @@ public class Backend.NotifyManager : Object {
         apps.@set (app.app_id, app);
     }
 
-    public static NotifyManager get_default () {
+    public static unowned NotifyManager get_default () {
         if (instance == null) {
             instance = new NotifyManager ();
         }
