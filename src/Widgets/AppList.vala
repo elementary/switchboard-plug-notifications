@@ -21,6 +21,7 @@
 
 public class Widgets.AppList : Gtk.ListBox {
 	private int item_count;
+	private Cancellable list_apps_cancellable;
 
 	public signal void item_changed (AppItem item);
 	public signal void list_loaded (int length);
@@ -36,25 +37,38 @@ public class Widgets.AppList : Gtk.ListBox {
 			}
 		});
 
+		list_apps_cancellable = new Cancellable ();
 		NotifySettings.get_default ().apps_changed.connect (() => {
 			if (NotifySettings.get_default ().apps.length != item_count) {
-				this.get_children ().foreach ((row) => {
-					this.remove (row);
-				});
-
-				list_apps ();
-
-				if (NotifySettings.get_default ().do_not_disturb == false)
-					select_first ();
+				queue_reload ();
 			}
 		});
+
+		queue_reload ();
 	}
 
-	public void list_apps () {
-		item_count = NotifySettings.get_default ().apps.length;
+	private void queue_reload () {
+		list_apps_cancellable.cancel ();
+		this.get_children ().foreach ((row) => {
+			this.remove (row);
+			});
+		list_apps_cancellable.reset ();
+		list_apps_async.begin ();
+	}
 
-		for (int i = 0; i < item_count; i++) {
-			var parameters = NotifySettings.get_default ().apps[i].split (":");
+	private async void list_apps_async () {
+		var apps = NotifySettings.get_default ().apps;
+		item_count = apps.length;
+
+		foreach (var app in apps) {
+			var idle_handler = Idle.add (list_apps_async.callback);
+			var cancellable_handler = list_apps_cancellable.connect (() => {
+				Source.remove(idle_handler);
+			});
+			yield;
+			list_apps_cancellable.disconnect (cancellable_handler);
+
+			var parameters = app.split (":");
 
 			if (parameters.length == 2) {
 				var properties = parameters[1].split (",");
@@ -64,11 +78,13 @@ public class Widgets.AppList : Gtk.ListBox {
 					this.add (item);
 				}
 			}
+
+			if (selected_row == null && NotifySettings.get_default ().do_not_disturb == false)
+				select_first ();
+
+			this.show_all ();
+			list_loaded (item_count);
 		}
-
-		this.show_all ();
-
-		list_loaded (item_count);
 	}
 
 	public void select_first () {

@@ -59,8 +59,6 @@ public class Widgets.AppsView : Granite.Widgets.ThinPaned {
 		this.pack2 (content, true, false);
 		this.set_position (240);
 
-		select_app (applist.selected_row);
-
 		applist.item_changed.connect (select_app);
 
 		appsettings.bubbles_changed.connect ((bubbles) => {
