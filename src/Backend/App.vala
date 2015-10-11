@@ -29,6 +29,6 @@ public class Backend.App : Object {
         Object (app_info: app_info);
 
         app_id = app_info.get_id ().replace (".desktop", "");
-        settings = new Settings.full (SettingsSchemaSource.get_default ().lookup (CHILD_SCHEMA_ID, false), null, CHILD_PATH.printf (app_id));
+        settings = new Settings.full (SettingsSchemaSource.get_default ().lookup (CHILD_SCHEMA_ID, true), null, CHILD_PATH.printf (app_id));
     }
 }
