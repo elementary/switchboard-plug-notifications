@@ -63,7 +63,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
         remember_option = new SettingsOption (
             Constants.PKGDATADIR + "/notify-center.svg",
-            _("Remember"),
+            _("Notification Center"),
             _("Show missed notifications in Notification Center."),
             remember_switch = new Gtk.Switch ());
 
