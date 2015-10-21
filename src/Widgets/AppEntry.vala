@@ -82,7 +82,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         }
 
         if (app.settings.get_boolean (REMEMBER_KEY)) {
-            items += _("Remember");
+            items += _("Notification Center");
         }
 
         if (items.length == 0) {

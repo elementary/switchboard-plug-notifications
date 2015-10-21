@@ -26,7 +26,8 @@ public class Widgets.SettingsHeader : Gtk.Grid {
     }
 
     public void set_title (string title) {
-        app_label.set_label ("<span font_weight=\"bold\" size=\"x-large\">%s</span>".printf (Markup.escape_text (title)));
+        app_label.set_label (title);
+        app_label.get_style_context ().add_class ("h2");
     }
 
     public void set_icon (Icon icon) {

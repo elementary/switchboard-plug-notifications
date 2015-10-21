@@ -47,7 +47,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         image.hexpand = false;
 
         title_label = new Gtk.Label (title);
-        title_label.get_style_context ().add_class ("h2");
+        title_label.get_style_context ().add_class ("h3");
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
         title_label.hexpand = true;
@@ -59,7 +59,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         widget.vexpand = false;
 
         description_label = new Gtk.Label (description);
-        description_label.halign = Gtk.Align.START;
+        ((Gtk.Misc) description_label).xalign = 0;
         description_label.valign = Gtk.Align.START;
         description_label.hexpand = true;
         description_label.vexpand = false;
