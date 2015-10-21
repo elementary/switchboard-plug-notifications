@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 16:05+0100\n"
-"PO-Revision-Date: 2015-09-02 15:25+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"PO-Revision-Date: 2015-10-20 15:13+0000\n"
+"Last-Translator: Djaler <djaler1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-07 06:17+0000\n"
-"X-Generator: Launchpad (build 17802)\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:20+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Plug.vala:30
 msgid "Notifications"
@@ -18,7 +18,7 @@ msgstr "Уведомления"
 
 #: ../src/Plug.vala:31
 msgid "Enable or disable notifications."
-msgstr "Включить или отключить уведомления."
+msgstr "Включение и отключение уведомлений"
 
 #: ../src/Plug.vala:43
 msgid "Nothing to do here"
@@ -30,28 +30,28 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
-"Настройки Уведомлений позволяют управлять доступом приложений к ним, менять "
-"их внешний вид,\n"
-"и отключать их на какое-то время совсем."
+"Параметры уведомлений позволяют изменить поведение уведомлений отдельных "
+"приложений,\n"
+"либо совсем отключить их на какое-то время."
 
 #: ../src/Plug.vala:45
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-"После установки приложения с поддержкой уведомления, оно автоматически "
+"После установки приложения с поддержкой уведомлений оно автоматически "
 "появится здесь."
 
 #: ../src/Widgets/AppsView.vala:43
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS находится в режиме \"Не беспокоить\"."
+msgstr "Система находится в режиме «Не беспокоить»"
 
 #: ../src/Widgets/AppsView.vala:44
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"В режиме \"Не беспокоить\", уведомления и оповещения будут скрыты и их звук "
+"В режиме «Не беспокоить» уведомления и оповещения будут скрыты, а их звук "
 "отключён."
 
 #: ../src/Widgets/AppsView.vala:45
@@ -64,15 +64,15 @@ msgstr ""
 
 #: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
 msgid "Bubbles"
-msgstr "Заметки"
+msgstr "Баннеры"
 
 #: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
 msgid "Sounds"
-msgstr "Звук"
+msgstr "Звуки"
 
 #: ../src/Widgets/AppItem.vala:147
 msgid "Disabled"
-msgstr "Выключено"
+msgstr "Отключены"
 
 #: ../src/Widgets/AppItem.vala:157
 msgid "Unknown"
@@ -88,7 +88,7 @@ msgstr "Сеть"
 
 #: ../src/Widgets/AppItem.vala:163
 msgid "System Configuration"
-msgstr "Настройка системы"
+msgstr "Параметры системы"
 
 #: ../src/Widgets/Footer.vala:33
 msgid "Do Not Disturb"
@@ -99,8 +99,8 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Заметки появляются в верхнем правом углу дисплея и автоматически исчезают."
+"Уведомления появляются в правом верхнем углу экрана и автоматически исчезают."
 
 #: ../src/Widgets/AppSettings.vala:122
 msgid "Sounds play once when a new notification arrives."
-msgstr "Воспроизведение звука при новом уведомление."
+msgstr "Воспроизведение звука при новом уведомлении."
