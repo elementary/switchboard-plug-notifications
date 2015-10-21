@@ -17,9 +17,11 @@
  * Boston, MA 02111-1307, USA.
  */
 
-public class Widgets.Footer : Gtk.Grid {
-    private Gtk.Label do_not_disturb_label;
-    private Gtk.Switch do_not_disturb_switch;
+public class Widgets.Sidebar : Gtk.Box {
+    private Gtk.ScrolledWindow scrolled_window;
+    private AppList app_list;
+
+    private Footer footer;
 
     construct {
         build_ui ();
@@ -27,24 +29,31 @@ public class Widgets.Footer : Gtk.Grid {
     }
 
     private void build_ui () {
-        this.margin = 12;
-        this.column_spacing = 12;
+        this.orientation = Gtk.Orientation.VERTICAL;
 
-        do_not_disturb_label = new Gtk.Label ("<b>" + _("Do Not Disturb") + "</b>");
-        do_not_disturb_label.use_markup = true;
+        scrolled_window = create_scrolled_window ();
 
-        do_not_disturb_switch = new Gtk.Switch ();
-        do_not_disturb_switch.hexpand = true;
-        do_not_disturb_switch.halign = Gtk.Align.END;
+        footer = new Footer ();
 
-        this.attach (do_not_disturb_label, 0, 0, 1, 1);
-        this.attach (do_not_disturb_switch, 1, 0, 1, 1);
+        this.pack_start (scrolled_window);
+        this.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, false);
+        this.pack_end (footer, false, false);
     }
 
     private void create_bindings () {
         Backend.NotifyManager.get_default ().bind_property ("do-not-disturb",
-                                                            do_not_disturb_switch,
-                                                            "state",
-                                                            BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
+                                                            app_list,
+                                                            "sensitive",
+                                                            BindingFlags.INVERT_BOOLEAN | BindingFlags.SYNC_CREATE);
+    }
+
+    private Gtk.ScrolledWindow create_scrolled_window () {
+        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+
+        app_list = new AppList ();
+
+        scrolled_window.add (app_list);
+
+        return scrolled_window;
     }
 }

@@ -1,102 +1,78 @@
-/***
-	BEGIN LICENSE
-
-	Copyright (C) 2014 elementary Developers
-	This program is free software: you can redistribute it and/or modify it
-	under the terms of the GNU Lesser General Public License version 3, as published
-	by the Free Software Foundation.
-
-	This program is distributed in the hope that it will be useful, but
-	WITHOUT ANY WARRANTY; without even the implied warranties of
-	MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-	PURPOSE.  See the GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License along
-	with this program.  If not, see <http://www.gnu.org/licenses/>
-
-	END LICENSE
-	Written By: Marcus Wichelmann <admin@marcusw.de>
-
-***/
+/*
+ * Copyright (c) 2011-2015 elementary Developers
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public
+ * License as published by the Free Software Foundation; either
+ * version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this program; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ */
 
 public class Widgets.AppList : Gtk.ListBox {
-	private int item_count;
-	private Cancellable list_apps_cancellable;
+    construct {
+        this.selection_mode = Gtk.SelectionMode.SINGLE;
+        this.set_sort_func (sort_func);
 
-	public signal void item_changed (AppItem item);
-	public signal void list_loaded (int length);
+        create_list ();
+        connect_signals ();
+        select_first_item ();
+    }
 
-	public AppItem selected_row;
+    private void create_list () {
+        Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
+            AppEntry app_entry = new AppEntry (entry.value);
+            this.add (app_entry);
 
-	public AppList () {
-		this.selection_mode = Gtk.SelectionMode.SINGLE;
-		this.row_selected.connect ((row) => {
-			if (row != null) {
-				selected_row = row as AppItem;
-				item_changed (row as AppItem);
-			}
-		});
+            return true;
+        });
+    }
 
-		list_apps_cancellable = new Cancellable ();
-		NotifySettings.get_default ().apps_changed.connect (() => {
-			if (NotifySettings.get_default ().apps.length != item_count) {
-				queue_reload ();
-			}
-		});
+    private void connect_signals () {
+        this.row_selected.connect (show_row);
+    }
 
-		queue_reload ();
-	}
+    private void show_row (Gtk.ListBoxRow? row) {
+        if (row == null) {
+            return;
+        }
 
-	private void queue_reload () {
-		list_apps_cancellable.cancel ();
-		this.get_children ().foreach ((row) => {
-			this.remove (row);
-			});
-		list_apps_cancellable.reset ();
-		list_apps_async.begin ();
-	}
+        if (!(row is AppEntry)) {
+            return;
+        }
 
-	private async void list_apps_async () {
-		var apps = NotifySettings.get_default ().apps;
-		item_count = apps.length;
+        Backend.NotifyManager.get_default ().selected_app_id = ((AppEntry)row).app.app_id;
+    }
 
-		foreach (var app in apps) {
-			var idle_handler = Idle.add (list_apps_async.callback);
-			var cancellable_handler = list_apps_cancellable.connect (() => {
-				Source.remove(idle_handler);
-			});
-			yield;
-			list_apps_cancellable.disconnect (cancellable_handler);
+    private void select_first_item () {
+        List<weak Gtk.Widget> children = this.get_children ();
 
-			var parameters = app.split (":");
+        if (children.length () > 0) {
+            Gtk.ListBoxRow row = ((Gtk.ListBoxRow)children.nth_data (0));
 
-			if (parameters.length == 2) {
-				var properties = parameters[1].split (",");
+            this.select_row (row);
+            show_row (row);
+        }
+    }
 
-				if (properties.length == 2 && parameters[0] != "notify-send") {
-					var item = new AppItem (parameters[0], properties);
-					this.add (item);
-				}
-			}
+    private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        if (!(row1 is AppEntry && row2 is AppEntry)) {
+            return 0;
+        }
 
-			if (selected_row == null && NotifySettings.get_default ().do_not_disturb == false)
-				select_first ();
+        string row_name1 = ((AppEntry)row1).app.app_info.get_display_name ();
+        string row_name2 = ((AppEntry)row2).app.app_info.get_display_name ();
 
-			this.show_all ();
-			list_loaded (item_count);
-		}
-	}
+        int order = strcmp (row_name1, row_name2);
 
-	public void select_first () {
-		if (item_count > 0) {
-			var first_row = this.get_row_at_index (0);
-
-			this.select_row (first_row);
-			selected_row = first_row as AppItem;
-		}
-	}
-
-	public void select_none () {
-		this.select_row (null);
-	}
+        return order.clamp (-1, 1);
+    }
 }
