@@ -2,95 +2,87 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-03 16:05+0100\n"
+"POT-Creation-Date: 2015-09-22 15:49+0200\n"
 "PO-Revision-Date: 2015-02-15 04:36+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-07 06:16+0000\n"
-"X-Generator: Launchpad (build 17802)\n"
+"X-Launchpad-Export-Date: 2015-10-22 05:56+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
-#: ../src/Plug.vala:30
+#: ../src/Widgets/MainView.vala:62
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:64
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:66
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+msgid "Bubbles"
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
+msgid "Sounds"
+msgstr "Sons"
+
+#: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
+msgid "Remember"
+msgstr ""
+
+#: ../src/Widgets/AppEntry.vala:89
+msgid "Disabled"
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:55
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+
+#: ../src/Widgets/AppSettingsView.vala:61
+msgid "Sounds play once when a new notification arrives."
+msgstr "Els sons es reproduïran un cop quan arribi una notificació."
+
+#: ../src/Widgets/AppSettingsView.vala:67
+msgid "Show missed notifications in Notification Center."
+msgstr ""
+
+#: ../src/Widgets/Footer.vala:36
+msgid "Do Not Disturb"
+msgstr ""
+
+#: ../src/Plug.vala:29
 msgid "Notifications"
 msgstr "Notificacions"
 
-#: ../src/Plug.vala:31
+#: ../src/Plug.vala:30
 msgid "Enable or disable notifications."
 msgstr "Habiliteu o inhabiliteu les notificacions."
 
-#: ../src/Plug.vala:43
+#: ../src/Plug.vala:78
 msgid "Nothing to do here"
 msgstr "No hi ha res per fer aquí"
 
-#: ../src/Plug.vala:44
+#: ../src/Plug.vala:80
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
-#: ../src/Plug.vala:45
+#: ../src/Plug.vala:82
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-
-#: ../src/Widgets/AppsView.vala:43
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
-
-#: ../src/Widgets/AppsView.vala:44
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-
-#: ../src/Widgets/AppsView.vala:45
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-
-#: ../src/Widgets/AppItem.vala:141 ../src/Widgets/AppSettings.vala:58
-msgid "Bubbles"
-msgstr ""
-
-#: ../src/Widgets/AppItem.vala:144 ../src/Widgets/AppSettings.vala:99
-msgid "Sounds"
-msgstr "Sons"
-
-#: ../src/Widgets/AppItem.vala:147
-msgid "Disabled"
-msgstr ""
-
-#: ../src/Widgets/AppItem.vala:157
-msgid "Unknown"
-msgstr ""
-
-#: ../src/Widgets/AppItem.vala:159
-msgid "Sound Menu"
-msgstr "Menú de so"
-
-#: ../src/Widgets/AppItem.vala:161
-msgid "Network"
-msgstr "Xarxa"
-
-#: ../src/Widgets/AppItem.vala:163
-msgid "System Configuration"
-msgstr "Paràmetres del sistema"
-
-#: ../src/Widgets/Footer.vala:33
-msgid "Do Not Disturb"
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:83
-msgid ""
-"Bubbles appear in the top right corner of the display and disappear "
-"automatically."
-msgstr ""
-
-#: ../src/Widgets/AppSettings.vala:122
-msgid "Sounds play once when a new notification arrives."
-msgstr "Els sons es reproduïran un cop quan arribi una notificació."
