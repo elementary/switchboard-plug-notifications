@@ -2,31 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 15:49+0200\n"
+"POT-Creation-Date: 2015-10-22 10:44-0500\n"
 "PO-Revision-Date: 2015-03-20 14:57+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-22 05:56+0000\n"
+"X-Launchpad-Export-Date: 2015-10-23 05:50+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
-#: ../src/Widgets/MainView.vala:62
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS 正处于勿扰模式中"
-
-#: ../src/Widgets/MainView.vala:64
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr "勿扰模式启用时，通知和警告将会被隐藏，通知提示音也将关闭。"
-
-#: ../src/Widgets/MainView.vala:66
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr "系统通知，如音量和屏幕亮度等将不会受影响。"
+#: ../src/Widgets/Footer.vala:33
+msgid "Do Not Disturb"
+msgstr "勿扰模式"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
@@ -37,7 +25,7 @@ msgid "Sounds"
 msgstr "声音"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
-msgid "Remember"
+msgid "Notification Center"
 msgstr ""
 
 #: ../src/Widgets/AppEntry.vala:89
@@ -58,23 +46,27 @@ msgstr "新通知到达时播放提示音。"
 msgid "Show missed notifications in Notification Center."
 msgstr ""
 
-#: ../src/Widgets/Footer.vala:36
-msgid "Do Not Disturb"
-msgstr "勿扰模式"
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS 正处于勿扰模式中"
 
-#: ../src/Plug.vala:29
-msgid "Notifications"
-msgstr "通知"
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr "勿扰模式启用时，通知和警告将会被隐藏，通知提示音也将关闭。"
 
-#: ../src/Plug.vala:30
-msgid "Enable or disable notifications."
-msgstr "启用和关闭通知"
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr "系统通知，如音量和屏幕亮度等将不会受影响。"
 
-#: ../src/Plug.vala:78
+#: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "暂无内容"
 
-#: ../src/Plug.vala:80
+#: ../src/Plug.vala:24
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -83,8 +75,16 @@ msgstr ""
 "通知设置可以对应用程序的通知进行配置，更改应用程序通知的显示方式，\n"
 "还能为您设定何时不想受通知打扰。"
 
-#: ../src/Plug.vala:82
+#: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr "安装的应用若包含通知选项，它们会自动出现在此处。"
+
+#: ../src/Plug.vala:41
+msgid "Notifications"
+msgstr "通知"
+
+#: ../src/Plug.vala:42
+msgid "Enable or disable notifications."
+msgstr "启用和关闭通知"

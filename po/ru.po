@@ -2,35 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 15:49+0200\n"
-"PO-Revision-Date: 2015-10-20 15:13+0000\n"
-"Last-Translator: Djaler <djaler1@gmail.com>\n"
+"POT-Creation-Date: 2015-10-22 10:44-0500\n"
+"PO-Revision-Date: 2015-10-22 22:27+0000\n"
+"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-22 05:56+0000\n"
+"X-Launchpad-Export-Date: 2015-10-23 05:50+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
-#: ../src/Widgets/MainView.vala:62
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "Система находится в режиме «Не беспокоить»"
-
-#: ../src/Widgets/MainView.vala:64
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"В режиме «Не беспокоить» уведомления и оповещения будут скрыты, а их звук "
-"отключён."
-
-#: ../src/Widgets/MainView.vala:66
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Системные уведомления, такие как громкость и яркость дисплея, не будут "
-"затронуты."
+#: ../src/Widgets/Footer.vala:33
+msgid "Do Not Disturb"
+msgstr "Не беспокоить"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
@@ -41,8 +25,8 @@ msgid "Sounds"
 msgstr "Звуки"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
-msgid "Remember"
-msgstr ""
+msgid "Notification Center"
+msgstr "Центр уведомлений"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
@@ -61,25 +45,33 @@ msgstr "Воспроизведение звука при новом уведом
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
+msgstr "Показывать пропущенные уведомления в «Центре уведомлений»."
+
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "Система находится в режиме «Не беспокоить»"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
 msgstr ""
+"В режиме «Не беспокоить» уведомления и оповещения будут скрыты, а их звук "
+"отключён."
 
-#: ../src/Widgets/Footer.vala:36
-msgid "Do Not Disturb"
-msgstr "Не беспокоить"
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Системные уведомления, такие как громкость и яркость дисплея, не будут "
+"затронуты."
 
-#: ../src/Plug.vala:29
-msgid "Notifications"
-msgstr "Уведомления"
-
-#: ../src/Plug.vala:30
-msgid "Enable or disable notifications."
-msgstr "Включение и отключение уведомлений"
-
-#: ../src/Plug.vala:78
+#: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Нет никаких действий"
 
-#: ../src/Plug.vala:80
+#: ../src/Plug.vala:24
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -89,10 +81,18 @@ msgstr ""
 "приложений,\n"
 "либо совсем отключить их на какое-то время."
 
-#: ../src/Plug.vala:82
+#: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
 "После установки приложения с поддержкой уведомлений оно автоматически "
 "появится здесь."
+
+#: ../src/Plug.vala:41
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: ../src/Plug.vala:42
+msgid "Enable or disable notifications."
+msgstr "Включение и отключение уведомлений"
