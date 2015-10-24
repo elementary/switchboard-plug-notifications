@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-22 10:44-0500\n"
-"PO-Revision-Date: 2015-02-06 16:28+0000\n"
+"PO-Revision-Date: 2015-10-24 05:44+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-23 05:50+0000\n"
+"X-Launchpad-Export-Date: 2015-10-24 06:02+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Widgets/Footer.vala:33
@@ -26,7 +26,7 @@ msgstr "Lyder"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr ""
+msgstr "Varselsenter"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
@@ -45,7 +45,7 @@ msgstr "Lyder spilles en gang når et nytt varsel kommer."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "Vis tapte varsler i Varselsenter."
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
