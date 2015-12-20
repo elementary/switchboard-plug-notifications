@@ -39,7 +39,7 @@ public class NotificationsPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-notifications",
                 display_name: _("Notifications"),
-                description: _("Enable or disable notifications."),
+                description: _("Configure notification bubbles, sounds, and notification center"),
                 icon: "preferences-desktop-notifications");
     }
 
