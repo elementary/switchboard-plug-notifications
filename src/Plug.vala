@@ -64,7 +64,11 @@ public class NotificationsPlug : Switchboard.Plug {
     }
 
     public override async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
+        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Do Not Disturb")), "");
+        search_results.set ("%s → %s".printf (display_name, _("Notifications")), "");
+        search_results.set ("%s → %s".printf (display_name, _("Sound")), "");
+        return search_results;
     }
 
     private void build_ui () {
