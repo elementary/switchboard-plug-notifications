@@ -36,7 +36,6 @@ public class Widgets.Sidebar : Gtk.Box {
         footer = new Footer ();
 
         this.pack_start (scrolled_window);
-        this.pack_start (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), false, false);
         this.pack_end (footer, false, false);
     }
 

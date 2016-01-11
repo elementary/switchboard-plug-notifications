@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-public class Widgets.Footer : Gtk.Grid {
+public class Widgets.Footer : Gtk.ActionBar {
     private Gtk.Label do_not_disturb_label;
     private Gtk.Switch do_not_disturb_switch;
 
@@ -27,18 +27,18 @@ public class Widgets.Footer : Gtk.Grid {
     }
 
     private void build_ui () {
-        this.margin = 12;
-        this.column_spacing = 12;
+        this.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 
-        do_not_disturb_label = new Gtk.Label ("<b>" + _("Do Not Disturb") + "</b>");
-        do_not_disturb_label.use_markup = true;
+        do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));
+        do_not_disturb_label.get_style_context ().add_class ("h4");
+        do_not_disturb_label.margin_start = 6;
 
         do_not_disturb_switch = new Gtk.Switch ();
-        do_not_disturb_switch.hexpand = true;
-        do_not_disturb_switch.halign = Gtk.Align.END;
+        do_not_disturb_switch.margin = 12;
+        do_not_disturb_switch.margin_end = 6;
 
-        this.attach (do_not_disturb_label, 0, 0, 1, 1);
-        this.attach (do_not_disturb_switch, 1, 0, 1, 1);
+        this.pack_start (do_not_disturb_label);
+        this.pack_end (do_not_disturb_switch);
     }
 
     private void create_bindings () {
