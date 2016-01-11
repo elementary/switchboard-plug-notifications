@@ -45,16 +45,16 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND);
         image.pixel_size = 32;
 
-        title_label = new Gtk.Label (Markup.escape_text (app.app_info.get_display_name ()));
+        title_label = new Gtk.Label (app.app_info.get_display_name ());
         title_label.get_style_context ().add_class ("h3");
         title_label.ellipsize = Pango.EllipsizeMode.END;
-        title_label.halign = Gtk.Align.START;
+        ((Gtk.Misc) title_label).xalign = 0;
         title_label.valign = Gtk.Align.END;
 
         description_label = new Gtk.Label (get_permissions_string (app));
         description_label.use_markup = true;
         description_label.ellipsize = Pango.EllipsizeMode.END;
-        description_label.halign = Gtk.Align.START;
+        ((Gtk.Misc) description_label).xalign = 0;
         description_label.valign = Gtk.Align.START;
 
         grid.attach (image, 0, 0, 1, 2);
@@ -89,6 +89,6 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             items += _("Disabled");
         }
 
-        return "<span font_size=\"small\">%s</span>".printf (string.joinv (", ", items));
+        return "<span font_size=\"small\">%s</span>".printf (Markup.escape_text (string.joinv (", ", items)));
     }
 }
