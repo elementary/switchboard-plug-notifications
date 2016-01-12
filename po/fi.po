@@ -2,19 +2,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-22 10:44-0500\n"
+"POT-Creation-Date: 2016-01-11 19:59+0100\n"
 "PO-Revision-Date: 2015-10-25 09:42+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-26 05:26+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2016-01-12 05:43+0000\n"
+"X-Generator: Launchpad (build 17881)\n"
 
-#: ../src/Widgets/Footer.vala:33
+#: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
 msgstr "Älä häiritse"
+
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS on \"Älä häiritse\"-tilassa"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Älä häiritse -tilassa ilmoitukset ja hälytykset piilotetaan, eikä "
+"ilmoitusääniä toisteta."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Tämä ei vaikuta järjestelmäilmoituksiin, kuten äänenvoimakkuuden ja näytön "
+"kirkkauden muutoksiin."
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
@@ -47,26 +67,6 @@ msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."
 msgid "Show missed notifications in Notification Center."
 msgstr "Näytä ohimenneet ilmoitukset ilmoituskeskuksessa."
 
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS on \"Älä häiritse\"-tilassa"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Älä häiritse -tilassa ilmoitukset ja hälytykset piilotetaan, eikä "
-"ilmoitusääniä toisteta."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Tämä ei vaikuta järjestelmäilmoituksiin, kuten äänenvoimakkuuden ja näytön "
-"kirkkauden muutoksiin."
-
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Ei mitään tehtävää"
@@ -94,5 +94,5 @@ msgid "Notifications"
 msgstr "Ilmoitukset"
 
 #: ../src/Plug.vala:42
-msgid "Enable or disable notifications."
-msgstr "Ota ilmoitukset käyttöön tai poista ne käytöstä"
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr ""
