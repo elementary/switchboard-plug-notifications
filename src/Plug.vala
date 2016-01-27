@@ -40,7 +40,7 @@ public class NotificationsPlug : Switchboard.Plug {
                 code_name: "personal-pantheon-notifications",
                 display_name: _("Notifications"),
                 description: _("Configure notification bubbles, sounds, and notification center"),
-                icon: "preferences-desktop-notifications");
+                icon: "preferences-system-notifications");
     }
 
     public override Gtk.Widget get_widget () {
