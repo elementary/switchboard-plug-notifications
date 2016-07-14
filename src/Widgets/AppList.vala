@@ -18,6 +18,8 @@
  */
 
 public class Widgets.AppList : Gtk.ListBox {
+    private const string FALLBACK_APP_ID = "gala-other.desktop";
+
     construct {
         this.selection_mode = Gtk.SelectionMode.SINGLE;
         this.set_sort_func (sort_func);
@@ -66,6 +68,12 @@ public class Widgets.AppList : Gtk.ListBox {
     private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
         if (!(row1 is AppEntry && row2 is AppEntry)) {
             return 0;
+        }
+
+        if (((AppEntry)row1).app.app_info.get_id () == FALLBACK_APP_ID) {
+            return 1;
+        } else if (((AppEntry)row2).app.app_info.get_id () == FALLBACK_APP_ID) {
+            return -1;
         }
 
         string row_name1 = ((AppEntry)row1).app.app_info.get_display_name ();
