@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2015-06-01 12:25+0000\n"
+"PO-Revision-Date: 2016-07-17 21:53+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-07-18 05:37+0000\n"
+"X-Generator: Launchpad (build 18140)\n"
 
 #: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
@@ -44,7 +44,7 @@ msgstr "Ljud"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr ""
+msgstr "Notiscenter"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
@@ -55,7 +55,7 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Aviseringsbubblor visas i översta högra hörnet och försvinner automatiskt."
+"Notisbubblor visas i översta högra hörnet och försvinner automatiskt."
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
@@ -93,4 +93,4 @@ msgstr "Notiser"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Ställ in notisbubblor, ljud och notiscenter"
