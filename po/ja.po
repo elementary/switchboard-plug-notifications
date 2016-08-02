@@ -3,68 +3,68 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2016-08-01 23:54+0000\n"
+"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-08-02 06:03+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "通知を一時的にミュート"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "通知を一時的にミュートしています。"
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
-msgstr ""
+msgstr "通知を一時的にミュートすると、通知やアラートは非表示となり通知時のサウンドも鳴りません。"
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
+msgstr "音量設定やディスプレイの明るさなどのシステム通知は影響を受けません。"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
-msgstr ""
+msgstr "バブル"
 
 #: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
 msgid "Sounds"
-msgstr ""
+msgstr "サウンド"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr ""
+msgstr "通知センター"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
-msgstr ""
+msgstr "無効"
 
 #: ../src/Widgets/AppSettingsView.vala:55
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
-msgstr ""
+msgstr "バブルはディスプレイの右上に表示されて自動的に消えます。"
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "新しい通知があったときにサウンドを鳴らします。"
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "見逃した通知を通知センターに表示する。"
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr ""
+msgstr "なにもしない"
 
 #: ../src/Plug.vala:24
 msgid ""
@@ -72,17 +72,19 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"通知設定ではアプリケーション通知の設定や通知の表示方法の変更、\n"
+"一時的な通知のミュート設定を行います。"
 
 #: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr ""
+msgstr "通知設定があるアプリケーションがインストールされるとその通知設定は自動的にここに表示されます。"
 
 #: ../src/Plug.vala:41
 msgid "Notifications"
-msgstr ""
+msgstr "通知"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "バブル、サウンド、通知センターの設定"
