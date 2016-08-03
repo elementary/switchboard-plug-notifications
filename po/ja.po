@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2016-08-01 23:54+0000\n"
+"PO-Revision-Date: 2016-08-02 15:18+0000\n"
 "Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:03+0000\n"
+"X-Launchpad-Export-Date: 2016-08-03 05:57+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Widgets/Footer.vala:32
@@ -18,13 +18,13 @@ msgstr "通知を一時的にミュート"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "通知を一時的にミュートしています。"
+msgstr "通知を一時的にミュートしています"
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
-msgstr "通知を一時的にミュートすると、通知やアラートは非表示となり通知時のサウンドも鳴りません。"
+msgstr "一時的にミュートすると、通知やアラートは非表示となり通知時のサウンドも鳴りません。"
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
@@ -52,7 +52,7 @@ msgstr "無効"
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
-msgstr "バブルはディスプレイの右上に表示されて自動的に消えます。"
+msgstr "ディスプレイの右上に表示されて自動的に消えます。"
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
@@ -60,7 +60,7 @@ msgstr "新しい通知があったときにサウンドを鳴らします。"
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "見逃した通知を通知センターに表示する。"
+msgstr "見逃した通知を通知センターに表示します。"
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
@@ -87,4 +87,4 @@ msgstr "通知"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "バブル、サウンド、通知センターの設定"
+msgstr "バブル、サウンド、通知センターを設定します"
