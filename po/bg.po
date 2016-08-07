@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2016-08-04 09:42+0000\n"
-"Last-Translator: Адмирал АнимЕ <Unknown>\n"
+"PO-Revision-Date: 2016-08-06 16:35+0000\n"
+"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-05 05:45+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:47+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Widgets/Footer.vala:32
@@ -65,7 +65,7 @@ msgstr "Звук се чува веднъж, когато се получи из
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "Показвай пропуснати известия в центъра за известия."
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
@@ -92,4 +92,4 @@ msgstr "Известия"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Настройка на мехурчетата, звуците и центъра за известия."
