@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2016-04-30 12:15+0000\n"
-"Last-Translator: Ufuk <ufukglr@yandex.com>\n"
+"PO-Revision-Date: 2016-09-13 10:34+0000\n"
+"Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-01 05:48+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-09-14 06:28+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 
 #: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
-msgstr "Rahatsız Etmeyin"
+msgstr "Rahatsız Etme"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
