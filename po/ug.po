@@ -1,0 +1,102 @@
+# Uyghur translation for switchboard-plug-notifications
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the switchboard-plug-notifications package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: switchboard-plug-notifications\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"PO-Revision-Date: 2017-01-02 03:19+0000\n"
+"Last-Translator: ablimet <Unknown>\n"
+"Language-Team: Uyghur <ug@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2017-01-02 05:25+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
+
+#: ../src/Widgets/Footer.vala:32
+msgid "Do Not Disturb"
+msgstr "دەخلى قىلماڭ"
+
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS دەخلى قىلماسلىق ھالىتىدە"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"دەخلى قىلماسلىق ھالىتى قوزغىتىلغاندا ئۇقتۇرۇش ۋە ئاگاھلاندۇرۇش كۆرسىتىلمەيدۇ "
+"ۋە ئۇقتۇرۇش ئاۋازىمۇ تاقىلىدۇ."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"ئاۋاز ۋە ئىكران يورۇقلۇقىغا ئوخشاش سىستېما ئۇقتۇرۇشلىرى دەخلىگە ئۇچرىمايدۇ."
+
+#: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+msgid "Bubbles"
+msgstr "كۆپۈك"
+
+#: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
+msgid "Sounds"
+msgstr "ئۈن"
+
+#: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
+msgid "Notification Center"
+msgstr "ئۇقتۇرۇش مەركىزى"
+
+#: ../src/Widgets/AppEntry.vala:89
+msgid "Disabled"
+msgstr "قوزغىتىلمىغان"
+
+#: ../src/Widgets/AppSettingsView.vala:55
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+"ئىكراننىڭ ئوڭ يۇقىرى بۇلۇڭىدا كۆپۈكچىلەر پەيدا بولىدۇ ۋە ئۆزلىكىدىن يوقىلىدۇ."
+
+#: ../src/Widgets/AppSettingsView.vala:61
+msgid "Sounds play once when a new notification arrives."
+msgstr "يىڭى ئۇقتۇرۇش تاپشۇرۇۋالغاندا ئاۋاز بىر قىتىم قويۇلىدۇ"
+
+#: ../src/Widgets/AppSettingsView.vala:67
+msgid "Show missed notifications in Notification Center."
+msgstr "كۆرمىگەن ئۇقتۇرۇشلارنى ئۇقتۇرۇش مەركىزىدە كۆرسىتىش"
+
+#: ../src/Plug.vala:22
+msgid "Nothing to do here"
+msgstr "بۇ يەردە ھىچنىمە يوق"
+
+#: ../src/Plug.vala:24
+msgid ""
+"Notifications preferences are for configuring which apps make use of "
+"notifications, for changing how an app's notifications appear,\n"
+"and for setting when you do not want to be disturbed by notifications."
+msgstr ""
+"ئۇقتۇرۇش مايىللىقلىرى ئارقىلىق قايسى ئەپلەر ئۇقتۇرۇشنى ئىشلىتىدۇ، ئەپلەرنىڭ "
+"ئۇقتۇرۇشلىرى قانداق كۆرسىتىلىدۇ، ۋە قايسى ۋاقىتلاردا سىز ئۇقتۇرۇشلارنىڭ  "
+"سىزگە دەخلى قىلماسلىقىنى خالايسىز قاتارلىقلارن تەڭشىگىلى بولىدۇ."
+
+#: ../src/Plug.vala:26
+msgid ""
+"When apps are installed that have notification options they will "
+"automatically appear here."
+msgstr ""
+"ئۇقتۇرۇش پارامېتىرلىرى بار ئەپلەر ئورنىتىلغان ۋاقىتتا بۇيەردە ئاپتوماتىك "
+"كۆرۈنىدۇ."
+
+#: ../src/Plug.vala:41
+msgid "Notifications"
+msgstr "ئۇقتۇرۇشلار"
+
+#: ../src/Plug.vala:42
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr "ئۇقتۇرۇش كۆپۈكچىلىرى، ئاۋازلىرى ۋە ئۇقتۇرۇش مەركىزىنى تەڭشەش"
