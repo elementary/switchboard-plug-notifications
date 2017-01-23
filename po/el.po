@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2017-01-19 16:34+0000\n"
+"PO-Revision-Date: 2017-01-22 16:24+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-21 06:52+0000\n"
+"X-Launchpad-Export-Date: 2017-01-23 06:24+0000\n"
 "X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/Widgets/Footer.vala:32
@@ -25,12 +25,16 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"Όσο η λειτουργία Μην ενοχλείτε είναι ενεργή, οι ειδοποιήσεις δεν θα "
+"εμφανίζονται και οι ήχοι τους θα είναι απενεργοποιημένοι."
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"Ειδοποιήσεις συστήματος, όπως η ένταση του ήχου και η φωτεινότητα της "
+"οθόνης, θα μείνουν ανεπηρέαστες."
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
@@ -56,7 +60,7 @@ msgstr ""
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "Οι ήχοι παίζουν μια φορά όταν λαμβάνετε μια νέα ειδοποίηση."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
@@ -78,6 +82,8 @@ msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"Όταν εγκαθίστανται εφαρμογές που έχουν επιλογές για ειδοποιήσεις θα "
+"εμφανίζονται εδώ αυτομάτως."
 
 #: ../src/Plug.vala:41
 msgid "Notifications"
