@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2017-01-22 16:24+0000\n"
+"PO-Revision-Date: 2017-01-29 11:27+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-23 06:24+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-01-30 05:53+0000\n"
+"X-Generator: Launchpad (build 18315)\n"
 
 #: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
@@ -18,14 +18,14 @@ msgstr "Μην ενοχλείτε"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "Το elementary OS είναι σε λειτουργία \"Μην ενοχλείτε\""
+msgstr "Το elementary OS βρίσκεται σε λειτουργία \"Μην ενοχλείτε\""
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Όσο η λειτουργία Μην ενοχλείτε είναι ενεργή, οι ειδοποιήσεις δεν θα "
+"Όσο η λειτουργία \"Μην ενοχλείτε\" είναι ενεργή, οι ειδοποιήσεις δε θα "
 "εμφανίζονται και οι ήχοι τους θα είναι απενεργοποιημένοι."
 
 #: ../src/Widgets/MainView.vala:26
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
-msgstr ""
+msgstr "Μπάνερ"
 
 #: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
 msgid "Sounds"
@@ -50,13 +50,15 @@ msgstr "Κέντρο ειδοποιήσεων"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
-msgstr ""
+msgstr "Απενεργοποιημένα"
 
 #: ../src/Widgets/AppSettingsView.vala:55
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"Τα μπάνερ εμφανίζονται στην πάνω δεξιά γωνία της οθόνης και εξαφανίζονται "
+"αυτόματα."
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
@@ -64,11 +66,11 @@ msgstr "Οι ήχοι παίζουν μια φορά όταν λαμβάνετε
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Εμφάνιση χαμένων ειδοποιήσεων στο Κέντρο ειδοποιήσεων"
+msgstr "Εμφάνιση χαμένων ειδοποιήσεων στο κέντρο ειδοποιήσεων"
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr ""
+msgstr "Δεν υπάρχει κάτι εδώ"
 
 #: ../src/Plug.vala:24
 msgid ""
@@ -76,6 +78,10 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"Οι προτιμήσεις ειδοποιήσεων είναι για τον ορισμό των εφαρμογών που θα "
+"χρησιμοποιούν τις ειδοποιήσεις,\n"
+" για αλλαγή του τρόπου εμφάνισης των ειδοποιήσεων μιας εφαρμογής και για τον "
+"ορισμό του χρόνου που επιθυμείτε να μην ενοχλείστε από ειδοποιήσεις."
 
 #: ../src/Plug.vala:26
 msgid ""
@@ -91,4 +97,4 @@ msgstr "Ειδοποιήσεις"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Ρύθμιση των μπάνερ ειδοποιήσεων, ήχων και του κέντρου ειδοποιήσεων"
