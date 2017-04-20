@@ -3,50 +3,54 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-11 19:59+0100\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-20 13:56+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-notifications/he/>\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
 
 #: ../src/Widgets/Footer.vala:32
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "לא להפריע"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "elementary OS נמצאת במצב לא להפריע"
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"בזמן שהמערכת במצב לא להפריע, התרעות ודיווחים יוסתרו ולא יושמעו צלילי התרעה."
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
+msgstr "התרעות מערכת, כגון שמע ובהירות התצוגה, לא יושפעו."
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 msgid "Bubbles"
-msgstr ""
+msgstr "בועות"
 
 #: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
 msgid "Sounds"
-msgstr ""
+msgstr "צלילים"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr ""
+msgstr "מרכז ההתרעות"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
-msgstr ""
+msgstr "מנוטרל"
 
 #: ../src/Widgets/AppSettingsView.vala:55
 msgid ""
@@ -56,15 +60,15 @@ msgstr ""
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "צלילים יושמעו כאשר מגיעה התרעה חדשה."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "הצגת התרעות שהוחמצו במרכז ההתרעות."
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr ""
+msgstr "אין מה לעשות כאן"
 
 #: ../src/Plug.vala:24
 msgid ""
@@ -72,17 +76,20 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"העדפות ההתרעה נועדו להגדרת היישומים שיוכלו להשתמש בהתרעות, לשנות את האופן בו "
+"מופיעה התרעה ליישום מסוים ולטובת הגדרת המועדים\n"
+"בהם עדיף שלא להפריע לך."
 
 #: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr ""
+msgstr "כאשר מותקנים יישומים שיש להם אפשרויות התרעה הם יופיעו כאן אוטומטית."
 
 #: ../src/Plug.vala:41
 msgid "Notifications"
-msgstr ""
+msgstr "התרעות"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "הגדרת בועות התרעה, צלילים ומרכז ההתרעות"
