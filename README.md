@@ -7,7 +7,6 @@ You'll need the following dependencies:
 
 * cmake
 * libgranite-dev
-
 * libswitchboard-2.0-dev
 * valac
 
