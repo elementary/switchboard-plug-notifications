@@ -27,7 +27,7 @@ msgstr "Lyder"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr "Varselsenter"
+msgstr "Varslingssenter"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
@@ -46,7 +46,7 @@ msgstr "Lyder spilles én gang når et nytt varsel ankommer."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Vis tapte varsler i varselsenter."
+msgstr "Vis tapte varsler i varslingssenteret."
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
