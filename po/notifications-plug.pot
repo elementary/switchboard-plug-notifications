@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr ""
 
@@ -67,6 +48,26 @@ msgstr ""
 msgid "Show missed notifications in Notification Center."
 msgstr ""
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr ""
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr ""
@@ -90,4 +91,12 @@ msgstr ""
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
+msgstr ""
+
+#: ../src/Plug.vala:69
+msgid "Notifications Center"
+msgstr ""
+
+#: ../src/Plug.vala:70
+msgid "Sound"
 msgstr ""
