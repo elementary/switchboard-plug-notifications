@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2016-12-02 16:26+0000\n"
 "Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,31 +13,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "No m'emprenyis!"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "El sistema Elementary està en mode de discreció"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Mentre estigui en el mode de discreció, les notificacions i les alertes "
-"s'amagaran i els sons de notificacions se silenciaran."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Les notificacions de sistema, com ara el volum i la brillantor de la "
-"pantalla, no canviaran."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Bafarades"
 
@@ -70,6 +47,30 @@ msgid "Show missed notifications in Notification Center."
 msgstr ""
 "Mostra les notificacions que se m'han escapat al centre de notificacions."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "El sistema Elementary està en mode de discreció"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Mentre estigui en el mode de discreció, les notificacions i les alertes "
+"s'amagaran i els sons de notificacions se silenciaran."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Les notificacions de sistema, com ara el volum i la brillantor de la "
+"pantalla, no canviaran."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "No m'emprenyis!"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "No hi ha res per fer aquí"
@@ -100,3 +101,13 @@ msgstr "Notificacions"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configureu les bafarades, els sons i el centre de notificacions."
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Centre de notificacions"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Sons"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2016-06-14 22:35+0000\n"
 "Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,30 +13,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-06-15 06:21+0000\n"
 "X-Generator: Launchpad (build 18097)\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Не турбувати"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS перебуває в режимі `Не турбувати'"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Перебуваючи в режимі `Не турбувати', всі сповіщення та сигнали будуть "
-"сховані, а звук повідомлень - вимкнений."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Системні сповіщення, такі як гучність та яскравість екрану, не буде змінено"
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Бульбашки"
 
@@ -68,6 +46,29 @@ msgstr "Ви почуєте звук як тільки з’явиться но�
 msgid "Show missed notifications in Notification Center."
 msgstr "Показувати пропущені сповіщення в Центрі повідомлень."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS перебуває в режимі `Не турбувати'"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Перебуваючи в режимі `Не турбувати', всі сповіщення та сигнали будуть "
+"сховані, а звук повідомлень - вимкнений."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Системні сповіщення, такі як гучність та яскравість екрану, не буде змінено"
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Не турбувати"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Тут немає чтого робити"
@@ -97,3 +98,13 @@ msgstr "Сповіщення"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Налаштувати повідомлення-бульбашки, звуки та центр повідомлень"
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Центр сповіщень"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Звуки"

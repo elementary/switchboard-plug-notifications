@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2017-03-17 14:55+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,31 +13,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-19 06:47+0000\n"
 "X-Generator: Launchpad (build 18332)\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Forstyr ikke"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS er i \"Forstyr ikke\"-tilstand"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Mens \"Forstyr ikke\"-tilstanden er aktiv, vil notifikationer og advarsler "
-"ikke blive vist, og der vil heller ikke blive afspillet lyde."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Systemnotifikationer, så som lydstyrke og skærmens lysstyrke, vil stadig "
-"blive vist."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Bobler"
 
@@ -68,6 +45,30 @@ msgstr "Lyde afspilles når notifikationer opstår."
 msgid "Show missed notifications in Notification Center."
 msgstr "Vis oversete notifikationer i notifikationscentret."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS er i \"Forstyr ikke\"-tilstand"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Mens \"Forstyr ikke\"-tilstanden er aktiv, vil notifikationer og advarsler "
+"ikke blive vist, og der vil heller ikke blive afspillet lyde."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Systemnotifikationer, så som lydstyrke og skærmens lysstyrke, vil stadig "
+"blive vist."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Forstyr ikke"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Intet at gøre her"
@@ -97,3 +98,13 @@ msgstr "Notifikationer"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfigurér notifikationsbobler, lyde og notifikationscenter"
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Notifikationscenter"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Lyde"

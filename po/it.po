@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2017-01-29 23:11+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,31 +13,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-01-30 05:53+0000\n"
 "X-Generator: Launchpad (build 18315)\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Non Disturbare"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS è in modalità Non Disturbare"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Mentre si è in modalità Non Disturbare le notifiche e gli avvisi verrano "
-"nascosti e i suoni di notifica saranno silenziati."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Le notifiche di sistema, come quelle del volume e della luminosità del "
-"display, non saranno influenzate."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Bolle"
 
@@ -70,6 +47,30 @@ msgstr ""
 msgid "Show missed notifications in Notification Center."
 msgstr "Mostra le notifiche perse nel centro notifiche."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS è in modalità Non Disturbare"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Mentre si è in modalità Non Disturbare le notifiche e gli avvisi verrano "
+"nascosti e i suoni di notifica saranno silenziati."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Le notifiche di sistema, come quelle del volume e della luminosità del "
+"display, non saranno influenzate."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Non Disturbare"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Niente da fare qui"
@@ -100,3 +101,13 @@ msgstr "Notifiche"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configura le bolle di notifica, i suoni e il centro notifiche"
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Centro notifiche"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Suoni"

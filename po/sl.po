@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2016-07-24 16:01+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,28 +13,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-07-25 05:36+0000\n"
 "X-Generator: Launchpad (build 18147)\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Ne moti"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS je v načinu \"Ne moti\"."
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr "V tem načinu bodo obvestila skrita in njihovi zvoki izklopljeni."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Sistemska obvestila, kot npr. glasnost in svetlost, ne bodo spremenjena."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Mehurčki"
 
@@ -66,6 +46,27 @@ msgstr "Zvoki se predvajajo ob novem obvestilu."
 msgid "Show missed notifications in Notification Center."
 msgstr "Prikaži zgrešena obvestila v središču za obvestila."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS je v načinu \"Ne moti\"."
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr "V tem načinu bodo obvestila skrita in njihovi zvoki izklopljeni."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Sistemska obvestila, kot npr. glasnost in svetlost, ne bodo spremenjena."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Ne moti"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Tu ni nič"
@@ -92,3 +93,13 @@ msgstr "Obvestila"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Nastavitve obvestil in zvokov za obveščanje"
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Središče za obvestila"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Zvoki"

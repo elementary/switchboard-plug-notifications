@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2017-05-04 09:30+0000\n"
 "Last-Translator: Seyit Ali Doğan <seyit822@yandex.com>\n"
-"Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-notifications/tr/>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,29 +15,8 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-09-14 06:28+0000\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Rahatsız Etme"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS Rahatsız Etmeyin modunda"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Rahatsız Etmeyin modundayken, bildirimler ve uyarılar gizlenecek ve bildirim "
-"sesleri kapatılacak."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr "Ses ve ekran parlaklığı gibi sistem bildirimleri etkilenmeyecek."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Baloncuklar"
 
@@ -69,6 +48,28 @@ msgstr "Yeni bir bildirim geldiğinde ses çıkar."
 msgid "Show missed notifications in Notification Center."
 msgstr "Okunmayan bildirimleri Bildirim Merkezinde göster."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS Rahatsız Etmeyin modunda"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"Rahatsız Etmeyin modundayken, bildirimler ve uyarılar gizlenecek ve bildirim "
+"sesleri kapatılacak."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr "Ses ve ekran parlaklığı gibi sistem bildirimleri etkilenmeyecek."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Rahatsız Etme"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Burada yapacak birşey yok"
@@ -99,3 +100,13 @@ msgstr "Bildirimler"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Bildirim balonları, sesleri ve bildirim merkezini yapılandır."
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Bildirim Merkezi"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Sesler"

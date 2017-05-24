@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-11 19:59+0100\n"
+"POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2017-05-12 15:59+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-notifications/nl/>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,31 +15,8 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-07-19 06:10+0000\n"
 
-#: ../src/Widgets/Footer.vala:32
-msgid "Do Not Disturb"
-msgstr "Niet Storen"
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS is in Stoor Mij Niet modus"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"In de Stoor-Mij-Niet modus zullen notificaties en waarschuwingen worden "
-"verborgen en notificatie-geluiden gedempt."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Systeem-notificaties, zoals die van het volume of de helderheid van het "
-"scherm, worden hierdoor niet beïnvloed."
-
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
+#: ../src/Plug.vala:71
 msgid "Bubbles"
 msgstr "Bubbels"
 
@@ -71,6 +48,30 @@ msgstr "Geluiden worden één keer afgespeeld bij een nieuwe melding."
 msgid "Show missed notifications in Notification Center."
 msgstr "Toon gemiste meldingen in het notificatiecentrum."
 
+#: ../src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS is in Stoor Mij Niet modus"
+
+#: ../src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"In de Stoor-Mij-Niet modus zullen notificaties en waarschuwingen worden "
+"verborgen en notificatie-geluiden gedempt."
+
+#: ../src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Systeem-notificaties, zoals die van het volume of de helderheid van het "
+"scherm, worden hierdoor niet beïnvloed."
+
+#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
+msgid "Do Not Disturb"
+msgstr "Niet Storen"
+
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Niets te doen hier"
@@ -100,3 +101,13 @@ msgstr "Notificaties"
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configureer meldingen, geluiden en notificatiecentrum"
+
+#: ../src/Plug.vala:69
+#, fuzzy
+msgid "Notifications Center"
+msgstr "Meldingscentrum"
+
+#: ../src/Plug.vala:70
+#, fuzzy
+msgid "Sound"
+msgstr "Geluiden"
