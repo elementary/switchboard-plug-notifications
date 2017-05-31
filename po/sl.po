@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2017-05-31 22:02+0000\n"
+"PO-Revision-Date: 2017-05-31 22:03+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/sl/>\n"
@@ -51,7 +51,7 @@ msgstr "Prikaži zgrešena obvestila v središču za obvestila."
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS je v načinu \"Ne moti\"."
+msgstr "elementary OS je v načinu \"Ne moti\""
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
@@ -81,13 +81,13 @@ msgid ""
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Nastavitve za obvestila so namenjene konfiguraciji dostopa aplikacij do "
-"obvestil ter oblike in časa prikaza obvestil"
+"obvestil ter oblike in časa prikaza obvestil."
 
 #: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr "Aplikacije z obvestili se bodo prikazale tu ob namestitvi"
+msgstr "Aplikacije z obvestili se bodo ob namestitvi prikazale tu."
 
 #: ../src/Plug.vala:41
 msgid "Notifications"
