@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2017-06-01 13:23+0000\n"
+"PO-Revision-Date: 2017-06-01 13:37+0000\n"
 "Last-Translator: Jonathan GN <jonathan@jamdigitalstudio.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/es/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 #: ../src/Plug.vala:71
 msgid "Bubbles"
-msgstr "Notificaciones"
+msgstr "Burbujas"
 
 #: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
 msgid "Sounds"
@@ -37,28 +37,28 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Los avisos aparecen en  la esquina superior derecha de la pantalla y "
+"Las burbujas aparecen en la esquina superior derecha de la pantalla y "
 "desaparecen automáticamente."
 
 #: ../src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr "Los sonidos se reproducen una vez al aparecer una notificación nueva."
+msgstr "Los sonidos se reproducen una vez al llegar una nueva notificación."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Mostrar notificaciones perdidas en el centro de notificaciones"
+msgstr "Mostrar notificaciones perdidas en el centro de notificaciones."
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS está en modo «No molestar»"
+msgstr "elementary OS está en modo No Molestar"
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Mientras el modo «No molestar» esté activo, las notificaciones y alertas se "
-"ocultarán y no reproducirá ningún sonido de aviso."
+"Mientras el modo No Molestar esté activo, las notificaciones y alertas se "
+"ocultarán, y se silenciaran los sonidos de aviso."
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
@@ -70,11 +70,11 @@ msgstr ""
 
 #: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
 msgid "Do Not Disturb"
-msgstr "No molestar"
+msgstr "No Molestar"
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr "No hay nada que configurar"
+msgstr "Nada para hacer aquí"
 
 #: ../src/Plug.vala:24
 msgid ""
@@ -83,15 +83,16 @@ msgid ""
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Las preferencias de notificaciones permiten configurar qué aplicaciones "
-"podrán emitir notificaciones y cómo aparecerán, así como desactivarlas "
-"temporalmente."
+"hacen uso de notificaciones, para cambiar como las notificaciones de una "
+"aplicación aparecen,\n"
+"y  para configurar cuando no desea ser molestado por dichas notificaciones."
 
 #: ../src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-"Cuando se instalen aplicaciones con opciones de notificaciones, estas "
+"Cuando se instalen aplicaciones con opciones de notificación, estas "
 "aparecerán aquí automáticamente."
 
 #: ../src/Plug.vala:41
@@ -100,9 +101,7 @@ msgstr "Notificaciones"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
-"Configura las burbujas de notificación, los sonidos y el centro de "
-"notificaciones"
+msgstr "Configurar burbujas de notificación, sonidos y centro de notificaciones"
 
 #: ../src/Plug.vala:69
 msgid "Notifications Center"
