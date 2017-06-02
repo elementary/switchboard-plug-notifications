@@ -36,11 +36,14 @@ public class NotificationsPlug : Switchboard.Plug {
     private Granite.Widgets.AlertView alert_view;
 
     public NotificationsPlug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+	    settings.set ("notifications", "null");
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-notifications",
                 display_name: _("Notifications"),
                 description: _("Configure notification bubbles, sounds, and notification center"),
-                icon: "preferences-system-notifications");
+                icon: "preferences-system-notifications",
+                supported_settings: settings);
     }
 
     public override Gtk.Widget get_widget () {
