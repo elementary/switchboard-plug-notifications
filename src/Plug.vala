@@ -37,7 +37,7 @@ public class NotificationsPlug : Switchboard.Plug {
 
     public NotificationsPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
-        settings.set ("notifications", "null");
+        settings.set ("notifications", null);
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-notifications",
                 display_name: _("Notifications"),
