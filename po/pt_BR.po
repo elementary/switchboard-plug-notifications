@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
 "PO-Revision-Date: 2017-06-03 15:59+0000\n"
-"Last-Translator: Pedro Carvalho <inceptus.p@live.com>\n"
+"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
 "notifications/pt_BR/>\n"
@@ -104,11 +104,9 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configurar bolhas de notificação, sons, e centro de notificação"
 
 #: ../src/Plug.vala:69
-#, fuzzy
 msgid "Notifications Center"
 msgstr "Central de notificações"
 
 #: ../src/Plug.vala:70
-#, fuzzy
 msgid "Sound"
-msgstr "Sons"
+msgstr "Som"
