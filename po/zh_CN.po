@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2017-03-21 02:40+0000\n"
+"PO-Revision-Date: 2017-07-04 09:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Chinese (Simplified) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-"
+"notifications/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-22 07:15+0000\n"
-"X-Generator: Launchpad (build 18334)\n"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 #: ../src/Plug.vala:71
@@ -93,11 +96,9 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "配置通知气泡，声音和通知中心"
 
 #: ../src/Plug.vala:69
-#, fuzzy
 msgid "Notifications Center"
 msgstr "通知中心"
 
 #: ../src/Plug.vala:70
-#, fuzzy
 msgid "Sound"
 msgstr "声音"
