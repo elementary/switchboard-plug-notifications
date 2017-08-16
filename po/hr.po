@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2016-07-13 15:04+0000\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-08-16 11:37+0000\n"
+"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-notifications/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-07-14 06:04+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 #: ../src/Plug.vala:71
@@ -100,11 +103,9 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Prilagodite mjehuriće obavijesti, zvukove i centar obavijesti"
 
 #: ../src/Plug.vala:69
-#, fuzzy
 msgid "Notifications Center"
 msgstr "Centar obavijesti"
 
 #: ../src/Plug.vala:70
-#, fuzzy
 msgid "Sound"
 msgstr "Zvukovi"
