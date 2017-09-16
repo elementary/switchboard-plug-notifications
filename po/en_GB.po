@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2014-11-17 00:47+0000\n"
-"Last-Translator: Marcus Wichelmann <admin@marcusw.de>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-09-16 01:26+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
+"Language-Team: English (United Kingdom) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"notifications/en_GB/>\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 #: ../src/Plug.vala:71
@@ -24,7 +27,7 @@ msgstr "Sounds"
 
 #: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
 msgid "Notification Center"
-msgstr ""
+msgstr "Notification Centre"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
@@ -44,7 +47,7 @@ msgstr "Sounds play once when a new notification arrives."
 
 #: ../src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "Show missed notifications in Notification Centre."
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
@@ -63,6 +66,8 @@ msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
 
 #: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
 msgid "Do Not Disturb"
@@ -96,14 +101,12 @@ msgstr "Notifications"
 
 #: ../src/Plug.vala:42
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Configure notification bubbles, sounds, and notification centre"
 
 #: ../src/Plug.vala:69
-#, fuzzy
 msgid "Notifications Center"
-msgstr "Notifications"
+msgstr "Notifications Center"
 
 #: ../src/Plug.vala:70
-#, fuzzy
 msgid "Sound"
-msgstr "Sounds"
+msgstr "Sound"
