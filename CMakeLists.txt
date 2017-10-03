@@ -16,7 +16,7 @@ set (PLUGTITLE "Notifications")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "application-default-icon")
 # Set the version for the plug
-set (VERSION "0.1.2")
+set (VERSION "0.1.3")
 
 project (${PLUGNAME})
 
