@@ -18,9 +18,9 @@
  */
 
 public class Widgets.AppEntry : Gtk.ListBoxRow {
-    private static const string BUBBLES_KEY = "bubbles";
-    private static const string SOUNDS_KEY = "sounds";
-    private static const string REMEMBER_KEY = "remember";
+    private const string BUBBLES_KEY = "bubbles";
+    private const string SOUNDS_KEY = "sounds";
+    private const string REMEMBER_KEY = "remember";
 
     public Backend.App app { get; construct; }
 
