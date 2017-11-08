@@ -18,30 +18,19 @@
  */
 
 public class Widgets.Footer : Gtk.ActionBar {
-    private Gtk.Label do_not_disturb_label;
-    private Gtk.Switch do_not_disturb_switch;
-
     construct {
-        build_ui ();
-        create_bindings ();
-    }
+        get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 
-    private void build_ui () {
-        this.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-
-        do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));
-        do_not_disturb_label.get_style_context ().add_class ("h4");
+        var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb"));
         do_not_disturb_label.margin_start = 6;
 
-        do_not_disturb_switch = new Gtk.Switch ();
+        var do_not_disturb_switch = new Gtk.Switch ();
         do_not_disturb_switch.margin = 12;
         do_not_disturb_switch.margin_end = 6;
 
-        this.pack_start (do_not_disturb_label);
-        this.pack_end (do_not_disturb_switch);
-    }
+        pack_start (do_not_disturb_label);
+        pack_end (do_not_disturb_switch);
 
-    private void create_bindings () {
         Backend.NotifyManager.get_default ().bind_property ("do-not-disturb",
                                                             do_not_disturb_switch,
                                                             "state",
