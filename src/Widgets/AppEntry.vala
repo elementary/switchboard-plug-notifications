@@ -24,47 +24,35 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 
     public Backend.App app { get; construct; }
 
-    private Gtk.Grid grid;
-
-    private Gtk.Image image;
-    private Gtk.Label title_label;
-    private Gtk.Label description_label;
-
     public AppEntry (Backend.App app) {
         Object (app: app);
-
-        build_ui ();
-        connect_signals ();
     }
 
-    private void build_ui () {
-        grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 6;
-
-        image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND);
+    construct {
+        var image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND);
         image.pixel_size = 32;
 
-        title_label = new Gtk.Label (app.app_info.get_display_name ());
-        title_label.get_style_context ().add_class ("h3");
+        var title_label = new Gtk.Label (app.app_info.get_display_name ());
+        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         title_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) title_label).xalign = 0;
+        title_label.xalign = 0;
         title_label.valign = Gtk.Align.END;
 
-        description_label = new Gtk.Label (get_permissions_string (app));
+        var description_label = new Gtk.Label (get_permissions_string (app));
         description_label.use_markup = true;
         description_label.ellipsize = Pango.EllipsizeMode.END;
-        ((Gtk.Misc) description_label).xalign = 0;
+        description_label.xalign = 0;
         description_label.valign = Gtk.Align.START;
 
+        var grid = new Gtk.Grid ();
+        grid.margin = 6;
+        grid.column_spacing = 6;
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (description_label, 1, 1, 1, 1);
 
         this.add (grid);
-    }
 
-    private void connect_signals () {
         app.settings.changed.connect (() => {
             description_label.set_markup (get_permissions_string (app));
         });

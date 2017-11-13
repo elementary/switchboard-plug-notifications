@@ -22,22 +22,6 @@ public class Widgets.SettingsHeader : Gtk.Grid {
     private Gtk.Label app_label;
 
     construct {
-        build_ui ();
-    }
-
-    public void set_title (string title) {
-        app_label.set_label (title);
-        app_label.get_style_context ().add_class ("h2");
-    }
-
-    public void set_icon (Icon icon) {
-        app_image.set_from_gicon (icon, Gtk.IconSize.DIALOG);
-        app_image.set_pixel_size (48);
-    }
-
-    private void build_ui () {
-        this.column_spacing = 12;
-
         app_image = new Gtk.Image ();
 
         app_label = new Gtk.Label (null);
@@ -45,7 +29,18 @@ public class Widgets.SettingsHeader : Gtk.Grid {
         app_label.halign = Gtk.Align.START;
         app_label.hexpand = true;
 
-        this.attach (app_image, 0, 0, 1, 1);
-        this.attach (app_label, 1, 0, 1, 1);
+        column_spacing = 12;
+        attach (app_image, 0, 0, 1, 1);
+        attach (app_label, 1, 0, 1, 1);
+    }
+
+    public void set_title (string title) {
+        app_label.set_label (title);
+        app_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+    }
+
+    public void set_icon (Icon icon) {
+        app_image.set_from_gicon (icon, Gtk.IconSize.DIALOG);
+        app_image.set_pixel_size (48);
     }
 }
