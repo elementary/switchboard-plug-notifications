@@ -50,19 +50,19 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         header = new SettingsHeader ();
 
         bubbles_option = new SettingsOption (
-            Constants.PKGDATADIR + "/bubbles.svg",
+            "/io/elementary/switchboard/bubbles.svg",
             _("Bubbles"),
             _("Bubbles appear in the top right corner of the display and disappear automatically."),
             bubbles_switch = new Gtk.Switch ());
 
         sound_option = new SettingsOption (
-            Constants.PKGDATADIR + "/sounds.svg",
+            "/io/elementary/switchboard/sounds.svg",
             _("Sounds"),
             _("Sounds play once when a new notification arrives."),
             sound_switch = new Gtk.Switch ());
 
         remember_option = new SettingsOption (
-            Constants.PKGDATADIR + "/notify-center.svg",
+            "/io/elementary/switchboard/notify-center.svg",
             _("Notification Center"),
             _("Show missed notifications in Notification Center."),
             remember_switch = new Gtk.Switch ());
