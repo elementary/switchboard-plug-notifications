@@ -46,9 +46,6 @@ set (CPACK_SOURCE_IGNORE_FILES "/build/;/.bzr/;/.bzrignore;~$;${CPACK_SOURCE_IGN
 include (CPack)
 add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
-# Files
-file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
-
 # Traslation stuff
 add_subdirectory (po)
 # Info-plug

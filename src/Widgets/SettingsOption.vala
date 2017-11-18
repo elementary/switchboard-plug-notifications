@@ -42,7 +42,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         this.margin_start = 60;
         this.margin_end = 30;
 
-        image = new Gtk.Image.from_file (image_path);
+        image = new Gtk.Image.from_resource (image_path);
         image.halign = Gtk.Align.START;
         image.hexpand = false;
 

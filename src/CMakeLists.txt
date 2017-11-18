@@ -38,7 +38,10 @@ OPTIONS
     --target-glib=2.32
 )
 
-add_library (${PLUGNAME} MODULE ${VALA_C})
+include (GResource)
+glib_compile_resources (GLIB_RESOURCES_IMAGES SOURCE ../data/switchboard-plug-notifications.gresource.xml)
+
+add_library (${PLUGNAME} MODULE ${VALA_C} ${GLIB_RESOURCES_IMAGES})
 target_link_libraries (${PLUGNAME} ${DEPS_LIBRARIES})
 
 # Installation
