@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2017-05-27 11:56+0000\n"
+"PO-Revision-Date: 2017-12-20 00:05+0000\n"
 "Last-Translator: Ryo Nakano <rmfmada3q@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-08-03 05:57+0000\n"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
@@ -48,15 +48,13 @@ msgstr "見逃した通知を通知センターに表示します。"
 
 #: ../src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "通知を一時的にミュートしています"
+msgstr "elementary OS はおやすみモードです"
 
 #: ../src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
-msgstr ""
-"一時的にミュートすると、通知やアラートは非表示となり通知時のサウンドも鳴りま"
-"せん。"
+msgstr "おやすみモードの間、通知やアラートは非表示となり通知時のサウンドも鳴りません。"
 
 #: ../src/Widgets/MainView.vala:26
 msgid ""
@@ -66,7 +64,7 @@ msgstr "音量設定やディスプレイの明るさなどのシステム通知
 
 #: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
 msgid "Do Not Disturb"
-msgstr "通知を一時的にミュート"
+msgstr "おやすみモード"
 
 #: ../src/Plug.vala:22
 msgid "Nothing to do here"
