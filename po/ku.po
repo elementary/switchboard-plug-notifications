@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-notifications\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2017-03-29 06:35+0000\n"
-"Last-Translator: Rokar ✌ <Unknown>\n"
-"Language-Team: Kurdish <ku@li.org>\n"
+"PO-Revision-Date: 2018-02-05 00:11+0000\n"
+"Last-Translator: Rokar <mail@rokar.de>\n"
+"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-notifications/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:42+0000\n"
-"X-Generator: Launchpad (build 18335)\n"
 
 #: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
 #: ../src/Plug.vala:71
@@ -95,11 +97,9 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
 #: ../src/Plug.vala:69
-#, fuzzy
 msgid "Notifications Center"
 msgstr "Navenda Agahdarîyê"
 
 #: ../src/Plug.vala:70
-#, fuzzy
 msgid "Sound"
 msgstr "Deng"
