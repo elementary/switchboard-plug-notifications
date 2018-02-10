@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-notifications\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-24 17:07-0500\n"
-"PO-Revision-Date: 2018-02-05 00:11+0000\n"
+"PO-Revision-Date: 2018-02-11 00:08+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/ku/>\n"
@@ -35,7 +35,7 @@ msgstr "Navenda Agahdarîyê"
 
 #: ../src/Widgets/AppEntry.vala:89
 msgid "Disabled"
-msgstr "Ne çalak"
+msgstr "Na çalak"
 
 #: ../src/Widgets/AppSettingsView.vala:55
 msgid ""
