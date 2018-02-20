@@ -4,4 +4,7 @@
 	dh $@ 
 
 override_dh_strip:
-	dh_strip --dbg-package=switchboard-plug-notifications-dbg
+	dh_strip --dbgsym-migration='switchboard-plug-notifications-dbg (<< 0.1.3)'
+
+override_dh_missing:
+	dh_missing --fail-missing
