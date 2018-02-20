@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-notifications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 17:07-0500\n"
+"POT-Creation-Date: 2018-02-20 16:21-0600\n"
 "PO-Revision-Date: 2018-02-11 00:08+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
-"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-notifications/ku/>\n"
+"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,86 +20,86 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:42+0000\n"
 
-#: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
-#: ../src/Plug.vala:71
-msgid "Bubbles"
-msgstr "Peqpeqoke"
-
-#: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
-msgid "Sounds"
-msgstr "Deng"
-
-#: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
-msgid "Notification Center"
-msgstr "Navenda Agahdarîyê"
-
-#: ../src/Widgets/AppEntry.vala:89
-msgid "Disabled"
-msgstr "Na çalak"
-
-#: ../src/Widgets/AppSettingsView.vala:55
-msgid ""
-"Bubbles appear in the top right corner of the display and disappear "
-"automatically."
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:61
-msgid "Sounds play once when a new notification arrives."
-msgstr ""
-
-#: ../src/Widgets/AppSettingsView.vala:67
-msgid "Show missed notifications in Notification Center."
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS cih  »na eciz bike« vê xistin"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-
-#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
-msgid "Do Not Disturb"
-msgstr "Mijûl Nekin"
-
-#: ../src/Plug.vala:22
+#: src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "ne tişt vê derê heye"
 
-#: ../src/Plug.vala:24
+#: src/Plug.vala:24
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
-#: ../src/Plug.vala:26
+#: src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
 
-#: ../src/Plug.vala:41
+#: src/Plug.vala:43
 msgid "Notifications"
 msgstr "Agahdarî"
 
-#: ../src/Plug.vala:42
+#: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: ../src/Plug.vala:69
+#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+msgid "Do Not Disturb"
+msgstr "Mijûl Nekin"
+
+#: src/Plug.vala:72
 msgid "Notifications Center"
 msgstr "Navenda Agahdarîyê"
 
-#: ../src/Plug.vala:70
+#: src/Plug.vala:73
 msgid "Sound"
 msgstr "Deng"
+
+#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Widgets/AppEntry.vala:65
+msgid "Bubbles"
+msgstr "Peqpeqoke"
+
+#: src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS cih  »na eciz bike« vê xistin"
+
+#: src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+
+#: src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+
+#: src/Widgets/AppSettingsView.vala:55
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+
+#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+msgid "Sounds"
+msgstr "Deng"
+
+#: src/Widgets/AppSettingsView.vala:61
+msgid "Sounds play once when a new notification arrives."
+msgstr ""
+
+#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+msgid "Notification Center"
+msgstr "Navenda Agahdarîyê"
+
+#: src/Widgets/AppSettingsView.vala:67
+msgid "Show missed notifications in Notification Center."
+msgstr ""
+
+#: src/Widgets/AppEntry.vala:77
+msgid "Disabled"
+msgstr "Na çalak"

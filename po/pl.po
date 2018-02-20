@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-24 17:07-0500\n"
+"POT-Creation-Date: 2018-02-20 16:21-0600\n"
 "PO-Revision-Date: 2017-05-25 06:41+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard"
-"/switchboard-plug-notifications/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,67 +16,11 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
-#: ../src/Widgets/AppEntry.vala:77 ../src/Widgets/AppSettingsView.vala:54
-#: ../src/Plug.vala:71
-msgid "Bubbles"
-msgstr "Bąbelki"
-
-#: ../src/Widgets/AppEntry.vala:81 ../src/Widgets/AppSettingsView.vala:60
-msgid "Sounds"
-msgstr "Dźwięki"
-
-#: ../src/Widgets/AppEntry.vala:85 ../src/Widgets/AppSettingsView.vala:66
-msgid "Notification Center"
-msgstr "Centrum powiadomień"
-
-#: ../src/Widgets/AppEntry.vala:89
-msgid "Disabled"
-msgstr "Wyłączone"
-
-#: ../src/Widgets/AppSettingsView.vala:55
-msgid ""
-"Bubbles appear in the top right corner of the display and disappear "
-"automatically."
-msgstr ""
-"Bąbelki pojawiają się w prawym górnym rogu ekranu i znikają automatycznie."
-
-#: ../src/Widgets/AppSettingsView.vala:61
-msgid "Sounds play once when a new notification arrives."
-msgstr "Dźwięk odtwarzany jest raz kiedy pojawia się nowe powiadomienie."
-
-#: ../src/Widgets/AppSettingsView.vala:67
-msgid "Show missed notifications in Notification Center."
-msgstr "Pokaż pominięte powiadomienia w Centrum powiadomień."
-
-#: ../src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS jest w trybie „Nie przeszkadzać”"
-
-#: ../src/Widgets/MainView.vala:24
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"W trybie „Nie przeszkadzać” powiadomienia i ostrzeżenia będą ukryte, a "
-"dźwięk powiadomień zostanie wyciszony."
-
-#: ../src/Widgets/MainView.vala:26
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Nie wpłynie to na takie powiadomienia systemowe jak poziom dźwięku oraz "
-"jasność obrazu."
-
-#: ../src/Widgets/Footer.vala:32 ../src/Plug.vala:68
-msgid "Do Not Disturb"
-msgstr "Nie przeszkadzać"
-
-#: ../src/Plug.vala:22
+#: src/Plug.vala:22
 msgid "Nothing to do here"
 msgstr "Nic do zrobienia"
 
-#: ../src/Plug.vala:24
+#: src/Plug.vala:24
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -87,7 +31,7 @@ msgstr ""
 "danego programu się prezentuje, oraz do ustawienia, kiedy nie chcesz, aby "
 "wyświetlały się powiadomienia."
 
-#: ../src/Plug.vala:26
+#: src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
@@ -95,18 +39,74 @@ msgstr ""
 "Kiedy są zainstalowane aplikacje które mają opcje powiadomień zostaną one "
 "automatycznie wyświetlone tutaj."
 
-#: ../src/Plug.vala:41
+#: src/Plug.vala:43
 msgid "Notifications"
 msgstr "Powiadomienia"
 
-#: ../src/Plug.vala:42
+#: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Skonfiguruj bąbelki powiadomień, dźwięki oraz centrum powiadomień"
 
-#: ../src/Plug.vala:69
+#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+msgid "Do Not Disturb"
+msgstr "Nie przeszkadzać"
+
+#: src/Plug.vala:72
 msgid "Notifications Center"
 msgstr "Centrum powiadomień"
 
-#: ../src/Plug.vala:70
+#: src/Plug.vala:73
 msgid "Sound"
 msgstr "Dźwięki"
+
+#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Widgets/AppEntry.vala:65
+msgid "Bubbles"
+msgstr "Bąbelki"
+
+#: src/Widgets/MainView.vala:22
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS jest w trybie „Nie przeszkadzać”"
+
+#: src/Widgets/MainView.vala:24
+msgid ""
+"While in Do Not Disturb mode, notifications and alerts will be hidden and "
+"notification sounds will be silenced."
+msgstr ""
+"W trybie „Nie przeszkadzać” powiadomienia i ostrzeżenia będą ukryte, a "
+"dźwięk powiadomień zostanie wyciszony."
+
+#: src/Widgets/MainView.vala:26
+msgid ""
+"System notifications, such as volume and display brightness, will be "
+"unaffected."
+msgstr ""
+"Nie wpłynie to na takie powiadomienia systemowe jak poziom dźwięku oraz "
+"jasność obrazu."
+
+#: src/Widgets/AppSettingsView.vala:55
+msgid ""
+"Bubbles appear in the top right corner of the display and disappear "
+"automatically."
+msgstr ""
+"Bąbelki pojawiają się w prawym górnym rogu ekranu i znikają automatycznie."
+
+#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+msgid "Sounds"
+msgstr "Dźwięki"
+
+#: src/Widgets/AppSettingsView.vala:61
+msgid "Sounds play once when a new notification arrives."
+msgstr "Dźwięk odtwarzany jest raz kiedy pojawia się nowe powiadomienie."
+
+#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+msgid "Notification Center"
+msgstr "Centrum powiadomień"
+
+#: src/Widgets/AppSettingsView.vala:67
+msgid "Show missed notifications in Notification Center."
+msgstr "Pokaż pominięte powiadomienia w Centrum powiadomień."
+
+#: src/Widgets/AppEntry.vala:77
+msgid "Disabled"
+msgstr "Wyłączone"
