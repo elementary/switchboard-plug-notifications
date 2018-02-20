@@ -9,6 +9,11 @@ add_project_arguments(
     language:'c'
 )
 
-subdir('data')
+plug_resources = gnome.compile_resources(
+    'plug_resources',
+    'data/switchboard-plug-notifications.gresource.xml',
+    source_dir: 'data'
+)
+
 subdir('src')
 subdir('po')
