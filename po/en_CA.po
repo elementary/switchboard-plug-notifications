@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-02-23 18:37+0000\n"
+"PO-Revision-Date: 2018-02-24 00:04+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -101,11 +101,11 @@ msgstr "Sounds play once when a new notification arrives."
 
 #: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
-msgstr "Notification Center"
+msgstr "Notification Centre"
 
 #: src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Show missed notifications in Notification Center."
+msgstr "Show missed notifications in Notification Centre."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
