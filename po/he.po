@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-05-04 00:06+0000\n"
+"PO-Revision-Date: 2018-05-10 07:53+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/he/>\n"
@@ -81,7 +81,7 @@ msgstr "התרעות מערכת, כגון שמע ובהירות התצוגה, ל
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
-msgstr ""
+msgstr "בועות תופענה בפינה הימנית העליונה של התצוגה והן תעלמנה אוטומטית."
 
 #: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
