@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-04-21 00:11+0000\n"
+"PO-Revision-Date: 2018-05-04 00:06+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/he/>\n"
@@ -53,7 +53,7 @@ msgstr "מרכז ההתרעות"
 
 #: src/Plug.vala:73
 msgid "Sound"
-msgstr "צלילים"
+msgstr "שמע"
 
 #: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
