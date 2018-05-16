@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-04-25 20:30+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"PO-Revision-Date: 2018-05-17 00:04+0000\n"
+"Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/cs/>\n"
 "Language: cs\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/Plug.vala:43
 msgid "Notifications"
-msgstr "Upozornění"
+msgstr "Notifikace"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
