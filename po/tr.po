@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-05-25 18:21+0000\n"
+"PO-Revision-Date: 2018-05-27 00:05+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr "Burada yapacak birşey yok"
+msgstr "Burada yapacak bir şey yok"
 
 #: src/Plug.vala:24
 msgid ""
