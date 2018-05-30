@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2015-08-20 11:47+0000\n"
-"Last-Translator: Papp Ferenc <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-05-30 12:45+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-notifications/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
 
 #: src/Plug.vala:22
 msgid "Nothing to do here"
@@ -41,21 +43,19 @@ msgstr "Értesítések"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Értesítési buborékok, hangok és az értesítési központ beállítása"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
 msgstr "Ne zavarj"
 
 #: src/Plug.vala:72
-#, fuzzy
 msgid "Notifications Center"
-msgstr "Értesítések"
+msgstr "Értesítési központ"
 
 #: src/Plug.vala:73
-#, fuzzy
 msgid "Sound"
-msgstr "Hangok"
+msgstr "Hangjelzés"
 
 #: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
@@ -100,11 +100,11 @@ msgstr "A hangok egyszer játszódnak le az új értesítés pillanatában."
 
 #: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
-msgstr ""
+msgstr "Értesítési központ"
 
 #: src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "Elmulasztott értesítések megjelenítése az Értesítési központban."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
