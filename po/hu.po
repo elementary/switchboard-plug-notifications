@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-05-30 12:45+0000\n"
+"PO-Revision-Date: 2018-06-01 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/hu/>\n"
@@ -55,7 +55,7 @@ msgstr "Értesítési központ"
 
 #: src/Plug.vala:73
 msgid "Sound"
-msgstr "Hangjelzés"
+msgstr "Hang"
 
 #: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
