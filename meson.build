@@ -15,5 +15,6 @@ plug_resources = gnome.compile_resources(
     source_dir: 'data'
 )
 
+subdir('data')
 subdir('src')
 subdir('po')
