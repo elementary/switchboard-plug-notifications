@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-05-14 00:02+0000\n"
+"PO-Revision-Date: 2018-06-10 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr "なにもしない"
+msgstr "設定するものがありません"
 
 #: src/Plug.vala:24
 msgid ""
@@ -32,9 +32,7 @@ msgstr ""
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr ""
-"通知設定があるアプリケーションがインストールされるとその通知設定は自動的にこ"
-"こに表示されます。"
+msgstr "通知設定があるアプリがインストールされると、自動的にここに表示されます。"
 
 #: src/Plug.vala:43
 msgid "Notifications"
