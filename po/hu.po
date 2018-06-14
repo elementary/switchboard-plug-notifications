@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
+"PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-notifications/hu/>\n"
@@ -71,7 +71,7 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Ne zavarj módban az értesítések és figyelmeztetések rejtve lesznek és "
+"Ne zavarj módban az értesítések és figyelmeztetések rejtve lesznek és az "
 "értesítési hangok sem játszódnak le."
 
 #: src/Widgets/MainView.vala:26
@@ -79,8 +79,8 @@ msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
-"Rendszerszintű értesítések, mint például a hangerő és fényerő állítása, "
-"érintetlenek lesznek."
+"A rendszerszintű értesítésekre, mint például a hangerő és fényerő állítása, "
+"nincs hatással."
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""
@@ -104,8 +104,8 @@ msgstr "Értesítési központ"
 
 #: src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Elmulasztott értesítések megjelenítése az Értesítési központban."
+msgstr "Az elmulasztott értesítések megjelennek az Értesítési központban."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
-msgstr "Letiltva"
+msgstr "Kikapcsolva"
