@@ -3,19 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 16:21-0600\n"
-"PO-Revision-Date: 2014-11-09 12:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-10-13 14:01+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/mr/>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
 
 #: src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr ""
+msgstr "इथे करण्यासारखे काहीच नाहीये"
 
 #: src/Plug.vala:24
 msgid ""
@@ -23,76 +25,85 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"सूचना प्राधान्ये कोणत्या अॅप्सच्या अधिसूचना कशा दिसतात ते बदलण्यासाठी, "
+"कोणत्या अॅप्स अधिसूचनांचा वापर करतात,\n"
+"आणि जेव्हा आपण अधिसूचनांद्वारे व्यत्यय आणू इच्छित नाही त्याचे सेटिंग कॉन्फि"
+"गर करण्यासाठी आहेत."
 
 #: src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
+"जेव्हा अॅप्स इन्स्टॉल होतात ज्यात सूचना पर्याय असतात तेव्हा ते स्वयंचलितपणे "
+"येथे दिसतील."
 
 #: src/Plug.vala:43
 msgid "Notifications"
-msgstr ""
+msgstr "अधिसूचना"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "अधिसूचना बबल, ध्वनी आणि अधिसूचना केंद्र कॉन्फिगर करा"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "व्यत्यय आणू नये"
 
 #: src/Plug.vala:72
 msgid "Notifications Center"
-msgstr ""
+msgstr "अधिसूचना केंद्र"
 
 #: src/Plug.vala:73
 msgid "Sound"
-msgstr ""
+msgstr "ध्वनी"
 
 #: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
-msgstr ""
+msgstr "बबल"
 
 #: src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "एलिमेंटरी ओएस व्यत्यय आणू नका मोडमध्ये आहे"
 
 #: src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"व्यत्यय आणू नका मोडमध्ये असताना, अधिसूचना आणि अलर्ट लपवल्या जातील आणि सूचना "
+"ध्वनी शांत केल्या जातील."
 
 #: src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
+msgstr "आवाज आणि डिस्प्ले ब्राइटनेस सारख्या सिस्टम सूचना अप्रभावित राहतील."
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"डिस्प्लेच्या वरच्या उजव्या कोपऱ्यात बबल दिसतात आणि स्वयंचलितपणे अदृश्य होतात."
 
 #: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
-msgstr ""
+msgstr "ध्वनी"
 
 #: src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "नवीन अधिसूचनेच्या वेळी ध्वनी वाजतात."
 
 #: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
-msgstr ""
+msgstr "अधिसूचना केंद्र"
 
 #: src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "अधिसूचना केंद्रात दुर्लक्ष झालेल्या अधिसूचना दाखवा."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
-msgstr ""
+msgstr "अक्षम"
