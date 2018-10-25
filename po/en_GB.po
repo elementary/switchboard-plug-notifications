@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:21-0700\n"
-"PO-Revision-Date: 2017-09-16 01:26+0000\n"
-"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
+"PO-Revision-Date: 2018-10-29 10:10+0000\n"
+"Last-Translator: Ciaran Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
 "projects/switchboard/switchboard-plug-notifications/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
 #: src/Plug.vala:22
@@ -51,7 +51,7 @@ msgstr "Do Not Disturb"
 
 #: src/Plug.vala:72
 msgid "Notifications Center"
-msgstr "Notifications Center"
+msgstr "Notifications Centre"
 
 #: src/Plug.vala:73
 msgid "Sound"
