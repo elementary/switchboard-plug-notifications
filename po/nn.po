@@ -3,21 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:21-0700\n"
-"PO-Revision-Date: 2017-04-20 14:13+0000\n"
-"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
-"Language-Team: nn (generated) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
+"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-notifications/nn/>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
 #: src/Plug.vala:22
 msgid "Nothing to do here"
-msgstr "Ingenting å finne på her"
+msgstr "Ingenting å gjere her"
 
 #: src/Plug.vala:24
 msgid ""
@@ -25,16 +25,17 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
-"Varselinstillingar lar deg konfigurera kva for appar som har lov til å bruka "
-"varsel,  korleis eit varsel frå ein app blir sjåande ut,\n"
-"og for instilling av kva tider du ikkje ynskjer å bli forstyrra i."
+"Varselinnstillingar let deg konfigurere kva for applikasjonar som kan bruke "
+"varsel, korleis ein applikasjon sine varsel dukkar opp, og å definere kva "
+"tid du ikkje vil verte forstyrra av varsel."
 
 #: src/Plug.vala:26
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-"Når appar som brukar varselinstillingar blir installerte, vil dei visast her."
+"Når applikasjonar som støttar varsel er installert, vil dei automatisk dukke "
+"opp her."
 
 #: src/Plug.vala:43
 msgid "Notifications"
@@ -42,21 +43,19 @@ msgstr "Varsel"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Konfigurer varselbobler, lydar og varselsenter"
+msgstr "Sett opp varselbobler, lydar og varselsenter"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
 msgstr "Ikkje forstyrr"
 
 #: src/Plug.vala:72
-#, fuzzy
 msgid "Notifications Center"
 msgstr "Varselsenter"
 
 #: src/Plug.vala:73
-#, fuzzy
 msgid "Sound"
-msgstr "Lydar"
+msgstr "Lyd"
 
 #: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
@@ -65,29 +64,28 @@ msgstr "Bobler"
 
 #: src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS er i Ikkje forstyrr-modus"
+msgstr "elementary OS er i ikkje forstyrr-modus"
 
 #: src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Når ein er i Ikkje forstyrr-modus, blir varsel og alarmer gøymde og "
-"varsellyden blir slått av."
+"Medan ein er i ikkje forstyrr-modus vil varsel og åtvaringar vere skjulte, "
+"og varsellydar er tause."
 
 #: src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
-"Systemvarsel som til dømes volum og skjermlysstyrke vil ikkje bli påverka."
+msgstr "Systemvarsel, som til dømes lyd- og lysstyrke, vil vere upåverka."
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Bobler vil dukka opp i hjørnet oppe til høgre av skjermen og forsvinn "
+"Bobler vil dukke opp i hjørnet øvst til høgre av skjermen, og forsvinn "
 "automatisk."
 
 #: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
@@ -96,7 +94,7 @@ msgstr "Lydar"
 
 #: src/Widgets/AppSettingsView.vala:61
 msgid "Sounds play once when a new notification arrives."
-msgstr "Lydar blir spelt av når eit nytt varsel kjem."
+msgstr "Lydar blir spelt av når eit nytt varsel dukkar opp."
 
 #: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
@@ -104,8 +102,8 @@ msgstr "Varselsenter"
 
 #: src/Widgets/AppSettingsView.vala:67
 msgid "Show missed notifications in Notification Center."
-msgstr "Vis varsel som du gjekk glipp av i Varslingsenter."
+msgstr "Vis tapte varsel i varselsenteret."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
-msgstr "Ikkje i bruk"
+msgstr "Avslått"
