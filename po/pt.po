@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:21-0700\n"
-"PO-Revision-Date: 2017-05-25 12:57+0000\n"
-"Last-Translator: Luís Lima <geral@liqensoft.com>\n"
-"Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-notifications/pt/>\n"
+"PO-Revision-Date: 2019-01-25 00:01+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-notifications/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-07-01 06:02+0000\n"
 
 #: src/Plug.vala:22
@@ -28,7 +28,7 @@ msgstr ""
 "As preferências de notificações permitem configurar que aplicações fazem uso "
 "de notificações, alterar a forma como uma notificação de uma aplicação "
 "aparece\n"
-" e definir quando pretende ou não ver notificações."
+"e definir quando pretende ou não ver notificações."
 
 #: src/Plug.vala:26
 msgid ""
@@ -48,7 +48,7 @@ msgstr "Configurar bolhas de notificação, sons e centro de notificações"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
-msgstr "Não Perturbe"
+msgstr "Não Incomodar"
 
 #: src/Plug.vala:72
 msgid "Notifications Center"
@@ -65,22 +65,22 @@ msgstr "Bolhas"
 
 #: src/Widgets/MainView.vala:22
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS está no modo \"não perturbe\""
+msgstr "O elementary OS está no modo 'Não Incomodar'"
 
 #: src/Widgets/MainView.vala:24
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Enquanto no modo \"não perturbe\", as notificações e alertas não serão "
-"mostrados e os sons das notificações silenciados."
+"Enquanto no modo 'Não Incomodar', as notificações e alertas serão ocultados "
+"e os sons das notificações silenciados."
 
 #: src/Widgets/MainView.vala:26
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
-"Notificações de Sistema, como volume e brilho do ecrã, não são afetadas."
+"Notificações do Sistema, como volume e brilho do ecrã, não são afetadas."
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""
