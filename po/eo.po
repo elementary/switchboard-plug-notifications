@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 17:21-0700\n"
-"PO-Revision-Date: 2019-07-05 06:46+0000\n"
+"PO-Revision-Date: 2019-07-10 08:46+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/eo/>\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/Plug.vala:43
 msgid "Notifications"
-msgstr ""
+msgstr "Avertoj"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
