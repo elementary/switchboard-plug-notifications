@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2018-05-31 00:03+0000\n"
+"POT-Creation-Date: 2018-10-13 17:21-0700\n"
+"PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-notifications/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2016-03-13 05:53+0000\n"
 
 #: src/Plug.vala:22
@@ -38,12 +38,14 @@ msgstr ""
 "opp her."
 
 #: src/Plug.vala:43
+#, fuzzy
 msgid "Notifications"
 msgstr "Merknader"
 
 #: src/Plug.vala:44
+#, fuzzy
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Sett opp varslingsbobler, lyder, og varslingssenter"
+msgstr "Sett opp merknadsbobler, lyder og merknadssenter"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
