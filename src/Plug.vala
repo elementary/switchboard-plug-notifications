@@ -39,7 +39,7 @@ public class NotificationsPlug : Switchboard.Plug {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("notifications", null);
         Object (category: Category.PERSONAL,
-                code_name: "personal-pantheon-notifications",
+                code_name: "io.elementary.switchboard.notifications",
                 display_name: _("Notifications"),
                 description: _("Configure notification bubbles, sounds, and notification center"),
                 icon: "preferences-system-notifications",
