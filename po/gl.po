@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2019-09-06 15:22+0000\n"
-"Last-Translator: Daniel <riesp@protonmail.com>\n"
+"PO-Revision-Date: 2019-09-28 19:23+0000\n"
+"Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/gl/>\n"
 "Language: gl\n"
@@ -43,7 +43,7 @@ msgstr "Notificacións"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Configurar burbullas de notificación, sons e centro de notificacións"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
