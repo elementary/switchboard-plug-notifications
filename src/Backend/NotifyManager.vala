@@ -36,15 +36,9 @@ public class Backend.NotifyManager : Object {
     construct {
         apps = new Gee.HashMap<string, App> ();
 
-        create_bindings ();
-        read_app_list ();
-    }
+        var notify_settings = new GLib.Settings ("org.pantheon.desktop.gala.notifications");
+        notify_settings.bind ("do-not-disturb", this, "do-not-disturb", SettingsBindFlags.DEFAULT);
 
-    private void create_bindings () {
-        NotifySettings.get_default ().schema.bind ("do-not-disturb", this, "do-not-disturb", SettingsBindFlags.DEFAULT);
-    }
-
-    private void read_app_list () {
         var installed_apps = AppInfo.get_all ();
 
         foreach (AppInfo app_info in installed_apps) {
