@@ -31,9 +31,6 @@ public class Widgets.Footer : Gtk.ActionBar {
         pack_start (do_not_disturb_label);
         pack_end (do_not_disturb_switch);
 
-        Backend.NotifyManager.get_default ().bind_property ("do-not-disturb",
-                                                            do_not_disturb_switch,
-                                                            "state",
-                                                            BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
+        NotificationsPlug.notify_settings.bind ("do-not-disturb", do_not_disturb_switch, "state", SettingsBindFlags.DEFAULT);
     }
 }

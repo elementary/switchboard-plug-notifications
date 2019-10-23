@@ -31,7 +31,7 @@ public class Widgets.MainView : Gtk.Paned {
     }
 
     private Sidebar sidebar;
-
+    private GLib.Settings notify_settings;
     private Gtk.Stack content;
 
     private AppSettingsView app_settings_view;
@@ -40,7 +40,8 @@ public class Widgets.MainView : Gtk.Paned {
     construct {
         build_ui ();
         update_view ();
-        connect_signals ();
+
+        notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 
     private void build_ui () {
@@ -62,11 +63,7 @@ public class Widgets.MainView : Gtk.Paned {
         this.set_position (240);
     }
 
-    private void connect_signals () {
-        Backend.NotifyManager.get_default ().notify["do-not-disturb"].connect (update_view);
-    }
-
     private void update_view () {
-        content.set_visible_child_name (Backend.NotifyManager.get_default ().do_not_disturb ? "alert-view" : "app-settings-view");
+        content.set_visible_child_name (notify_settings.get_boolean ("do-not-disturb") ? "alert-view" : "app-settings-view");
     }
 }

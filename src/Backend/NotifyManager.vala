@@ -28,16 +28,12 @@ public class Backend.NotifyManager : Object {
         return instance;
     }
 
-    public bool do_not_disturb { get; set; }
     public Gee.HashMap<string, App> apps { get; construct; } /* string: app-id */
 
     public string selected_app_id { get; set; }
 
     construct {
         apps = new Gee.HashMap<string, App> ();
-
-        var notify_settings = new GLib.Settings ("org.pantheon.desktop.gala.notifications");
-        notify_settings.bind ("do-not-disturb", this, "do-not-disturb", SettingsBindFlags.DEFAULT);
 
         var installed_apps = AppInfo.get_all ();
 

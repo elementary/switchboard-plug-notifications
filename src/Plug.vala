@@ -18,6 +18,8 @@
  */
 
 public class NotificationsPlug : Switchboard.Plug {
+    public static GLib.Settings notify_settings;
+
     private static Granite.Widgets.AlertView create_alert_view () {
         var title = _("Nothing to do here");
 
@@ -44,6 +46,10 @@ public class NotificationsPlug : Switchboard.Plug {
                 description: _("Configure notification bubbles, sounds, and notification center"),
                 icon: "preferences-system-notifications",
                 supported_settings: settings);
+    }
+
+    static construct {
+        notify_settings = new GLib.Settings ("org.pantheon.desktop.gala.notifications");
     }
 
     public override Gtk.Widget get_widget () {
