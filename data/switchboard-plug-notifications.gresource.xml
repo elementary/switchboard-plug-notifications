@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gresources>
-  <gresource prefix="/io/elementary/switchboard">
-    <file alias="bubbles.svg" compressed="true">bubbles.svg</file>
-    <file alias="notify-center.svg" compressed="true">notify-center.svg</file>
-    <file alias="sounds.svg" compressed="true">sounds.svg</file>
-  </gresource>
-</gresources>
