@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:21-0700\n"
+"POT-Creation-Date: 2019-11-07 16:20+0000\n"
 "PO-Revision-Date: 2019-07-15 10:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -26,3 +26,7 @@ msgstr "Avertoj"
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Agordi avertajn bobelojn, sonojn, kaj la avertan centron"
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:10
+msgid "Updated translations"
+msgstr ""
