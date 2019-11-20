@@ -4,10 +4,17 @@
   <extends>io.elementary.switchboard</extends>
   <name>Notifications</name>
   <summary>Configure notification bubbles, sounds, and notification center</summary>
+  <releases>
+    <release version="2.1.6" date="2019-11-05" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
-      <screenshot type="default">
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-notifications/master/data/screenshot.png</image>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-notifications/master/data/screenshot.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-notifications/issues</url>

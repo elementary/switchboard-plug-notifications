@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 17:21-0700\n"
+"POT-Creation-Date: 2019-11-07 16:20+0000\n"
 "PO-Revision-Date: 2019-06-20 21:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -26,3 +26,7 @@ msgstr "Ilmoitukset"
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Määritä ilmoituskuplien ja -äänien sekä ilmoituskeskuksen toiminta"
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:10
+msgid "Updated translations"
+msgstr ""
