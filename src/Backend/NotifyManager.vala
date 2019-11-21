@@ -28,7 +28,6 @@ public class Backend.NotifyManager : Object {
         return instance;
     }
 
-    public bool do_not_disturb { get; set; }
     public Gee.HashMap<string, App> apps { get; construct; } /* string: app-id */
 
     public string selected_app_id { get; set; }
@@ -36,15 +35,6 @@ public class Backend.NotifyManager : Object {
     construct {
         apps = new Gee.HashMap<string, App> ();
 
-        create_bindings ();
-        read_app_list ();
-    }
-
-    private void create_bindings () {
-        NotifySettings.get_default ().schema.bind ("do-not-disturb", this, "do-not-disturb", SettingsBindFlags.DEFAULT);
-    }
-
-    private void read_app_list () {
         var installed_apps = AppInfo.get_all ();
 
         foreach (AppInfo app_info in installed_apps) {

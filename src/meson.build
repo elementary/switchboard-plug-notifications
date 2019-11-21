@@ -8,7 +8,6 @@ plug_files = files(
     'Widgets/AppSettingsView.vala',
     'Widgets/AppList.vala',
     'Widgets/AppEntry.vala',
-    'Backend/NotifySettings.vala',
     'Backend/NotifyManager.vala',
     'Backend/App.vala'
 )
