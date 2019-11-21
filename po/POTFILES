@@ -7,6 +7,5 @@ src/Widgets/Footer.vala
 src/Widgets/AppSettingsView.vala
 src/Widgets/AppList.vala
 src/Widgets/AppEntry.vala
-src/Backend/NotifySettings.vala
 src/Backend/NotifyManager.vala
 src/Backend/App.vala
