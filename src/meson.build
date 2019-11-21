@@ -4,9 +4,7 @@ plug_files = files(
     'Widgets/SettingsOption.vala',
     'Widgets/SettingsHeader.vala',
     'Widgets/MainView.vala',
-    'Widgets/Footer.vala',
     'Widgets/AppSettingsView.vala',
-    'Widgets/AppList.vala',
     'Widgets/AppEntry.vala',
     'Backend/NotifyManager.vala',
     'Backend/App.vala'
