@@ -2,7 +2,6 @@ plug_files = files(
     'Plug.vala',
     'Widgets/Sidebar.vala',
     'Widgets/SettingsOption.vala',
-    'Widgets/SettingsHeader.vala',
     'Widgets/MainView.vala',
     'Widgets/Footer.vala',
     'Widgets/AppSettingsView.vala',

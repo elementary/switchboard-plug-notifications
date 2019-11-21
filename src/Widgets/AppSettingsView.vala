@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2019 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -17,14 +17,12 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Widgets.AppSettingsView : Gtk.Grid {
+public class Widgets.AppSettingsView : Granite.SimpleSettingsPage {
     private const string BUBBLES_KEY = "bubbles";
     private const string SOUNDS_KEY = "sounds";
     private const string REMEMBER_KEY = "remember";
 
     private Backend.App? selected_app = null;
-
-    private SettingsHeader header;
 
     private Gtk.Switch bubbles_switch;
     private SettingsOption bubbles_option;
@@ -36,19 +34,6 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private SettingsOption remember_option;
 
     construct {
-        build_ui ();
-        update_selected_app ();
-        create_bindings ();
-        update_header ();
-        connect_signals ();
-    }
-
-    private void build_ui () {
-        this.margin = 12;
-        this.row_spacing = 32;
-
-        header = new SettingsHeader ();
-
         bubbles_option = new SettingsOption (
             "/io/elementary/switchboard/bubbles.svg",
             _("Bubbles"),
@@ -67,13 +52,15 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             _("Show missed notifications in Notification Center."),
             remember_switch = new Gtk.Switch ());
 
-        this.attach (header, 0, 0, 1, 1);
-        this.attach (bubbles_option, 0, 1, 1, 1);
-        this.attach (sound_option, 0, 2, 1, 1);
-        this.attach (remember_option, 0, 3, 1, 1);
-    }
+        content_area.row_spacing = 32;
+        content_area.attach (bubbles_option, 0, 1);
+        content_area.attach (sound_option, 0, 2);
+        content_area.attach (remember_option, 0, 3);
 
-    private void connect_signals () {
+        update_selected_app ();
+        create_bindings ();
+        update_header ();
+
         Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (() => {
             remove_bindings ();
             update_selected_app ();
@@ -101,7 +88,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void update_header () {
-        header.set_title (selected_app.app_info.get_display_name ());
-        header.set_icon (selected_app.app_info.get_icon ());
+        title = selected_app.app_info.get_display_name ();
+        icon_name = selected_app.app_info.get_icon ().to_string ();
     }
 }

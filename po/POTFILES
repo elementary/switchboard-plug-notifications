@@ -1,7 +1,6 @@
 src/Plug.vala
 src/Widgets/Sidebar.vala
 src/Widgets/SettingsOption.vala
-src/Widgets/SettingsHeader.vala
 src/Widgets/MainView.vala
 src/Widgets/Footer.vala
 src/Widgets/AppSettingsView.vala
