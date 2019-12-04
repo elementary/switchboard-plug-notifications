@@ -3,9 +3,7 @@ src/Widgets/Sidebar.vala
 src/Widgets/SettingsOption.vala
 src/Widgets/SettingsHeader.vala
 src/Widgets/MainView.vala
-src/Widgets/Footer.vala
 src/Widgets/AppSettingsView.vala
-src/Widgets/AppList.vala
 src/Widgets/AppEntry.vala
 src/Backend/NotifyManager.vala
 src/Backend/App.vala

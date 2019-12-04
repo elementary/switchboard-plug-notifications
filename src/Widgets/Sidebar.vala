@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2019 elementary, Inc (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -17,21 +17,35 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Widgets.Sidebar : Gtk.Box {
-    private Gtk.ScrolledWindow scrolled_window;
-    private AppList app_list;
-
-    private Footer footer;
+public class Widgets.Sidebar : Gtk.Grid {
+    private const string FALLBACK_APP_ID = "gala-other.desktop";
 
     construct {
-        this.orientation = Gtk.Orientation.VERTICAL;
+        var app_list = new Gtk.ListBox ();
+        app_list.expand = true;
+        app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        app_list.set_sort_func (sort_func);
 
-        scrolled_window = create_scrolled_window ();
+        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+        scrolled_window.add (app_list);
 
-        footer = new Footer ();
+        var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb"));
+        do_not_disturb_label.margin_start = 6;
 
-        this.pack_start (scrolled_window);
-        this.pack_end (footer, false, false);
+        var do_not_disturb_switch = new Gtk.Switch ();
+        do_not_disturb_switch.margin = 12;
+        do_not_disturb_switch.margin_end = 6;
+
+        var footer = new Gtk.ActionBar ();
+        footer.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        footer.pack_start (do_not_disturb_label);
+        footer.pack_end (do_not_disturb_switch);
+
+        orientation = Gtk.Orientation.VERTICAL;
+        add (scrolled_window);
+        add (footer);
+
+        app_list.row_selected.connect (show_row);
 
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",
@@ -39,15 +53,54 @@ public class Widgets.Sidebar : Gtk.Box {
             "sensitive",
             SettingsBindFlags.INVERT_BOOLEAN
         );
+
+        NotificationsPlug.notify_settings.bind (
+            "do-not-disturb",
+            do_not_disturb_switch,
+            "state",
+            SettingsBindFlags.DEFAULT
+        );
+
+        Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
+            AppEntry app_entry = new AppEntry (entry.value);
+            app_list.add (app_entry);
+
+            return true;
+        });
+
+        List<weak Gtk.Widget> children = app_list.get_children ();
+        if (children.length () > 0) {
+            Gtk.ListBoxRow row = ((Gtk.ListBoxRow)children.nth_data (0));
+
+            app_list.select_row (row);
+            show_row (row);
+        }
     }
 
-    private Gtk.ScrolledWindow create_scrolled_window () {
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+    private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        if (!(row1 is AppEntry && row2 is AppEntry)) {
+            return 0;
+        }
 
-        app_list = new AppList ();
+        if (((AppEntry)row1).app.app_info.get_id () == FALLBACK_APP_ID) {
+            return 1;
+        } else if (((AppEntry)row2).app.app_info.get_id () == FALLBACK_APP_ID) {
+            return -1;
+        }
 
-        scrolled_window.add (app_list);
+        string row_name1 = ((AppEntry)row1).app.app_info.get_display_name ();
+        string row_name2 = ((AppEntry)row2).app.app_info.get_display_name ();
 
-        return scrolled_window;
+        int order = strcmp (row_name1, row_name2);
+
+        return order.clamp (-1, 1);
+    }
+
+    private void show_row (Gtk.ListBoxRow? row) {
+        if (row == null || !(row is AppEntry)) {
+            return;
+        }
+
+        Backend.NotifyManager.get_default ().selected_app_id = ((AppEntry)row).app.app_id;
     }
 }
