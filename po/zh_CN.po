@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:20+0000\n"
-"PO-Revision-Date: 2017-07-04 09:04+0000\n"
+"PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-notifications/zh_CN/>\n"
+"switchboard/switchboard-plug-notifications/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-22 07:15+0000\n"
 
 #: src/Plug.vala:22
@@ -41,7 +41,7 @@ msgstr "通知"
 
 #: src/Plug.vala:44
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "配置通知气泡，声音和通知中心"
+msgstr "配置通知气泡、声音和通知中心"
 
 #: src/Plug.vala:71 src/Widgets/Footer.vala:24
 msgid "Do Not Disturb"
