@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,51 +18,43 @@
  */
 
 public class Widgets.MainView : Gtk.Paned {
-    private static Granite.Widgets.AlertView create_alert_view () {
-        var title = _("elementary OS is in Do Not Disturb mode");
+    private Gtk.Stack stack;
+
+    construct {
+        var sidebar = new Sidebar ();
+
+        var app_settings_view = new AppSettingsView ();
+        app_settings_view.show_all ();
 
         var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
         description += "\n\n";
         description += _("System notifications, such as volume and display brightness, will be unaffected.");
 
-        var icon_name = "notification-disabled";
+        var alert_view = new Granite.Widgets.AlertView (
+            _("elementary OS is in Do Not Disturb mode"),
+            description,
+            "notification-disabled"
+        );
+        alert_view.show_all ();
 
-        return new Granite.Widgets.AlertView (title, description, icon_name);
-    }
+        stack = new Gtk.Stack ();
+        stack.add_named (app_settings_view, "app-settings-view");
+        stack.add_named (alert_view, "alert-view");
 
-    private Sidebar sidebar;
-    private Gtk.Stack content;
+        pack1 (sidebar, true, false);
+        pack2 (stack, true, false);
+        set_position (240);
 
-    private AppSettingsView app_settings_view;
-    private Granite.Widgets.AlertView alert_view;
-
-    construct {
-        build_ui ();
         update_view ();
 
         NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 
-    private void build_ui () {
-        sidebar = new Sidebar ();
-
-        content = new Gtk.Stack ();
-
-        app_settings_view = new AppSettingsView ();
-        alert_view = create_alert_view ();
-
-        app_settings_view.show_all ();
-        alert_view.show_all ();
-
-        content.add_named (app_settings_view, "app-settings-view");
-        content.add_named (alert_view, "alert-view");
-
-        this.pack1 (sidebar, true, false);
-        this.pack2 (content, true, false);
-        this.set_position (240);
-    }
-
     private void update_view () {
-        content.set_visible_child_name (NotificationsPlug.notify_settings.get_boolean ("do-not-disturb") ? "alert-view" : "app-settings-view");
+        if (NotificationsPlug.notify_settings.get_boolean ("do-not-disturb")) {
+            stack.visible_child_name = "alert-view";
+        } else {
+            stack.visible_child_name = "app-settings-view";
+        }
     }
 }
