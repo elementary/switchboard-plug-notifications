@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,67 +18,61 @@
  */
 
 public class Widgets.AppSettingsView : Gtk.Grid {
-    private const string BUBBLES_KEY = "bubbles";
-    private const string SOUNDS_KEY = "sounds";
-    private const string REMEMBER_KEY = "remember";
+    private Gtk.Image app_image;
+    private Gtk.Label app_label;
 
-    private Backend.App? selected_app = null;
-
-    private SettingsHeader header;
-
-    private Gtk.Switch bubbles_switch;
     private SettingsOption bubbles_option;
-
-    private Gtk.Switch sound_switch;
     private SettingsOption sound_option;
-
-    private Gtk.Switch remember_switch;
     private SettingsOption remember_option;
 
     construct {
-        build_ui ();
-        update_selected_app ();
-        create_bindings ();
-        update_header ();
-        connect_signals ();
-    }
+        app_image = new Gtk.Image ();
+        app_image.pixel_size = 48;
 
-    private void build_ui () {
-        this.margin = 12;
-        this.row_spacing = 32;
+        app_label = new Gtk.Label (null);
+        app_label.use_markup = true;
+        app_label.halign = Gtk.Align.START;
+        app_label.hexpand = true;
+        app_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        header = new SettingsHeader ();
+        var header = new Gtk.Grid ();
+        header.column_spacing = 12;
+        header.attach (app_image, 0, 0);
+        header.attach (app_label, 1, 0);
 
         bubbles_option = new SettingsOption (
             "/io/elementary/switchboard/bubbles.svg",
             _("Bubbles"),
             _("Bubbles appear in the top right corner of the display and disappear automatically."),
-            bubbles_switch = new Gtk.Switch ());
+            new Gtk.Switch ()
+        );
 
         sound_option = new SettingsOption (
             "/io/elementary/switchboard/sounds.svg",
             _("Sounds"),
             _("Sounds play once when a new notification arrives."),
-            sound_switch = new Gtk.Switch ());
+            new Gtk.Switch ()
+        );
 
         remember_option = new SettingsOption (
             "/io/elementary/switchboard/notify-center.svg",
             _("Notification Center"),
             _("Show missed notifications in Notification Center."),
-            remember_switch = new Gtk.Switch ());
+            new Gtk.Switch ()
+        );
 
-        this.attach (header, 0, 0, 1, 1);
-        this.attach (bubbles_option, 0, 1, 1, 1);
-        this.attach (sound_option, 0, 2, 1, 1);
-        this.attach (remember_option, 0, 3, 1, 1);
-    }
+        margin = 12;
+        row_spacing = 32;
+        attach (header, 0, 0);
+        attach (bubbles_option, 0, 1);
+        attach (sound_option, 0, 2);
+        attach (remember_option, 0, 3);
 
-    private void connect_signals () {
+        update_selected_app ();
+
         Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (() => {
             remove_bindings ();
             update_selected_app ();
-            create_bindings ();
-            update_header ();
         });
     }
 
@@ -89,19 +83,15 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void update_selected_app () {
-        Backend.NotifyManager notify_manager = Backend.NotifyManager.get_default ();
-        string app_id = notify_manager.selected_app_id;
-        selected_app = notify_manager.apps.get (app_id);
-    }
+        var notify_manager = Backend.NotifyManager.get_default ();
+        var app_id = notify_manager.selected_app_id;
+        var selected_app = notify_manager.apps.get (app_id);
 
-    private void create_bindings () {
-        selected_app.settings.bind (BUBBLES_KEY, bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        selected_app.settings.bind (SOUNDS_KEY, sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        selected_app.settings.bind (REMEMBER_KEY, remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-    }
+        selected_app.settings.bind ("bubbles", bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind ("sounds", sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind ("remember", remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
 
-    private void update_header () {
-        header.set_title (selected_app.app_info.get_display_name ());
-        header.set_icon (selected_app.app_info.get_icon ());
+        app_label.label = selected_app.app_info.get_display_name ();
+        app_image.gicon = selected_app.app_info.get_icon ();
     }
 }
