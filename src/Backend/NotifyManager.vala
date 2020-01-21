@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -41,13 +41,9 @@ public class Backend.NotifyManager : Object {
             DesktopAppInfo? desktop_app_info = app_info as DesktopAppInfo;
 
             if (desktop_app_info != null && desktop_app_info.get_boolean ("X-GNOME-UsesNotifications")) {
-                register_app (desktop_app_info);
+                var app = new App (desktop_app_info);
+                apps.@set (app.app_id, app);
             }
         }
-    }
-
-    private void register_app (DesktopAppInfo app_info) {
-        App app = new App (app_info);
-        apps.@set (app.app_id, app);
     }
 }
