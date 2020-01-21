@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-01-21 08:23+0000\n"
 "PO-Revision-Date: 2018-07-22 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:11+0000\n"
 
-#: src/Plug.vala:22
+#: src/Plug.vala:24
 msgid "Nothing to do here"
 msgstr "Zatím nic k nastavení"
 
-#: src/Plug.vala:24
+#: src/Plug.vala:26
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -29,43 +29,39 @@ msgstr ""
 "využívají, ke změně způsobu jejich zobrazení,\n"
 "a pro nastavení, kdy si nepřejete být notifikacemi rušeni."
 
-#: src/Plug.vala:26
+#: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
 "Aplikace, které využívají možnosti notifikací, se zde automaticky objeví."
 
-#: src/Plug.vala:43
+#: src/Plug.vala:45
 msgid "Notifications"
 msgstr "Notifikace"
 
-#: src/Plug.vala:44
+#: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Nastavujte bubliny upozornění, zvuky a centrum upozornění"
 
-#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Nerušit"
 
-#: src/Plug.vala:72
+#: src/Plug.vala:82
 msgid "Notifications Center"
 msgstr "Centrum oznámení"
 
-#: src/Plug.vala:73
+#: src/Plug.vala:83
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Bubliny"
 
-#: src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS je v módu Nerušit"
-
-#: src/Widgets/MainView.vala:24
+#: src/Widgets/MainView.vala:29
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -73,13 +69,17 @@ msgstr ""
 "Dokud je systém v módu Nerušit, upozornění a varování budou skryty a zvuky "
 "ztišeny."
 
-#: src/Widgets/MainView.vala:26
+#: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
 "Systémová oznámení, jako například hlasitost a jas obrazovky zůstanou "
 "nedotčeny."
+
+#: src/Widgets/MainView.vala:34
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS je v módu Nerušit"
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""

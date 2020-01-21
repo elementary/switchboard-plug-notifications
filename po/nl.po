@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-01-21 08:23+0000\n"
 "PO-Revision-Date: 2017-05-29 22:13+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2016-07-19 06:10+0000\n"
 
-#: src/Plug.vala:22
+#: src/Plug.vala:24
 msgid "Nothing to do here"
 msgstr "Niets te doen hier"
 
-#: src/Plug.vala:24
+#: src/Plug.vala:26
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -29,7 +29,7 @@ msgstr ""
 "wenst te gebruiken, hoe deze aan u worden getoond\n"
 "en onder welke omstandigheden u geen meldingen wilt ontvangen."
 
-#: src/Plug.vala:26
+#: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
@@ -37,36 +37,32 @@ msgstr ""
 "Zodra applicaties met notificatiemogelijkheden worden geïnstalleerd zullen "
 "deze hier automatisch verschijnen."
 
-#: src/Plug.vala:43
+#: src/Plug.vala:45
 msgid "Notifications"
 msgstr "Notificaties"
 
-#: src/Plug.vala:44
+#: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configureer meldingen, geluiden en notificatiecentrum"
 
-#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Niet Storen"
 
-#: src/Plug.vala:72
+#: src/Plug.vala:82
 msgid "Notifications Center"
 msgstr "Meldingscentrum"
 
-#: src/Plug.vala:73
+#: src/Plug.vala:83
 msgid "Sound"
 msgstr "Geluid"
 
-#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Bubbels"
 
-#: src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS is in Stoor Mij Niet modus"
-
-#: src/Widgets/MainView.vala:24
+#: src/Widgets/MainView.vala:29
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -74,13 +70,17 @@ msgstr ""
 "In de Stoor-Mij-Niet modus zullen notificaties en waarschuwingen worden "
 "verborgen en notificatie-geluiden gedempt."
 
-#: src/Widgets/MainView.vala:26
+#: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
 "Systeem-notificaties, zoals die van het volume of de helderheid van het "
 "scherm, worden hierdoor niet beïnvloed."
+
+#: src/Widgets/MainView.vala:34
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS is in Stoor Mij Niet modus"
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""

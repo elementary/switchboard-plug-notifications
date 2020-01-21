@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notifications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-01-21 08:23+0000\n"
 "PO-Revision-Date: 2018-02-20 16:21-0600\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,62 +16,62 @@ msgstr ""
 "Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Plug.vala:22
+#: src/Plug.vala:24
 msgid "Nothing to do here"
 msgstr ""
 
-#: src/Plug.vala:24
+#: src/Plug.vala:26
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 
-#: src/Plug.vala:26
+#: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
 
-#: src/Plug.vala:43
+#: src/Plug.vala:45
 msgid "Notifications"
 msgstr ""
 
-#: src/Plug.vala:44
+#: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr ""
 
-#: src/Plug.vala:72
+#: src/Plug.vala:82
 msgid "Notifications Center"
 msgstr ""
 
-#: src/Plug.vala:73
+#: src/Plug.vala:83
 msgid "Sound"
 msgstr ""
 
-#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr ""
 
-#: src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
-
-#: src/Widgets/MainView.vala:24
+#: src/Widgets/MainView.vala:29
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
 
-#: src/Widgets/MainView.vala:26
+#: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
+msgstr ""
+
+#: src/Widgets/MainView.vala:34
+msgid "elementary OS is in Do Not Disturb mode"
 msgstr ""
 
 #: src/Widgets/AppSettingsView.vala:55

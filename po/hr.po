@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-01-21 08:23+0000\n"
 "PO-Revision-Date: 2017-08-16 11:37+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://weblate.elementary.io/projects/switchboard/"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-07-14 06:04+0000\n"
 
-#: src/Plug.vala:22
+#: src/Plug.vala:24
 msgid "Nothing to do here"
 msgstr "Ništa za napraviti"
 
-#: src/Plug.vala:24
+#: src/Plug.vala:26
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
 "notifications, for changing how an app's notifications appear,\n"
@@ -30,7 +30,7 @@ msgstr ""
 "obavijesti, za promjenu načina pojave obavijesti\n"
 "i za postavljanje Ne ometaj načina za isključenje obavijesti."
 
-#: src/Plug.vala:26
+#: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
@@ -38,36 +38,32 @@ msgstr ""
 "Kada su instalirane aplikacije koje imaju mogućnost postavljanje obavjesti, "
 "one će se prikazivati ovdje."
 
-#: src/Plug.vala:43
+#: src/Plug.vala:45
 msgid "Notifications"
 msgstr "Obavijesti"
 
-#: src/Plug.vala:44
+#: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Prilagodite mjehuriće obavijesti, zvukove i centar obavijesti"
 
-#: src/Plug.vala:71 src/Widgets/Footer.vala:24
+#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Ne ometaj"
 
-#: src/Plug.vala:72
+#: src/Plug.vala:82
 msgid "Notifications Center"
 msgstr "Centar obavijesti"
 
-#: src/Plug.vala:73
+#: src/Plug.vala:83
 msgid "Sound"
 msgstr "Zvukovi"
 
-#: src/Plug.vala:74 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Mjehurići"
 
-#: src/Widgets/MainView.vala:22
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS je u Ne ometaj načinu rada"
-
-#: src/Widgets/MainView.vala:24
+#: src/Widgets/MainView.vala:29
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -75,13 +71,17 @@ msgstr ""
 "U Ne ometaj načinu, obavijesti i upozorenja će biti skriveni a zvukovi "
 "obavijesti utišani."
 
-#: src/Widgets/MainView.vala:26
+#: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
 "Ovo neće utjecati na obavijesti sustava kao što su glasnoća zvuka i "
 "osvjetljenje zaslona."
+
+#: src/Widgets/MainView.vala:34
+msgid "elementary OS is in Do Not Disturb mode"
+msgstr "elementary OS je u Ne ometaj načinu rada"
 
 #: src/Widgets/AppSettingsView.vala:55
 msgid ""
