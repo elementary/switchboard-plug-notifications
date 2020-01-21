@@ -23,30 +23,21 @@ public class Widgets.SettingsOption : Gtk.Grid {
     public string description { get; construct; }
     public Gtk.Widget widget { get; construct; }
 
-    private Gtk.Image image;
-    private Gtk.Label title_label;
-    private Gtk.Label description_label;
-
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
-        Object (image_path: image_path,
-                title: title,
-                description: description,
-                widget: widget);
-
-        build_ui ();
+        Object (
+            image_path: image_path,
+            title: title,
+            description: description,
+            widget: widget
+        );
     }
 
-    private void build_ui () {
-        this.column_spacing = 6;
-        this.row_spacing = 6;
-        this.margin_start = 60;
-        this.margin_end = 30;
-
-        image = new Gtk.Image.from_resource (image_path);
+    construct {
+        var image = new Gtk.Image.from_resource (image_path);
         image.halign = Gtk.Align.START;
         image.hexpand = false;
 
-        title_label = new Gtk.Label (title);
+        var title_label = new Gtk.Label (title);
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         title_label.halign = Gtk.Align.START;
         title_label.valign = Gtk.Align.END;
@@ -58,7 +49,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         widget.hexpand = false;
         widget.vexpand = false;
 
-        description_label = new Gtk.Label (description);
+        var description_label = new Gtk.Label (description);
         description_label.xalign = 0;
         description_label.valign = Gtk.Align.START;
         description_label.hexpand = true;
@@ -66,9 +57,13 @@ public class Widgets.SettingsOption : Gtk.Grid {
         description_label.wrap = true;
         description_label.justify = Gtk.Justification.LEFT;
 
-        this.attach (image, 0, 0, 1, 3);
-        this.attach (title_label, 1, 0, 1, 1);
-        this.attach (widget, 1, 1, 1, 1);
-        this.attach (description_label, 1, 2, 1, 1);
+        column_spacing = 12;
+        row_spacing = 6;
+        margin_start = 60;
+        margin_end = 30;
+        attach (image, 0, 0, 1, 3);
+        attach (title_label, 1, 0);
+        attach (widget, 1, 1);
+        attach (description_label, 1, 2);
     }
 }
