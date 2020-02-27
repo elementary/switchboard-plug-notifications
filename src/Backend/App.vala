@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright (c) 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -18,17 +18,28 @@
  */
 
 public class Backend.App : Object {
-    private const string CHILD_SCHEMA_ID = "org.pantheon.desktop.gala.notifications.application";
-    private const string CHILD_PATH = "/org/pantheon/desktop/gala/notifications/applications/%s/";
-
     public DesktopAppInfo app_info { get; construct; }
     public string app_id { get; private set; }
     public Settings settings { get; private set; }
 
     public App (DesktopAppInfo app_info) {
         Object (app_info: app_info);
+    }
 
+    construct {
         app_id = app_info.get_id ().replace (".desktop", "");
-        settings = new Settings.full (SettingsSchemaSource.get_default ().lookup (CHILD_SCHEMA_ID, true), null, CHILD_PATH.printf (app_id));
+
+        string child_schema_id = "io.elementary.notifications.applications";
+        string child_path = "/io/elementary/notifications/applications/%s/";
+        if (GLib.SettingsSchemaSource.get_default ().lookup (child_schema_id, false) == null) {
+            child_schema_id = "org.pantheon.desktop.gala.notifications.application";
+            child_path = "/org/pantheon/desktop/gala/notifications/applications/%s/";
+        }
+
+        settings = new Settings.full (
+            SettingsSchemaSource.get_default ().lookup (child_schema_id, true),
+            null,
+            child_path.printf (app_id)
+        );
     }
 }
