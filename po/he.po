@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-21 08:23+0000\n"
-"PO-Revision-Date: 2018-05-11 00:06+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
 #: src/Plug.vala:24
@@ -37,11 +37,11 @@ msgstr "כאשר מותקנים יישומים שיש להם אפשרויות ה
 
 #: src/Plug.vala:45
 msgid "Notifications"
-msgstr "התרעות"
+msgstr "התראות"
 
 #: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "הגדרת בועות התרעה, צלילים ומרכז ההתרעות"
+msgstr "הגדרת בועות התראה, צלילים ומרכז התראות"
 
 #: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
