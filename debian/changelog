@@ -1,3 +1,36 @@
+switchboard-plug-notifications (2.1.6) bionic; urgency=medium
+
+  * Release 2.1.6 (#65)
+  * App: Use key for native notifications if available (#63)
+  * AppSettingsView: simplify (#60)
+  * Update translation files
+  * Update translation template
+  * NotifyManager: Remove single-use method (#61)
+  * Plug: bind to native notification settings if available (#62)
+  * MainView: GOject style and cleanup (#59)
+  * SettingsOption: Use GObject style (#58)
+  * Combine Sidebar, Footer, and AppList classes (#56)
+  * Update POTFILES (#55)
+  * Replace Granite.Services.Settings with GLib.Settings (#54)
+  * Update translation template
+  * AppData: Add 2.1.6 release info
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Split deb packaging into its own branch
+  * run installation in CI (#52)
+  * Add Lint to CI (#51)
+  * Test with GitHub CI (#50)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * build: fix install path for switchboard plug (#47)
+  * Update Plug.vala (#46)
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Change RDNN to io.elementary.switchboard.notifications (#40)
+  * Travis: use juno-unstable docker (#37)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 01 Apr 2020 23:41:31 +0000
+
 switchboard-plug-notifications (2.1.5) bionic; urgency=medium
 
   * New upstream release.
