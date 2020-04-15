@@ -4,6 +4,8 @@
   <extends>io.elementary.switchboard</extends>
   <name>Notifications</name>
   <summary>Configure notification bubbles, sounds, and notification center</summary>
+  <icon type="stock">preferences-system-notifications</icon>
+  <translation type="gettext">notifications-plug</translation>
   <releases>
     <release version="2.1.6" date="2020-04-01" urgency="medium">
       <description>
