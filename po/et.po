@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 08:23+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2016-06-16 13:49+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,21 +41,21 @@ msgstr "Märguanded"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Märguannete mullide, helide ja märguannete keskuse seadistamine"
 
-#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Märguannete keelamine"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:84
 #, fuzzy
 msgid "Notifications Center"
 msgstr "Märguannete keskus"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:85
 #, fuzzy
 msgid "Sound"
 msgstr "Helid"
 
-#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Mullid"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "Kõik märguanded on keelatud"
 
-#: src/Widgets/AppSettingsView.vala:55
+#: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -88,19 +88,19 @@ msgstr ""
 "Märguande mull ilmub üles paremasse nurka ning mõne aja pärast peidetakse "
 "see automaatselt."
 
-#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
 msgstr "Helid"
 
-#: src/Widgets/AppSettingsView.vala:61
+#: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
 msgstr "Märguande korral heli esitamine."
 
-#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
 msgstr "Märguannete keskus"
 
-#: src/Widgets/AppSettingsView.vala:67
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Märkamata jäänud märguannete lisamine märguannete keskusesse."
 

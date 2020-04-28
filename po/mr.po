@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 08:23+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2019-05-13 15:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -44,19 +44,19 @@ msgstr "अधिसूचना"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "अधिसूचना बबल, ध्वनी आणि सूचना केंद्र कॉन्फिगर करा"
 
-#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "व्यत्यय आणू नये"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:84
 msgid "Notifications Center"
 msgstr "अधिसूचना केंद्र"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:85
 msgid "Sound"
 msgstr "ध्वनी"
 
-#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "बबल"
@@ -79,25 +79,25 @@ msgstr "आवाज आणि डिस्प्ले ब्राइटने
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "एलिमेंटरी ओएस व्यत्यय आणू नका मोडमध्ये आहे"
 
-#: src/Widgets/AppSettingsView.vala:55
+#: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr "डिस्प्लेच्या वरच्या उजव्या कोपऱ्यात बबल दिसतात आणि स्वयंचलितपणे अदृश्य होतात."
 
-#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
 msgstr "ध्वनी"
 
-#: src/Widgets/AppSettingsView.vala:61
+#: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
 msgstr "नवीन अधिसूचनेच्या वेळी ध्वनी वाजतात."
 
-#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
 msgstr "अधिसूचना केंद्र"
 
-#: src/Widgets/AppSettingsView.vala:67
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "अधिसूचना केंद्रात दुर्लक्ष झालेल्या अधिसूचना दाखवा."
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 08:23+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2017-05-25 08:20+0000\n"
 "Last-Translator: Sergiu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -47,19 +47,19 @@ msgstr "Notificări"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configuraţi bulele de notificare, sunetele şi centrul de notificări"
 
-#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Nu Deranja"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:84
 msgid "Notifications Center"
 msgstr "Centrul de Notificări"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:85
 msgid "Sound"
 msgstr "Sunet"
 
-#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Bule"
@@ -84,25 +84,25 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS este în modul Nu Deranja"
 
-#: src/Widgets/AppSettingsView.vala:55
+#: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr "Bulele apar în colţul drept de sus al ecranului şi dispar automat."
 
-#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
 msgstr "Sunete"
 
-#: src/Widgets/AppSettingsView.vala:61
+#: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
 msgstr "Sunetele vor fi redate odată ce va fi primită o notificare."
 
-#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
 msgstr "Centrul de Notificări"
 
-#: src/Widgets/AppSettingsView.vala:67
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Arată notificările pierdute în Centrul de Notificări."
 

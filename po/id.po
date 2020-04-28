@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 08:23+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2017-07-31 15:39+0700\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: \n"
@@ -44,19 +44,19 @@ msgstr "Notifikasi"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfigurasikan gelembung notifikasi, suara, dan pusat notifikasi"
 
-#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Jangan Ganggu"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:84
 msgid "Notifications Center"
 msgstr "Pusat Notifikasi"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:85
 msgid "Sound"
 msgstr "Suara"
 
-#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Gelembung"
@@ -81,26 +81,26 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS berada dalam mode Jangan Ganggu"
 
-#: src/Widgets/AppSettingsView.vala:55
+#: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Gelembung muncul di sudut kanan atas layar dan menghilang secara otomatis."
 
-#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
 msgstr "Suara"
 
-#: src/Widgets/AppSettingsView.vala:61
+#: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
 msgstr "Suara dimainkan sekali saat ada pemberitahuan baru."
 
-#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
 msgstr "Pusat Notifikasi"
 
-#: src/Widgets/AppSettingsView.vala:67
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Tampilkan motifikasi yang tidak terjawab di Pusat Notifikasi."
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-21 08:23+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2017-01-06 06:44+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -44,21 +44,21 @@ msgstr "Обавештења"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Подесите балончиће обавештења, звуке и обавештајни центар"
 
-#: src/Plug.vala:81 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Не узнемиравај"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:84
 #, fuzzy
 msgid "Notifications Center"
 msgstr "Обавештајни центар"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:85
 #, fuzzy
 msgid "Sound"
 msgstr "Звуци"
 
-#: src/Plug.vala:84 src/Widgets/AppSettingsView.vala:54
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
 #: src/Widgets/AppEntry.vala:65
 msgid "Bubbles"
 msgstr "Балончићи"
@@ -83,26 +83,26 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "елементарни ОС је у режиму не узнемиравања"
 
-#: src/Widgets/AppSettingsView.vala:55
+#: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Балончићи се појављују у горњем десном углу екрана и нестају аутоматски."
 
-#: src/Widgets/AppSettingsView.vala:60 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
 msgstr "Звуци"
 
-#: src/Widgets/AppSettingsView.vala:61
+#: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
 msgstr "Звуци се пуштају једном када пристигну обавештења."
 
-#: src/Widgets/AppSettingsView.vala:66 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
 msgstr "Обавештајни центар"
 
-#: src/Widgets/AppSettingsView.vala:67
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Приказује пропуштена обавештења у обавештајном центру."
 
