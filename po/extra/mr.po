@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2019-11-25 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,13 +20,15 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:5
-msgid "Notifications"
+#, fuzzy
+#| msgid "Notifications"
+msgid "Notifications Settings"
 msgstr "अधिसूचना"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "अधिसूचना बबल, ध्वनी आणि सूचना केंद्र कॉन्फिगर करा"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:10
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:12
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"

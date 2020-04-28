@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:20+0000\n"
+"POT-Creation-Date: 2020-04-28 22:27+0000\n"
 "PO-Revision-Date: 2019-11-11 12:24+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:5
-msgid "Notifications"
+#, fuzzy
+#| msgid "Notifications"
+msgid "Notifications Settings"
 msgstr "Notificaciones"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
@@ -28,6 +30,6 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 "Configurar burbujas de notificación, sonidos y centro de notificaciones"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:10
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:12
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
