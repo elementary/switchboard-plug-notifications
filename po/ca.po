@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2019-05-15 17:14+0000\n"
+"PO-Revision-Date: 2020-05-08 11:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 
 #: src/Plug.vala:24
@@ -26,8 +26,8 @@ msgid ""
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Les preferències de les notificacions serveixen per configurar quines "
-"aplicacions fan ús de les notificacions, per canviar com apareixen les "
-"notificacions d'una aplicació i per establir quan no voleu que les "
+"aplicacions fan ús de les notificacions, per canviar com apareixen\n"
+"les notificacions d'una aplicació i per establir quan no voleu que les "
 "notificacions us molestin."
 
 #: src/Plug.vala:28
@@ -70,20 +70,20 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Mentre estigui en el mode de discreció, les notificacions i les alertes "
-"s'amagaran i els sons de notificacions se silenciaran."
+"Amb el mode «No m'emprenyis», les notificacions i les alertes s'amagaran i "
+"els sons de les notificacions se silenciaran."
 
 #: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
-"Les notificacions de sistema, com ara el volum i la brillantor de la "
+"Les notificacions del sistema, com ara el volum i la brillantor de la "
 "pantalla, no canviaran."
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "El sistema Elementary està en mode de discreció"
+msgstr "L'elementary OS té el mode «No m'emprenyis» activat."
 
 #: src/Widgets/AppSettingsView.vala:46
 msgid ""
