@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2017-06-01 13:37+0000\n"
-"Last-Translator: Jonathan GN <jonathan@jamdigitalstudio.com>\n"
+"PO-Revision-Date: 2020-05-11 03:10+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/es/>\n"
 "Language: es\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:27+0000\n"
 
 #: src/Plug.vala:24
 msgid "Nothing to do here"
-msgstr "Nada para hacer aquí"
+msgstr "Nada que hacer aquí"
 
 #: src/Plug.vala:26
 msgid ""
@@ -26,9 +26,9 @@ msgid ""
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Las preferencias de notificaciones permiten configurar qué aplicaciones "
-"hacen uso de notificaciones, para cambiar como las notificaciones de una "
-"aplicación aparecen,\n"
-"y  para configurar cuando no desea ser molestado por dichas notificaciones."
+"hacen uso de notificaciones, cambiar cómo aparecen las\n"
+"notificaciones de una aplicación y configurar cuándo no desea que le "
+"molesten."
 
 #: src/Plug.vala:28
 msgid ""
@@ -45,11 +45,12 @@ msgstr "Notificaciones"
 #: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
-"Configurar burbujas de notificación, sonidos y centro de notificaciones"
+"Configure las burbujas de notificación, los sonidos y el centro de "
+"notificaciones"
 
 #: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
-msgstr "No Molestar"
+msgstr "No molestar"
 
 #: src/Plug.vala:84
 msgid "Notifications Center"
@@ -69,8 +70,8 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Mientras el modo No Molestar esté activo, las notificaciones y alertas se "
-"ocultarán, y se silenciaran los sonidos de aviso."
+"Mientras el modo No molestar esté activo, se ocultarán las notificaciones y "
+"alertas y se silenciarán los sonidos de aviso."
 
 #: src/Widgets/MainView.vala:31
 msgid ""
@@ -82,7 +83,7 @@ msgstr ""
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS está en modo No Molestar"
+msgstr "elementary OS está en modo No molestar"
 
 #: src/Widgets/AppSettingsView.vala:46
 msgid ""
@@ -98,7 +99,7 @@ msgstr "Sonidos"
 
 #: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
-msgstr "Los sonidos se reproducen una vez al llegar una nueva notificación."
+msgstr "Los sonidos se reproducen una vez al recibir una notificación nueva."
 
 #: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
