@@ -7,6 +7,11 @@
   <icon type="stock">preferences-system-notifications</icon>
   <translation type="gettext">notifications-plug</translation>
   <releases>
+    <release version="2.1.7" date="2020-05-28" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
     <release version="2.1.6" date="2020-04-01" urgency="medium">
       <description>
         <p>Updated translations</p>
