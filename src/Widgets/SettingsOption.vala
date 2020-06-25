@@ -93,7 +93,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private void update_image_resource () {
         if (gtk_settings.gtk_application_prefer_dark_theme) {
-            image.resource = image_path.replace(".svg", "-dark.svg");
+            image.resource = image_path.replace (".svg", "-dark.svg");
         } else {
             image.resource = image_path;
         }
