@@ -23,6 +23,11 @@ public class Widgets.SettingsOption : Gtk.Grid {
     public string description { get; construct; }
     public Gtk.Widget widget { get; construct; }
 
+    private static Gtk.CssProvider css_provider;
+
+    private Gtk.Image image;
+    private Gtk.Settings gtk_settings;
+
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
         Object (
             image_path: image_path,
@@ -32,10 +37,22 @@ public class Widgets.SettingsOption : Gtk.Grid {
         );
     }
 
+    static construct {
+        css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("/io/elementary/switchboard/SettingsOption.css");
+    }
+
     construct {
-        var image = new Gtk.Image.from_resource (image_path);
-        image.halign = Gtk.Align.START;
-        image.hexpand = false;
+        image = new Gtk.Image.from_resource (image_path);
+
+        var card = new Gtk.Grid ();
+        card.valign = Gtk.Align.START;
+        card.add (image);
+
+        unowned Gtk.StyleContext card_context = card.get_style_context ();
+        card_context.add_class (Granite.STYLE_CLASS_CARD);
+        card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
+        card_context.add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var title_label = new Gtk.Label (title);
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -61,9 +78,24 @@ public class Widgets.SettingsOption : Gtk.Grid {
         row_spacing = 6;
         margin_start = 60;
         margin_end = 30;
-        attach (image, 0, 0, 1, 3);
+        attach (card, 0, 0, 1, 3);
         attach (title_label, 1, 0);
         attach (widget, 1, 1);
         attach (description_label, 1, 2);
+
+        gtk_settings = Gtk.Settings.get_default ();
+        gtk_settings.notify["gtk-application-prefer-dark-theme"].connect (() => {
+            update_image_resource ();
+        });
+
+        update_image_resource ();
+    }
+
+    private void update_image_resource () {
+        if (gtk_settings.gtk_application_prefer_dark_theme) {
+            image.resource = image_path.replace(".svg", "-dark.svg");
+        } else {
+            image.resource = image_path;
+        }
     }
 }
