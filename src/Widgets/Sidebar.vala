@@ -25,7 +25,7 @@ public class Widgets.Sidebar : Gtk.Grid {
             expand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
-            app_list.set_sort_func (sort_func);
+        app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.add (app_list);
