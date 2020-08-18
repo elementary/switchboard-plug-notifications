@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2015 elementary Developers
+ * Copyright (c) 2011-2015 elementary Developers
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
