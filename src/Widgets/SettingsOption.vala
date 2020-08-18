@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -45,8 +45,9 @@ public class Widgets.SettingsOption : Gtk.Grid {
     construct {
         image = new Gtk.Image.from_resource (image_path);
 
-        var card = new Gtk.Grid ();
-        card.valign = Gtk.Align.START;
+        var card = new Gtk.Grid () {
+            valign = Gtk.Align.START
+        };
         card.add (image);
 
         unowned Gtk.StyleContext card_context = card.get_style_context ();
@@ -54,25 +55,27 @@ public class Widgets.SettingsOption : Gtk.Grid {
         card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
         card_context.add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        var title_label = new Gtk.Label (title);
+        var title_label = new Gtk.Label (title) {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.END,
+            hexpand = true,
+            vexpand = false
+        };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-        title_label.halign = Gtk.Align.START;
-        title_label.valign = Gtk.Align.END;
-        title_label.hexpand = true;
-        title_label.vexpand = false;
 
         widget.halign = Gtk.Align.START;
         widget.valign = Gtk.Align.CENTER;
         widget.hexpand = false;
         widget.vexpand = false;
 
-        var description_label = new Gtk.Label (description);
-        description_label.xalign = 0;
-        description_label.valign = Gtk.Align.START;
-        description_label.hexpand = true;
-        description_label.vexpand = false;
-        description_label.wrap = true;
-        description_label.justify = Gtk.Justification.LEFT;
+        var description_label = new Gtk.Label (description) {
+            xalign = 0,
+            valign = Gtk.Align.START,
+            hexpand = true,
+            vexpand = false,
+            wrap = true,
+            justify = Gtk.Justification.LEFT
+        };
 
         column_spacing = 12;
         row_spacing = 6;
