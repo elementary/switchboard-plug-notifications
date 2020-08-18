@@ -33,7 +33,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             pixel_size = 32
         };
 
-          var title_label = new Gtk.Label (app.app_info.get_display_name ()) {
+        var title_label = new Gtk.Label (app.app_info.get_display_name ()) {
             ellipsize = Pango.EllipsizeMode.END,
             xalign = 0,
             valign = Gtk.Align.END
