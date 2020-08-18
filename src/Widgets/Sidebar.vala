@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2019 elementary, Inc (https://elementary.io)
+ * Copyright 2011-2020 elementary, Inc (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -21,20 +21,23 @@ public class Widgets.Sidebar : Gtk.Grid {
     private const string FALLBACK_APP_ID = "gala-other.desktop";
 
     construct {
-        var app_list = new Gtk.ListBox ();
-        app_list.expand = true;
-        app_list.selection_mode = Gtk.SelectionMode.SINGLE;
-        app_list.set_sort_func (sort_func);
+        var app_list = new Gtk.ListBox () {
+            expand = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
+            app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.add (app_list);
 
-        var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb"));
-        do_not_disturb_label.margin_start = 6;
+        var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb")) {
+            margin_start = 6
+        };
 
-        var do_not_disturb_switch = new Gtk.Switch ();
-        do_not_disturb_switch.margin = 12;
-        do_not_disturb_switch.margin_end = 6;
+        var do_not_disturb_switch = new Gtk.Switch () {
+            margin = 12,
+            margin_end = 6
+        };
 
         var footer = new Gtk.ActionBar ();
         footer.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);

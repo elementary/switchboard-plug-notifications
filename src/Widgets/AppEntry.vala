@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
+ * Copyright 2011-2020 elementary, Inc. (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -29,24 +29,28 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND);
-        image.pixel_size = 32;
+        var image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND) {
+            pixel_size = 32
+        };
 
-        var title_label = new Gtk.Label (app.app_info.get_display_name ());
+          var title_label = new Gtk.Label (app.app_info.get_display_name ()) {
+            ellipsize = Pango.EllipsizeMode.END,
+            xalign = 0,
+            valign = Gtk.Align.END
+        };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-        title_label.ellipsize = Pango.EllipsizeMode.END;
-        title_label.xalign = 0;
-        title_label.valign = Gtk.Align.END;
 
-        var description_label = new Gtk.Label (get_permissions_string (app));
-        description_label.use_markup = true;
-        description_label.ellipsize = Pango.EllipsizeMode.END;
-        description_label.xalign = 0;
-        description_label.valign = Gtk.Align.START;
+        var description_label = new Gtk.Label (get_permissions_string (app)) {
+            use_markup = true,
+            ellipsize = Pango.EllipsizeMode.END,
+            xalign = 0,
+            valign = Gtk.Align.START
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 6;
+        var grid = new Gtk.Grid () {
+            margin = 6,
+            column_spacing = 6
+        };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (description_label, 1, 1, 1, 1);

@@ -26,17 +26,20 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private SettingsOption remember_option;
 
     construct {
-        app_image = new Gtk.Image ();
-        app_image.pixel_size = 48;
+        app_image = new Gtk.Image () {
+            pixel_size = 48
+        };
 
-        app_label = new Gtk.Label (null);
-        app_label.use_markup = true;
-        app_label.halign = Gtk.Align.START;
-        app_label.hexpand = true;
+        app_label = new Gtk.Label (null) {
+            use_markup = true,
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
         app_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
 
-        var header = new Gtk.Grid ();
-        header.column_spacing = 12;
+        var header = new Gtk.Grid () {
+            column_spacing = 12
+        };
         header.attach (app_image, 0, 0);
         header.attach (app_label, 1, 0);
 
