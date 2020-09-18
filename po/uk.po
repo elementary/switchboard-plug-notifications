@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2016-06-14 22:35+0000\n"
-"Last-Translator: Roman Sytnyk <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-09-19 01:14+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-notifications/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-06-15 06:21+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
 
 #: src/Plug.vala:24
 msgid "Nothing to do here"
@@ -53,7 +56,6 @@ msgid "Notifications Center"
 msgstr "Центр сповіщень"
 
 #: src/Plug.vala:85
-#, fuzzy
 msgid "Sound"
 msgstr "Звуки"
 
@@ -75,7 +77,7 @@ msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
-"Системні сповіщення, такі як гучність та яскравість екрану, не буде змінено"
+"Системні сповіщення, такі як гучність та яскравість екрану, не буде змінено."
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
