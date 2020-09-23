@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2020-09-19 01:14+0000\n"
+"PO-Revision-Date: 2020-09-24 16:44+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: src/Plug.vala:24
 msgid "Nothing to do here"
-msgstr "Тут немає чтого робити"
+msgstr "Немає дій"
 
 #: src/Plug.vala:26
 msgid ""
@@ -28,15 +28,19 @@ msgid ""
 msgstr ""
 "Налаштування сповіщень використовуються для вказання застосунків які будуть "
 "їх використовувати,\n"
-"налаштування вигляду сповіщень та вмикання режиму тиші"
+"налаштування вигляду сповіщень та вмикання режиму тиші\n"
+"\n"
+"Налаштування сповіщень призначені для вказання застосунків які будуть їх "
+"використовувати, для зміни способу появи сповіщень,\n"
+"і для налаштування, коли ви не хочете, щоб вас турбували сповіщення."
 
 #: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-"Після встановлення програм з підтримкою сповіщень, вони автоматично "
-"з’являться тут."
+"Після встановлення застосунків з підтримкою сповіщень, вони автоматично з’"
+"являться тут."
 
 #: src/Plug.vala:45
 msgid "Notifications"
@@ -44,14 +48,13 @@ msgstr "Сповіщення"
 
 #: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Налаштувати повідомлення-бульбашки, звуки та центр повідомлень"
+msgstr "Налаштування бульбашок сповіщень, звуків та центру сповіщень"
 
 #: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
 msgid "Do Not Disturb"
 msgstr "Не турбувати"
 
 #: src/Plug.vala:84
-#, fuzzy
 msgid "Notifications Center"
 msgstr "Центр сповіщень"
 
@@ -69,8 +72,8 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"Перебуваючи в режимі `Не турбувати', всі сповіщення та сигнали будуть "
-"сховані, а звук повідомлень - вимкнений."
+"В режимі «Не турбувати», всі сповіщення та попередження буде сховано, а "
+"звуки повідомлень — вимкнено."
 
 #: src/Widgets/MainView.vala:31
 msgid ""
@@ -81,15 +84,15 @@ msgstr ""
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS перебуває в режимі `Не турбувати'"
+msgstr "elementary OS перебуває в режимі «Не турбувати»"
 
 #: src/Widgets/AppSettingsView.vala:46
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Бульбашки будуть з’являються в верхньому правому кутку екрану та автоматично "
-"зникатимуть."
+"Бульбашки з’являтимуться у верхньому правому куті екрана та зникатимуть "
+"самостійно."
 
 #: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
 msgid "Sounds"
@@ -97,7 +100,7 @@ msgstr "Звуки"
 
 #: src/Widgets/AppSettingsView.vala:53
 msgid "Sounds play once when a new notification arrives."
-msgstr "Ви почуєте звук як тільки з’явиться нове сповіщення."
+msgstr "Ви почуєте одноразовий звук коли з’явиться нове сповіщення."
 
 #: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
 msgid "Notification Center"
@@ -105,7 +108,7 @@ msgstr "Центр сповіщень"
 
 #: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
-msgstr "Показувати пропущені сповіщення в Центрі повідомлень."
+msgstr "Показувати пропущені сповіщення в Центрі сповіщень."
 
 #: src/Widgets/AppEntry.vala:77
 msgid "Disabled"
