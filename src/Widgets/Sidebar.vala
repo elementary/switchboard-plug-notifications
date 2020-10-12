@@ -31,12 +31,12 @@ public class Widgets.Sidebar : Gtk.Grid {
         scrolled_window.add (app_list);
 
         var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb")) {
-            margin_start = 6
+            margin_start = 3
         };
 
         var do_not_disturb_switch = new Gtk.Switch () {
-            margin = 12,
-            margin_end = 6
+            margin = 6,
+            margin_end = 3
         };
 
         var footer = new Gtk.ActionBar ();
