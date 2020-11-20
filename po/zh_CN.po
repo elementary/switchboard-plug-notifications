@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2019-12-20 16:09+0000\n"
+"PO-Revision-Date: 2020-11-21 04:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-notifications/zh_Hans/>\n"
@@ -70,7 +70,7 @@ msgstr "勿扰模式启用时，通知和警告将会被隐藏，通知提示音
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr "系统通知，如音量和屏幕亮度等将不会受影响。"
+msgstr "系统通知，如音量和屏幕亮度等不会受影响。"
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
