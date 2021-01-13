@@ -27,8 +27,9 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
     construct {
         app_image = new Gtk.Image () {
-            pixel_size = 48
+            pixel_size = 64
         };
+        app_image.get_style_context ().add_class ("icon-dropshadow");
 
         app_label = new Gtk.Label (null) {
             use_markup = true,
