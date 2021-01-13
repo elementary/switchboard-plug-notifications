@@ -32,7 +32,6 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         var image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND) {
             pixel_size = 32
         };
-        image.get_style_context ().add_class ("icon-dropshadow");
 
         var title_label = new Gtk.Label (app.app_info.get_display_name ()) {
             ellipsize = Pango.EllipsizeMode.END,
