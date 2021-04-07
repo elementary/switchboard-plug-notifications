@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2021-03-05 18:36+0000\n"
+"PO-Revision-Date: 2021-04-08 01:00+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/ru/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "Настройка пузырей уведомлений, звуков и центра уведомлений"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:12
 msgid "Updated translations"
