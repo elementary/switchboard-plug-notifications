@@ -25,7 +25,7 @@ public class NotificationsPlug : Switchboard.Plug {
 
         var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
         description += "\n\n";
-        description += _("When apps are installed that have notification options they will automatically appear here.");
+        description += _("When apps with notification options are installed, they appear here.");
 
         var icon_name = "dialog-information";
 
