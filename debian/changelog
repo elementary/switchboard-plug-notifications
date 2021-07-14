@@ -1,3 +1,15 @@
+switchboard-plug-notifications (2.2.0) bionic; urgency=medium
+
+  * Release 2.2.0 (#82)
+  * LINGUAS: sort, remove en_US
+  * Update translation files
+  * Release Action: Set branch to odin
+  * Sidebar: Reduce padding (#74)
+  * Update code style (#72)
+  * Update visual style and support dark (#71)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 14 Jul 2021 21:11:32 +0000
+
 switchboard-plug-notifications (2.1.7) bionic; urgency=medium
 
   * Release 2.1.7 (#70)
