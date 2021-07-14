@@ -25,7 +25,7 @@ public class NotificationsPlug : Switchboard.Plug {
 
         var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
         description += "\n\n";
-        description += _("When apps are installed that have notification options they will automatically appear here.");
+        description += _("Apps with adjustable notifications appear here once installed.");
 
         var icon_name = "dialog-information";
 
@@ -43,7 +43,7 @@ public class NotificationsPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.notifications",
                 display_name: _("Notifications"),
-                description: _("Configure notification bubbles, sounds, and notification center"),
+                description: _("Adjust notification bubbles, sounds, and the notification center"),
                 icon: "preferences-system-notifications",
                 supported_settings: settings);
     }
