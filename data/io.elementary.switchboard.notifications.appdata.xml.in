@@ -9,8 +9,11 @@
   <releases>
     <release version="2.2.0" date="2021-07-14" urgency="medium">
       <description>
-        <p>New illustrations</p>
-        <p>Updated translations</p>
+        <p>Minor updates:</p>
+        <ul>
+          <li>New illustrations</li>
+          <li>Updated translations</li>
+        </ul>
       </description>
     </release>
     <release version="2.1.7" date="2020-05-28" urgency="medium">
