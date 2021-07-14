@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2018-06-04 00:09+0000\n"
 "Last-Translator: Andrej Gálet <andrejgalet@gmail.com>\n"
 "Language-Team: Slovak <https://weblate.elementary.io/projects/switchboard/"
@@ -45,7 +45,7 @@ msgstr "Oznámenia"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfigurovať notifikačné bubliny, zvuky a notifikačné centrum"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "Nerušiť"
 
@@ -58,8 +58,8 @@ msgstr "Centrum upozornení"
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bubliny"
 
@@ -81,29 +81,29 @@ msgstr "Systémové oznámenia ako hlasitosť a jas obrazovky budú bez zmeny."
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS je v režime Nerušiť"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Bubliny sa objavia v pravom hornom rohu obrazovky a automaticky sa stratia."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Zvuky"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Pri novom oznámení sa prehrá zvuk."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centrum upozornení"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Zobraziť chýbajúce notifikácie v Notifikačnom centre."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Zakázané"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2017-08-31 23:21+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -46,7 +46,7 @@ msgstr "Ειδοποιήσεις"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Ρύθμιση των μπάνερ ειδοποιήσεων, ήχων και του κέντρου ειδοποιήσεων"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "Μην ενοχλείτε"
 
@@ -59,8 +59,8 @@ msgstr "Κέντρο ειδοποιήσεων"
 msgid "Sound"
 msgstr "Ήχος"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Μπάνερ"
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "Το elementary OS βρίσκεται σε λειτουργία \"Μην ενοχλείτε\""
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -92,22 +92,22 @@ msgstr ""
 "Τα μπάνερ εμφανίζονται στην πάνω δεξιά γωνία της οθόνης και εξαφανίζονται "
 "αυτόματα."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Ήχοι"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Οι ήχοι παίζουν μια φορά όταν λαμβάνετε μια νέα ειδοποίηση."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Κέντρο ειδοποιήσεων"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Εμφάνιση χαμένων ειδοποιήσεων στο κέντρο ειδοποιήσεων"
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Απενεργοποιημένα"
