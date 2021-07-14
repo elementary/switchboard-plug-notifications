@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -30,5 +30,15 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "配置通知气泡、声音和通知中心"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:12
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:14
+msgid "New illustrations"
+msgstr ""
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:15
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:21
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:26
 msgid "Updated translations"
 msgstr "翻译更新"
