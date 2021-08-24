@@ -21,12 +21,17 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private Gtk.Image app_image;
     private Gtk.Label app_label;
 
+    private Gtk.Stack stack;
+    private Gtk.Revealer bypass_do_not_disturb_revealer;
+
     private SettingsOption bubbles_option;
     private SettingsOption sound_option;
     private SettingsOption remember_option;
+    private Gtk.Switch bypass_do_not_disturb_switch;
 
     construct {
         app_image = new Gtk.Image () {
+            margin = 12,
             pixel_size = 48
         };
 
@@ -64,19 +69,64 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             new Gtk.Switch ()
         );
 
-        margin = 12;
-        row_spacing = 32;
-        attach (header, 0, 0);
-        attach (bubbles_option, 0, 1);
-        attach (sound_option, 0, 2);
-        attach (remember_option, 0, 3);
+        var settings_grid = new Gtk.Grid () {
+            expand = true,
+            margin = 12,
+            row_spacing = 32
+        };
+        settings_grid.attach (bubbles_option, 0, 1);
+        settings_grid.attach (sound_option, 0, 2);
+        settings_grid.attach (remember_option, 0, 3);
+
+        var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
+        description += "\n\n";
+        description += _("System notifications, such as volume and display brightness, will be unaffected.");
+
+        var alert_view = new Granite.Widgets.AlertView (
+            _("elementary OS is in Do Not Disturb mode"),
+            description,
+            "notification-disabled"
+        );
+        alert_view.show_all ();
+
+        stack = new Gtk.Stack ();
+        stack.add_named (settings_grid, "settings-grid");
+        stack.add_named (alert_view, "alert-view");
+
+        var bypass_do_not_disturb_label = new Granite.HeaderLabel (_("Bypass Do Not Disturb")) {
+            margin_start = 3
+        };
+
+        bypass_do_not_disturb_switch = new Gtk.Switch () {
+            margin = 6,
+            margin_end = 3
+        };
+        bypass_do_not_disturb_switch.notify["state"].connect (update_view);
+
+        var bypass_do_not_disturb_action_bar = new Gtk.ActionBar ();
+        bypass_do_not_disturb_action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        bypass_do_not_disturb_action_bar.pack_start (bypass_do_not_disturb_label);
+        bypass_do_not_disturb_action_bar.pack_end (bypass_do_not_disturb_switch);
+
+        bypass_do_not_disturb_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.SLIDE_UP,
+            reveal_child = false
+        };
+        bypass_do_not_disturb_revealer.add (bypass_do_not_disturb_action_bar);
+
+        attach (header, 0, 1);
+        attach (stack, 0, 2);
+        attach (bypass_do_not_disturb_revealer, 0, 3);
 
         update_selected_app ();
+        update_view ();
 
         Backend.NotifyManager.get_default ().notify["selected-app-id"].connect (() => {
             remove_bindings ();
             update_selected_app ();
         });
+
+        NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 
     private void remove_bindings () {
@@ -96,5 +146,17 @@ public class Widgets.AppSettingsView : Gtk.Grid {
 
         app_label.label = selected_app.app_info.get_display_name ();
         app_image.gicon = selected_app.app_info.get_icon ();
+
+        update_view ();
+    }
+
+    public void update_view () {
+        if (NotificationsPlug.notify_settings.get_boolean ("do-not-disturb") && !bypass_do_not_disturb_switch.state) {
+            stack.visible_child_name = "alert-view";
+            bypass_do_not_disturb_revealer.reveal_child = true;
+        } else {
+            stack.visible_child_name = "settings-grid";
+            bypass_do_not_disturb_revealer.reveal_child = bypass_do_not_disturb_switch.state;
+        }
     }
 }

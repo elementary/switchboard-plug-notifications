@@ -52,13 +52,6 @@ public class Widgets.Sidebar : Gtk.Grid {
 
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",
-            app_list,
-            "sensitive",
-            SettingsBindFlags.INVERT_BOOLEAN
-        );
-
-        NotificationsPlug.notify_settings.bind (
-            "do-not-disturb",
             do_not_disturb_switch,
             "state",
             SettingsBindFlags.DEFAULT
