@@ -18,7 +18,7 @@
  */
 
 public class Widgets.MainView : Gtk.Paned {
-    private Gtk.Stack stack;
+    //private Gtk.Stack stack;
 
     construct {
         var sidebar = new Sidebar ();
@@ -26,7 +26,7 @@ public class Widgets.MainView : Gtk.Paned {
         var app_settings_view = new AppSettingsView ();
         app_settings_view.show_all ();
 
-        var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
+        /*var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
         description += "\n\n";
         description += _("System notifications, such as volume and display brightness, will be unaffected.");
 
@@ -39,22 +39,14 @@ public class Widgets.MainView : Gtk.Paned {
 
         stack = new Gtk.Stack ();
         stack.add_named (app_settings_view, "app-settings-view");
-        stack.add_named (alert_view, "alert-view");
+        stack.add_named (alert_view, "alert-view");*/
 
         pack1 (sidebar, true, false);
-        pack2 (stack, true, false);
+        pack2 (app_settings_view, true, false);
         set_position (240);
 
-        update_view ();
+        //update_view ();
 
-        NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
-    }
-
-    private void update_view () {
-        if (NotificationsPlug.notify_settings.get_boolean ("do-not-disturb")) {
-            stack.visible_child_name = "alert-view";
-        } else {
-            stack.visible_child_name = "app-settings-view";
-        }
+        //NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 }

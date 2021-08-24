@@ -24,6 +24,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
     private SettingsOption bubbles_option;
     private SettingsOption sound_option;
     private SettingsOption remember_option;
+    private SettingsOption bypass_do_not_disturb_option;
 
     construct {
         app_image = new Gtk.Image () {
@@ -64,12 +65,20 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             new Gtk.Switch ()
         );
 
+        bypass_do_not_disturb_option = new SettingsOption (
+            "/io/elementary/switchboard/notify-center.svg",
+            _("Bypass Do Not Disturb"),
+            _("Notify despite Do Not Disturb is enabled."),
+            new Gtk.Switch ()
+        );
+
         margin = 12;
         row_spacing = 32;
         attach (header, 0, 0);
         attach (bubbles_option, 0, 1);
         attach (sound_option, 0, 2);
         attach (remember_option, 0, 3);
+        attach (bypass_do_not_disturb_option, 0, 4);
 
         update_selected_app ();
 
@@ -77,12 +86,16 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             remove_bindings ();
             update_selected_app ();
         });
+
+        bypass_do_not_disturb_option.widget.notify["state"].connect (update_view);
+        NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 
     private void remove_bindings () {
         Settings.unbind (bubbles_option.widget, "state");
         Settings.unbind (sound_option.widget, "state");
         Settings.unbind (remember_option.widget, "state");
+        //Settings.unbind (bypass_do_not_disturb_option.widget, "state");
     }
 
     private void update_selected_app () {
@@ -93,8 +106,19 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         selected_app.settings.bind ("bubbles", bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind ("sounds", sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind ("remember", remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        //selected_app.settings.bind ("bypass_do_not_disturb", bypass_do_not_disturb_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
 
         app_label.label = selected_app.app_info.get_display_name ();
         app_image.gicon = selected_app.app_info.get_icon ();
+
+        update_view ();
+    }
+
+    private void update_view () {
+        if (NotificationsPlug.notify_settings.get_boolean ("do-not-disturb") && !((Gtk.Switch) bypass_do_not_disturb_option.widget).state) {
+            bubbles_option.sensitive = sound_option.sensitive = remember_option.sensitive = false;
+        } else {
+            bubbles_option.sensitive = sound_option.sensitive = remember_option.sensitive = true;
+        }
     }
 }
