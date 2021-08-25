@@ -103,7 +103,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         Settings.unbind (bubbles_option.widget, "state");
         Settings.unbind (sound_option.widget, "state");
         Settings.unbind (remember_option.widget, "state");
-        //Settings.unbind (bypass_do_not_disturb_option.widget, "state");
+        Settings.unbind (bypass_do_not_disturb_switch, "state");
     }
 
     private void update_selected_app () {
@@ -114,7 +114,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         selected_app.settings.bind ("bubbles", bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind ("sounds", sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind ("remember", remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        //selected_app.settings.bind ("bypass_do_not_disturb", bypass_do_not_disturb_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind ("bypass-do-not-disturb", bypass_do_not_disturb_switch, "state", GLib.SettingsBindFlags.DEFAULT);
 
         app_label.label = selected_app.app_info.get_display_name ();
         app_image.gicon = selected_app.app_info.get_icon ();

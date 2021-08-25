@@ -26,27 +26,8 @@ public class Widgets.MainView : Gtk.Paned {
         var app_settings_view = new AppSettingsView ();
         app_settings_view.show_all ();
 
-        /*var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
-        description += "\n\n";
-        description += _("System notifications, such as volume and display brightness, will be unaffected.");
-
-        var alert_view = new Granite.Widgets.AlertView (
-            _("elementary OS is in Do Not Disturb mode"),
-            description,
-            "notification-disabled"
-        );
-        alert_view.show_all ();
-
-        stack = new Gtk.Stack ();
-        stack.add_named (app_settings_view, "app-settings-view");
-        stack.add_named (alert_view, "alert-view");*/
-
         pack1 (sidebar, true, false);
         pack2 (app_settings_view, true, false);
         set_position (240);
-
-        //update_view ();
-
-        //NotificationsPlug.notify_settings.changed["do-not-disturb"].connect (update_view);
     }
 }
