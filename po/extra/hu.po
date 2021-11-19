@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:11+0000\n"
-"PO-Revision-Date: 2021-09-02 23:10+0000\n"
+"PO-Revision-Date: 2021-11-20 04:48+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/hu/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:5
 msgid "Notifications Settings"
-msgstr ""
+msgstr "Értesítésbeállítások"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
@@ -33,7 +33,7 @@ msgstr "Kisebb frissítések:"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:14
 msgid "New illustrations"
-msgstr ""
+msgstr "Új illusztrációk"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:15
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:21
