@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:11+0000\n"
-"PO-Revision-Date: 2022-01-10 12:16+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/cs/>\n"
@@ -33,7 +33,7 @@ msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:14
 msgid "New illustrations"
-msgstr ""
+msgstr "Nové ilustrace"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:15
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:21
