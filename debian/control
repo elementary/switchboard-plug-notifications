@@ -14,7 +14,7 @@ Homepage: https://github.com/elementary/switchboard-plug-notifications
 
 Package: switchboard-plug-notifications
 Architecture: any
-Depends: gala, ${misc:Depends}, ${shlibs:Depends}
+Depends: io.elementary.notifications, ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
 Description: Change notification settings
  Switchboard plug for controlling Gala's notifications.
