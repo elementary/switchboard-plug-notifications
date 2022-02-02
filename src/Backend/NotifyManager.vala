@@ -55,6 +55,7 @@ public class Backend.NotifyManager : Object {
             var alternate_names = new Gee.HashMap<string, string> ();
             // Even though it is called `alternate_names`, it includes the
             // app's formal name as well.
+            alternate_names.set(App.normalize_app_id(app.app_id), app.app_id);
             foreach (var alt_name in desktop_app_info.get_string_list("X-Flatpak-RenamedFrom")) {
                 alternate_names.set(App.normalize_app_id(alt_name), alt_name);
             }
