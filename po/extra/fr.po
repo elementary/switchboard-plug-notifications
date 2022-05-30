@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:11+0000\n"
-"PO-Revision-Date: 2021-07-30 20:57+0000\n"
+"PO-Revision-Date: 2022-05-30 10:51+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/fr/>\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
+msgstr "Mises à jour mineures :"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:14
 msgid "New illustrations"
