@@ -48,7 +48,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         var card = new Gtk.Grid () {
             valign = Gtk.Align.START
         };
-        card.add (image);
+        card.attach (image, 0, 0);
 
         unowned Gtk.StyleContext card_context = card.get_style_context ();
         card_context.add_class (Granite.STYLE_CLASS_CARD);

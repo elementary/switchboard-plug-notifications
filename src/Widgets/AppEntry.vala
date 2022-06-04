@@ -29,7 +29,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_gicon (app.app_info.get_icon (), Gtk.IconSize.DND) {
+        var image = new Gtk.Image.from_gicon (app.app_info.get_icon ()) {
             pixel_size = 32
         };
 
@@ -48,14 +48,17 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         };
 
         var grid = new Gtk.Grid () {
-            margin = 6,
+            margin_start = 6,
+            margin_end = 6,
+            margin_top = 6,
+            margin_bottom = 6,
             column_spacing = 6
         };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (description_label, 1, 1, 1, 1);
 
-        this.add (grid);
+        this.child = grid;
 
         app.settings.changed.connect (() => {
             description_label.set_markup (get_permissions_string (app));

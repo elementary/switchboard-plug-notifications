@@ -64,7 +64,10 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             new Gtk.Switch ()
         );
 
-        margin = 12;
+        margin_start = 12;
+        margin_end = 12;
+        margin_top = 12;
+        margin_bottom = 12;
         row_spacing = 32;
         attach (header, 0, 0);
         attach (bubbles_option, 0, 1);
