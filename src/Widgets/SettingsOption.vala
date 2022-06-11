@@ -25,7 +25,9 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private static Gtk.CssProvider css_provider;
 
-    private Gtk.Image image;
+    private string icon_name;
+    private string icon_name_dark;
+    private Gtk.Grid card;
     private Gtk.Settings gtk_settings;
 
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
@@ -43,17 +45,15 @@ public class Widgets.SettingsOption : Gtk.Grid {
     }
 
     construct {
-        image = new Gtk.Image.from_resource (image_path);
+        icon_name = "icon-%s".printf ((Path.get_basename (image_path)).split (".")[0]);
+        icon_name_dark = icon_name + "-dark";
 
-        var card = new Gtk.Grid () {
+        card = new Gtk.Grid () {
             valign = Gtk.Align.START
         };
-        card.attach (image, 0, 0);
-
-        unowned Gtk.StyleContext card_context = card.get_style_context ();
-        card_context.add_class (Granite.STYLE_CLASS_CARD);
-        card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
-        card_context.add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        card.add_css_class (Granite.STYLE_CLASS_CARD);
+        card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+        card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var title_label = new Gtk.Label (title) {
             halign = Gtk.Align.START,
@@ -96,9 +96,11 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private void update_image_resource () {
         if (gtk_settings.gtk_application_prefer_dark_theme) {
-            image.resource = image_path.replace (".svg", "-dark.svg");
+            card.remove_css_class (icon_name);
+            card.add_css_class (icon_name_dark);
         } else {
-            image.resource = image_path;
+            card.remove_css_class (icon_name_dark);
+            card.add_css_class (icon_name);
         }
     }
 }

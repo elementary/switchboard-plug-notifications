@@ -35,7 +35,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             halign = Gtk.Align.START,
             hexpand = true
         };
-        app_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        app_label.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
 
         var header = new Gtk.Grid () {
             column_spacing = 12

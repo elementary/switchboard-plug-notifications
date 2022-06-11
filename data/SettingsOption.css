@@ -17,11 +17,79 @@
 * Boston, MA 02110-1301 USA.
 */
 
+/*.card {*/
+/*    background-image:*/
+/*        linear-gradient(*/
+/*            to bottom,*/
+/*            alpha (@accent_color_300, 0.1),*/
+/*            alpha (@accent_color_500, 0.1)*/
+/*        );*/
+/*}*/
+
 .card {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 112px 80px, cover;
+   min-width: 112px;
+   min-height: 80px;
+}
+
+.card.icon-bubbles {
     background-image:
+        url("resource:///io/elementary/switchboard/bubbles.svg"),
         linear-gradient(
             to bottom,
-            alpha (@accent_color_300, 0.1),
-            alpha (@accent_color_500, 0.1)
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.icon-bubbles-dark {
+    background-image:
+        url("resource:///io/elementary/switchboard/bubbles-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.icon-sounds {
+    background-image:
+        url("resource:///io/elementary/switchboard/sounds.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.icon-sounds-dark {
+    background-image:
+        url("resource:///io/elementary/switchboard/sounds-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.icon-notify-center {
+    background-image:
+        url("resource:///io/elementary/switchboard/notify-center.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.icon-notify-center-dark {
+    background-image:
+        url("resource:///io/elementary/switchboard/notify-center-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
         );
 }

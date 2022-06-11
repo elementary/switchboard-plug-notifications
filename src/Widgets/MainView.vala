@@ -29,7 +29,6 @@ public class Widgets.MainView : Gtk.Widget {
         var sidebar = new Sidebar ();
 
         var app_settings_view = new AppSettingsView ();
-        // app_settings_view.show_all ();
 
         var description = _("While in Do Not Disturb mode, notifications and alerts will be hidden and notification sounds will be silenced.");
         description += "\n\n";
@@ -39,7 +38,6 @@ public class Widgets.MainView : Gtk.Widget {
             description = description,
             icon = new ThemedIcon ("notification-disabled")
         };
-        // alert_view.show_all ();
 
         stack = new Gtk.Stack ();
         stack.add_named (app_settings_view, "app-settings-view");

@@ -38,7 +38,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             xalign = 0,
             valign = Gtk.Align.END
         };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var description_label = new Gtk.Label (get_permissions_string (app)) {
             use_markup = true,
