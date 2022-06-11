@@ -44,7 +44,7 @@ public class Widgets.Sidebar : Gtk.Grid {
         };
 
         var footer = new Gtk.ActionBar ();
-        footer.get_style_context ().add_class ("inline-footer");
+        footer.add_css_class ("inline-footer");
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
@@ -74,7 +74,7 @@ public class Widgets.Sidebar : Gtk.Grid {
             return true;
         });
 
-        ListModel children = app_list.observe_children ();
+        var children = app_list.observe_children ();
         if (children.get_n_items () > 0) {
             Gtk.ListBoxRow row = ((Gtk.ListBoxRow) children.get_item (0));
 

@@ -99,13 +99,8 @@ public class NotificationsPlug : Switchboard.Plug {
         main_view = new Widgets.MainView ();
         alert_view = create_alert_view ();
 
-        // main_view.show_all ();
-        // alert_view.show_all ();
-
         stack.add_named (main_view, "main-view");
         stack.add_named (alert_view, "alert-view");
-
-        // stack.show_all ();
     }
 
     private void update_view () {

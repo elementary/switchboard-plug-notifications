@@ -61,7 +61,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
             hexpand = true,
             vexpand = false
         };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         widget.halign = Gtk.Align.START;
         widget.valign = Gtk.Align.CENTER;
