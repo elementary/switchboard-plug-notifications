@@ -44,7 +44,7 @@ public class Widgets.Sidebar : Gtk.Grid {
         };
 
         var footer = new Gtk.ActionBar ();
-        footer.add_css_class ("inline-footer");
+        footer.add_css_class (Granite.STYLE_CLASS_FLAT);
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
