@@ -34,7 +34,7 @@ public class Widgets.MainView : Gtk.Widget {
         description += "\n\n";
         description += _("System notifications, such as volume and display brightness, will be unaffected.");
 
-        var alert_view = new Granite.Placeholder (_("elementary OS is in Do Not Disturb mode")) {
+        var alert_view = new Granite.Placeholder (_("Do Not Disturb is active")) {
             description = description,
             icon = new ThemedIcon ("notification-disabled")
         };
@@ -46,9 +46,8 @@ public class Widgets.MainView : Gtk.Widget {
         main_widget = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
             start_child = sidebar,
             end_child = stack,
-            resize_start_child = true,
+            resize_start_child = false,
             shrink_start_child = false,
-            resize_end_child = true,
             shrink_end_child = false,
             position = 240
         };
