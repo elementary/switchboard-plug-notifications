@@ -17,7 +17,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Widgets.Sidebar : Gtk.Grid {
+public class Widgets.Sidebar : Gtk.Box {
     private const string FALLBACK_APP_ID = "gala-other.desktop";
 
     construct {
@@ -48,8 +48,9 @@ public class Widgets.Sidebar : Gtk.Grid {
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
-        attach (scrolled_window, 0, 0);
-        attach (footer, 0, 1);
+        orientation = Gtk.Orientation.VERTICAL;
+        append (scrolled_window);
+        append (footer);
 
         app_list.row_selected.connect (show_row);
 
