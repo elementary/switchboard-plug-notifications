@@ -1,5 +1,5 @@
 /*
-* Copyright 2020 elementary, Inc. (https://elementary.io)
+* Copyright 2020-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -25,7 +25,7 @@
    min-height: 80px;
 }
 
-.card.icon-bubbles {
+.card.bubbles {
     background-image:
         url("resource:///io/elementary/settings/notifications/bubbles.svg"),
         linear-gradient(
@@ -35,7 +35,7 @@
         );
 }
 
-.card.icon-bubbles-dark {
+.card.bubbles.dark {
     background-image:
         url("resource:///io/elementary/settings/notifications/bubbles-dark.svg"),
         linear-gradient(
@@ -45,7 +45,7 @@
         );
 }
 
-.card.icon-sounds {
+.card.sounds {
     background-image:
         url("resource:///io/elementary/settings/notifications/sounds.svg"),
         linear-gradient(
@@ -55,7 +55,7 @@
         );
 }
 
-.card.icon-sounds-dark {
+.card.sounds.dark {
     background-image:
         url("resource:///io/elementary/settings/notifications/sounds-dark.svg"),
         linear-gradient(
@@ -65,7 +65,7 @@
         );
 }
 
-.card.icon-notify-center {
+.card.notify-center {
     background-image:
         url("resource:///io/elementary/settings/notifications/notify-center.svg"),
         linear-gradient(
@@ -75,7 +75,7 @@
         );
 }
 
-.card.icon-notify-center-dark {
+.card.notify-center.dark {
     background-image:
         url("resource:///io/elementary/settings/notifications/notify-center-dark.svg"),
         linear-gradient(

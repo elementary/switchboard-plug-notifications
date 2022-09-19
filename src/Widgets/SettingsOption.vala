@@ -25,8 +25,6 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private static Gtk.CssProvider css_provider;
 
-    private string icon_name;
-    private string icon_name_dark;
     private Gtk.Grid card;
     private Gtk.Settings gtk_settings;
 
@@ -45,12 +43,10 @@ public class Widgets.SettingsOption : Gtk.Grid {
     }
 
     construct {
-        icon_name = "icon-%s".printf ((Path.get_basename (image_path)).split (".")[0]);
-        icon_name_dark = icon_name + "-dark";
-
         card = new Gtk.Grid () {
             valign = Gtk.Align.START
         };
+        card.add_css_class (image_path);
         card.add_css_class (Granite.STYLE_CLASS_CARD);
         card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -96,11 +92,9 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private void update_image_resource () {
         if (gtk_settings.gtk_application_prefer_dark_theme) {
-            card.remove_css_class (icon_name);
-            card.add_css_class (icon_name_dark);
+            card.add_css_class ("dark");
         } else {
-            card.remove_css_class (icon_name_dark);
-            card.add_css_class (icon_name);
+            card.remove_css_class ("dark");
         }
     }
 }
