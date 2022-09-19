@@ -1,4 +1,4 @@
-# Switchboard Notifications Plug
+# Notifications Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-notifications/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
@@ -20,4 +20,4 @@ Run `meson` to configure the build environment and then `ninja` to build
 
 To install, use `ninja install`
 
-    sudo ninja install
+    ninja install

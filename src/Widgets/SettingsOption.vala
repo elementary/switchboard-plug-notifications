@@ -41,7 +41,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     static construct {
         css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("/io/elementary/switchboard/SettingsOption.css");
+        css_provider.load_from_resource ("/io/elementary/settings/notifications/SettingsOption.css");
     }
 
     construct {

@@ -44,21 +44,21 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         header.attach (app_label, 1, 0);
 
         bubbles_option = new SettingsOption (
-            "/io/elementary/switchboard/bubbles.svg",
+            "/io/elementary/settings/notifications/bubbles.svg",
             _("Bubbles"),
             _("Bubbles appear in the top right corner of the display and disappear automatically."),
             new Gtk.Switch ()
         );
 
         sound_option = new SettingsOption (
-            "/io/elementary/switchboard/sounds.svg",
+            "/io/elementary/settings/notifications/sounds.svg",
             _("Sounds"),
             _("Sounds play once when a new notification arrives."),
             new Gtk.Switch ()
         );
 
         remember_option = new SettingsOption (
-            "/io/elementary/switchboard/notify-center.svg",
+            "/io/elementary/settings/notifications/notify-center.svg",
             _("Notification Center"),
             _("Show missed notifications in Notification Center."),
             new Gtk.Switch ()

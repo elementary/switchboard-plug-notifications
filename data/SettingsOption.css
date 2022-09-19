@@ -36,7 +36,7 @@
 
 .card.icon-bubbles {
     background-image:
-        url("resource:///io/elementary/switchboard/bubbles.svg"),
+        url("resource:///io/elementary/settings/notifications/bubbles.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -46,7 +46,7 @@
 
 .card.icon-bubbles-dark {
     background-image:
-        url("resource:///io/elementary/switchboard/bubbles-dark.svg"),
+        url("resource:///io/elementary/settings/notifications/bubbles-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -56,7 +56,7 @@
 
 .card.icon-sounds {
     background-image:
-        url("resource:///io/elementary/switchboard/sounds.svg"),
+        url("resource:///io/elementary/settings/notifications/sounds.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -66,7 +66,7 @@
 
 .card.icon-sounds-dark {
     background-image:
-        url("resource:///io/elementary/switchboard/sounds-dark.svg"),
+        url("resource:///io/elementary/settings/notifications/sounds-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -76,7 +76,7 @@
 
 .card.icon-notify-center {
     background-image:
-        url("resource:///io/elementary/switchboard/notify-center.svg"),
+        url("resource:///io/elementary/settings/notifications/notify-center.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -86,7 +86,7 @@
 
 .card.icon-notify-center-dark {
     background-image:
-        url("resource:///io/elementary/switchboard/notify-center-dark.svg"),
+        url("resource:///io/elementary/settings/notifications/notify-center-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
