@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard.notifications</id>
-  <extends>io.elementary.switchboard</extends>
+  <id>io.elementary.settings.notifications</id>
+  <extends>io.elementary.settings</extends>
   <name>Notifications Settings</name>
   <summary>Configure notification bubbles, sounds, and notification center</summary>
   <icon type="stock">preferences-system-notifications</icon>
-  <translation type="gettext">notifications-plug</translation>
   <releases>
     <release version="2.2.0" date="2021-07-14" urgency="medium">
       <description>
@@ -29,7 +28,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-notifications/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-notifications/main/data/screenshot.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>

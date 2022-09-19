@@ -25,7 +25,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private static Gtk.CssProvider css_provider;
 
-    private Gtk.Image image;
+    private Gtk.Grid card;
     private Gtk.Settings gtk_settings;
 
     public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
@@ -39,21 +39,17 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     static construct {
         css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("/io/elementary/switchboard/SettingsOption.css");
+        css_provider.load_from_resource ("/io/elementary/settings/notifications/SettingsOption.css");
     }
 
     construct {
-        image = new Gtk.Image.from_resource (image_path);
-
-        var card = new Gtk.Grid () {
+        card = new Gtk.Grid () {
             valign = Gtk.Align.START
         };
-        card.add (image);
-
-        unowned Gtk.StyleContext card_context = card.get_style_context ();
-        card_context.add_class (Granite.STYLE_CLASS_CARD);
-        card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
-        card_context.add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        card.add_css_class (image_path);
+        card.add_css_class (Granite.STYLE_CLASS_CARD);
+        card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+        card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var title_label = new Gtk.Label (title) {
             halign = Gtk.Align.START,
@@ -61,7 +57,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
             hexpand = true,
             vexpand = false
         };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         widget.halign = Gtk.Align.START;
         widget.valign = Gtk.Align.CENTER;
@@ -96,9 +92,9 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
     private void update_image_resource () {
         if (gtk_settings.gtk_application_prefer_dark_theme) {
-            image.resource = image_path.replace (".svg", "-dark.svg");
+            card.add_css_class ("dark");
         } else {
-            image.resource = image_path;
+            card.remove_css_class ("dark");
         }
     }
 }

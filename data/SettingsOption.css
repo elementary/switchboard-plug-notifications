@@ -1,5 +1,5 @@
 /*
-* Copyright 2020 elementary, Inc. (https://elementary.io)
+* Copyright 2020-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,10 +18,69 @@
 */
 
 .card {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 112px 80px, cover;
+   min-width: 112px;
+   min-height: 80px;
+}
+
+.card.bubbles {
     background-image:
+        url("resource:///io/elementary/settings/notifications/bubbles.svg"),
         linear-gradient(
             to bottom,
-            alpha (@accent_color_300, 0.1),
-            alpha (@accent_color_500, 0.1)
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.bubbles.dark {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/bubbles-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.sounds {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/sounds.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.sounds.dark {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/sounds-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.notify-center {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/notify-center.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+.card.notify-center.dark {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/notify-center-dark.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
         );
 }

@@ -17,36 +17,40 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Widgets.Sidebar : Gtk.Grid {
+public class Widgets.Sidebar : Gtk.Box {
     private const string FALLBACK_APP_ID = "gala-other.desktop";
 
     construct {
         var app_list = new Gtk.ListBox () {
-            expand = true,
+            hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
         app_list.set_sort_func (sort_func);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (app_list);
+        var scrolled_window = new Gtk.ScrolledWindow () {
+            child = app_list
+        };
 
         var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb")) {
             margin_start = 3
         };
 
         var do_not_disturb_switch = new Gtk.Switch () {
-            margin = 6,
+            margin_start = 6,
+            margin_top = 6,
+            margin_bottom = 6,
             margin_end = 3
         };
 
         var footer = new Gtk.ActionBar ();
-        footer.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        footer.add_css_class (Granite.STYLE_CLASS_FLAT);
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
         orientation = Gtk.Orientation.VERTICAL;
-        add (scrolled_window);
-        add (footer);
+        append (scrolled_window);
+        append (footer);
 
         app_list.row_selected.connect (show_row);
 
@@ -66,14 +70,13 @@ public class Widgets.Sidebar : Gtk.Grid {
 
         Backend.NotifyManager.get_default ().apps.@foreach ((entry) => {
             AppEntry app_entry = new AppEntry (entry.value);
-            app_list.add (app_entry);
+            app_list.append (app_entry);
 
             return true;
         });
 
-        List<weak Gtk.Widget> children = app_list.get_children ();
-        if (children.length () > 0) {
-            Gtk.ListBoxRow row = ((Gtk.ListBoxRow)children.nth_data (0));
+        if (app_list.get_first_child () != null) {
+            var row = ((Gtk.ListBoxRow) app_list.get_first_child ());
 
             app_list.select_row (row);
             show_row (row);

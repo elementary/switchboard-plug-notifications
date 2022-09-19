@@ -20,22 +20,25 @@
 public class NotificationsPlug : Switchboard.Plug {
     public static GLib.Settings notify_settings;
 
-    private static Granite.Widgets.AlertView create_alert_view () {
+    private static Granite.Placeholder create_alert_view () {
         var title = _("Nothing to do here");
 
         var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
         description += "\n\n";
         description += _("When apps are installed that have notification options they will automatically appear here.");
 
-        var icon_name = "dialog-information";
+        var icon = new ThemedIcon ("dialog-information");
 
-        return new Granite.Widgets.AlertView (title, description, icon_name);
+        return new Granite.Placeholder (title) {
+            description = description,
+            icon = icon
+        };
     }
 
     private Gtk.Stack stack;
 
     private Widgets.MainView main_view;
-    private Granite.Widgets.AlertView alert_view;
+    private Granite.Placeholder alert_view;
 
     public NotificationsPlug () {
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -44,7 +47,7 @@ public class NotificationsPlug : Switchboard.Plug {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("notifications", null);
         Object (category: Category.PERSONAL,
-                code_name: "io.elementary.switchboard.notifications",
+                code_name: "io.elementary.settings.notifications",
                 display_name: _("Notifications"),
                 description: _("Configure notification bubbles, sounds, and notification center"),
                 icon: "preferences-system-notifications",
@@ -96,13 +99,8 @@ public class NotificationsPlug : Switchboard.Plug {
         main_view = new Widgets.MainView ();
         alert_view = create_alert_view ();
 
-        main_view.show_all ();
-        alert_view.show_all ();
-
         stack.add_named (main_view, "main-view");
         stack.add_named (alert_view, "alert-view");
-
-        stack.show_all ();
     }
 
     private void update_view () {

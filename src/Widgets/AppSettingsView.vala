@@ -35,7 +35,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             halign = Gtk.Align.START,
             hexpand = true
         };
-        app_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
+        app_label.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
 
         var header = new Gtk.Grid () {
             column_spacing = 12
@@ -44,27 +44,30 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         header.attach (app_label, 1, 0);
 
         bubbles_option = new SettingsOption (
-            "/io/elementary/switchboard/bubbles.svg",
+            "bubbles",
             _("Bubbles"),
             _("Bubbles appear in the top right corner of the display and disappear automatically."),
             new Gtk.Switch ()
         );
 
         sound_option = new SettingsOption (
-            "/io/elementary/switchboard/sounds.svg",
+            "sounds",
             _("Sounds"),
             _("Sounds play once when a new notification arrives."),
             new Gtk.Switch ()
         );
 
         remember_option = new SettingsOption (
-            "/io/elementary/switchboard/notify-center.svg",
+            "notify-center",
             _("Notification Center"),
             _("Show missed notifications in Notification Center."),
             new Gtk.Switch ()
         );
 
-        margin = 12;
+        margin_start = 12;
+        margin_end = 12;
+        margin_top = 12;
+        margin_bottom = 12;
         row_spacing = 32;
         attach (header, 0, 0);
         attach (bubbles_option, 0, 1);
