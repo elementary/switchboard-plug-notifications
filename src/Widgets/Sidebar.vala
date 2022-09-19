@@ -74,9 +74,8 @@ public class Widgets.Sidebar : Gtk.Grid {
             return true;
         });
 
-        var children = app_list.observe_children ();
-        if (children.get_n_items () > 0) {
-            Gtk.ListBoxRow row = ((Gtk.ListBoxRow) children.get_item (0));
+        if (app_list.get_first_child () != null) {
+            var row = ((Gtk.ListBoxRow) app_list.get_first_child ());
 
             app_list.select_row (row);
             show_row (row);
