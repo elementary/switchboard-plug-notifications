@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:11+0000\n"
-"PO-Revision-Date: 2022-09-23 23:35+0000\n"
+"PO-Revision-Date: 2022-09-27 14:02+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-notifications/ckb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:24
 msgid "Nothing to do here"
-msgstr ""
+msgstr "هیچ شتێک نییە لێرە بیکەی"
 
 #: src/Plug.vala:26
 msgid ""
@@ -25,75 +25,81 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
+"هەڵبژاردنی ئاگادارییەکان بریتییە لە ڕێکخست و ڕێگەدان بەو بەرنامانەی کە "
+"ئاگاداری بەکاردەهێنن، هەروەها دەتوانیت شێوازەی دەرکەونتی ئاگادارییەکان "
+"ڕێکبخەیت و،\n"
+"دیاریبکەیت کە لە چ کاتێکدا نابێت ئاگاداریت بۆ بێت و بێزاربکرێیت."
 
 #: src/Plug.vala:28
 msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
-msgstr ""
+msgstr "ئەو ئەپە دامەزراوانەی کە ئاگاداری دەنێرن، خۆکارانە لێرە دەردەکەون."
 
 #: src/Plug.vala:45
 msgid "Notifications"
-msgstr ""
+msgstr "ئاگادارییەکان"
 
 #: src/Plug.vala:46
 msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
+msgstr "شێوازی دەرکەوتن و دەنگی ئاگادارییەکان و، سەنتەری ئاگادارییەکانی ڕێکبخە"
 
 #: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
-msgstr ""
+msgstr "مەم پچڕێنە"
 
 #: src/Plug.vala:84
 msgid "Notifications Center"
-msgstr ""
+msgstr "سەنتەری ئاگادارییەکان"
 
 #: src/Plug.vala:85
 msgid "Sound"
-msgstr ""
+msgstr "دەنگ"
 
 #: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
-msgstr ""
+msgstr "شێوازی دەرکەوتن"
 
 #: src/Widgets/MainView.vala:29
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
+"کاتێک لە دۆخی (مەم پچڕێنە)دایت، ئاگادارییەکان دەشاردێنەوە و بێدەنگ دەکرێن."
 
 #: src/Widgets/MainView.vala:31
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
-msgstr ""
+msgstr "ئاگادارییەکانی سیستەم وەکو دەنگ و ڕووناکی ڕوونما وەکو خۆیان دەمێننەوە."
 
 #: src/Widgets/MainView.vala:34
 msgid "elementary OS is in Do Not Disturb mode"
-msgstr ""
+msgstr "سیستەمی ئلێمێنتری لە دۆخی (مەم پچڕینە)دایە"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
+"ئاگادارییەکان لە گۆشەی سەرەوەی دەستە ڕاست دەردەکەون و، خۆکارانە دیارنامێنن."
 
 #: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
-msgstr ""
+msgstr "دەنگەکان"
 
 #: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
-msgstr ""
+msgstr "لەکاتی هاتنی ئاگاداری، یەک جار دەنگی دێت."
 
 #: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
-msgstr ""
+msgstr "سەنتەری ئاگاداری"
 
 #: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
-msgstr ""
+msgstr "ئاگادارییە لەدەستچووەکانم لە سەنتەری ئاگاداری پشاندە."
 
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
