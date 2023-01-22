@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:11+0000\n"
-"PO-Revision-Date: 2022-12-31 16:25+0000\n"
+"PO-Revision-Date: 2023-01-21 08:25+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ru/>\n"
@@ -26,7 +26,7 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
-"Параметры уведомлений позволяют изменить поведение уведомлений отдельных "
+"Параметры уведомлений позволяют изменять поведение уведомлений отдельных "
 "приложений,\n"
 "либо совсем отключить их на какое-то время."
 
@@ -68,8 +68,7 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"В режиме «Не беспокоить» уведомления и оповещения будут скрыты, а их звук "
-"отключён."
+"В режиме «Не беспокоить» уведомления и оповещения скрыты, а их звук отключён."
 
 #: src/Widgets/MainView.vala:31
 msgid ""
@@ -88,7 +87,8 @@ msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
-"Баннеры появляются в правом верхнем углу экрана и автоматически исчезают."
+"Показывать баннеры, которые появляются в правом верхнем углу экрана и после "
+"автоматически исчезают."
 
 #: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
@@ -96,7 +96,7 @@ msgstr "Звуки"
 
 #: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
-msgstr "Воспроизведение звука при новом уведомлении."
+msgstr "Воспроизводить звуки при новом уведомлении."
 
 #: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
