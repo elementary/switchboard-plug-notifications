@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2020 elementary, Inc (https://elementary.io)
+ * Copyright 2011-2023 elementary, Inc (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -20,12 +20,28 @@
 public class Widgets.Sidebar : Gtk.Box {
     private const string FALLBACK_APP_ID = "gala-other.desktop";
 
+    private Gtk.SearchEntry search_entry;
+
     construct {
+        search_entry = new Gtk.SearchEntry () {
+            placeholder_text = _("Search Apps"),
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            margin_end = 6,
+            hexpand = true
+        };
+
+        var search_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        search_box.add_css_class (Granite.STYLE_CLASS_VIEW);
+        search_box.append (search_entry);
+
         var app_list = new Gtk.ListBox () {
             hexpand = true,
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
+        app_list.set_filter_func (filter_function);
         app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow () {
@@ -49,10 +65,15 @@ public class Widgets.Sidebar : Gtk.Box {
         footer.pack_end (do_not_disturb_switch);
 
         orientation = Gtk.Orientation.VERTICAL;
+        append (search_box);
         append (scrolled_window);
         append (footer);
 
         app_list.row_selected.connect (show_row);
+
+        search_entry.search_changed.connect (() => {
+            app_list.invalidate_filter ();
+        });
 
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",
@@ -81,6 +102,17 @@ public class Widgets.Sidebar : Gtk.Box {
             app_list.select_row (row);
             show_row (row);
         }
+    }
+
+    private bool filter_function (Gtk.ListBoxRow row) {
+        if (search_entry.text != "") {
+            var search_term = search_entry.text.down ();
+            var row_name = ((AppEntry) row).app.app_info.get_display_name ().down ();
+
+            return search_term in row_name;
+        }
+
+        return true;
     }
 
     private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
