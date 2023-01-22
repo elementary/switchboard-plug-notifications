@@ -32,9 +32,10 @@ public class Widgets.Sidebar : Gtk.Box {
             child = app_list
         };
 
-        var do_not_disturb_label = new Granite.HeaderLabel (_("Do Not Disturb")) {
+        var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb")) {
             margin_start = 3
         };
+        do_not_disturb_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var do_not_disturb_switch = new Gtk.Switch () {
             margin_start = 6,
