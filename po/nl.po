@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2017-05-29 22:13+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/nl/>\n"
 "Language: nl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-07-19 06:10+0000\n"
 
 #: src/Plug.vala:24
@@ -32,6 +32,8 @@ msgstr ""
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
+"Apps met in te stellen notificaties verschijnen hier wanneer ze "
+"geïnstalleerd zijn."
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -60,14 +62,14 @@ msgstr "Bubbels"
 
 #: src/Widgets/Sidebar.vala:27
 msgid "Search Apps"
-msgstr ""
+msgstr "Zoek apps"
 
 #: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"In de Stoor-Mij-Niet modus zullen notificaties en waarschuwingen worden "
+"In de niet storen-modus zullen notificaties en waarschuwingen worden "
 "verborgen en notificatie-geluiden gedempt."
 
 #: src/Widgets/MainView.vala:35
@@ -79,10 +81,8 @@ msgstr ""
 "scherm, worden hierdoor niet beïnvloed."
 
 #: src/Widgets/MainView.vala:37
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "Niet Storen"
+msgstr "Niet Storen is actief"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
