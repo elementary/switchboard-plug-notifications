@@ -1,4 +1,4 @@
-switchboard-plug-notifications (2.2.0) bionic; urgency=medium
+io.elementary.settings.notifications (2.2.0) bionic; urgency=medium
 
   * Release 2.2.0 (#82)
   * LINGUAS: sort, remove en_US
@@ -10,7 +10,7 @@ switchboard-plug-notifications (2.2.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 14 Jul 2021 21:11:32 +0000
 
-switchboard-plug-notifications (2.1.7) bionic; urgency=medium
+io.elementary.settings.notifications (2.1.7) bionic; urgency=medium
 
   * Release 2.1.7 (#70)
   * Update translation files
@@ -22,7 +22,7 @@ switchboard-plug-notifications (2.1.7) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Thu, 28 May 2020 23:44:37 +0000
 
-switchboard-plug-notifications (2.1.6) bionic; urgency=medium
+io.elementary.settings.notifications (2.1.6) bionic; urgency=medium
 
   * Release 2.1.6 (#65)
   * App: Use key for native notifications if available (#63)
@@ -55,43 +55,43 @@ switchboard-plug-notifications (2.1.6) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 01 Apr 2020 23:41:31 +0000
 
-switchboard-plug-notifications (2.1.5) bionic; urgency=medium
+io.elementary.settings.notifications (2.1.5) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 16 Oct 2018 03:05:38 -0500
 
-switchboard-plug-notifications (0.1.4) bionic; urgency=medium
+io.elementary.settings.notifications (0.1.4) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 11 Jun 2018 09:56:50 -0500
 
-switchboard-plug-notifications (0.1.3) xenial; urgency=medium
+io.elementary.settings.notifications (0.1.3) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 03 Oct 2017 15:38:23 -0500
 
-switchboard-plug-notifications (0.1.2) xenial; urgency=medium
+io.elementary.settings.notifications (0.1.2) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Wed, 24 May 2017 17:04:56 -0500
 
-switchboard-plug-notifications (0.1.1) xenial; urgency=medium
+io.elementary.settings.notifications (0.1.1) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Thu, 11 Aug 2016 04:20:45 -0500
 
-switchboard-plug-notifications (0.1.0.1) trusty; urgency=medium
+io.elementary.settings.notifications (0.1.0.1) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 01 Sep 2015 04:28:08 -0500
 
-switchboard-plug-notifications (0.1) trusty; urgency=low
+io.elementary.settings.notifications (0.1) trusty; urgency=low
 
   * New upstream release.
 
