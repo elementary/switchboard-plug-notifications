@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.settings.notifications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 12:44-0700\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,7 @@ msgid ""
 msgstr ""
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
+msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
 
 #: src/Plug.vala:51
@@ -42,7 +40,7 @@ msgstr ""
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:35
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr ""
 
@@ -59,6 +57,10 @@ msgstr ""
 msgid "Bubbles"
 msgstr ""
 
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
 #: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
@@ -72,7 +74,7 @@ msgid ""
 msgstr ""
 
 #: src/Widgets/MainView.vala:37
-msgid "elementary OS is in Do Not Disturb mode"
+msgid "Do Not Disturb is active"
 msgstr ""
 
 #: src/Widgets/AppSettingsView.vala:49
