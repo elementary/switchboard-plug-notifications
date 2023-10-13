@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2021-11-10 14:38+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,24 +20,23 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:5
+#: data/notifications.appdata.xml.in:5
 msgid "Notifications Settings"
 msgstr "Ustawienia powiadomień"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:6
+#: data/notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Skonfiguruj bąbelki powiadomień, dźwięki oraz centrum powiadomień"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:12
+#: data/notifications.appdata.xml.in:11
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:14
+#: data/notifications.appdata.xml.in:13
 msgid "New illustrations"
 msgstr "Nowe ilustracje"
 
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:15
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:21
-#: data/io.elementary.switchboard.notifications.appdata.xml.in:26
+#: data/notifications.appdata.xml.in:14 data/notifications.appdata.xml.in:20
+#: data/notifications.appdata.xml.in:25
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
