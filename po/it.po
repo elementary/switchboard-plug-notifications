@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2018-12-11 15:10+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -31,39 +31,39 @@ msgstr ""
 "disturbato."
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
+msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
-"Quando le applicazioni che vengono installate hanno opzioni di notifica "
-"appariranno qui automaticamente."
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "Notifiche"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configura le bolle di notifica, i suoni e il centro notifiche"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "Non Disturbare"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 msgid "Notifications Center"
 msgstr "Centro notifiche"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr "Suoni"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Bolle"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -71,7 +71,7 @@ msgstr ""
 "Mentre sei in modalità Non Disturbare le notifiche e gli avvisi verrano "
 "nascosti e i suoni di notifica saranno silenziati."
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -79,9 +79,11 @@ msgstr ""
 "Le notifiche di sistema, come quelle del volume e della luminosità del "
 "display, non saranno interessate."
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS è in modalità Non Disturbare"
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "Non Disturbare"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -91,7 +93,7 @@ msgstr ""
 "Le bolle appaiono nell'angolo in alto a destra dello schermo e spariscono "
 "automaticamente."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Suoni"
 
@@ -100,7 +102,7 @@ msgid "Sounds play once when a new notification arrives."
 msgstr ""
 "I suoni vengono riprodotti una sola volta quando arriva una nuova notifica."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Centro notifiche"
 
@@ -108,6 +110,16 @@ msgstr "Centro notifiche"
 msgid "Show missed notifications in Notification Center."
 msgstr "Mostra le notifiche perse nel centro notifiche."
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Disabilitato"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr ""
+#~ "Quando le applicazioni che vengono installate hanno opzioni di notifica "
+#~ "appariranno qui automaticamente."
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "elementary OS è in modalità Non Disturbare"

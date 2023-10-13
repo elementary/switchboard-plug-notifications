@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2021-01-28 03:50+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -29,51 +29,55 @@ msgstr ""
 "更改应用通知的显示方式，设定免打扰时间。"
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
-msgstr "安装的应用若包含通知选项，它们会自动出现在此处。"
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "通知"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "配置通知气泡、声音和通知中心"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "勿扰模式"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 msgid "Notifications Center"
 msgstr "通知中心"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr "声音"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "气泡"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr "勿扰模式启用时，通知和警告将会被隐藏，通知提示音也将关闭。"
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr "系统通知，如音量和屏幕亮度等不会受影响。"
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS 正处于勿扰模式中"
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "勿扰模式"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -81,7 +85,7 @@ msgid ""
 "automatically."
 msgstr "屏幕右上角弹出气泡并自动消失。"
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "声音"
 
@@ -89,7 +93,7 @@ msgstr "声音"
 msgid "Sounds play once when a new notification arrives."
 msgstr "新通知到达时播放提示音。"
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "通知中心"
 
@@ -97,6 +101,14 @@ msgstr "通知中心"
 msgid "Show missed notifications in Notification Center."
 msgstr "在通知中心显示未查看的通知。"
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "已禁用"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr "安装的应用若包含通知选项，它们会自动出现在此处。"
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "elementary OS 正处于勿扰模式中"

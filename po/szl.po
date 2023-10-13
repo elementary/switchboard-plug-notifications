@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -24,50 +24,52 @@ msgid ""
 msgstr ""
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
+msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr ""
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr ""
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 msgid "Notifications Center"
 msgstr ""
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr ""
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr ""
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr ""
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
+#: src/Widgets/MainView.vala:37
+msgid "Do Not Disturb is active"
 msgstr ""
 
 #: src/Widgets/AppSettingsView.vala:49
@@ -76,7 +78,7 @@ msgid ""
 "automatically."
 msgstr ""
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr ""
 
@@ -84,7 +86,7 @@ msgstr ""
 msgid "Sounds play once when a new notification arrives."
 msgstr ""
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr ""
 
@@ -92,6 +94,6 @@ msgstr ""
 msgid "Show missed notifications in Notification Center."
 msgstr ""
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr ""

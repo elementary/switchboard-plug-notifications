@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2016-06-29 14:22+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,41 +28,41 @@ msgstr ""
 "dhe për të vendosur kur nuk dëshironi të jeni të bezdisur nga njoftimet."
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
+msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
-"Programet e instaluar që kanë opsione për njoftimet do të paraqiten këtu "
-"vetvetishëm."
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "Njoftimet"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfiguro flluskat e njoftimeve, tingujt dhe qendrën e njoftimeve"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "Mos më bezdis"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 #, fuzzy
 msgid "Notifications Center"
 msgstr "Qendra e njoftimeve"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 #, fuzzy
 msgid "Sound"
 msgstr "Tinguj"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Flluska"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -70,7 +70,7 @@ msgstr ""
 "Gjatë modalitetit Mos më bezdis, njoftimet dhe alarmet s'do të paraqiten dhe "
 "tingujt e njoftimeve do jenë të heshtur."
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -78,9 +78,11 @@ msgstr ""
 "Njoftimet e sistemit, si puna e volumit dhe e ndriçimit të ekranit, nuk do "
 "të preken."
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS është në modalitetit Mos më bezdis"
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "Mos më bezdis"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -88,7 +90,7 @@ msgid ""
 "automatically."
 msgstr "Flluskat dalin lart në këndin e djathtë të ekranit dhe zhduken vetë."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Tinguj"
 
@@ -96,7 +98,7 @@ msgstr "Tinguj"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Tingujt riprodhohen sapo arrin një njoftim i ri."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Qendra e njoftimeve"
 
@@ -104,6 +106,16 @@ msgstr "Qendra e njoftimeve"
 msgid "Show missed notifications in Notification Center."
 msgstr "Shfaq njoftimet e humbura në Qendrën e Njoftimeve."
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Çaktivizuar"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr ""
+#~ "Programet e instaluar që kanë opsione për njoftimet do të paraqiten këtu "
+#~ "vetvetishëm."
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "elementary OS është në modalitetit Mos më bezdis"

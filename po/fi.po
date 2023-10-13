@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2019-06-20 21:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -30,39 +30,39 @@ msgstr ""
 "ja asettaa järjestelmä sellaiseen tilaan, ettei ilmoituksia näytetä."
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
+msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
-"Kun ilmoitusvalintoja sisältäviä sovelluksia on asennettu, kyseiset "
-"sovellukset näkyvät täällä."
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Määritä ilmoituskuplien ja -äänien sekä ilmoituskeskuksen toiminta"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "Älä häiritse"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 msgid "Notifications Center"
 msgstr "Ilmoituskeskus"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr "Ääni"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Kuplat"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -70,7 +70,7 @@ msgstr ""
 "Älä häiritse -tilassa ilmoitukset ja hälytykset piilotetaan, eikä "
 "ilmoitusääniä toisteta."
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -78,9 +78,11 @@ msgstr ""
 "Tämä ei vaikuta järjestelmäilmoituksiin, kuten äänenvoimakkuuden ja näytön "
 "kirkkauden muutoksiin."
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS on \"Älä häiritse\"-tilassa"
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "Älä häiritse"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -89,7 +91,7 @@ msgid ""
 msgstr ""
 "Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Äänet"
 
@@ -97,7 +99,7 @@ msgstr "Äänet"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Ilmoituskeskus"
 
@@ -105,6 +107,16 @@ msgstr "Ilmoituskeskus"
 msgid "Show missed notifications in Notification Center."
 msgstr "Näytä ohimenneet ilmoitukset ilmoituskeskuksessa."
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Pois käytöstä"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr ""
+#~ "Kun ilmoitusvalintoja sisältäviä sovelluksia on asennettu, kyseiset "
+#~ "sovellukset näkyvät täällä."
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "elementary OS on \"Älä häiritse\"-tilassa"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2019-05-15 17:14+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,38 +29,40 @@ msgstr ""
 "известия, и как ще изглеждат известията."
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
-msgstr "Когато се слагат приложения с известия, те ще бъдат показани тук."
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "Известия"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Настройка на мехурчетата, звуците и центъра за известия."
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "Не ме безпокойте"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 #, fuzzy
 msgid "Notifications Center"
 msgstr "Център за известия"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr "Звук"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Мехурчета"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -68,7 +70,7 @@ msgstr ""
 "Докато сте в режим Небезпокой, известията и алармите ще бъдат скрити и "
 "звуците заглушени."
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
@@ -76,9 +78,11 @@ msgstr ""
 "Системните известия, например за звук и яркост на екрана, няма да се "
 "променят."
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "Системата е в режим \"не ме безпокойте\""
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "Не ме безпокойте"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -87,7 +91,7 @@ msgid ""
 msgstr ""
 "Балончета се показват в горния десен ъгъл на екрана и изчезват своевременно."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Звуци"
 
@@ -95,7 +99,7 @@ msgstr "Звуци"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Звук се чува веднъж, когато се получи известие."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Център за известия"
 
@@ -103,6 +107,14 @@ msgstr "Център за известия"
 msgid "Show missed notifications in Notification Center."
 msgstr "Показвай пропуснати известия в центъра за известия."
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Изключено"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr "Когато се слагат приложения с известия, те ще бъдат показани тук."
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "Системата е в режим \"не ме безпокойте\""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"POT-Creation-Date: 2023-10-13 17:09+0000\n"
 "PO-Revision-Date: 2021-08-24 18:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -30,37 +30,39 @@ msgstr ""
 "a pre nastavenie, kedy nechcete byť oznámeniami vyrušovaní."
 
 #: src/Plug.vala:28
-msgid ""
-"When apps are installed that have notification options they will "
-"automatically appear here."
-msgstr "Tu sa zobrazia aplikácie, ktoré využívajú možnosti oznámení."
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
 
-#: src/Plug.vala:45
+#: src/Plug.vala:51
 msgid "Notifications"
 msgstr "Oznámenia"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Nastavujte bubliny a zvuky oznámení, a tiež centrum oznámení"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
 msgid "Do Not Disturb"
 msgstr "Nerušiť"
 
-#: src/Plug.vala:84
+#: src/Plug.vala:90
 msgid "Notifications Center"
 msgstr "Centrum oznámení"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:91
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
-#: src/Widgets/AppEntry.vala:69
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Bubliny"
 
-#: src/Widgets/MainView.vala:29
+#: src/Widgets/Sidebar.vala:27
+msgid "Search Apps"
+msgstr ""
+
+#: src/Widgets/MainView.vala:33
 msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
@@ -68,15 +70,17 @@ msgstr ""
 "Pokiaľ je režim Nerušiť zapnutý, oznámenia a varovania budú skryté a zvuky "
 "oznámení stíšené."
 
-#: src/Widgets/MainView.vala:31
+#: src/Widgets/MainView.vala:35
 msgid ""
 "System notifications, such as volume and display brightness, will be "
 "unaffected."
 msgstr "Systémové oznámenia, ako hlasitosť a jas obrazovky zostanú nedotknuté."
 
-#: src/Widgets/MainView.vala:34
-msgid "elementary OS is in Do Not Disturb mode"
-msgstr "elementary OS je v režime Nerušiť"
+#: src/Widgets/MainView.vala:37
+#, fuzzy
+#| msgid "Do Not Disturb"
+msgid "Do Not Disturb is active"
+msgstr "Nerušiť"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
@@ -85,7 +89,7 @@ msgid ""
 msgstr ""
 "Bubliny sa objavujú v pravom hornom rohu obrazovky a automaticky zmiznú."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Zvuky"
 
@@ -93,7 +97,7 @@ msgstr "Zvuky"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Zvuk sa prehrá raz pri každom novom oznámení."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Centrum oznámení"
 
@@ -101,6 +105,14 @@ msgstr "Centrum oznámení"
 msgid "Show missed notifications in Notification Center."
 msgstr "Zobrazí neprečítané oznámenia v Centre oznámení."
 
-#: src/Widgets/AppEntry.vala:81
+#: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Vypnuté"
+
+#~ msgid ""
+#~ "When apps are installed that have notification options they will "
+#~ "automatically appear here."
+#~ msgstr "Tu sa zobrazia aplikácie, ktoré využívajú možnosti oznámení."
+
+#~ msgid "elementary OS is in Do Not Disturb mode"
+#~ msgstr "elementary OS je v režime Nerušiť"
