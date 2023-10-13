@@ -43,7 +43,7 @@ public class NotificationsPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.notifications",
                 display_name: _("Notifications"),
-                description: _("Adjust notification bubbles, sounds, and the notification center"),
+                description: _("Configure notification bubbles, sounds, and notification center"),
                 icon: "preferences-system-notifications",
                 supported_settings: settings);
     }
