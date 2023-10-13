@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2019-08-27 01:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -42,7 +42,7 @@ msgstr "تنبيهات"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "من دون إزعاج"
 
@@ -54,8 +54,8 @@ msgstr "مركز التنبيهات"
 msgid "Sound"
 msgstr "الصوت"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "فقاعات"
 
@@ -75,28 +75,28 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr ""
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "الأصوات"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "الأصوات تشتغل مرة واحدة عندما يصل إشعار جديد."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "مركز التنبيهات"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr ""
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "غير مفعل"

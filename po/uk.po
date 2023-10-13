@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2021-05-03 15:59+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -35,8 +35,8 @@ msgid ""
 "When apps are installed that have notification options they will "
 "automatically appear here."
 msgstr ""
-"Після встановлення застосунків з підтримкою сповіщень, вони автоматично з’"
-"являться тут."
+"Після встановлення застосунків з підтримкою сповіщень, вони автоматично "
+"з’являться тут."
 
 #: src/Plug.vala:45
 msgid "Notifications"
@@ -46,7 +46,7 @@ msgstr "Сповіщення"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Налаштування бульбашок сповіщень, звуків та центру сповіщень"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "Не турбувати"
 
@@ -58,8 +58,8 @@ msgstr "Центр сповіщень"
 msgid "Sound"
 msgstr "Звук"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Бульбашки"
 
@@ -82,7 +82,7 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS перебуває в режимі «Не турбувати»"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -90,22 +90,22 @@ msgstr ""
 "Бульбашки з’являтимуться у верхньому правому куті екрана та зникатимуть "
 "самостійно."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Звуки"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Ви почуєте одноразовий звук коли з’явиться нове сповіщення."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Центр сповіщень"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Показувати пропущені сповіщення в Центрі сповіщень."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Вимкнено"

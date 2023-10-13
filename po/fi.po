@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2019-06-20 21:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -45,7 +45,7 @@ msgstr "Ilmoitukset"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Määritä ilmoituskuplien ja -äänien sekä ilmoituskeskuksen toiminta"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "Älä häiritse"
 
@@ -57,8 +57,8 @@ msgstr "Ilmoituskeskus"
 msgid "Sound"
 msgstr "Ääni"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Kuplat"
 
@@ -82,29 +82,29 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS on \"Älä häiritse\"-tilassa"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Kuplat ilmestyvät näytön oikeaan yläkulmaan ja katoavat automaattisesti."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Äänet"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Äänet toistetaan kerran uusien ilmoitusten yhteydessä."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Ilmoituskeskus"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Näytä ohimenneet ilmoitukset ilmoituskeskuksessa."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Pois käytöstä"

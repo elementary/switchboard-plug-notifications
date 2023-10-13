@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2019-06-27 14:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -47,7 +47,7 @@ msgstr "Merknader"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Sett opp merknadsbobler, lyder og merknadssenter"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "Ikke forstyrr"
 
@@ -59,8 +59,8 @@ msgstr "Varslingssenter"
 msgid "Sound"
 msgstr "Lyd"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bobler"
 
@@ -83,29 +83,29 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS er i ikke forstyrr-modus"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Bobler opptrer i øvre høyre hjørne av skjermen og forsvinner automatisk."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Lyder"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Lyder spilles én gang når et nytt varsel ankommer."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Varslingssenter"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Vis tapte varsler i varslingssenteret."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Slått av"

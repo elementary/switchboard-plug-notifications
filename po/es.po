@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2020-05-11 03:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr ""
 "Configure las burbujas de notificación, los sonidos y el centro de "
 "notificaciones"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "No molestar"
 
@@ -60,8 +60,8 @@ msgstr "Centro de notificaciones"
 msgid "Sound"
 msgstr "Sonido"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Burbujas"
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS está en modo No molestar"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -93,22 +93,22 @@ msgstr ""
 "Las burbujas aparecen en la esquina superior derecha de la pantalla y "
 "desaparecen automáticamente."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Sonidos"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "Los sonidos se reproducen una vez al recibir una notificación nueva."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centro de notificaciones"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "Mostrar notificaciones perdidas en el centro de notificaciones."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Desactivado"

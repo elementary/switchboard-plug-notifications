@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2021-05-06 14:05+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"PO-Revision-Date: 2021-07-15 13:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/notifications-plug-extra/nb/>\n"
@@ -29,5 +29,15 @@ msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Sett opp merknadsbobler, lyder og merknadssenter"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:12
+msgid "Minor updates:"
+msgstr "Småoppdateringer:"
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:14
+msgid "New illustrations"
+msgstr ""
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:15
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:21
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:26
 msgid "Updated translations"
 msgstr "Oppdaterte oversettelser"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2019-05-13 15:14+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"PO-Revision-Date: 2022-08-05 15:12+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ko/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-02-24 05:51+0000\n"
 
 #: src/Plug.vala:24
@@ -25,9 +25,8 @@ msgid ""
 "notifications, for changing how an app's notifications appear,\n"
 "and for setting when you do not want to be disturbed by notifications."
 msgstr ""
-"알림 환경 설정은 알림을 사용할 수 있도록 앱을 구성하기 위한, 응용 프로그램의 "
-"알림이 표시되는 방식을 변경하고, 알림에 의해 방해받고 싶지 않을 때를 설정합니"
-"다."
+"알림 환경 설정은 알림을 사용할 수 있도록 앱을 구성하기 위한, 응용 프로그램의 알림이 표시되는 방식을 변경하고,\n"
+"알림에 의해 방해받고 싶지 않을 때를 설정합니다."
 
 #: src/Plug.vala:28
 msgid ""
@@ -43,7 +42,7 @@ msgstr "알림"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "말풍선, 알림음, 알림 센터를 설정합니다"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "방해 금지 모드"
 
@@ -55,8 +54,8 @@ msgstr "알림 센터"
 msgid "Sound"
 msgstr "소리"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "말풍선"
 
@@ -77,28 +76,28 @@ msgstr "볼륨 및 디스플레이 밝기 등의 시스템 알림은 영향을�
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS가 방해 금지 모드 상태입니다"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr "말풍선은 화면 오른쪽 위에 자동으로 나타납니다."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "알림음"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "알림음은 새로 알림이 도착할 때 한 번 실행됩니다."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "알림 센터"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "알림 센터에서 못 본 알림 보기."
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "사용 안 함"

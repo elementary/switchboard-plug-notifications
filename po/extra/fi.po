@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
-"PO-Revision-Date: 2020-02-22 14:09+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
+"PO-Revision-Date: 2021-08-23 19:38+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/fi/>\n"
@@ -17,18 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:5
-#, fuzzy
-#| msgid "Notifications"
 msgid "Notifications Settings"
-msgstr "Ilmoitukset"
+msgstr "Ilmoitusten asetukset"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:6
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Määritä ilmoituskuplien ja -äänien sekä ilmoituskeskuksen toiminta"
 
 #: data/io.elementary.switchboard.notifications.appdata.xml.in:12
+msgid "Minor updates:"
+msgstr "Pienet päivitykset:"
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:14
+msgid "New illustrations"
+msgstr "Uudet kuvitukset"
+
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:15
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:21
+#: data/io.elementary.switchboard.notifications.appdata.xml.in:26
 msgid "Updated translations"
-msgstr "Päivitetyt käännökset"
+msgstr "Päivityksiä kielikäännöksiin"

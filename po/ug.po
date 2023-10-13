@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-notifications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:27+0000\n"
+"POT-Creation-Date: 2021-07-14 21:11+0000\n"
 "PO-Revision-Date: 2017-01-02 03:19+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -48,7 +48,7 @@ msgstr "ئۇقتۇرۇشلار"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "ئۇقتۇرۇش كۆپۈكچىلىرى، ئاۋازلىرى ۋە ئۇقتۇرۇش مەركىزىنى تەڭشەش"
 
-#: src/Plug.vala:83 src/Widgets/Sidebar.vala:32
+#: src/Plug.vala:83 src/Widgets/Sidebar.vala:33
 msgid "Do Not Disturb"
 msgstr "دەخلى قىلماڭ"
 
@@ -62,8 +62,8 @@ msgstr "ئۇقتۇرۇش مەركىزى"
 msgid "Sound"
 msgstr "ئۈن"
 
-#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:45
-#: src/Widgets/AppEntry.vala:65
+#: src/Plug.vala:86 src/Widgets/AppSettingsView.vala:48
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "كۆپۈك"
 
@@ -86,29 +86,29 @@ msgstr ""
 msgid "elementary OS is in Do Not Disturb mode"
 msgstr "elementary OS دەخلى قىلماسلىق ھالىتىدە"
 
-#: src/Widgets/AppSettingsView.vala:46
+#: src/Widgets/AppSettingsView.vala:49
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "ئىكراننىڭ ئوڭ يۇقىرى بۇلۇڭىدا كۆپۈكچىلەر پەيدا بولىدۇ ۋە ئۆزلىكىدىن يوقىلىدۇ."
 
-#: src/Widgets/AppSettingsView.vala:52 src/Widgets/AppEntry.vala:69
+#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "ئۈن"
 
-#: src/Widgets/AppSettingsView.vala:53
+#: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
 msgstr "يىڭى ئۇقتۇرۇش تاپشۇرۇۋالغاندا ئاۋاز بىر قىتىم قويۇلىدۇ"
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:73
+#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "ئۇقتۇرۇش مەركىزى"
 
-#: src/Widgets/AppSettingsView.vala:60
+#: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
 msgstr "كۆرمىگەن ئۇقتۇرۇشلارنى ئۇقتۇرۇش مەركىزىدە كۆرسىتىش"
 
-#: src/Widgets/AppEntry.vala:77
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "قوزغىتىلمىغان"

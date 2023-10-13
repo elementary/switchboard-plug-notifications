@@ -1,7 +1,7 @@
 project(
     'notifications',
     'vala', 'c',
-    version: '2.1.7'
+    version: '2.2.0'
 )
 
 gettext_name = meson.project_name() + '-plug'
@@ -21,6 +21,15 @@ plug_resources = gnome.compile_resources(
     'plug_resources',
     'data/switchboard-plug-notifications.gresource.xml',
     source_dir: 'data'
+)
+
+config_data = configuration_data()
+config_data.set_quoted('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+config_data.set_quoted('GETTEXT_PACKAGE', meson.project_name() + '-plug')
+config_file = configure_file(
+    input: 'src/Config.vala.in',
+    output: '@BASENAME@',
+    configuration: config_data
 )
 
 subdir('data')
