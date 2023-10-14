@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2019-03-05 03:26+0000\n"
+"PO-Revision-Date: 2023-10-17 15:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-08-03 05:57+0000\n"
 
 #: src/Plug.vala:24
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
+msgstr "通知を設定可能なアプリがインストールされると、ここに表示されます。"
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -59,7 +59,7 @@ msgstr "バブル"
 
 #: src/Widgets/Sidebar.vala:27
 msgid "Search Apps"
-msgstr ""
+msgstr "アプリを検索"
 
 #: src/Widgets/MainView.vala:33
 msgid ""
@@ -74,10 +74,8 @@ msgid ""
 msgstr "音量設定やディスプレイの明るさなどのシステム通知は影響を受けません。"
 
 #: src/Widgets/MainView.vala:37
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "非通知モード"
+msgstr "非通知モードが有効"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
