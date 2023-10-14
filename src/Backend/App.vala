@@ -18,8 +18,15 @@
  */
 
 public class Backend.App : Object {
+    public static string normalize_app_id(string app_id) {
+        return app_id.replace(".desktop", "").down();
+    }
+
     public DesktopAppInfo app_info { get; construct; }
     public string app_id { get; private set; }
+    public string normalized_app_id {
+        owned get { return normalize_app_id(app_id); }
+    }
     public Settings settings { get; private set; }
 
     public App (DesktopAppInfo app_info) {
