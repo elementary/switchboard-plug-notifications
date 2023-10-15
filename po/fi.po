@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2019-06-20 21:06+0000\n"
+"PO-Revision-Date: 2023-10-17 15:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/fi/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:11+0000\n"
 
 #: src/Plug.vala:24
@@ -32,6 +32,8 @@ msgstr ""
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
+"Sovellukset, joiden ilmoitukset ovat mukautettavissa, ilmestyvät asennuksen "
+"jälkeen tähän."
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -60,7 +62,7 @@ msgstr "Kuplat"
 
 #: src/Widgets/Sidebar.vala:27
 msgid "Search Apps"
-msgstr ""
+msgstr "Etsi sovelluksia"
 
 #: src/Widgets/MainView.vala:33
 msgid ""
@@ -79,10 +81,8 @@ msgstr ""
 "kirkkauden muutoksiin."
 
 #: src/Widgets/MainView.vala:37
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "Älä häiritse"
+msgstr "Älä häiritse -tila on aktiivisena"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
