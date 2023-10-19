@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2017-05-25 06:41+0000\n"
-"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2023-10-20 18:10+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
 #: src/Plug.vala:24
@@ -34,6 +34,7 @@ msgstr ""
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
+"Aplikacje z konfigurowalnymi powiadomieniami pojawią się tutaj po instalacji."
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -62,7 +63,7 @@ msgstr "Bąbelki"
 
 #: src/Widgets/Sidebar.vala:27
 msgid "Search Apps"
-msgstr ""
+msgstr "Wyszukaj aplikacje"
 
 #: src/Widgets/MainView.vala:33
 msgid ""
@@ -81,10 +82,8 @@ msgstr ""
 "jasność obrazu."
 
 #: src/Widgets/MainView.vala:37
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "Nie przeszkadzać"
+msgstr "Tryb „Nie przeszkadzać” jest włączony"
 
 #: src/Widgets/AppSettingsView.vala:49
 msgid ""
