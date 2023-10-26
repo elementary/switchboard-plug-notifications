@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
-"Last-Translator: кубик круглый <cubic@users.noreply.l10n.elementary.io>\n"
+"PO-Revision-Date: 2023-10-27 11:10+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ru/>\n"
 "Language: ru\n"
@@ -69,7 +69,8 @@ msgid ""
 "While in Do Not Disturb mode, notifications and alerts will be hidden and "
 "notification sounds will be silenced."
 msgstr ""
-"В режиме «Не беспокоить» уведомления и оповещения скрыты, а их звук отключён."
+"В режиме «Не беспокоить» уведомления и оповещения будут скрыты, а их звук "
+"отключён."
 
 #: src/Widgets/MainView.vala:35
 msgid ""
@@ -97,7 +98,7 @@ msgstr "Звуки"
 
 #: src/Widgets/AppSettingsView.vala:56
 msgid "Sounds play once when a new notification arrives."
-msgstr "Воспроизводить звуки при новом уведомлении."
+msgstr "Воспроизводить звуки при получении нового уведомления."
 
 #: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
@@ -105,7 +106,7 @@ msgstr "Центр уведомлений"
 
 #: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
-msgstr "Показывать пропущенные уведомления в «Центре уведомлений»."
+msgstr "Показывать пропущенные уведомления в центре уведомлений."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
