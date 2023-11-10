@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"PO-Revision-Date: 2023-11-11 10:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/he/>\n"
@@ -47,7 +47,7 @@ msgstr "לא להפריע"
 
 #: src/Plug.vala:90
 msgid "Notifications Center"
-msgstr "מרכז ההתרעות"
+msgstr "מרכז ההתראות"
 
 #: src/Plug.vala:91
 msgid "Sound"
@@ -95,7 +95,7 @@ msgstr "צלילים יושמעו כאשר מגיעה התרעה חדשה."
 
 #: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
-msgstr "מרכז ההתרעות"
+msgstr "מרכז ההתראות"
 
 #: src/Widgets/AppSettingsView.vala:63
 msgid "Show missed notifications in Notification Center."
