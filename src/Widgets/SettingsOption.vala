@@ -75,8 +75,6 @@ public class Widgets.SettingsOption : Gtk.Grid {
 
         column_spacing = 12;
         row_spacing = 6;
-        margin_start = 60;
-        margin_end = 30;
         attach (card, 0, 0, 1, 3);
         attach (title_label, 1, 0);
         attach (widget, 1, 1);
