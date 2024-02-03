@@ -17,32 +17,12 @@
  * Boston, MA 02110-1301, USA.
  */
 
-public class Widgets.AppSettingsView : Gtk.Grid {
-    private Gtk.Image app_image;
-    private Gtk.Label app_label;
-
+public class Widgets.AppSettingsView : Switchboard.SettingsPage {
     private SettingsOption bubbles_option;
     private SettingsOption sound_option;
     private SettingsOption remember_option;
 
     construct {
-        app_image = new Gtk.Image () {
-            pixel_size = 48
-        };
-
-        app_label = new Gtk.Label (null) {
-            use_markup = true,
-            halign = Gtk.Align.START,
-            hexpand = true
-        };
-        app_label.add_css_class (Granite.STYLE_CLASS_H2_LABEL);
-
-        var header = new Gtk.Grid () {
-            column_spacing = 12
-        };
-        header.attach (app_image, 0, 0);
-        header.attach (app_label, 1, 0);
-
         bubbles_option = new SettingsOption (
             "bubbles",
             _("Bubbles"),
@@ -64,15 +44,12 @@ public class Widgets.AppSettingsView : Gtk.Grid {
             new Gtk.Switch ()
         );
 
-        margin_start = 12;
-        margin_end = 12;
-        margin_top = 12;
-        margin_bottom = 12;
-        row_spacing = 32;
-        attach (header, 0, 0);
-        attach (bubbles_option, 0, 1);
-        attach (sound_option, 0, 2);
-        attach (remember_option, 0, 3);
+        var box = new Gtk.Box (VERTICAL, 32);
+        box.append (bubbles_option);
+        box.append (sound_option);
+        box.append (remember_option);
+
+        child = box;
 
         update_selected_app ();
 
@@ -97,7 +74,7 @@ public class Widgets.AppSettingsView : Gtk.Grid {
         selected_app.settings.bind ("sounds", sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
         selected_app.settings.bind ("remember", remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
 
-        app_label.label = selected_app.app_info.get_display_name ();
-        app_image.gicon = selected_app.app_info.get_icon ();
+        title = selected_app.app_info.get_display_name ();
+        icon = selected_app.app_info.get_icon ();
     }
 }
