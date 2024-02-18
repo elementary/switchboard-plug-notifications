@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-13 17:09+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"PO-Revision-Date: 2024-02-19 11:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:24
 msgid "Nothing to do here"
-msgstr "設定できるものがありません"
+msgstr "設定可能項目なし"
 
 #: src/Plug.vala:26
 msgid ""
