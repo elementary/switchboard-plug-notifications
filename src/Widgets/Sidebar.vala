@@ -32,9 +32,20 @@ public class Widgets.Sidebar : Gtk.Box {
             hexpand = true
         };
 
-        var search_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-        search_box.add_css_class (Granite.STYLE_CLASS_VIEW);
-        search_box.append (search_entry);
+        var search_revealer = new Gtk.Revealer () {
+            child = search_entry
+        };
+
+        var search_toggle = new Gtk.ToggleButton () {
+            icon_name = "edit-find-symbolic",
+            tooltip_text = _("Search Apps")
+        };
+
+        var headerbar = new Adw.HeaderBar () {
+            show_end_title_buttons = false,
+            show_title = false
+        };
+        headerbar.pack_end (search_toggle);
 
         var app_list = new Gtk.ListBox () {
             hexpand = true,
@@ -65,16 +76,24 @@ public class Widgets.Sidebar : Gtk.Box {
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
-        orientation = Gtk.Orientation.VERTICAL;
-        append (search_box);
-        append (scrolled_window);
-        append (footer);
+        var toolbarview = new Adw.ToolbarView () {
+            content = scrolled_window,
+            top_bar_style = FLAT
+        };
+        toolbarview.add_top_bar (headerbar);
+        toolbarview.add_top_bar (search_revealer);
+        toolbarview.add_bottom_bar (footer);
+        toolbarview.add_css_class (Granite.STYLE_CLASS_SIDEBAR);
+
+        append (toolbarview);
 
         app_list.row_selected.connect (show_row);
 
         search_entry.search_changed.connect (() => {
             app_list.invalidate_filter ();
         });
+
+        search_toggle.bind_property ("active", search_revealer, "reveal-child");
 
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",

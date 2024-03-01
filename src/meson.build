@@ -18,6 +18,7 @@ shared_module(
     config_file,
     plug_resources,
     dependencies: [
+        adw_dep,
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),

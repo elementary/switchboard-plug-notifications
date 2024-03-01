@@ -50,6 +50,7 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
         box.append (remember_option);
 
         child = box;
+        show_end_title_buttons = true;
 
         update_selected_app ();
 

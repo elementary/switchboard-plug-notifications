@@ -48,10 +48,6 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
         };
 
         var grid = new Gtk.Grid () {
-            margin_start = 6,
-            margin_end = 6,
-            margin_top = 6,
-            margin_bottom = 6,
             column_spacing = 6
         };
         grid.attach (image, 0, 0, 1, 2);
