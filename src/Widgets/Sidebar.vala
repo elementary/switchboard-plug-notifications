@@ -22,6 +22,10 @@ public class Widgets.Sidebar : Gtk.Box {
 
     private Gtk.SearchEntry search_entry;
 
+    class construct {
+        set_css_name ("settingssidebar");
+    }
+
     construct {
         search_entry = new Gtk.SearchEntry () {
             placeholder_text = _("Search Apps"),
@@ -83,7 +87,6 @@ public class Widgets.Sidebar : Gtk.Box {
         toolbarview.add_top_bar (headerbar);
         toolbarview.add_top_bar (search_revealer);
         toolbarview.add_bottom_bar (footer);
-        toolbarview.add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         append (toolbarview);
 
