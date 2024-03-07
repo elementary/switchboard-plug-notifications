@@ -22,34 +22,39 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
     private SettingsOption sound_option;
     private SettingsOption remember_option;
 
+    static construct {
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("/io/elementary/settings/notifications/SettingsOption.css");
+
+        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+    }
+
     construct {
         bubbles_option = new SettingsOption (
             "bubbles",
             _("Bubbles"),
-            _("Bubbles appear in the top right corner of the display and disappear automatically."),
-            new Gtk.Switch ()
+            _("Bubbles appear in the top right corner of the display and disappear automatically.")
         );
 
         sound_option = new SettingsOption (
             "sounds",
             _("Sounds"),
-            _("Sounds play once when a new notification arrives."),
-            new Gtk.Switch ()
+            _("Sounds play once when a new notification arrives.")
         );
 
         remember_option = new SettingsOption (
             "notify-center",
             _("Notification Center"),
-            _("Show missed notifications in Notification Center."),
-            new Gtk.Switch ()
+            _("Show missed notifications in Notification Center.")
         );
 
-        var box = new Gtk.Box (VERTICAL, 32);
+        var box = new Gtk.Box (VERTICAL, 24);
         box.append (bubbles_option);
         box.append (sound_option);
         box.append (remember_option);
 
         child = box;
+        add_css_class ("notifications");
 
         update_selected_app ();
 
