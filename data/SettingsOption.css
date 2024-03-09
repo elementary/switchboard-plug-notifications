@@ -17,6 +17,13 @@
 * Boston, MA 02110-1301 USA.
 */
 
+settingspage.notifications infobar revealer > box {
+    background-color: mix(@GRAPE_500, @GRAPE_700, 0.5);
+    background-image: -gtk-icontheme("notification-disabled-symbolic");
+    color: white;
+    margin-bottom: 2em;
+}
+
 settingspage.notifications .card {
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +31,7 @@ settingspage.notifications .card {
     min-width: 112px;
     min-height: 80px;
     margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 settingspage.notifications .card.bubbles {
