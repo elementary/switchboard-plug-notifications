@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2020-05-11 03:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -56,7 +56,7 @@ msgstr "Centro de notificaciones"
 msgid "Sound"
 msgstr "Sonido"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Burbujas"
@@ -65,29 +65,25 @@ msgstr "Burbujas"
 msgid "Search Apps"
 msgstr ""
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Mientras el modo No molestar esté activo, se ocultarán las notificaciones y "
-"alertas y se silenciarán los sonidos de aviso."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Las notificaciones del sistema, como volumen y brillo de pantalla, no se "
-"verán afectadas."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 #, fuzzy
 #| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
 msgstr "No molestar"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr ""
+"Las notificaciones del sistema, como volumen y brillo de pantalla, no se "
+"verán afectadas."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -95,25 +91,32 @@ msgstr ""
 "Las burbujas aparecen en la esquina superior derecha de la pantalla y "
 "desaparecen automáticamente."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Sonidos"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "Los sonidos se reproducen una vez al recibir una notificación nueva."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Centro de notificaciones"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Mostrar notificaciones perdidas en el centro de notificaciones."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Desactivado"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "Mientras el modo No molestar esté activo, se ocultarán las notificaciones "
+#~ "y alertas y se silenciarán los sonidos de aviso."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

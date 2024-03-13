@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2023-12-16 04:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -54,7 +54,7 @@ msgstr "Értesítési központ"
 msgid "Sound"
 msgstr "Hang"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Buborékok"
@@ -63,27 +63,23 @@ msgstr "Buborékok"
 msgid "Search Apps"
 msgstr "Alkalmazások keresése"
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Ne zavarj módban az értesítések és figyelmeztetések is rejtve lesznek, az "
-"értesítési hangok pedig némítva."
+#: src/Widgets/AppSettingsView.vala:33
+msgid "Do Not Disturb is active"
+msgstr "A Ne zavarj be van kapcsolva"
 
-#: src/Widgets/MainView.vala:35
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
 msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
 msgstr ""
 "A rendszerszintű értesítésekre, mint például a hangerő és fényerő állítása, "
 "nincs hatással."
 
-#: src/Widgets/MainView.vala:37
-msgid "Do Not Disturb is active"
-msgstr "A Ne zavarj be van kapcsolva"
-
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -91,25 +87,32 @@ msgstr ""
 "A buborékok a képernyő jobb felső sarkában jelennek meg, és automatikusan "
 "eltűnnek."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Hangok"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "A hangok egyszer játszódnak le az új értesítés pillanatában."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Értesítési központ"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Az elmulasztott értesítések megjelennek az Értesítési központban."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Kikapcsolva"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "Ne zavarj módban az értesítések és figyelmeztetések is rejtve lesznek, az "
+#~ "értesítési hangok pedig némítva."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

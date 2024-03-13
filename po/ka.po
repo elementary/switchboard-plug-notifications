@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2024-01-24 03:33+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -53,7 +53,7 @@ msgstr "შეყობინებების ცენტრი"
 msgid "Sound"
 msgstr "ხმები"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "ბუშტები"
@@ -62,51 +62,54 @@ msgstr "ბუშტები"
 msgid "Search Apps"
 msgstr "აპების ძებნა"
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"\"არ შემაწუხოთ\" რეჟიმისას, შეტყობინებები და გაფრთხილებები დაიმალება და "
-"შეტყობინების ხმები დადუმდება."
+#: src/Widgets/AppSettingsView.vala:33
+msgid "Do Not Disturb is active"
+msgstr "არ შემაწუხოთ აქტიურია"
 
-#: src/Widgets/MainView.vala:35
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
 msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
 msgstr ""
 "სისტემური შეტყობინებები, როგორიცაა ხმა და ეკრანის სიკაშკაშე, ხელშეუხებელი "
 "დარჩება."
 
-#: src/Widgets/MainView.vala:37
-msgid "Do Not Disturb is active"
-msgstr "არ შემაწუხოთ აქტიურია"
-
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr "ბუშტები ეკრანის ზედა მაჯრვენა კუთხეში ჩნდებიან და ავტომატურად ქრებიან."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "ხმები"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "ახალი შეტყობინების მოსვლისას იკვრება ხმა."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "შეყობინებების ცენტრი"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "შეტყობინებების ცენტრში გამოყოვებული შეტყობინებების ჩვენება."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "გამორთულია"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "\"არ შემაწუხოთ\" რეჟიმისას, შეტყობინებები და გაფრთხილებები დაიმალება და "
+#~ "შეტყობინების ხმები დადუმდება."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2024-02-09 15:13+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -56,7 +56,7 @@ msgstr "Varslingssenter"
 msgid "Sound"
 msgstr "Lyd"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Bobler"
@@ -66,53 +66,56 @@ msgstr "Bobler"
 msgid "Search Apps"
 msgstr "Søk etter programmer"
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Mens i ikke forstyrr-modus vil varsler og advarsler være skjult og "
-"varslingslyder vil bli brakt til taushet."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Systemvarslinger, som for eksempel lyd- og lys-styrke, vil være upåvirket."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 #, fuzzy
 #| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
 msgstr "Ikke forstyrr"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr ""
+"Systemvarslinger, som for eksempel lyd- og lys-styrke, vil være upåvirket."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Bobler opptrer i øvre høyre hjørne av skjermen og forsvinner automatisk."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Lyder"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "Lyder spilles én gang når et nytt varsel ankommer."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Varslingssenter"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Vis tapte varsler i varslingssenteret."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Slått av"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "Mens i ikke forstyrr-modus vil varsler og advarsler være skjult og "
+#~ "varslingslyder vil bli brakt til taushet."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

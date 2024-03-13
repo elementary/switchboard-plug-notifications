@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2023-11-11 10:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -53,7 +53,7 @@ msgstr "מרכז ההתראות"
 msgid "Sound"
 msgstr "שמע"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "בועות"
@@ -62,48 +62,52 @@ msgstr "בועות"
 msgid "Search Apps"
 msgstr "חיפוש יישומונים"
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"בזמן שהמערכת במצב לא להפריע, התרעות ודיווחים יוסתרו ולא יושמעו צלילי התרעה."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr "התרעות מערכת, כגון שמע ובהירות התצוגה, לא יושפעו."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 msgid "Do Not Disturb is active"
 msgstr "‚לא להפריע’ פעיל"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr "התרעות מערכת, כגון שמע ובהירות התצוגה, לא יושפעו."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr "הודעות בועה תופענה בפינה הימנית העליונה של התצוגה והן תעלמנה אוטומטית."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "צלילים"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "צלילים יושמעו כאשר מגיעה התרעה חדשה."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "מרכז ההתראות"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "הצגת התרעות שהוחמצו במרכז ההתרעות."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "מושבתת"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "בזמן שהמערכת במצב לא להפריע, התרעות ודיווחים יוסתרו ולא יושמעו צלילי "
+#~ "התרעה."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "
