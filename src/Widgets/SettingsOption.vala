@@ -21,64 +21,42 @@ public class Widgets.SettingsOption : Gtk.Grid {
     public string image_path { get; construct; }
     public string title { get; construct; }
     public string description { get; construct; }
-    public Gtk.Widget widget { get; construct; }
-
-    private static Gtk.CssProvider css_provider;
+    public Gtk.Switch widget { get; private set; }
 
     private Gtk.Grid card;
     private Gtk.Settings gtk_settings;
 
-    public SettingsOption (string image_path, string title, string description, Gtk.Widget widget) {
+    public SettingsOption (string image_path, string title, string description) {
         Object (
             image_path: image_path,
             title: title,
-            description: description,
-            widget: widget
+            description: description
         );
-    }
-
-    static construct {
-        css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("/io/elementary/settings/notifications/SettingsOption.css");
     }
 
     construct {
         card = new Gtk.Grid () {
-            valign = Gtk.Align.START
+            halign = START
         };
         card.add_css_class (image_path);
         card.add_css_class (Granite.STYLE_CLASS_CARD);
         card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
-        card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        var title_label = new Gtk.Label (title) {
-            halign = Gtk.Align.START,
-            valign = Gtk.Align.END,
-            hexpand = true,
-            vexpand = false
+        widget = new Gtk.Switch () {
+            valign = START
         };
-        title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        widget.halign = Gtk.Align.START;
-        widget.valign = Gtk.Align.CENTER;
-        widget.hexpand = false;
-        widget.vexpand = false;
-
-        var description_label = new Gtk.Label (description) {
-            xalign = 0,
-            valign = Gtk.Align.START,
+        var header_label = new Granite.HeaderLabel (title) {
             hexpand = true,
-            vexpand = false,
-            wrap = true,
-            justify = Gtk.Justification.LEFT
+            halign = FILL,
+            secondary_text = description,
+            mnemonic_widget = widget
         };
 
         column_spacing = 12;
-        row_spacing = 6;
-        attach (card, 0, 0, 1, 3);
-        attach (title_label, 1, 0);
-        attach (widget, 1, 1);
-        attach (description_label, 1, 2);
+        attach (header_label, 0, 0);
+        attach (widget, 1, 0);
+        attach (card, 0, 1, 2);
 
         gtk_settings = Gtk.Settings.get_default ();
         gtk_settings.notify["gtk-application-prefer-dark-theme"].connect (() => {

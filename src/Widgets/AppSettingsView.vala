@@ -22,33 +22,51 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
     private SettingsOption sound_option;
     private SettingsOption remember_option;
 
+    static construct {
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("/io/elementary/settings/notifications/SettingsOption.css");
+
+        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+    }
+
     construct {
+        var dnd_header = new Granite.HeaderLabel (_("Do Not Disturb is active")) {
+            halign = FILL,
+            hexpand = true,
+            secondary_text = _("Bubbles will be hidden and sounds will be silenced. System notifications, such as volume and display brightness, will be unaffected.")
+        };
+
+        var dnd_infobar = new Gtk.InfoBar () {
+            message_type = INFO
+        };
+        dnd_infobar.add_child (dnd_header);
+        dnd_infobar.add_css_class (Granite.STYLE_CLASS_FRAME);
+
         bubbles_option = new SettingsOption (
             "bubbles",
             _("Bubbles"),
-            _("Bubbles appear in the top right corner of the display and disappear automatically."),
-            new Gtk.Switch ()
+            _("Bubbles appear in the top right corner of the display and disappear automatically.")
         );
 
         sound_option = new SettingsOption (
             "sounds",
             _("Sounds"),
-            _("Sounds play once when a new notification arrives."),
-            new Gtk.Switch ()
+            _("Sounds play once when a new notification arrives.")
         );
 
         remember_option = new SettingsOption (
             "notify-center",
             _("Notification Center"),
-            _("Show missed notifications in Notification Center."),
-            new Gtk.Switch ()
+            _("Show missed notifications in Notification Center.")
         );
 
-        var box = new Gtk.Box (VERTICAL, 32);
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.append (dnd_infobar);
         box.append (bubbles_option);
         box.append (sound_option);
         box.append (remember_option);
 
+        add_css_class ("notifications");
         child = box;
         show_end_title_buttons = true;
 
@@ -58,6 +76,8 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
             remove_bindings ();
             update_selected_app ();
         });
+
+        NotificationsPlug.notify_settings.bind ("do-not-disturb", dnd_infobar, "revealed", GET);
     }
 
     private void remove_bindings () {

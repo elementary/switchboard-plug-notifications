@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: notifications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2018-05-27 19:25+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -58,7 +58,7 @@ msgstr "Centrul de notificări"
 msgid "Sound"
 msgstr "Sunet"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Bule"
@@ -67,54 +67,57 @@ msgstr "Bule"
 msgid "Search Apps"
 msgstr ""
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"În modul \"Nu deranjați\", notificările și alertele vor fi ascunse, iar "
-"sunetele de notificare vor fi reduse la tăcere."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Notificările sistemului, cum ar fi luminozitatea volumului și a afișajului, "
-"nu vor fi afectate."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 #, fuzzy
 #| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
 msgstr "Nu deranja"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr ""
+"Notificările sistemului, cum ar fi luminozitatea volumului și a afișajului, "
+"nu vor fi afectate."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
 msgstr ""
 "Bulele apar în colțul din dreapta sus al monitorului și dispar automat."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Sunete"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "Sunetele se redă o dată când apare o nouă notificare."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Centru de notificări"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Afișați notificările pierdute în Centrul de notificări."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Dezactivat"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "În modul \"Nu deranjați\", notificările și alertele vor fi ascunse, iar "
+#~ "sunetele de notificare vor fi reduse la tăcere."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

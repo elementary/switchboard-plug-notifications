@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2023-10-17 15:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-06-15 06:21+0000\n"
 
@@ -56,7 +56,7 @@ msgstr "Центр сповіщень"
 msgid "Sound"
 msgstr "Звук"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Бульбашки"
@@ -65,26 +65,22 @@ msgstr "Бульбашки"
 msgid "Search Apps"
 msgstr "Пошук застосунків"
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"В режимі «Не турбувати», всі сповіщення та попередження буде сховано, а "
-"звуки повідомлень — вимкнено."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Системні сповіщення, такі як гучність та яскравість екрана, не буде змінено."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 msgid "Do Not Disturb is active"
 msgstr "Увімкнено режим Не турбувати"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr ""
+"Системні сповіщення, такі як гучність та яскравість екрана, не буде змінено."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -92,25 +88,32 @@ msgstr ""
 "Бульбашки з’являтимуться у верхньому правому куті екрана та зникатимуть "
 "самостійно."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Звуки"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "Ви почуєте одноразовий звук коли з’явиться нове сповіщення."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Центр сповіщень"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Показувати пропущені сповіщення в Центрі сповіщень."
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Вимкнено"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "В режимі «Не турбувати», всі сповіщення та попередження буде сховано, а "
+#~ "звуки повідомлень — вимкнено."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

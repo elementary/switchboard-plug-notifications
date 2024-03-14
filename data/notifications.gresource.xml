@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/io/elementary/settings/notifications">
-    <file alias="bubbles.svg" compressed="true">bubbles.svg</file>
-    <file alias="bubbles-dark.svg" compressed="true">bubbles-dark.svg</file>
-    <file alias="notify-center.svg" compressed="true">notify-center.svg</file>
-    <file alias="notify-center-dark.svg" compressed="true">notify-center-dark.svg</file>
-    <file alias="SettingsOption.css" compressed="true">SettingsOption.css</file>
-    <file alias="sounds.svg" compressed="true">sounds.svg</file>
-    <file alias="sounds-dark.svg" compressed="true">sounds-dark.svg</file>
+    <file compressed="true">bubble.svg</file>
+    <file compressed="true">bubble-dark.svg</file>
+    <file compressed="true">dock.svg</file>
+    <file compressed="true">dock-dark.svg</file>
+    <file compressed="true">notify-center.svg</file>
+    <file compressed="true">notify-center-dark.svg</file>
+    <file compressed="true">SettingsOption.css</file>
   </gresource>
 </gresources>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 17:09+0000\n"
+"POT-Creation-Date: 2024-03-13 19:23+0000\n"
 "PO-Revision-Date: 2017-08-31 23:21+0000\n"
 "Last-Translator: Grammatopoulos Athanasios-Vasi <darkthanos.gr@gmail.com>\n"
 "Language-Team: Greek <https://weblate.elementary.io/projects/switchboard/"
@@ -55,7 +55,7 @@ msgstr "Κέντρο ειδοποιήσεων"
 msgid "Sound"
 msgstr "Ήχος"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:48
+#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:72
 msgid "Bubbles"
 msgstr "Μπάνερ"
@@ -64,29 +64,25 @@ msgstr "Μπάνερ"
 msgid "Search Apps"
 msgstr ""
 
-#: src/Widgets/MainView.vala:33
-msgid ""
-"While in Do Not Disturb mode, notifications and alerts will be hidden and "
-"notification sounds will be silenced."
-msgstr ""
-"Όσο η λειτουργία \"Μην ενοχλείτε\" είναι ενεργή, οι ειδοποιήσεις δε θα "
-"εμφανίζονται και οι ήχοι τους θα είναι απενεργοποιημένοι."
-
-#: src/Widgets/MainView.vala:35
-msgid ""
-"System notifications, such as volume and display brightness, will be "
-"unaffected."
-msgstr ""
-"Ειδοποιήσεις συστήματος, όπως η ένταση του ήχου και η φωτεινότητα της "
-"οθόνης, θα μείνουν ανεπηρέαστες."
-
-#: src/Widgets/MainView.vala:37
+#: src/Widgets/AppSettingsView.vala:33
 #, fuzzy
 #| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
 msgstr "Μην ενοχλείτε"
 
-#: src/Widgets/AppSettingsView.vala:49
+#: src/Widgets/AppSettingsView.vala:36
+#, fuzzy
+#| msgid ""
+#| "System notifications, such as volume and display brightness, will be "
+#| "unaffected."
+msgid ""
+"Bubbles will be hidden and sounds will be silenced. System notifications, "
+"such as volume and display brightness, will be unaffected."
+msgstr ""
+"Ειδοποιήσεις συστήματος, όπως η ένταση του ήχου και η φωτεινότητα της "
+"οθόνης, θα μείνουν ανεπηρέαστες."
+
+#: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
@@ -94,25 +90,32 @@ msgstr ""
 "Τα μπάνερ εμφανίζονται στην πάνω δεξιά γωνία της οθόνης και εξαφανίζονται "
 "αυτόματα."
 
-#: src/Widgets/AppSettingsView.vala:55 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
 msgid "Sounds"
 msgstr "Ήχοι"
 
-#: src/Widgets/AppSettingsView.vala:56
+#: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
 msgstr "Οι ήχοι παίζουν μια φορά όταν λαμβάνετε μια νέα ειδοποίηση."
 
-#: src/Widgets/AppSettingsView.vala:62 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
 msgid "Notification Center"
 msgstr "Κέντρο ειδοποιήσεων"
 
-#: src/Widgets/AppSettingsView.vala:63
+#: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
 msgstr "Εμφάνιση χαμένων ειδοποιήσεων στο κέντρο ειδοποιήσεων"
 
 #: src/Widgets/AppEntry.vala:84
 msgid "Disabled"
 msgstr "Απενεργοποιημένα"
+
+#~ msgid ""
+#~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
+#~ "notification sounds will be silenced."
+#~ msgstr ""
+#~ "Όσο η λειτουργία \"Μην ενοχλείτε\" είναι ενεργή, οι ειδοποιήσεις δε θα "
+#~ "εμφανίζονται και οι ήχοι τους θα είναι απενεργοποιημένοι."
 
 #~ msgid ""
 #~ "When apps are installed that have notification options they will "

@@ -63,32 +63,27 @@ public class Widgets.Sidebar : Gtk.Box {
             child = app_list
         };
 
-        var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb")) {
-            margin_start = 3
-        };
-        do_not_disturb_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+        var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));
 
-        var do_not_disturb_switch = new Gtk.Switch () {
-            margin_start = 6,
-            margin_top = 6,
-            margin_bottom = 6,
-            margin_end = 3
+        var do_not_disturb_switch = new Gtk.Switch ()  {
+            valign = CENTER
         };
 
         var footer = new Gtk.ActionBar ();
-        footer.add_css_class (Granite.STYLE_CLASS_FLAT);
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
         var toolbarview = new Adw.ToolbarView () {
             content = scrolled_window,
-            top_bar_style = FLAT
+            top_bar_style = FLAT,
+            bottom_bar_style = RAISED
         };
         toolbarview.add_top_bar (headerbar);
         toolbarview.add_top_bar (search_revealer);
         toolbarview.add_bottom_bar (footer);
 
         append (toolbarview);
+        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         app_list.row_selected.connect (show_row);
 
@@ -100,15 +95,8 @@ public class Widgets.Sidebar : Gtk.Box {
 
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",
-            app_list,
-            "sensitive",
-            SettingsBindFlags.INVERT_BOOLEAN
-        );
-
-        NotificationsPlug.notify_settings.bind (
-            "do-not-disturb",
             do_not_disturb_switch,
-            "state",
+            "active",
             SettingsBindFlags.DEFAULT
         );
 

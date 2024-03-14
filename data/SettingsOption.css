@@ -17,70 +17,100 @@
 * Boston, MA 02110-1301 USA.
 */
 
-.card {
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 112px 80px, cover;
-   min-width: 112px;
-   min-height: 80px;
+settingspage.notifications infobar revealer > box {
+    background-color: mix(@GRAPE_500, @GRAPE_700, 0.5);
+    background-image: -gtk-icontheme("notification-disabled-symbolic");
+    color: white;
+    margin-bottom: 2em;
 }
 
-.card.bubbles {
+settingspage.notifications .card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 112px 80px, cover;
+    min-width: 112px;
+    min-height: 80px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+settingspage.notifications .card.bubbles {
     background-image:
-        url("resource:///io/elementary/settings/notifications/bubbles.svg"),
+        url("resource:///io/elementary/settings/notifications/bubble.svg"),
+        url("resource:///io/elementary/settings/notifications/dock.svg"),
         linear-gradient(
             to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
+        );
+    background-size: 40px 14px, 54px 12px, cover;
+    background-position: calc(100% - 3px) 12px, bottom, center;
+}
+
+settingspage.notifications .card.bubbles.dark {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/bubble-dark.svg"),
+        url("resource:///io/elementary/settings/notifications/dock-dark.svg"),
+        linear-gradient(
+            to bottom,
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
         );
 }
 
-.card.bubbles.dark {
+settingspage.notifications .card.bubbles:dir(rtl) {
+    background-position: 3px 12px, bottom, center;
+}
+
+settingspage.notifications .card.sounds {
     background-image:
-        url("resource:///io/elementary/settings/notifications/bubbles-dark.svg"),
+        -gtk-icontheme("audio-volume-high-symbolic"),
+        url("resource:///io/elementary/settings/notifications/dock.svg"),
         linear-gradient(
             to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
+        );
+    background-size: 32px, 54px 12px, cover;
+    background-position: center, bottom, center;
+    color: @selected_fg_color;
+}
+
+settingspage.notifications .card.sounds.dark {
+    background-image:
+        -gtk-icontheme("audio-volume-high-symbolic"),
+        url("resource:///io/elementary/settings/notifications/dock-dark.svg"),
+        linear-gradient(
+            to bottom,
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
         );
 }
 
-.card.sounds {
-    background-image:
-        url("resource:///io/elementary/settings/notifications/sounds.svg"),
-        linear-gradient(
-            to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
-        );
-}
-
-.card.sounds.dark {
-    background-image:
-        url("resource:///io/elementary/settings/notifications/sounds-dark.svg"),
-        linear-gradient(
-            to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
-        );
-}
-
-.card.notify-center {
+settingspage.notifications .card.notify-center {
     background-image:
         url("resource:///io/elementary/settings/notifications/notify-center.svg"),
+        url("resource:///io/elementary/settings/notifications/dock.svg"),
         linear-gradient(
             to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
+        );
+    background-size: 40px 55px, 54px 12px, cover;
+    background-position: calc(100% - 3px) 3px, bottom, center;
+}
+
+settingspage.notifications .card.notify-center.dark {
+    background-image:
+        url("resource:///io/elementary/settings/notifications/notify-center-dark.svg"),
+        url("resource:///io/elementary/settings/notifications/dock-dark.svg"),
+        linear-gradient(
+            to bottom,
+            shade(@selected_bg_color, 1.1),
+            @selected_bg_color
         );
 }
 
-.card.notify-center.dark {
-    background-image:
-        url("resource:///io/elementary/settings/notifications/notify-center-dark.svg"),
-        linear-gradient(
-            to bottom,
-            alpha(@accent_color_300, 0.1),
-            alpha(@accent_color_500, 0.1)
-        );
+settingspage.notifications .card.notify-center:dir(rtl) {
+    background-position: 3px 3px, bottom, center;
 }
