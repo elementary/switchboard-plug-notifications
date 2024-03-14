@@ -60,7 +60,8 @@ public class Widgets.Sidebar : Gtk.Box {
         app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow () {
-            child = app_list
+            child = app_list,
+            hscrollbar_policy = NEVER
         };
 
         var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));

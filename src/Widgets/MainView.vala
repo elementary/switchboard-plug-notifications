@@ -34,8 +34,7 @@ public class Widgets.MainView : Gtk.Widget {
             end_child = app_settings_view,
             resize_start_child = false,
             shrink_start_child = false,
-            shrink_end_child = false,
-            position = 240
+            shrink_end_child = false
         };
         main_widget.set_parent (this);
     }
