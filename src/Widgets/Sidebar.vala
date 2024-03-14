@@ -66,7 +66,7 @@ public class Widgets.Sidebar : Gtk.Box {
 
         var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));
 
-        var do_not_disturb_switch = new Gtk.Switch ()  {
+        var do_not_disturb_switch = new Gtk.Switch () {
             valign = CENTER
         };
 
