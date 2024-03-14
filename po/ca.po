@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2023-10-17 15:10+0000\n"
+"PO-Revision-Date: 2024-03-15 21:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ca/>\n"
@@ -72,16 +72,12 @@ msgid "Do Not Disturb is active"
 msgstr "«No m'emprenyis!» activat"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
 msgstr ""
-"Les notificacions del sistema, com ara el volum i la brillantor de la "
-"pantalla, no canviaran."
+"Les bombolles s'amagaran i els sons se silenciaran. Les notificacions del "
+"sistema, com ara el volum i la brillantor de la pantalla, no canviaran."
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
