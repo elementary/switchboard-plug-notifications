@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2023-12-16 04:07+0000\n"
+"PO-Revision-Date: 2024-03-19 22:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/hu/>\n"
@@ -68,15 +68,12 @@ msgid "Do Not Disturb is active"
 msgstr "A Ne zavarj be van kapcsolva"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
 msgstr ""
-"A rendszerszintű értesítésekre, mint például a hangerő és fényerő állítása, "
+"A buborékok el lesznek rejtve és a hangok el lesznek némítva. A "
+"rendszerszintű értesítésekre, mint például a hangerő és fényerő állítása, "
 "nincs hatással."
 
 #: src/Widgets/AppSettingsView.vala:48
