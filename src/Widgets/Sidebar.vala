@@ -22,6 +22,10 @@ public class Widgets.Sidebar : Gtk.Box {
 
     private Gtk.SearchEntry search_entry;
 
+    class construct {
+        set_css_name ("settingssidebar");
+    }
+
     construct {
         search_entry = new Gtk.SearchEntry () {
             placeholder_text = _("Search Apps"),
@@ -32,9 +36,20 @@ public class Widgets.Sidebar : Gtk.Box {
             hexpand = true
         };
 
-        var search_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-        search_box.add_css_class (Granite.STYLE_CLASS_VIEW);
-        search_box.append (search_entry);
+        var search_revealer = new Gtk.Revealer () {
+            child = search_entry
+        };
+
+        var search_toggle = new Gtk.ToggleButton () {
+            icon_name = "edit-find-symbolic",
+            tooltip_text = _("Search Apps")
+        };
+
+        var headerbar = new Adw.HeaderBar () {
+            show_end_title_buttons = false,
+            show_title = false
+        };
+        headerbar.pack_end (search_toggle);
 
         var app_list = new Gtk.ListBox () {
             hexpand = true,
@@ -45,35 +60,46 @@ public class Widgets.Sidebar : Gtk.Box {
         app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow () {
-            child = app_list
+            child = app_list,
+            hscrollbar_policy = NEVER
         };
 
-        var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb")) {
-            margin_start = 3
-        };
-        do_not_disturb_label.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
+        var do_not_disturb_label = new Gtk.Label (_("Do Not Disturb"));
 
         var do_not_disturb_switch = new Gtk.Switch () {
-            margin_start = 6,
-            margin_top = 6,
-            margin_bottom = 6,
-            margin_end = 3
+            valign = CENTER
         };
 
         var footer = new Gtk.ActionBar ();
-        footer.add_css_class (Granite.STYLE_CLASS_FLAT);
         footer.pack_start (do_not_disturb_label);
         footer.pack_end (do_not_disturb_switch);
 
-        orientation = Gtk.Orientation.VERTICAL;
-        append (search_box);
-        append (scrolled_window);
-        append (footer);
+        var toolbarview = new Adw.ToolbarView () {
+            content = scrolled_window,
+            top_bar_style = FLAT,
+            bottom_bar_style = RAISED
+        };
+        toolbarview.add_top_bar (headerbar);
+        toolbarview.add_top_bar (search_revealer);
+        toolbarview.add_bottom_bar (footer);
+
+        append (toolbarview);
+        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         app_list.row_selected.connect (show_row);
 
         search_entry.search_changed.connect (() => {
             app_list.invalidate_filter ();
+        });
+
+        search_toggle.bind_property ("active", search_revealer, "reveal-child");
+
+        search_revealer.notify["child-revealed"].connect (() => {
+            if (search_revealer.child_revealed) {
+                search_entry.grab_focus ();
+            } else {
+                search_entry.text = "";
+            }
         });
 
         NotificationsPlug.notify_settings.bind (

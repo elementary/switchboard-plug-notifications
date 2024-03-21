@@ -66,8 +66,9 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
         box.append (sound_option);
         box.append (remember_option);
 
-        child = box;
         add_css_class ("notifications");
+        child = box;
+        show_end_title_buttons = true;
 
         update_selected_app ();
 

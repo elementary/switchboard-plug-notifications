@@ -30,7 +30,7 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
 
     construct {
         var image = new Gtk.Image.from_gicon (app.app_info.get_icon ()) {
-            pixel_size = 32
+            icon_size = LARGE
         };
 
         var title_label = new Gtk.Label (app.app_info.get_display_name ()) {
@@ -46,12 +46,9 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             xalign = 0,
             valign = Gtk.Align.START
         };
+        description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var grid = new Gtk.Grid () {
-            margin_start = 6,
-            margin_end = 6,
-            margin_top = 6,
-            margin_bottom = 6,
             column_spacing = 6
         };
         grid.attach (image, 0, 0, 1, 2);
@@ -84,6 +81,6 @@ public class Widgets.AppEntry : Gtk.ListBoxRow {
             items += _("Disabled");
         }
 
-        return "<span font_size=\"small\">%s</span>".printf (Markup.escape_text (string.joinv (", ", items)));
+        return string.joinv (", ", items);
     }
 }

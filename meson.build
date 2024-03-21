@@ -32,6 +32,8 @@ config_file = configure_file(
     configuration: config_data
 )
 
+adw_dep = dependency('libadwaita-1', version: '>=1.4')
+
 subdir('data')
 subdir('src')
 subdir('po')
