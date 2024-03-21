@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2024-02-19 11:12+0000\n"
+"PO-Revision-Date: 2024-03-16 23:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/ja/>\n"
@@ -66,14 +66,11 @@ msgid "Do Not Disturb is active"
 msgstr "非通知モードが有効"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "音量設定やディスプレイの明るさなどのシステム通知は影響を受けません。"
+msgstr "バブルは非表示になり、サウンドは再生されなくなります。音量設定やディスプレイ"
+"の明るさなどのシステム通知は影響を受けません。"
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""

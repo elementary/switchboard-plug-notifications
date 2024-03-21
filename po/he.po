@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2023-11-11 10:10+0000\n"
+"PO-Revision-Date: 2024-03-15 21:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/he/>\n"
@@ -67,14 +67,12 @@ msgid "Do Not Disturb is active"
 msgstr "‚לא להפריע’ פעיל"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "התרעות מערכת, כגון שמע ובהירות התצוגה, לא יושפעו."
+msgstr ""
+"בועות תוסתרנה והצלילים יושתקו. התראות מערכת, כגון שמע ובהירות התצוגה, לא "
+"יושפעו."
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
