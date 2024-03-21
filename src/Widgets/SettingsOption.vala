@@ -45,6 +45,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         widget = new Gtk.Switch () {
             valign = START
         };
+        widget.bind_property ("state", widget, "active", SYNC_CREATE | BIDIRECTIONAL);
 
         var header_label = new Granite.HeaderLabel (title) {
             hexpand = true,
