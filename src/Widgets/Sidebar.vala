@@ -94,6 +94,12 @@ public class Widgets.Sidebar : Gtk.Box {
 
         search_toggle.bind_property ("active", search_revealer, "reveal-child");
 
+        search_revealer.notify["child-revealed"].connect (() => {
+            if (search_revealer.child_revealed) {
+                search_entry.grab_focus ();
+            }
+        });
+
         NotificationsPlug.notify_settings.bind (
             "do-not-disturb",
             do_not_disturb_switch,
