@@ -97,6 +97,8 @@ public class Widgets.Sidebar : Gtk.Box {
         search_revealer.notify["child-revealed"].connect (() => {
             if (search_revealer.child_revealed) {
                 search_entry.grab_focus ();
+            } else {
+                search_entry.text = "";
             }
         });
 
