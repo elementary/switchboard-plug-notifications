@@ -18,10 +18,11 @@
  */
 
 public class Widgets.SettingsOption : Gtk.Grid {
+    public bool active { get; set; }
+
     public string image_path { get; construct; }
     public string title { get; construct; }
     public string description { get; construct; }
-    public Gtk.Switch widget { get; private set; }
 
     private Gtk.Grid card;
     private Gtk.Settings gtk_settings;
@@ -42,7 +43,7 @@ public class Widgets.SettingsOption : Gtk.Grid {
         card.add_css_class (Granite.STYLE_CLASS_CARD);
         card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
 
-        widget = new Gtk.Switch () {
+        var widget = new Gtk.Switch () {
             valign = START
         };
 
@@ -64,6 +65,8 @@ public class Widgets.SettingsOption : Gtk.Grid {
         });
 
         update_image_resource ();
+
+        bind_property ("active", widget, "active", SYNC_CREATE | BIDIRECTIONAL);
     }
 
     private void update_image_resource () {

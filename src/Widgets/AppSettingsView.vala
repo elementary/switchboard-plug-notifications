@@ -81,9 +81,9 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
     }
 
     private void remove_bindings () {
-        Settings.unbind (bubbles_option.widget, "state");
-        Settings.unbind (sound_option.widget, "state");
-        Settings.unbind (remember_option.widget, "state");
+        Settings.unbind (bubbles_option, "active");
+        Settings.unbind (sound_option, "active");
+        Settings.unbind (remember_option, "active");
     }
 
     private void update_selected_app () {
@@ -91,9 +91,9 @@ public class Widgets.AppSettingsView : Switchboard.SettingsPage {
         var app_id = notify_manager.selected_app_id;
         var selected_app = notify_manager.apps.get (app_id);
 
-        selected_app.settings.bind ("bubbles", bubbles_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        selected_app.settings.bind ("sounds", sound_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
-        selected_app.settings.bind ("remember", remember_option.widget, "state", GLib.SettingsBindFlags.DEFAULT);
+        selected_app.settings.bind ("bubbles", bubbles_option, "active", DEFAULT);
+        selected_app.settings.bind ("sounds", sound_option, "active", DEFAULT);
+        selected_app.settings.bind ("remember", remember_option, "active", DEFAULT);
 
         title = selected_app.app_info.get_display_name ();
         icon = selected_app.app_info.get_icon ();
