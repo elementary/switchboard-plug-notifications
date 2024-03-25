@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2024-02-08 15:11+0000\n"
+"PO-Revision-Date: 2024-03-26 21:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/pt/>\n"
@@ -70,16 +70,12 @@ msgid "Do Not Disturb is active"
 msgstr "Não incomodar está ativo"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
 msgstr ""
-"As notificações do sistema, tais como volume e brilho do ecrã, não são "
-"afetadas."
+"As bolhas serão ocultadas e os sons serão silenciados. As notificações do "
+"sistema, tais como volume e luminosidade do ecrã, não são afetadas."
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
