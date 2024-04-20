@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 19:23+0000\n"
-"PO-Revision-Date: 2024-03-15 21:13+0000\n"
+"PO-Revision-Date: 2024-04-21 19:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/he/>\n"
@@ -60,7 +60,7 @@ msgstr "בועות"
 
 #: src/Widgets/Sidebar.vala:27
 msgid "Search Apps"
-msgstr "חיפוש יישומונים"
+msgstr "חיפוש יישומים"
 
 #: src/Widgets/AppSettingsView.vala:33
 msgid "Do Not Disturb is active"
