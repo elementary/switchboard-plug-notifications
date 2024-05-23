@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.elementary.settings.notifications</id>
+  <extends>io.elementary.settings</extends>
+  <translation type="gettext">io.elementary.settings.notifications</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+
+  <icon type="stock">preferences-system-notifications</icon>
+  <name>Notifications Settings</name>
+  <summary>Configure notification bubbles, sounds, and notification center</summary>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-notifications/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-notifications/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-notifications/discussions</url>
+  <url type="homepage">https://elementary.io</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="2.2.0" date="2021-07-14" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>New illustrations</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.1.7" date="2020-05-28" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+
+    <release version="2.1.6" date="2020-04-01" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
+</component>
