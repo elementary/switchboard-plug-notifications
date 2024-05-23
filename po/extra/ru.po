@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:31+0000\n"
+"POT-Creation-Date: 2024-05-23 18:41+0000\n"
 "PO-Revision-Date: 2022-12-31 16:25+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,15 +32,27 @@ msgstr "Настройка баннеров уведомлений, звуков
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/notifications.metainfo.xml.in:34
+#: data/notifications.metainfo.xml.in:34 data/notifications.metainfo.xml.in:50
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
 #: data/notifications.metainfo.xml.in:36
-msgid "New illustrations"
-msgstr "Новые иллюстрации"
+msgid "Updated illustrations with better RTL support"
+msgstr ""
 
-#: data/notifications.metainfo.xml.in:37 data/notifications.metainfo.xml.in:44
-#: data/notifications.metainfo.xml.in:50
+#: data/notifications.metainfo.xml.in:37
+msgid "More responsive layout"
+msgstr ""
+
+#: data/notifications.metainfo.xml.in:38
+msgid "Don't block settings when Do Not Disturb is active"
+msgstr ""
+
+#: data/notifications.metainfo.xml.in:39 data/notifications.metainfo.xml.in:53
+#: data/notifications.metainfo.xml.in:60 data/notifications.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Обновлены переводы"
+
+#: data/notifications.metainfo.xml.in:52
+msgid "New illustrations"
+msgstr "Новые иллюстрации"
