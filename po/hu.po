@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2024-03-19 22:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -42,7 +42,7 @@ msgstr "Értesítések"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Értesítési buborékok, hangok és az értesítési központ beállítása"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Ne zavarj"
 
@@ -55,11 +55,11 @@ msgid "Sound"
 msgstr "Hang"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Buborékok"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "Alkalmazások keresése"
 
@@ -84,7 +84,7 @@ msgstr ""
 "A buborékok a képernyő jobb felső sarkában jelennek meg, és automatikusan "
 "eltűnnek."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Hangok"
 
@@ -92,7 +92,7 @@ msgstr "Hangok"
 msgid "Sounds play once when a new notification arrives."
 msgstr "A hangok egyszer játszódnak le az új értesítés pillanatában."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Értesítési központ"
 
@@ -100,7 +100,7 @@ msgstr "Értesítési központ"
 msgid "Show missed notifications in Notification Center."
 msgstr "Az elmulasztott értesítések megjelennek az Értesítési központban."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Kikapcsolva"
 

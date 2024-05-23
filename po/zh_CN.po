@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2021-01-28 03:50+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -40,7 +40,7 @@ msgstr "通知"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "配置通知气泡、声音和通知中心"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "勿扰模式"
 
@@ -53,11 +53,11 @@ msgid "Sound"
 msgstr "声音"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "气泡"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgid ""
 "automatically."
 msgstr "屏幕右上角弹出气泡并自动消失。"
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "声音"
 
@@ -91,7 +91,7 @@ msgstr "声音"
 msgid "Sounds play once when a new notification arrives."
 msgstr "新通知到达时播放提示音。"
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "通知中心"
 
@@ -99,7 +99,7 @@ msgstr "通知中心"
 msgid "Show missed notifications in Notification Center."
 msgstr "在通知中心显示未查看的通知。"
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "已禁用"
 

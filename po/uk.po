@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2024-03-15 21:13+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -44,7 +44,7 @@ msgstr "Сповіщення"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Налаштування бульбашок сповіщень, звуків та центру сповіщень"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Не турбувати"
 
@@ -57,11 +57,11 @@ msgid "Sound"
 msgstr "Звук"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Бульбашки"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "Пошук застосунків"
 
@@ -85,7 +85,7 @@ msgstr ""
 "Бульбашки з’являтимуться у верхньому правому куті екрана та зникатимуть "
 "самостійно."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Звуки"
 
@@ -93,7 +93,7 @@ msgstr "Звуки"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Ви почуєте одноразовий звук коли з’явиться нове сповіщення."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Центр сповіщень"
 
@@ -101,7 +101,7 @@ msgstr "Центр сповіщень"
 msgid "Show missed notifications in Notification Center."
 msgstr "Показувати пропущені сповіщення в Центрі сповіщень."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Вимкнено"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2018-11-04 11:49+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:11+0000\n"
 
@@ -42,7 +42,7 @@ msgstr "Obavijesti"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Podesite balončiće obavijesti, zvukove i centar obavijesti"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Ne smetaj"
 
@@ -55,11 +55,11 @@ msgid "Sound"
 msgstr "Zvuk"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Balončići"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 msgstr ""
 "Balončići se pojavljuju u gornjem desnom uglu ekrana i nestaju automatski."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Zvukovi"
 
@@ -96,7 +96,7 @@ msgstr "Zvukovi"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Zvukovi će se čuti samo jednom kada stigne obavijest."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centar obavijesti"
 
@@ -104,7 +104,7 @@ msgstr "Centar obavijesti"
 msgid "Show missed notifications in Notification Center."
 msgstr "Prikaži propuštene obavijesti u Centru obavijesti."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Deaktivirano"
 
