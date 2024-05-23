@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2019-05-13 15:14+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -41,7 +41,7 @@ msgstr "अधिसूचना"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "अधिसूचना बबल, ध्वनी आणि सूचना केंद्र कॉन्फिगर करा"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "व्यत्यय आणू नये"
 
@@ -54,11 +54,11 @@ msgid "Sound"
 msgstr "ध्वनी"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "बबल"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgid ""
 "automatically."
 msgstr "डिस्प्लेच्या वरच्या उजव्या कोपऱ्यात बबल दिसतात आणि स्वयंचलितपणे अदृश्य होतात."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "ध्वनी"
 
@@ -92,7 +92,7 @@ msgstr "ध्वनी"
 msgid "Sounds play once when a new notification arrives."
 msgstr "नवीन अधिसूचनेच्या वेळी ध्वनी वाजतात."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "अधिसूचना केंद्र"
 
@@ -100,7 +100,7 @@ msgstr "अधिसूचना केंद्र"
 msgid "Show missed notifications in Notification Center."
 msgstr "अधिसूचना केंद्रात दुर्लक्ष झालेल्या अधिसूचना दाखवा."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "अक्षम"
 

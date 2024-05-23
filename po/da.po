@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2018-12-12 23:02+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
@@ -41,7 +41,7 @@ msgstr "Notifikationer"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfigurér notifikationsbobler, lyde og notifikationscenter"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Forstyr ikke"
 
@@ -54,11 +54,11 @@ msgid "Sound"
 msgstr "Lyd"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bobler"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 "Bobler vises i øverste højre hjørne af skærmen, og forsvinder automatisk."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Lyde"
 
@@ -95,7 +95,7 @@ msgstr "Lyde"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Lyde afspilles når notifikationer opstår."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Notifikationscenter"
 
@@ -103,7 +103,7 @@ msgstr "Notifikationscenter"
 msgid "Show missed notifications in Notification Center."
 msgstr "Vis oversete notifikationer i notifikationscentret."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Deaktiveret"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2016-06-29 14:22+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr "Njoftimet"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Konfiguro flluskat e njoftimeve, tingujt dhe qendrën e njoftimeve"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Mos më bezdis"
 
@@ -54,11 +54,11 @@ msgid "Sound"
 msgstr "Tinguj"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Flluska"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgid ""
 "automatically."
 msgstr "Flluskat dalin lart në këndin e djathtë të ekranit dhe zhduken vetë."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Tinguj"
 
@@ -94,7 +94,7 @@ msgstr "Tinguj"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Tingujt riprodhohen sapo arrin një njoftim i ri."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Qendra e njoftimeve"
 
@@ -102,7 +102,7 @@ msgstr "Qendra e njoftimeve"
 msgid "Show missed notifications in Notification Center."
 msgstr "Shfaq njoftimet e humbura në Qendrën e Njoftimeve."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Çaktivizuar"
 

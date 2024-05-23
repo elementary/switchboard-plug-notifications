@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2017-05-25 08:20+0000\n"
 "Last-Translator: Sergiu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -43,7 +43,7 @@ msgstr "Notificări"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Configuraţi bulele de notificare, sunetele şi centrul de notificări"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Nu Deranja"
 
@@ -56,11 +56,11 @@ msgid "Sound"
 msgstr "Sunet"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bule"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "automatically."
 msgstr "Bulele apar în colţul drept de sus al ecranului şi dispar automat."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Sunete"
 
@@ -96,7 +96,7 @@ msgstr "Sunete"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Sunetele vor fi redate odată ce va fi primită o notificare."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centrul de Notificări"
 
@@ -104,7 +104,7 @@ msgstr "Centrul de Notificări"
 msgid "Show missed notifications in Notification Center."
 msgstr "Arată notificările pierdute în Centrul de Notificări."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Dezactivat"
 

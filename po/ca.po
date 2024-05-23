@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2024-03-15 21:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -46,7 +46,7 @@ msgstr ""
 "Configureu les bafarades de les notificacions, sons i el centre de "
 "notificacions."
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "No m'emprenyis!"
 
@@ -59,11 +59,11 @@ msgid "Sound"
 msgstr "So"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bafarades"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "Cerca aplicacions"
 
@@ -87,7 +87,7 @@ msgstr ""
 "Les bafarades apareixen al cantó de dalt a la dreta de la pantalla i "
 "desapareixen automàticament."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Sons"
 
@@ -95,7 +95,7 @@ msgstr "Sons"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Els sons es reproduiran un cop quan arribi una notificació."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centre de notificacions"
 
@@ -104,7 +104,7 @@ msgid "Show missed notifications in Notification Center."
 msgstr ""
 "Mostra les notificacions que se m'han escapat al centre de notificacions."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Inhabilitat"
 

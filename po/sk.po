@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -42,7 +42,7 @@ msgstr "Oznámenia"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "Nastavujte bubliny a zvuky oznámení, a tiež centrum oznámení"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Nerušiť"
 
@@ -55,11 +55,11 @@ msgid "Sound"
 msgstr "Zvuk"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bubliny"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "Vyhľadať aplikácie"
 
@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 "Bubliny sa objavujú v pravom hornom rohu obrazovky a automaticky zmiznú."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Zvuky"
 
@@ -92,7 +92,7 @@ msgstr "Zvuky"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Zvuk sa prehrá raz pri každom novom oznámení."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centrum oznámení"
 
@@ -100,7 +100,7 @@ msgstr "Centrum oznámení"
 msgid "Show missed notifications in Notification Center."
 msgstr "Zobrazí neprečítané oznámenia v Centre oznámení."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Vypnuté"
 

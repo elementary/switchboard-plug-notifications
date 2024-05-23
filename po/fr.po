@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2024-03-20 22:13+0000\n"
 "Last-Translator: Corentin Noël <tintou@noel.tf>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -46,7 +46,7 @@ msgstr ""
 "Configurer les bulles et le son de notifications ainsi que le centre de "
 "notifications"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Ne pas déranger"
 
@@ -59,11 +59,11 @@ msgid "Sound"
 msgstr "Son"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bulles"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "Rechercher des applications"
 
@@ -87,7 +87,7 @@ msgstr ""
 "Les bulles apparaissent dans le coin supérieur droit de l'écran et "
 "disparaissent automatiquement."
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "Sons"
 
@@ -95,7 +95,7 @@ msgstr "Sons"
 msgid "Sounds play once when a new notification arrives."
 msgstr "Les sons sont joués lorsqu'une nouvelle notification est affichée."
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "Centre de notifications"
 
@@ -104,7 +104,7 @@ msgid "Show missed notifications in Notification Center."
 msgstr ""
 "Les notifications manquées apparaîtront dans le centre de notifications."
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Désactivé"
 

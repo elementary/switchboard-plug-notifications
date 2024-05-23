@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-13 19:23+0000\n"
+"POT-Creation-Date: 2024-05-23 18:31+0000\n"
 "PO-Revision-Date: 2024-03-16 23:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -40,7 +40,7 @@ msgstr "通知"
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr "バブル、サウンド、通知センターを設定します"
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:51
+#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "非通知モード"
 
@@ -53,11 +53,11 @@ msgid "Sound"
 msgstr "サウンド"
 
 #: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
-#: src/Widgets/AppEntry.vala:72
+#: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "バブル"
 
-#: src/Widgets/Sidebar.vala:27
+#: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
 msgstr "アプリを検索"
 
@@ -69,7 +69,8 @@ msgstr "非通知モードが有効"
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "バブルは非表示になり、サウンドは再生されなくなります。音量設定やディスプレイ"
+msgstr ""
+"バブルは非表示になり、サウンドは再生されなくなります。音量設定やディスプレイ"
 "の明るさなどのシステム通知は影響を受けません。"
 
 #: src/Widgets/AppSettingsView.vala:48
@@ -78,7 +79,7 @@ msgid ""
 "automatically."
 msgstr "ディスプレイの右上に表示されて自動的に消えます。"
 
-#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:76
+#: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
 msgstr "サウンド"
 
@@ -86,7 +87,7 @@ msgstr "サウンド"
 msgid "Sounds play once when a new notification arrives."
 msgstr "新しい通知があったときにサウンドを鳴らします。"
 
-#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:80
+#: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
 msgstr "通知センター"
 
@@ -94,7 +95,7 @@ msgstr "通知センター"
 msgid "Show missed notifications in Notification Center."
 msgstr "見逃した通知を通知センターに表示します。"
 
-#: src/Widgets/AppEntry.vala:84
+#: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "無効"
 
