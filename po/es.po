@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2024-06-13 15:29+0000\n"
+"PO-Revision-Date: 2024-06-15 16:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/es/>\n"
@@ -33,6 +33,8 @@ msgstr ""
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
 msgstr ""
+"Las aplicaciones con notificaciones configurables aparecerán aquí una vez "
+"instaladas."
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -41,7 +43,7 @@ msgstr "Notificaciones"
 #: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
-"Configure las burbujas de notificación, los sonidos y el centro de "
+"Configure las burbujas de notificaciones, los sonidos y el centro de "
 "notificaciones"
 
 #: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
@@ -66,22 +68,17 @@ msgid "Search Apps"
 msgstr "Buscar aplicaciones"
 
 #: src/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "No molestar"
+msgstr "No molestar está activado"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
 msgstr ""
-"Las notificaciones del sistema, como volumen y brillo de pantalla, no se "
-"verán afectadas."
+"Las burbujas de notificación se esconderán y los sonidos silenciados. Las "
+"notificaciones del sistema, como volumen y brillo de pantalla, no se verán "
+"afectadas."
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
