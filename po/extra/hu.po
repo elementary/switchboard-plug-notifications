@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2021-11-20 04:48+0000\n"
+"PO-Revision-Date: 2024-06-19 02:57+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/notifications.metainfo.xml.in:10
 msgid "Notifications Settings"
@@ -29,7 +29,7 @@ msgstr "Értesítési buborékok, hangok és az értesítési központ beállít
 
 #: data/notifications.metainfo.xml.in:26
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/notifications.metainfo.xml.in:34 data/notifications.metainfo.xml.in:50
 msgid "Minor updates:"
@@ -37,15 +37,15 @@ msgstr "Kisebb frissítések:"
 
 #: data/notifications.metainfo.xml.in:36
 msgid "Updated illustrations with better RTL support"
-msgstr ""
+msgstr "Frissített ábrák jobb jobbról-balra támogatással"
 
 #: data/notifications.metainfo.xml.in:37
 msgid "More responsive layout"
-msgstr ""
+msgstr "Alkalmazkodóbb elrendezés"
 
 #: data/notifications.metainfo.xml.in:38
 msgid "Don't block settings when Do Not Disturb is active"
-msgstr ""
+msgstr "Ne Zavarjanak mód mellett ne tiltsa le a beállításokat"
 
 #: data/notifications.metainfo.xml.in:39 data/notifications.metainfo.xml.in:53
 #: data/notifications.metainfo.xml.in:60 data/notifications.metainfo.xml.in:66
