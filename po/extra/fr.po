@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:31+0000\n"
-"PO-Revision-Date: 2022-05-30 10:51+0000\n"
+"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"PO-Revision-Date: 2024-06-06 08:56+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/notifications.metainfo.xml.in:10
 msgid "Notifications Settings"
@@ -31,17 +31,31 @@ msgstr ""
 
 #: data/notifications.metainfo.xml.in:26
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
-#: data/notifications.metainfo.xml.in:34
+#: data/notifications.metainfo.xml.in:34 data/notifications.metainfo.xml.in:50
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
 #: data/notifications.metainfo.xml.in:36
-msgid "New illustrations"
-msgstr "Nouvelles illustrations"
+msgid "Updated illustrations with better RTL support"
+msgstr "Illustrations mises à jour avec une meilleure prise en charge RTL"
 
-#: data/notifications.metainfo.xml.in:37 data/notifications.metainfo.xml.in:44
-#: data/notifications.metainfo.xml.in:50
+#: data/notifications.metainfo.xml.in:37
+msgid "More responsive layout"
+msgstr "Mise en page plus réactive"
+
+#: data/notifications.metainfo.xml.in:38
+msgid "Don't block settings when Do Not Disturb is active"
+msgstr ""
+"Ne pas bloquer les paramètres lorsque la fonction « Ne pas déranger » est "
+"activée"
+
+#: data/notifications.metainfo.xml.in:39 data/notifications.metainfo.xml.in:53
+#: data/notifications.metainfo.xml.in:60 data/notifications.metainfo.xml.in:66
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
+
+#: data/notifications.metainfo.xml.in:52
+msgid "New illustrations"
+msgstr "Nouvelles illustrations"
