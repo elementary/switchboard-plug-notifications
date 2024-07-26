@@ -1,3 +1,9 @@
+io.elementary.settings.notifications (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Fri, 26 Jul 2024 10:06:29 -0700
+
 io.elementary.settings.notifications (2.2.0) bionic; urgency=medium
 
   * Release 2.2.0 (#82)
