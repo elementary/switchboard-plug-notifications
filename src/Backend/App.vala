@@ -31,10 +31,6 @@ public class Backend.App : Object {
 
         string child_schema_id = "io.elementary.notifications.applications";
         string child_path = "/io/elementary/notifications/applications/%s/";
-        if (GLib.SettingsSchemaSource.get_default ().lookup (child_schema_id, true) == null) {
-            child_schema_id = "org.pantheon.desktop.gala.notifications.application";
-            child_path = "/org/pantheon/desktop/gala/notifications/applications/%s/";
-        }
 
         settings = new Settings.full (
             SettingsSchemaSource.get_default ().lookup (child_schema_id, true),
