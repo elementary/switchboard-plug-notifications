@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/notifications-plug-extra/zh_Hant/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #: data/notifications.metainfo.xml.in:10
-#, fuzzy
-#| msgid "Notifications"
 msgid "Notifications Settings"
-msgstr "通知"
+msgstr "通知設定值"
 
 #: data/notifications.metainfo.xml.in:11
 msgid "Configure notification bubbles, sounds, and notification center"
@@ -39,15 +37,15 @@ msgstr "小型更新："
 
 #: data/notifications.metainfo.xml.in:36
 msgid "Updated illustrations with better RTL support"
-msgstr ""
+msgstr "更新插圖以改善 RTL 支援"
 
 #: data/notifications.metainfo.xml.in:37
 msgid "More responsive layout"
-msgstr ""
+msgstr "改為使用更為響應式的佈局"
 
 #: data/notifications.metainfo.xml.in:38
 msgid "Don't block settings when Do Not Disturb is active"
-msgstr ""
+msgstr "不要在勿擾模式啟用時阻止變更設定"
 
 #: data/notifications.metainfo.xml.in:39 data/notifications.metainfo.xml.in:53
 #: data/notifications.metainfo.xml.in:60 data/notifications.metainfo.xml.in:66
@@ -56,4 +54,4 @@ msgstr "翻譯更新"
 
 #: data/notifications.metainfo.xml.in:52
 msgid "New illustrations"
-msgstr ""
+msgstr "新插圖"
