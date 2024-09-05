@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-notifications/zh_Hant/>\n"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
+msgstr "安裝有可調整的通知的應用程式之後，它們會顯示於此。"
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -62,26 +62,20 @@ msgid "Search Apps"
 msgstr "搜尋應用程式"
 
 #: src/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "勿擾"
+msgstr "勿擾模式已啟用"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "系統通知，如音量、螢幕亮度等，則不受影響。"
+msgstr "通知氣泡隱藏，音效也不會播放。系統通知，如音量、螢幕亮度等，則不會受影響。"
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
 "Bubbles appear in the top right corner of the display and disappear "
 "automatically."
-msgstr "氣泡出現在顯示器的右上角後自動消失。"
+msgstr "氣泡會出現在顯示器的右上角，並會自動消失。"
 
 #: src/Widgets/AppSettingsView.vala:53 src/Widgets/AppEntry.vala:73
 msgid "Sounds"
@@ -89,7 +83,7 @@ msgstr "音效"
 
 #: src/Widgets/AppSettingsView.vala:54
 msgid "Sounds play once when a new notification arrives."
-msgstr "當有新的通知時播放音效一次。"
+msgstr "音效會在有新的通知時播放一次。"
 
 #: src/Widgets/AppSettingsView.vala:59 src/Widgets/AppEntry.vala:77
 msgid "Notification Center"
