@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2024-07-05 21:16+0000\n"
+"PO-Revision-Date: 2024-09-13 00:01+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "notifications-plug-extra/ka/>\n"
@@ -37,15 +37,15 @@ msgstr "უმნიშვნელო განახლებები:"
 
 #: data/notifications.metainfo.xml.in:36
 msgid "Updated illustrations with better RTL support"
-msgstr ""
+msgstr "განახლდა ილუსტრაციები უკეთესი RTL-ის მხარდაჭერით"
 
 #: data/notifications.metainfo.xml.in:37
 msgid "More responsive layout"
-msgstr ""
+msgstr "უფრო ცოცხალი განლაგება"
 
 #: data/notifications.metainfo.xml.in:38
 msgid "Don't block settings when Do Not Disturb is active"
-msgstr ""
+msgstr "არ დაბლოკო პარამეტრები, როცა 'არ შემაწუხო' აქტიურია"
 
 #: data/notifications.metainfo.xml.in:39 data/notifications.metainfo.xml.in:53
 #: data/notifications.metainfo.xml.in:60 data/notifications.metainfo.xml.in:66
