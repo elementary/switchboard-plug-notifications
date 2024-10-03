@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2024-06-15 16:16+0000\n"
+"PO-Revision-Date: 2024-10-04 17:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/es/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:27+0000\n"
 
 #: src/Plug.vala:24
@@ -43,7 +43,7 @@ msgstr "Notificaciones"
 #: src/Plug.vala:52
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
-"Configure las burbujas de notificaciones, los sonidos y el centro de "
+"Configure las burbujas de notificaciones, los sonidos y el Centro de "
 "notificaciones"
 
 #: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
@@ -102,7 +102,7 @@ msgstr "Centro de notificaciones"
 
 #: src/Widgets/AppSettingsView.vala:60
 msgid "Show missed notifications in Notification Center."
-msgstr "Mostrar notificaciones perdidas en el centro de notificaciones."
+msgstr "Mostrar notificaciones perdidas en el Centro de notificaciones."
 
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
