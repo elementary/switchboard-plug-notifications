@@ -37,6 +37,12 @@ public class Widgets.MainView : Gtk.Widget {
             shrink_end_child = false
         };
         main_widget.set_parent (this);
+
+        var sss = SettingsSchemaSource.get_default ().lookup ("io.elementary.settings", true);
+        if (sss != null && sss.has_key ("sidebar-position")) {
+            var settings = new Settings ("io.elementary.settings");
+            settings.bind ("sidebar-position", main_widget, "position", DEFAULT);
+        }
     }
 
     ~MainView () {
