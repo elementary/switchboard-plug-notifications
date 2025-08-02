@@ -3,16 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-23 18:41+0000\n"
-"PO-Revision-Date: 2021-01-28 03:50+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-notifications/zh_Hans/>\n"
+"PO-Revision-Date: 2025-08-03 09:55+0000\n"
+"Last-Translator: JieXu <xujie0739@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"l10n.elementaryos.org/projects/settings/switchboard-plug-notifications/"
+"zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-03-22 07:15+0000\n"
 
 #: src/Plug.vala:24
@@ -30,7 +31,7 @@ msgstr ""
 
 #: src/Plug.vala:28
 msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
+msgstr "支持自定义通知设置的应用安装后将会列在此处。"
 
 #: src/Plug.vala:51
 msgid "Notifications"
@@ -59,23 +60,17 @@ msgstr "气泡"
 
 #: src/Widgets/Sidebar.vala:31 src/Widgets/Sidebar.vala:45
 msgid "Search Apps"
-msgstr ""
+msgstr "搜索应用程序"
 
 #: src/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Do Not Disturb"
 msgid "Do Not Disturb is active"
-msgstr "勿扰模式"
+msgstr "勿扰模式已启用"
 
 #: src/Widgets/AppSettingsView.vala:36
-#, fuzzy
-#| msgid ""
-#| "System notifications, such as volume and display brightness, will be "
-#| "unaffected."
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "系统通知，如音量和屏幕亮度等不会受影响。"
+msgstr "通知气泡隐藏，音效也不会播放。系统通知，如音量、荧幕亮度等，则不会受影响。"
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
