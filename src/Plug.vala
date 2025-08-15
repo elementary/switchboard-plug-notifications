@@ -1,44 +1,14 @@
 /*
- * Copyright (c) 2011-2015 elementary Developers
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
- * Boston, MA 02110-1301, USA.
+ * SPDX-FileCopyrightText: 2011-2025 elementary, Inc. (https://elementary.io)
+ * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 public class NotificationsPlug : Switchboard.Plug {
     public static GLib.Settings notify_settings;
 
-    private static Granite.Placeholder create_alert_view () {
-        var title = _("Nothing to do here");
-
-        var description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear,\nand for setting when you do not want to be disturbed by notifications.");
-        description += "\n\n";
-        description += _("Apps with configurable notifications will appear here once installed.");
-
-        var icon = new ThemedIcon ("dialog-information");
-
-        return new Granite.Placeholder (title) {
-            description = description,
-            icon = icon
-        };
-    }
-
+    private Adw.ToolbarView placeholder_view;
     private Gtk.Stack stack;
-
     private Widgets.MainView main_view;
-    private Granite.Placeholder alert_view;
 
     public NotificationsPlug () {
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -69,13 +39,33 @@ public class NotificationsPlug : Switchboard.Plug {
             return stack;
         }
 
-        build_ui ();
-        update_view ();
+        main_view = new Widgets.MainView ();
+
+        var alert_view = new Granite.Placeholder (_("Apps with configurable notifications will appear here once installed.")) {
+            description = _("Notifications preferences are for configuring which apps make use of notifications, for changing how an app's notifications appear, and for setting when you do not want to be disturbed by notifications."),
+            icon = new ThemedIcon ("dialog-information")
+        };
+
+        placeholder_view = new Adw.ToolbarView () {
+            content = alert_view
+        };
+        placeholder_view.add_top_bar (new Adw.HeaderBar ());
+
+        stack = new Gtk.Stack () {
+            vhomogeneous = false
+        };
+        stack.add_child (main_view);
+        stack.add_child (placeholder_view);
 
         return stack;
     }
 
     public override void shown () {
+        if (Backend.NotifyManager.get_default ().apps.size > 0) {
+            stack.visible_child = main_view;
+        } else {
+            stack.visible_child = placeholder_view;
+        }
     }
 
     public override void hidden () {
@@ -91,20 +81,6 @@ public class NotificationsPlug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Sound")), "");
         search_results.set ("%s → %s".printf (display_name, _("Bubbles")), "");
         return search_results;
-    }
-
-    private void build_ui () {
-        stack = new Gtk.Stack ();
-
-        main_view = new Widgets.MainView ();
-        alert_view = create_alert_view ();
-
-        stack.add_named (main_view, "main-view");
-        stack.add_named (alert_view, "alert-view");
-    }
-
-    private void update_view () {
-        stack.set_visible_child_name (Backend.NotifyManager.get_default ().apps.size > 0 ? "main-view" : "alert-view");
     }
 }
 
