@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2023-05-23 19:07+0000\n"
-"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
-"io>\n"
+"Last-Translator: Faisal Rachmadin "
+"<frachmadin@users.noreply.l10n.elementary.io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-notifications/id/>\n"
 "Language: id\n"
@@ -16,45 +16,46 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "Tidak ada yang bisa dilakukan di sini"
+#: src/Plug.vala:21
+msgid "Notifications"
+msgstr "Notifikasi"
 
-#: src/Plug.vala:26
+#: src/Plug.vala:22
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr "Konfigurasikan gelembung notifikasi, suara, dan pusat notifikasi"
+
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+
+#: src/Plug.vala:45
+#, fuzzy
+#| msgid ""
+#| "Notifications preferences are for configuring which apps make use of "
+#| "notifications, for changing how an app's notifications appear,\n"
+#| "and for setting when you do not want to be disturbed by notifications."
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Preferensi notifikasi adalah untuk mengonfigurasi aplikasi mana yang "
 "menggunakan notifikasi, karena mengubah tampilan aplikasi,\n"
 "dan untuk pengaturan saat Anda tidak ingin diganggu oleh notifikasi."
 
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-
-#: src/Plug.vala:51
-msgid "Notifications"
-msgstr "Notifikasi"
-
-#: src/Plug.vala:52
-msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Konfigurasikan gelembung notifikasi, suara, dan pusat notifikasi"
-
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Jangan Ganggu"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "Pusat Notifikasi"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "Suara"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Gelembung"
@@ -107,6 +108,9 @@ msgstr "Tampilkan motifikasi yang tidak terjawab di Pusat Notifikasi."
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Nonaktifkan"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "Tidak ada yang bisa dilakukan di sini"
 
 #~ msgid ""
 #~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "

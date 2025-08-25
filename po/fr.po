@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2024-03-20 22:13+0000\n"
 "Last-Translator: Corentin Noël <tintou@noel.tf>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -15,50 +15,51 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:11+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "Aucune action à effectuer"
+#: src/Plug.vala:21
+msgid "Notifications"
+msgstr "Notifications"
 
-#: src/Plug.vala:26
+#: src/Plug.vala:22
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr ""
+"Configurer les bulles et le son de notifications ainsi que le centre de "
+"notifications"
+
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+"Les applications dont les notifications sont configurables apparaîtront ici "
+"une fois installées."
+
+#: src/Plug.vala:45
+#, fuzzy
+#| msgid ""
+#| "Notifications preferences are for configuring which apps make use of "
+#| "notifications, for changing how an app's notifications appear,\n"
+#| "and for setting when you do not want to be disturbed by notifications."
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Les paramètres de notifications permettent de configurer les applications "
 "utilisant des notifications afin de changer \n"
 "la manière dont celles-ci apparaissent et pour définir lorsque vous ne "
 "voulez pas être dérangé par celles-ci."
 
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-"Les applications dont les notifications sont configurables apparaîtront ici "
-"une fois installées."
-
-#: src/Plug.vala:51
-msgid "Notifications"
-msgstr "Notifications"
-
-#: src/Plug.vala:52
-msgid "Configure notification bubbles, sounds, and notification center"
-msgstr ""
-"Configurer les bulles et le son de notifications ainsi que le centre de "
-"notifications"
-
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Ne pas déranger"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "Centre de notifications"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "Son"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bulles"
@@ -107,6 +108,9 @@ msgstr ""
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Désactivé"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "Aucune action à effectuer"
 
 #~ msgid ""
 #~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "

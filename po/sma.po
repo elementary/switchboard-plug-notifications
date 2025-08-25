@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2014-11-12 23:53+0000\n"
 "Last-Translator: Skandee <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,44 +13,40 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-02-04 06:12+0000\n"
 "X-Generator: Launchpad (build 17908)\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr ""
-
-#: src/Plug.vala:26
-msgid ""
-"Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
-msgstr ""
-
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-
-#: src/Plug.vala:51
+#: src/Plug.vala:21
 msgid "Notifications"
 msgstr "Bæjhkoehtimmieh"
 
-#: src/Plug.vala:52
+#: src/Plug.vala:22
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+
+#: src/Plug.vala:45
+msgid ""
+"Notifications preferences are for configuring which apps make use of "
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
+msgstr ""
+
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr ""
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 #, fuzzy
 msgid "Notifications Center"
 msgstr "Bæjhkoehtimmieh"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 #, fuzzy
 msgid "Sound"
 msgstr "Tjoejeh"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-notifications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2018-02-11 00:08+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
@@ -20,42 +20,38 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:42+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "ne tişt vê derê heye"
-
-#: src/Plug.vala:26
-msgid ""
-"Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
-msgstr ""
-
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-
-#: src/Plug.vala:51
+#: src/Plug.vala:21
 msgid "Notifications"
 msgstr "Agahdarî"
 
-#: src/Plug.vala:52
+#: src/Plug.vala:22
 msgid "Configure notification bubbles, sounds, and notification center"
 msgstr ""
 
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+
+#: src/Plug.vala:45
+msgid ""
+"Notifications preferences are for configuring which apps make use of "
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
+msgstr ""
+
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Mijûl Nekin"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "Navenda Agahdarîyê"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "Deng"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Peqpeqoke"
@@ -101,6 +97,9 @@ msgstr ""
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Na çalak"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "ne tişt vê derê heye"
 
 #~ msgid "elementary OS is in Do Not Disturb mode"
 #~ msgstr "elementary OS cih  »na eciz bike« vê xistin"

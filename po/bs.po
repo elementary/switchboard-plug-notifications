@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2018-11-04 11:49+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -16,45 +16,46 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-02-04 06:11+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "Ovdje se nema ništa za obaviti"
+#: src/Plug.vala:21
+msgid "Notifications"
+msgstr "Obavijesti"
 
-#: src/Plug.vala:26
+#: src/Plug.vala:22
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr "Podesite balončiće obavijesti, zvukove i centar obavijesti"
+
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+
+#: src/Plug.vala:45
+#, fuzzy
+#| msgid ""
+#| "Notifications preferences are for configuring which apps make use of "
+#| "notifications, for changing how an app's notifications appear,\n"
+#| "and for setting when you do not want to be disturbed by notifications."
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Postavke obavijesti služe da konfigurirate koje će aplikacije koristiti "
 "obavijesti, da izmijenite kako će se pojavljivati obavijesti neke\n"
 "aplikacije i da podesite kada ne želite da Vam smetaju obavijesti."
 
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-
-#: src/Plug.vala:51
-msgid "Notifications"
-msgstr "Obavijesti"
-
-#: src/Plug.vala:52
-msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Podesite balončiće obavijesti, zvukove i centar obavijesti"
-
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Ne smetaj"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "Centar obavijesti"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Balončići"
@@ -107,6 +108,9 @@ msgstr "Prikaži propuštene obavijesti u Centru obavijesti."
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Deaktivirano"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "Ovdje se nema ništa za obaviti"
 
 #~ msgid ""
 #~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "

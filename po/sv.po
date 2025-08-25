@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2018-10-24 15:05+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -15,45 +15,46 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-07-21 06:03+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "Ingenting här ännu"
+#: src/Plug.vala:21
+msgid "Notifications"
+msgstr "Notifikationer"
 
-#: src/Plug.vala:26
+#: src/Plug.vala:22
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr "Ställ in notifikationsbubblor, ljud och notifikationscenter"
+
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr ""
+
+#: src/Plug.vala:45
+#, fuzzy
+#| msgid ""
+#| "Notifications preferences are for configuring which apps make use of "
+#| "notifications, for changing how an app's notifications appear,\n"
+#| "and for setting when you do not want to be disturbed by notifications."
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
 msgstr ""
 "Notifikationsinställningar ställer in vilka program som använder "
 "notifikationer, för att ändra hur ett programs notifikationer ser ut\n"
 "och för att ställa in när du inte vill bli störd."
 
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr ""
-
-#: src/Plug.vala:51
-msgid "Notifications"
-msgstr "Notifikationer"
-
-#: src/Plug.vala:52
-msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "Ställ in notifikationsbubblor, ljud och notifikationscenter"
-
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "Stör ej"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "Notifikationscenter"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "Bubblor"
@@ -103,6 +104,9 @@ msgstr "Visa missade notifikationer i notifikationscentret."
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "Inaktiverad"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "Ingenting här ännu"
 
 #~ msgid ""
 #~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "

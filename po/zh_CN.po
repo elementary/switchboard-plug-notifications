@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-23 18:41+0000\n"
+"POT-Creation-Date: 2025-08-25 23:30+0000\n"
 "PO-Revision-Date: 2025-08-03 09:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -16,44 +16,45 @@ msgstr ""
 "X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-03-22 07:15+0000\n"
 
-#: src/Plug.vala:24
-msgid "Nothing to do here"
-msgstr "暂无内容"
+#: src/Plug.vala:21
+msgid "Notifications"
+msgstr "通知"
 
-#: src/Plug.vala:26
+#: src/Plug.vala:22
+msgid "Configure notification bubbles, sounds, and notification center"
+msgstr "配置通知气泡、声音和通知中心"
+
+#: src/Plug.vala:44
+msgid "Apps with configurable notifications will appear here once installed."
+msgstr "支持自定义通知设置的应用安装后将会列在此处。"
+
+#: src/Plug.vala:45
+#, fuzzy
+#| msgid ""
+#| "Notifications preferences are for configuring which apps make use of "
+#| "notifications, for changing how an app's notifications appear,\n"
+#| "and for setting when you do not want to be disturbed by notifications."
 msgid ""
 "Notifications preferences are for configuring which apps make use of "
-"notifications, for changing how an app's notifications appear,\n"
-"and for setting when you do not want to be disturbed by notifications."
+"notifications, for changing how an app's notifications appear, and for "
+"setting when you do not want to be disturbed by notifications."
 msgstr ""
 "通知设置可以对应用程序的通知进行配置，\n"
 "更改应用通知的显示方式，设定免打扰时间。"
 
-#: src/Plug.vala:28
-msgid "Apps with configurable notifications will appear here once installed."
-msgstr "支持自定义通知设置的应用安装后将会列在此处。"
-
-#: src/Plug.vala:51
-msgid "Notifications"
-msgstr "通知"
-
-#: src/Plug.vala:52
-msgid "Configure notification bubbles, sounds, and notification center"
-msgstr "配置通知气泡、声音和通知中心"
-
-#: src/Plug.vala:89 src/Widgets/Sidebar.vala:67
+#: src/Plug.vala:79 src/Widgets/Sidebar.vala:67
 msgid "Do Not Disturb"
 msgstr "勿扰模式"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:80
 msgid "Notifications Center"
 msgstr "通知中心"
 
-#: src/Plug.vala:91
+#: src/Plug.vala:81
 msgid "Sound"
 msgstr "声音"
 
-#: src/Plug.vala:92 src/Widgets/AppSettingsView.vala:47
+#: src/Plug.vala:82 src/Widgets/AppSettingsView.vala:47
 #: src/Widgets/AppEntry.vala:69
 msgid "Bubbles"
 msgstr "气泡"
@@ -70,7 +71,8 @@ msgstr "勿扰模式已启用"
 msgid ""
 "Bubbles will be hidden and sounds will be silenced. System notifications, "
 "such as volume and display brightness, will be unaffected."
-msgstr "通知气泡隐藏，音效也不会播放。系统通知，如音量、荧幕亮度等，则不会受影响。"
+msgstr ""
+"通知气泡隐藏，音效也不会播放。系统通知，如音量、荧幕亮度等，则不会受影响。"
 
 #: src/Widgets/AppSettingsView.vala:48
 msgid ""
@@ -97,6 +99,9 @@ msgstr "在通知中心显示未查看的通知。"
 #: src/Widgets/AppEntry.vala:81
 msgid "Disabled"
 msgstr "已禁用"
+
+#~ msgid "Nothing to do here"
+#~ msgstr "暂无内容"
 
 #~ msgid ""
 #~ "While in Do Not Disturb mode, notifications and alerts will be hidden and "
